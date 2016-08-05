@@ -11,6 +11,7 @@
 # Ignore vim files
 *~
 *.swp
+*.map
 .ruby-version
 .DS_Store
 Icon[\r]
