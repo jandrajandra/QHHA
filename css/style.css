@@ -6,6 +6,7 @@ body {
   background: white;
   font-family: sans-serif; }
 
+/* BIENVENIDA */
 .bienvenida a {
   color: black; }
 .bienvenida p {
@@ -113,8 +114,10 @@ body {
     width: 200px;
     margin-right: 50px; }
 
+/* GUADALAJARA */
 .guadalajara {
-  margin-top: 60px; }
+  /* Indice de ejes */
+  /* EJE */ }
   .guadalajara .header {
     vertical-align: middle;
     background: #555;
@@ -152,7 +155,8 @@ body {
     background: #FCE809;
     text-align: center;
     height: 175px;
-    line-height: 175px; }
+    line-height: 175px;
+    padding-top: 60px; }
     .guadalajara .alcalde h2, .guadalajara .alcalde .bio, .guadalajara .alcalde .inicioFin, .guadalajara .alcalde .datos {
       display: inline-block;
       text-align: left;
@@ -362,14 +366,17 @@ body {
       list-style-type: none; }
       .guadalajara .eje ul.compromisos li.compromiso {
         padding: 20px 40px;
-        margin: 20px 0; }
+        margin: 10px 0; }
         .guadalajara .eje ul.compromisos li.compromiso big {
           background: black;
           color: white;
           font-size: 130%;
           cursor: pointer;
           padding: 10px 20px;
-          line-height: 40px; }
+          line-height: 40px;
+          display: inline-block;
+          margin-left: -50px;
+          margin-right: 50px; }
           .guadalajara .eje ul.compromisos li.compromiso big:hover {
             background: White;
             color: black; }
@@ -379,21 +386,56 @@ body {
           padding: 0;
           list-style-type: none; }
           .guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador {
-            padding: 10px;
+            padding: 0;
             margin: 20px 0;
             background: #ddd; }
             .guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador div {
-              display: inline-block; }
+              display: inline-block;
+              text-align: center;
+              vertical-align: top; }
             .guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .descripción {
               width: 60%;
+              padding: 15px;
               font-size: 120%;
-              display: inline-block; }
-            .guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .arranque2015, .guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .actualización2016, .guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .meta2018 {
-              width: 50px;
-              float: right; }
-            .guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .observaciones {
-              width: 75px;
-              float: right; }
+              display: inline-block;
+              text-align: left;
+              margin-right: 5px; }
+            .guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .arranque, .guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .actualización, .guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .meta {
+              width: 60px;
+              background: #ccc;
+              padding: 10px;
+              margin: 10px 0;
+              font-weight: bold;
+              font-size: 120%;
+              margin-top: 15px; }
+            .guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .actualización {
+              width: 100px;
+              padding: 15px 10px;
+              margin-top: 10px;
+              background: #aaa; }
+            .guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover {
+              display: none;
+              background: #ccc;
+              text-align: left;
+              font-size: 90%; }
+              .guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover .fuente {
+                width: 20%;
+                text-align: center;
+                padding: 10px;
+                background: #999;
+                font-style: italic; }
+              .guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover .observaciones {
+                width: 40%;
+                text-align: left;
+                padding: 10px; }
+              .guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover .fechaarranque, .guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover .fechaactualización, .guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover .fechameta {
+                width: 60px;
+                padding: 10px;
+                text-align: center; }
+              .guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover .fechaactualización {
+                width: 100px; }
+            .guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador:hover .hover {
+              display: block; }
       .guadalajara .eje ul.compromisos.picked li.compromiso ul.indicadores {
         display: block; }
     .guadalajara .eje#seguridad {

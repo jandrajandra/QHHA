@@ -1,3 +1,14 @@
+var TOOLS = {
+	isSame:function(array1, array2) { 
+		return array1.sort().join() == array2.sort().join()
+	},
+	markdown:function(str) {
+		return str.replace(/_([^_]+?)_/g,'<em>$1</em>').
+			replace(/\*([^*]+?)\*/g,'<strong>$1</strong>').
+			replace(/\n+/g,'<br />');
+	}
+};
+
 var QHHA = {
 	boot:function() {
 		//$('.compromisos a.compromiso').click( this.pickCompromiso );
@@ -9,11 +20,6 @@ var QHHA = {
 				porcentaje = Math.ceil((dias*100)/total);
 			$('.alcalde .inicioFin .dias i').text(dias);
 			$('.alcalde .inicioFin .porcentaje i').text(porcentaje);
-		}
-	},
-	tools:{
-		isSame:function(array1, array2) { 
-			return array1.sort().join() == array2.sort().join()
 		}
 	},
 	sheet: {
@@ -50,7 +56,7 @@ var QHHA = {
 
 				S.data[eje] = compromisos;
 				S.done.push( eje );
-				if( QHHA.tools.isSame( S.done, S.ejes ) ) {
+				if( TOOLS.isSame( S.done, S.ejes ) ) {
 					S.load();
 				}
 			});
@@ -60,16 +66,21 @@ var QHHA = {
 				S.getEje(zapGdl, eje, i+1);
 			})
 		},
+		prop: function(col, name, link) {
+			var out = '&nbsp';
+			if(col[name]) {
+				if(link && col[link]) {
+					out = '<a href="'+col[link]+'" target="new">'+TOOLS.markdown( col[name] )+'</a>';
+				} else {
+					out = TOOLS.markdown( col[name] );
+				}
+			}
+			return ('<div class="'+name+'">'+out+'</div>');
+		},
 		load:function() { var teCompromiso = $('#template .compromiso'),
 				teIndicador = $('#template .indicador'),
 				data = QHHA.sheet.data,
-				prop = function(obj, name) {
-					if(obj[name]) {
-						return '<div class="'+name+'">'+obj[name]+'</div>';
-					} else {
-						return '';
-					}
-				};
+				prop = QHHA.sheet.prop;
 
 			$.each(QHHA.sheet.ejes, function() { var eje = this,
 					compromisos = $('.eje.'+eje+' .compromisos');
@@ -78,15 +89,22 @@ var QHHA = {
 						elCompromiso = teCompromiso.clone(),
 						elIndicadores = elCompromiso.find('ul.indicadores');
 
-					elCompromiso.find('big').html( daCompromiso.compromiso );
+					elCompromiso.find('big').html( TOOLS.markdown( daCompromiso.compromiso ));
+
 					$.each(daCompromiso.indicadores, function() { var daIndicador = this;
 						elIndicadores.append(
 							teIndicador.clone().html(
 								prop(daIndicador, 'descripción')+
-								prop(daIndicador, 'observaciones')+
-								prop(daIndicador, 'meta2018')+
-								prop(daIndicador, 'actualización2016')+
-								prop(daIndicador, 'arranque2015')
+								prop(daIndicador, 'arranque')+
+								prop(daIndicador, 'actualización')+
+								prop(daIndicador, 'meta')+
+								'<div class="hover">'+
+									prop(daIndicador, 'fuente', 'enlacefuente')+
+									prop(daIndicador, 'observaciones')+
+									prop(daIndicador, 'fechaarranque')+
+									prop(daIndicador, 'fechaactualización')+
+									prop(daIndicador, 'fechameta')+
+								'</div>'
 							)
 						);
 					});
@@ -100,6 +118,7 @@ var QHHA = {
 		$(this).parents('ul.compromisos').toggleClass('picked');
 	}
 };
+
 
 $( document ).ready(function() {
 	QHHA.boot();

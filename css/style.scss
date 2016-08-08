@@ -19,6 +19,7 @@ $pub2:#7A000D;
 $med2:#885C03;
 $com2:#151D39;
 
+/* BIENVENIDA */
 .bienvenida { 
 	a {color:black}
 	p {font-size:150%}
@@ -79,7 +80,8 @@ $com2:#151D39;
 	.jcv {width:200px; margin-right:50px}
 }
 
-.guadalajara {margin-top:60px;
+/* GUADALAJARA */
+.guadalajara {
 	.header { vertical-align:middle; background:#555; height:60px; width:100%; line-height:60px; text-align:left; color:white; position:fixed; top:0; left:0; overflow:hidden;
 		.home {display:inline-block; text-decoration:none; background:#eee; float:left; width:200px; text-align:center;
 			img {width:150px; vertical-align:middle }
@@ -89,7 +91,7 @@ $com2:#151D39;
 		}
 	}
 
-	.alcalde {background:#FCE809; text-align:center; height:175px; line-height:175px;
+	.alcalde {background:#FCE809; text-align:center; height:175px; line-height:175px; padding-top:60px;
 		h2, .bio, .inicioFin, .datos {display:inline-block; text-align:left; line-height:normal; vertical-align:top}
 		h2 {font-size:150%; text-align:center; margin:0; padding:0; background:#DBC808; height:175px;
 			padding:0 30px; overflow:hidden;
@@ -114,6 +116,7 @@ $com2:#151D39;
 		a {color:black}
 	}
 
+	/* Indice de ejes */
 	.ejes {padding:20px 0; background:#eee;
 		@include linear-gradient(to bottom, #bbb, #eee);
 		big {display:block}
@@ -157,6 +160,7 @@ $com2:#151D39;
 
 	#template {display:none}
 
+	/* EJE */
 	.eje { padding:20px 0; margin:0; text-align:left;
 		h3 {text-align:center; padding-top:20px;
 			font-weight:bold; color:white; margin:0; padding:20px 0; font-size:200%; width:100%; height:100px; line-height:100px;
@@ -165,17 +169,27 @@ $com2:#151D39;
 			}
 			big {display:inline-block; height:100px; padding:0 30px;}
 		}
+
 		ul.compromisos {width:900px; margin:0 auto; list-style-type:none;
-			li.compromiso { padding:20px 40px; margin:20px 0;
-				big {background:black; color:white; font-size:130%; cursor:pointer; padding:10px 20px; line-height:40px;
+			li.compromiso { padding:20px 40px; margin:10px 0;
+				big {background:black; color:white; font-size:130%; cursor:pointer; padding:10px 20px; line-height:40px; display:inline-block;
+					margin-left:-50px; margin-right:50px;
 					&:hover {background:White; color:black}
 				} 
 				ul.indicadores {display:none; margin:0; padding:0; list-style-type:none;
-					li.indicador {padding:10px; margin:20px 0; background:#ddd;
-						div {display:inline-block}
-						.descripción {width:60%; font-size:120%; display:inline-block}
-						.arranque2015, .actualización2016, .meta2018 {width:50px; float:right}
-						.observaciones {width:75px; float:right}
+					li.indicador {padding:0; margin:20px 0; background:#ddd;
+						div {display:inline-block; text-align:center; vertical-align:top}
+						.descripción {width:60%; padding:15px; font-size:120%; display:inline-block; text-align:left; margin-right:5px}
+						.arranque, .actualización, .meta {width:60px; background:#ccc; padding:10px; margin:10px 0; 
+							font-weight:bold; font-size:120%; margin-top:15px}
+						.actualización {width:100px; padding:15px 10px; margin-top:10px; background:#aaa}
+						.hover {display:none; background:#ccc; text-align:left; font-size:90%;
+							.fuente {width:20%; text-align:center; padding:10px; background:#999; font-style:italic;}
+							.observaciones {width:40%; text-align:left; padding:10px}
+							.fechaarranque, .fechaactualización, .fechameta {width:60px; padding:10px; text-align:center;}
+							.fechaactualización {width:100px}
+						}
+						&:hover .hover {display:block}
 					}
 				}
 			}
