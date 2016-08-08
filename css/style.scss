@@ -1,12 +1,163 @@
 body {margin:0; padding:0; text-align:center; background:white; font-family:sans-serif}
 
-.bienvenida {
-	.municipio {
+$seg:#AF0B1E;
+$urb:#CDDA1B;
+$eco:#F6921F;
+$efi:#8583A0;
+$pub:#E50027;
+$med:#FBBF0E;
+$com:#253763;
+
+$seg2:#770013;
+$urb2:#7F9304;
+$eco2:#8F4103;
+$efi2:#3A374C;
+$pub2:#7A000D;
+$med2:#885C03;
+$com2:#151D39;
+
+.bienvenida { 
+	a {color:black}
+	p {font-size:150%}
+
+	.municipio {display:inline-block; width:400px; height:275px; color:white; text-decoration:none;
+		h2 {font-size:50px; margin-top:50px; margin-bottom:0}
+		h3 {font-size:30px; margin-top:10px}
+
+		.mouseout {display:inline-block}
+		.mouseover {display:none}
+
+		&.zap {
+			background:#5C5973 url(/img/zapgdl/zap-bkg.png) no-repeat center bottom;
+			background-size:auto 100%;
+			margin-right:30px;
+		}
+		&.gdl {
+			background:#5C5973 url(/img/zapgdl/gdl-bkg.png) no-repeat center bottom;
+			background-size:auto 100%;
+		}
+
+		&:hover {
+			background-color:#121A2E;
+			color:white;
+			.mouseout {display:none}
+			.mouseover {display:inline-block}
+		}
 	}
 }
 
-.compromisos {
+.intro { width:600px; margin:30px auto; text-align:left; font-size:110%;
+	p.first {font-size:130%}
+	ul.fuentes {
+	}
+	ul.ejes {list-style-type:none; font-size:120%;
+		li {font-weight:bold; margin:5px 0;
+			span {border-radius:50%; width:70px; height:70px; line-height:70px; vertical-align:middle;
+				font-size:130%; margin-right:15px; text-align:center; color:#fff; display:inline-block;
+				img {height:50px; vertical-align:middle;}
+			}
+		}
+		.seg {color:$seg; span {background-color:$seg}}
+		.urb {color:$urb; span {background-color:$urb}}
+		.eco {color:$eco; span {background-color:$eco}}
+		.efi {color:$efi; span {background-color:$efi}}
+		.pub {color:$pub; span {background-color:$pub}}
+		.med {color:$med; span {background-color:$med}}
+		.com {color:$com; span {background-color:$com}}
+	}
 }
 
-.indicadores {
+.sponsors {padding-bottom:50px; margin-top:40px; padding-top:30px; border-top:1px solid #aaa; color:#aaa; background:#eee;
+	img {vertical-align:middle}
+	.jcv {width:200px; margin-right:50px}
 }
+
+.guadalajara {
+	.header { vertical-align:middle; background:#555; height:60px; width:100%; line-height:60px; text-align:left; color:white; border-bottom:1px solid black; position:fixed; top:0; left:0; overflow:hidden;
+		.home {display:inline-block; text-decoration:none; background:#eee; float:left; width:200px; text-align:center;
+			img {width:150px; vertical-align:middle }
+		}
+		.top {font-size:170%; margin:0 20px; padding:0; display:inline-block; text-decoration:none; color:white;
+			img {height:60px; vertical-align:middle; margin-right:10px}
+		}
+	}
+	.alcalde {background:#FCE809; text-align:left; height:200px; margin-top:60px;
+		h2, p, div.datos {display:inline-block; text-align:left; vertical-align:middle;}
+		h2 {font-size:150%; text-align:center; margin:0; padding:0; background:#ccc;
+			padding:20px 30px; padding-left:80px; float:left;
+			img {height:90px;}
+		}
+		.datos { background:#ccc; float:left; margin-right:20px; 
+			.tel {margin-top:30px}
+		}
+		p {width:250px; padding:10px;}
+		a {color:black}
+	}
+	.ejes {padding:20px 0; 
+		big {display:block}
+		ul {list-style-type:none; width:80%; margin:0 auto; text-align:center;
+			li {color:white; margin:5px; padding:0; display:inline-block; width:600px; cursor:pointer; text-align:left;
+				span { float:left; margin:0; margin-right:20px; padding:10px;
+					img {height:80px; }
+				}
+				&.right {
+					big, small {margin-left:15px; text-align:right; display:block}
+					span {float:right; margin-right:0; margin-left:20px}
+				}
+				big {margin-top:15px}
+					a {color:white; text-decoration:none; font-weight:bold; font-size:150%}
+				small {font-size:110%}
+				&:hover {
+					a {text-decoration:underline}
+				}
+				&.seg {background-color:$seg; width:400px; margin-left:200px; span {background-color:$seg2;}}
+				&.urb {background-color:$urb; width:400px; margin-right:200px; span {background-color:$urb2;}}
+				&.eco {background-color:$eco; width:500px; margin-left:100px; span {background-color:$eco2;}}
+				&.efi {background-color:$efi; width:500px; margin-right:100px; span {background-color:$efi2;}}
+				&.pub {background-color:$pub; width:400px; margin-left:200px; span {background-color:$pub2;}}
+				&.med {background-color:$med; width:400px; margin-right:200px; span {background-color:$med2;}}
+				&.com {background-color:$com; width:550px; span {background-color:$com2;}}
+				&:hover {
+					a {text-decoration:underline}
+					&.seg {background-color:$seg2;}
+					&.urb {background-color:$urb2;}
+					&.eco {background-color:$eco2;}
+					&.efi {background-color:$efi2;}
+					&.pub {background-color:$pub2;}
+					&.med {background-color:$med2;}
+					&.com {background-color:$com2;}
+				}
+			}
+		}
+	}
+
+	.eje { background:purple; padding:20px; margin:50px; text-align:left;
+		h3 {
+			font-weight:bold; color:white; margin-top:0; font-size:200%;
+			span { float:left; margin:0; margin-right:20px; padding:10px;
+				img {height:50px;}
+			}
+		}
+		.compromisos {
+			a {text-decoration:none; font-weight:bold; color:#000}
+			ul.compromisos {list-style-type:none;
+				> li {background:white; padding:10px; margin:10px;
+				}
+				ul.indicadores {display:none; background:#ddd; margin:0; padding:0; list-style-type:none;
+					li {padding:10px; margin:10px}
+				}
+				&.picked {
+					ul.indicadores {display:block}
+				}
+			}
+		}
+		&#seguridad {background-color:$seg; span {background-color:$seg2;}}
+		&#desarrollo-urbano {background-color:$urb; span {background-color:$urb2;}}
+		&#desarrollo-economico {background-color:$eco; span {background-color:$eco;}}
+		&#eficiencia {background-color:$efi; span {background-color:$efi2;}}
+		&#servicios-publicos {background-color:$pub; span {background-color:$pub2;}}
+		&#medio-ambiente {background-color:$med; span {background-color:$med2;}}
+		&#comunidad {background-color:$com; span {background-color:$com2;}}
+	}
+}
+
