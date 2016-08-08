@@ -7,10 +7,29 @@
 		<script src="/js/code.js"></script>
 		<script>
 			$( document ).ready(function() {
-				QHHA.sheet.fetch('gdl','seg');
+				QHHA.sheet.fetch('gdl');
+				QHHA.days.since();
 			});
 		</script>
 		<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
 	</head>
 	<body class="guadalajara">
 		<div class="header">
@@ -37,16 +56,17 @@
 					<a href="https://twitter.com/enriquealfaror">EnriqueAlfaroR</a>
 				</div>
 			</div>
-			<p>
+			<div class="bio">
 				Inició en la política en 2007 como diputado en el Congreso de Jalisco y después como alcalde del municipio de Tlajomulco. Fue candidato a gobernador del estado por la coalicion PT y Movimiento Ciudadano.
-			</p>
-			<p style="text-align:center">
-				Su gestión en Guadalajara<br>
-				inició el<br>
-				<b>30 de septiembre de <big>2015</big></b><br>
-				y finaliza el<br>
-				<b>30 de septiembre de <big>2018</big>.</b>
-			</p>
+			</div>
+			<div class="inicioFin">
+				Su gestión inició el
+					<b>30 de septiembre de <big>2015</big></b><br/>
+					y finaliza el<br/>
+				<b>30 de septiembre de <big>2018</big></b>.<br/>
+
+				Van <div class="dias"><i>2</i> días</div><div class="porcentaje">(<i>0</i>%)</div>.
+			</div>
 		</div>
 		<div class="ejes">
 			<ul>
@@ -86,108 +106,63 @@
 			</ul>
 		</div>
 
-		<div class="eje" id="seguridad">
+		<div id="template">
+			<li class="compromiso">
+				<big></big>
+				<ul class="indicadores">
+				</ul>
+			</li>
+			<li class="indicador"></li>
+		</div>
+
+		<div class="eje seg" id="seguridad">
 			<h3>
 				<span><img src="/img/icons/seg.png" /></span>
-				Seguridad y prevención del delito
+				<big>Seguridad y prevención del delito</big>
 			</h3>
-			<div class="compromisos">
-				<ul class="compromisos">
-					<li>
-						<a href="javascript:void(0);" class="compromiso">
-							<b>Policía</b> <i>metropolitana con mando único</i>.
-							Policía de <i>proximidad</i>; los empresarios podrán involucrarse con aportaciones para
-mejora de la Policía.</a>
-						<ul class="indicadores">
-							<li><b>Manual</b> del nuevo sistema operativo de Policía <i>por cuadrantes</i>.</li>
-							<li><i>Número</i> de <b>cuadrantes</b> operando bajo el nuevo sistema operativo.</li>
-							<li><i>Número</i> de policías asignados <b>por cuadrante</b>.</li>
-							<li><i>Porcentaje</i> de ciudadanos con <b>confianza</b> en la policía municipal.</li>
-						</ul>
-					</li>
-					<li>
-						<a href="javascript:void(0);" class="compromiso">
-							Garantizar la <b>seguridad</b> y respeto los <b>derechos humanos</b> y las <b>libertades</b> que otorga la ley.
-						</a>
-						<ul class="indicadores">
-							<li><i>Tasa</i> de <b>delitos del fuero común</b> por cada mil habitantes.</li>
-							<li><i>Tasa</i> de <b>homicidios</b> por cada cien mil habitantes.</li>
-							<li><i>Porcentaje</i> de ciudadanos que sufrieron un <b>delito</b> en el último año.</li>
-							<li><i>Porcentaje</i> de ciudadanos <b>satisfechos</b> con la seguridad pública que le brindan.</li>
-							<li>Índice de Paz Metropolitano</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
+			<ul class="compromisos"></ul>
 		</div>
-		<div class="eje" id="desarrollo-urbano">
+		<div class="eje urb" id="desarrollo-urbano">
 			<h3>
 				<span><img src="/img/icons/urb.png" /></span>
-				Desarrollo urbano
+				<big>Desarrollo urbano</big>
 			</h3>
-			<div class="compromisos">
-				<ul class="compromisos">
-					<li>Policia metropolitana con mando</li>
-					<li>Policia metropolitana con mando</li>
-					<li>Policia metropolitana con mando</li>
-					<li>Policia metropolitana con mando</li>
-				</ul>
-			</div>
+			<ul class="compromisos"></ul>
 		</div>
-		<div class="eje" id="desarrollo-economico">
-			<h3>Desarrollo Económico</h3>
-			<div class="compromisos">
-				<ul class="compromisos">
-					<li>Policia metropolitana con mando</li>
-					<li>Policia metropolitana con mando</li>
-					<li>Policia metropolitana con mando</li>
-					<li>Policia metropolitana con mando</li>
-				</ul>
-			</div>
+		<div class="eje eco" id="desarrollo-economico">
+			<h3>
+				<span><img src="/img/icons/eco.png" /></span>
+				<big>Desarrollo Económico</big>
+			</h3>
+			<ul class="compromisos"></ul>
 		</div>
-		<div class="eje" id="eficiencia">
-			<h3>Eficiencia Administrativa</h3>
-			<div class="compromisos">
-				<ul class="compromisos">
-					<li>Policia metropolitana con mando</li>
-					<li>Policia metropolitana con mando</li>
-					<li>Policia metropolitana con mando</li>
-					<li>Policia metropolitana con mando</li>
-				</ul>
-			</div>
+		<div class="eje efi" id="eficiencia">
+			<h3>
+				<span><img src="/img/icons/efi.png" /></span>
+				<big>Eficiencia Administrativa</big>
+			</h3>
+			<ul class="compromisos"></ul>
 		</div>
-		<div class="eje" id="servicios-publicos">
-			<h3>Servicios Públicos</h3>
-			<div class="compromisos">
-				<ul class="compromisos">
-					<li>Policia metropolitana con mando</li>
-					<li>Policia metropolitana con mando</li>
-					<li>Policia metropolitana con mando</li>
-					<li>Policia metropolitana con mando</li>
-				</ul>
-			</div>
+		<div class="eje pub" id="servicios-publicos">
+			<h3>
+				<span><img src="/img/icons/pub.png" /></span>
+				<big>Servicios Públicos</big>
+			</h3>
+			<ul class="compromisos"></ul>
 		</div>
-		<div class="eje" id="medio-ambiente">
-			<h3>Medio Ambiente</h3>
-			<div class="compromisos">
-				<ul class="compromisos">
-					<li>Policia metropolitana con mando</li>
-					<li>Policia metropolitana con mando</li>
-					<li>Policia metropolitana con mando</li>
-					<li>Policia metropolitana con mando</li>
-				</ul>
-			</div>
+		<div class="eje med" id="medio-ambiente">
+			<h3>
+				<span><img src="/img/icons/med.png" /></span>
+				<big>Medio Ambiente</big>
+			</h3>
+			<ul class="compromisos"></ul>
 		</div>
-		<div class="eje" id="comunidad">
-			<h3>Construcción de Comunidad</h3>
-			<div class="compromisos">
-				<ul class="compromisos">
-					<li>Policia metropolitana con mando</li>
-					<li>Policia metropolitana con mando</li>
-					<li>Policia metropolitana con mando</li>
-					<li>Policia metropolitana con mando</li>
-				</ul>
-			</div>
+		<div class="eje com" id="comunidad">
+			<h3>
+				<span><img src="/img/icons/com.png" /></span>
+				<big>Construcción de Comunidad</big>
+			</h3>
+			<ul class="compromisos"></ul>
 		</div>
 	</body>
 </html>

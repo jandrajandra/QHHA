@@ -1,3 +1,6 @@
+@charset "UTF-8";
+@import "bourbon/bourbon";
+
 body {margin:0; padding:0; text-align:center; background:white; font-family:sans-serif}
 
 $seg:#AF0B1E;
@@ -43,6 +46,7 @@ $com2:#151D39;
 			.mouseout {display:none}
 			.mouseover {display:inline-block}
 		}
+
 	}
 }
 
@@ -51,7 +55,7 @@ $com2:#151D39;
 	ul.fuentes {
 	}
 	ul.ejes {list-style-type:none; font-size:120%;
-		li {font-weight:bold; margin:5px 0;
+		li {font-weight:bold; margin:5px 0; 
 			span {border-radius:50%; width:70px; height:70px; line-height:70px; vertical-align:middle;
 				font-size:130%; margin-right:15px; text-align:center; color:#fff; display:inline-block;
 				img {height:50px; vertical-align:middle;}
@@ -65,6 +69,9 @@ $com2:#151D39;
 		.med {color:$med; span {background-color:$med}}
 		.com {color:$com; span {background-color:$com}}
 	}
+	.tabla {
+		text-align:center;
+	}
 }
 
 .sponsors {padding-bottom:50px; margin-top:40px; padding-top:30px; border-top:1px solid #aaa; color:#aaa; background:#eee;
@@ -72,8 +79,8 @@ $com2:#151D39;
 	.jcv {width:200px; margin-right:50px}
 }
 
-.guadalajara {
-	.header { vertical-align:middle; background:#555; height:60px; width:100%; line-height:60px; text-align:left; color:white; border-bottom:1px solid black; position:fixed; top:0; left:0; overflow:hidden;
+.guadalajara {margin-top:60px;
+	.header { vertical-align:middle; background:#555; height:60px; width:100%; line-height:60px; text-align:left; color:white; position:fixed; top:0; left:0; overflow:hidden;
 		.home {display:inline-block; text-decoration:none; background:#eee; float:left; width:200px; text-align:center;
 			img {width:150px; vertical-align:middle }
 		}
@@ -81,22 +88,38 @@ $com2:#151D39;
 			img {height:60px; vertical-align:middle; margin-right:10px}
 		}
 	}
-	.alcalde {background:#FCE809; text-align:left; height:200px; margin-top:60px;
-		h2, p, div.datos {display:inline-block; text-align:left; vertical-align:middle;}
-		h2 {font-size:150%; text-align:center; margin:0; padding:0; background:#ccc;
-			padding:20px 30px; padding-left:80px; float:left;
-			img {height:90px;}
+
+	.alcalde {background:#FCE809; text-align:center; height:175px; line-height:175px;
+		h2, .bio, .inicioFin, .datos {display:inline-block; text-align:left; line-height:normal; vertical-align:top}
+		h2 {font-size:150%; text-align:center; margin:0; padding:0; background:#DBC808; height:175px;
+			padding:0 30px; overflow:hidden;
+			img {height:90px; margin-top:30px}
 		}
-		.datos { background:#ccc; float:left; margin-right:20px; 
+		.datos { background:#DBC808; height:175px; padding:0 20px;
 			.tel {margin-top:30px}
+			div {margin:15px 0}
 		}
-		p {width:250px; padding:10px;}
+		.bio, .inicioFin {width:250px; padding:0 20px; vertical-align:middle}
+		.inicioFin { text-align:center;
+			b {padding-left:10px; background:#DBC808; display:inline-block; margin:3px 0; font-weight:normal;
+				big {color:black; background:#C1B10B; padding:2px 5px; vertical-align:middle; font-size:120%; display:inline-block}
+			}
+			b:last-of-type {margin-bottom:10px}
+			.dias, .porcentaje {display:inline-block; font-weight:bold; width:auto; padding:0 3px; height:30px; line-height:30px; vertical-align:middle;
+				i {font-style:normal}
+			}
+			.dias {background:#000; color:white; font-size:120%; padding:0 7px; }
+			.porcentaje {background:#DBC808; font-weight:normal}
+		}
 		a {color:black}
 	}
-	.ejes {padding:20px 0; 
+
+	.ejes {padding:20px 0; background:#eee;
+		@include linear-gradient(to bottom, #bbb, #eee);
 		big {display:block}
 		ul {list-style-type:none; width:80%; margin:0 auto; text-align:center;
-			li {color:white; margin:5px; padding:0; display:inline-block; width:600px; cursor:pointer; text-align:left;
+			li {color:white; margin:15px; padding:0; display:inline-block; width:600px; cursor:pointer; text-align:left;
+				@include transition(all 1s ease);
 				span { float:left; margin:0; margin-right:20px; padding:10px;
 					img {height:80px; }
 				}
@@ -110,12 +133,13 @@ $com2:#151D39;
 				&:hover {
 					a {text-decoration:underline}
 				}
-				&.seg {background-color:$seg; width:400px; margin-left:200px; span {background-color:$seg2;}}
-				&.urb {background-color:$urb; width:400px; margin-right:200px; span {background-color:$urb2;}}
-				&.eco {background-color:$eco; width:500px; margin-left:100px; span {background-color:$eco2;}}
-				&.efi {background-color:$efi; width:500px; margin-right:100px; span {background-color:$efi2;}}
-				&.pub {background-color:$pub; width:400px; margin-left:200px; span {background-color:$pub2;}}
-				&.med {background-color:$med; width:400px; margin-right:200px; span {background-color:$med2;}}
+
+				&.seg {background-color:$seg; width:400px; margin-left:100px; span {background-color:$seg2;}}
+				&.urb {background-color:$urb; width:400px; margin-right:100px; span {background-color:$urb2;}}
+				&.eco {background-color:$eco; width:500px; margin-left:0; span {background-color:$eco2;}}
+				&.efi {background-color:$efi; width:500px; margin-right:0; span {background-color:$efi2;}}
+				&.pub {background-color:$pub; width:400px; margin-left:100px; span {background-color:$pub2;}}
+				&.med {background-color:$med; width:400px; margin-right:100px; span {background-color:$med2;}}
 				&.com {background-color:$com; width:550px; span {background-color:$com2;}}
 				&:hover {
 					a {text-decoration:underline}
@@ -131,33 +155,41 @@ $com2:#151D39;
 		}
 	}
 
-	.eje { background:purple; padding:20px; margin:50px; text-align:left;
-		h3 {
-			font-weight:bold; color:white; margin-top:0; font-size:200%;
-			span { float:left; margin:0; margin-right:20px; padding:10px;
-				img {height:50px;}
+	#template {display:none}
+
+	.eje { padding:20px 0; margin:0; text-align:left;
+		h3 {text-align:center; padding-top:20px;
+			font-weight:bold; color:white; margin:0; padding:20px 0; font-size:200%; width:100%; height:100px; line-height:100px;
+			span { display:inline-block; margin:0; padding:0 10px; line-height:100px; vertical-align:top;
+				img {height:80px; vertical-align:middle}
+			}
+			big {display:inline-block; height:100px; padding:0 30px;}
+		}
+		ul.compromisos {width:900px; margin:0 auto; list-style-type:none;
+			li.compromiso { padding:20px 40px; margin:20px 0;
+				big {background:black; color:white; font-size:130%; cursor:pointer; padding:10px 20px; line-height:40px;
+					&:hover {background:White; color:black}
+				} 
+				ul.indicadores {display:none; margin:0; padding:0; list-style-type:none;
+					li.indicador {padding:10px; margin:20px 0; background:#ddd;
+						div {display:inline-block}
+						.descripción {width:60%; font-size:120%; display:inline-block}
+						.arranque2015, .actualización2016, .meta2018 {width:50px; float:right}
+						.observaciones {width:75px; float:right}
+					}
+				}
+			}
+			&.picked {
+				li.compromiso ul.indicadores {display:block}
 			}
 		}
-		.compromisos {
-			a {text-decoration:none; font-weight:bold; color:#000}
-			ul.compromisos {list-style-type:none;
-				> li {background:white; padding:10px; margin:10px;
-				}
-				ul.indicadores {display:none; background:#ddd; margin:0; padding:0; list-style-type:none;
-					li {padding:10px; margin:10px}
-				}
-				&.picked {
-					ul.indicadores {display:block}
-				}
-			}
-		}
-		&#seguridad {background-color:$seg; span {background-color:$seg2;}}
-		&#desarrollo-urbano {background-color:$urb; span {background-color:$urb2;}}
-		&#desarrollo-economico {background-color:$eco; span {background-color:$eco;}}
-		&#eficiencia {background-color:$efi; span {background-color:$efi2;}}
-		&#servicios-publicos {background-color:$pub; span {background-color:$pub2;}}
-		&#medio-ambiente {background-color:$med; span {background-color:$med2;}}
-		&#comunidad {background-color:$com; span {background-color:$com2;}}
+		&#seguridad {@include linear-gradient(to bottom, $seg2, $seg); h3 big {background-color:$seg;}}
+		&#desarrollo-urbano {@include linear-gradient(to bottom, $urb2, $urb); h3 big {background-color:$urb;}}
+		&#desarrollo-economico {@include linear-gradient(to bottom, $eco2, $eco); h3 big {background-color:$eco;}}
+		&#eficiencia {@include linear-gradient(to bottom, $efi2, $efi); h3 big {background-color:$efi;}}
+		&#servicios-publicos {@include linear-gradient(to bottom, $pub2, $pub); h3 big {background-color:$pub;}}
+		&#medio-ambiente {@include linear-gradient(to bottom, $med2, $med); h3 big {background-color:$med;}}
+		&#comunidad {@include linear-gradient(to bottom, $com2, $com); h3 big {background-color:$com;}}
 	}
 }
 
