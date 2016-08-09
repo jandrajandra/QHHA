@@ -366,9 +366,8 @@ body {
       list-style-type: none; }
       .guadalajara .eje ul.compromisos li.compromiso {
         padding: 20px 40px;
-        margin: 10px 0; }
+        margin: 0; }
         .guadalajara .eje ul.compromisos li.compromiso big {
-          background: black;
           color: white;
           font-size: 130%;
           cursor: pointer;
@@ -422,8 +421,9 @@ body {
                 width: 20%;
                 text-align: center;
                 padding: 10px;
-                background: #999;
-                font-style: italic; }
+                background: #999; }
+                .guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover .fuente a {
+                  font-style: italic; }
               .guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover .observaciones {
                 width: 40%;
                 text-align: left;
@@ -440,44 +440,44 @@ body {
         display: block; }
     .guadalajara .eje#seguridad {
       background-color: #770013;
-      background-image: -webkit-linear-gradient(top, #770013, #AF0B1E);
-      background-image: linear-gradient(to bottom,#770013, #AF0B1E); }
+      background-image: -webkit-linear-gradient(right, #770013, #AF0B1E);
+      background-image: linear-gradient(to left,#770013, #AF0B1E); }
       .guadalajara .eje#seguridad h3 big {
         background-color: #AF0B1E; }
     .guadalajara .eje#desarrollo-urbano {
       background-color: #7F9304;
-      background-image: -webkit-linear-gradient(top, #7F9304, #CDDA1B);
-      background-image: linear-gradient(to bottom,#7F9304, #CDDA1B); }
+      background-image: -webkit-linear-gradient(right, #7F9304, #CDDA1B);
+      background-image: linear-gradient(to left,#7F9304, #CDDA1B); }
       .guadalajara .eje#desarrollo-urbano h3 big {
         background-color: #CDDA1B; }
     .guadalajara .eje#desarrollo-economico {
       background-color: #8F4103;
-      background-image: -webkit-linear-gradient(top, #8F4103, #F6921F);
-      background-image: linear-gradient(to bottom,#8F4103, #F6921F); }
+      background-image: -webkit-linear-gradient(right, #8F4103, #F6921F);
+      background-image: linear-gradient(to left,#8F4103, #F6921F); }
       .guadalajara .eje#desarrollo-economico h3 big {
         background-color: #F6921F; }
     .guadalajara .eje#eficiencia {
       background-color: #3A374C;
-      background-image: -webkit-linear-gradient(top, #3A374C, #8583A0);
-      background-image: linear-gradient(to bottom,#3A374C, #8583A0); }
+      background-image: -webkit-linear-gradient(right, #3A374C, #8583A0);
+      background-image: linear-gradient(to left,#3A374C, #8583A0); }
       .guadalajara .eje#eficiencia h3 big {
         background-color: #8583A0; }
     .guadalajara .eje#servicios-publicos {
       background-color: #7A000D;
-      background-image: -webkit-linear-gradient(top, #7A000D, #E50027);
-      background-image: linear-gradient(to bottom,#7A000D, #E50027); }
+      background-image: -webkit-linear-gradient(right, #7A000D, #E50027);
+      background-image: linear-gradient(to left,#7A000D, #E50027); }
       .guadalajara .eje#servicios-publicos h3 big {
         background-color: #E50027; }
     .guadalajara .eje#medio-ambiente {
       background-color: #885C03;
-      background-image: -webkit-linear-gradient(top, #885C03, #FBBF0E);
-      background-image: linear-gradient(to bottom,#885C03, #FBBF0E); }
+      background-image: -webkit-linear-gradient(right, #885C03, #FBBF0E);
+      background-image: linear-gradient(to left,#885C03, #FBBF0E); }
       .guadalajara .eje#medio-ambiente h3 big {
         background-color: #FBBF0E; }
     .guadalajara .eje#comunidad {
       background-color: #151D39;
-      background-image: -webkit-linear-gradient(top, #151D39, #253763);
-      background-image: linear-gradient(to bottom,#151D39, #253763); }
+      background-image: -webkit-linear-gradient(right, #151D39, #253763);
+      background-image: linear-gradient(to left,#151D39, #253763); }
       .guadalajara .eje#comunidad h3 big {
         background-color: #253763; }
 

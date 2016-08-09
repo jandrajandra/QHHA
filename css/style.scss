@@ -171,8 +171,8 @@ $com2:#151D39;
 		}
 
 		ul.compromisos {width:900px; margin:0 auto; list-style-type:none;
-			li.compromiso { padding:20px 40px; margin:10px 0;
-				big {background:black; color:white; font-size:130%; cursor:pointer; padding:10px 20px; line-height:40px; display:inline-block;
+			li.compromiso { padding:20px 40px; margin:0;
+				big {color:white; font-size:130%; cursor:pointer; padding:10px 20px; line-height:40px; display:inline-block;
 					margin-left:-50px; margin-right:50px;
 					&:hover {background:White; color:black}
 				} 
@@ -184,7 +184,9 @@ $com2:#151D39;
 							font-weight:bold; font-size:120%; margin-top:15px}
 						.actualización {width:100px; padding:15px 10px; margin-top:10px; background:#aaa}
 						.hover {display:none; background:#ccc; text-align:left; font-size:90%;
-							.fuente {width:20%; text-align:center; padding:10px; background:#999; font-style:italic;}
+							.fuente {width:20%; text-align:center; padding:10px; background:#999; 
+								a {font-style:italic;}
+							}
 							.observaciones {width:40%; text-align:left; padding:10px}
 							.fechaarranque, .fechaactualización, .fechameta {width:60px; padding:10px; text-align:center;}
 							.fechaactualización {width:100px}
@@ -197,13 +199,13 @@ $com2:#151D39;
 				li.compromiso ul.indicadores {display:block}
 			}
 		}
-		&#seguridad {@include linear-gradient(to bottom, $seg2, $seg); h3 big {background-color:$seg;}}
-		&#desarrollo-urbano {@include linear-gradient(to bottom, $urb2, $urb); h3 big {background-color:$urb;}}
-		&#desarrollo-economico {@include linear-gradient(to bottom, $eco2, $eco); h3 big {background-color:$eco;}}
-		&#eficiencia {@include linear-gradient(to bottom, $efi2, $efi); h3 big {background-color:$efi;}}
-		&#servicios-publicos {@include linear-gradient(to bottom, $pub2, $pub); h3 big {background-color:$pub;}}
-		&#medio-ambiente {@include linear-gradient(to bottom, $med2, $med); h3 big {background-color:$med;}}
-		&#comunidad {@include linear-gradient(to bottom, $com2, $com); h3 big {background-color:$com;}}
+		&#seguridad {@include linear-gradient(to left, $seg2, $seg); h3 big {background-color:$seg;}}
+		&#desarrollo-urbano {@include linear-gradient(to left, $urb2, $urb); h3 big {background-color:$urb;}}
+		&#desarrollo-economico {@include linear-gradient(to left, $eco2, $eco); h3 big {background-color:$eco;}}
+		&#eficiencia {@include linear-gradient(to left, $efi2, $efi); h3 big {background-color:$efi;}}
+		&#servicios-publicos {@include linear-gradient(to left, $pub2, $pub); h3 big {background-color:$pub;}}
+		&#medio-ambiente {@include linear-gradient(to left, $med2, $med); h3 big {background-color:$med;}}
+		&#comunidad {@include linear-gradient(to left, $com2, $com); h3 big {background-color:$com;}}
 	}
 }
 

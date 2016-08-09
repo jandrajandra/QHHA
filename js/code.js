@@ -66,11 +66,12 @@ var QHHA = {
 				S.getEje(zapGdl, eje, i+1);
 			})
 		},
-		prop: function(col, name, link) {
+		prop: function(col, name, link, caption) {
 			var out = '&nbsp';
 			if(col[name]) {
 				if(link && col[link]) {
-					out = '<a href="'+col[link]+'" target="new">'+TOOLS.markdown( col[name] )+'</a>';
+					out = (caption || '') +
+						'<a href="'+col[link]+'" target="new">'+TOOLS.markdown( col[name] )+'</a>';
 				} else {
 					out = TOOLS.markdown( col[name] );
 				}
@@ -99,7 +100,7 @@ var QHHA = {
 								prop(daIndicador, 'actualización')+
 								prop(daIndicador, 'meta')+
 								'<div class="hover">'+
-									prop(daIndicador, 'fuente', 'enlacefuente')+
+									prop(daIndicador, 'fuente', 'enlacefuente', 'Fuente: ')+
 									prop(daIndicador, 'observaciones')+
 									prop(daIndicador, 'fechaarranque')+
 									prop(daIndicador, 'fechaactualización')+
