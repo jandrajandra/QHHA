@@ -81,45 +81,35 @@ $com2:#151D39;
 	.jcv {width:200px; margin-right:50px}
 }
 
-/* GUADALAJARA */
-.guadalajara {
-	.header { vertical-align:middle; background:#555; height:60px; width:100%; line-height:60px; text-align:left; color:white; position:fixed; top:0; left:0; overflow:hidden;
-		.home {display:inline-block; text-decoration:none; background:#eee; float:left; width:200px; text-align:center;
-			img {width:150px; vertical-align:middle }
-		}
-		.top {font-size:170%; margin:0 20px; padding:0; display:inline-block; text-decoration:none; color:white;
-			img {height:60px; vertical-align:middle; margin-right:10px}
-		}
-	}
 
-	.alcalde {background:#FCE809; text-align:center; height:175px; line-height:175px; padding-top:60px;
-		h2, .bio, .inicioFin, .datos {display:inline-block; text-align:left; line-height:normal; vertical-align:top}
-		h2 {font-size:150%; text-align:center; margin:0; padding:0; background:#DBC808; height:175px;
-			padding:0 30px; overflow:hidden;
-			img {height:90px; margin-top:30px}
+$headerHeight:200px;
+$smallHeaderHeight:80px;
+
+/* GUADALAJARA */
+#guadalajara {
+	#header { vertical-align:middle; background:#555; height:$headerHeight; width:100%; line-height:$headerHeight; text-align:left; color:white; position:fixed; top:0; left:0; overflow:hidden; z-index:2; @include transition(all 1s ease);
+		.home {display:inline-block; text-decoration:none; background:#eee; float:left; width:500px; text-align:center; @include transition(all 1s ease); height:$headerHeight;
+			img {width:400px; vertical-align:top; margin-top:30px; @include transition(all 1s ease);}
 		}
-		.datos { background:#DBC808; height:175px; padding:0 20px;
-			.tel {margin-top:30px}
-			div {margin:15px 0}
+		.top {font-size:250%; height:$headerHeight; line-height:$headerHeight; vertical-align:bottom; font-weight:bold; margin:0 20px; padding:0; display:inline-block; text-decoration:none; color:white; @include transition(all 1s ease);
+			img {height:$headerHeight; vertical-align:top; margin:0 30px; @include transition(all 1s ease);}
+			span {display:inline-block; vertical-align:middle; height:120px}
 		}
-		.bio, .inicioFin {width:250px; padding:0 20px; vertical-align:middle}
-		.inicioFin { text-align:center;
-			b {padding-left:10px; background:#DBC808; display:inline-block; margin:3px 0; font-weight:normal;
-				big {color:black; background:#C1B10B; padding:2px 5px; vertical-align:middle; font-size:120%; display:inline-block}
+		&.small { height:$smallHeaderHeight; line-height:$smallHeaderHeight;
+			.home {width:225px; height:$smallHeaderHeight;
+				img {width:200px; margin-top:0}
 			}
-			b:last-of-type {margin-bottom:10px}
-			.dias, .porcentaje {display:inline-block; font-weight:bold; width:auto; padding:0 3px; height:30px; line-height:30px; vertical-align:middle;
-				i {font-style:normal}
+			.top {line-height:$smallHeaderHeight; font-size:150%;
+				img {height:$smallHeaderHeight}
 			}
-			.dias {background:#000; color:white; font-size:120%; padding:0 7px; }
-			.porcentaje {background:#DBC808; font-weight:normal}
 		}
-		a {color:black}
 	}
 
 	/* Indice de ejes */
-	.ejes {padding:20px 0; background:#eee;
-		@include linear-gradient(to bottom, #bbb, #eee);
+	#ejes {padding:0; background:#eee; height:100%; position:relative; overflow:hidden;
+		@include linear-gradient(to right, #bbb, #eee);
+
+		.bienvenida { padding-top:$headerHeight; font-size:150%; margin:60px 0 30px 0}
 		big {display:block}
 		ul {list-style-type:none; width:80%; margin:0 auto; text-align:center;
 			li {color:white; margin:15px; padding:0; display:inline-block; width:600px; cursor:pointer; text-align:left;
@@ -159,7 +149,37 @@ $com2:#151D39;
 			}
 		}
 		&.counted ul li small {display:block}
+
+		$alcaldeHeight:200px;
+		/* ALCALDE */
+		#alcalde {text-align:center; height:$alcaldeHeight; line-height:$alcaldeHeight; 
+			position:absolute; bottom:0; left:0; margin-bottom:-$alcaldeHeight; @include transition(margin-bottom 1s ease);
+
+			h2, .bio, .inicioFin, .datos {display:inline-block; text-align:left; line-height:normal; vertical-align:top}
+			h2 {font-size:150%; text-align:center; margin:0; padding:0; background:#DBC808; height:$alcaldeHeight;
+				padding:0 30px; overflow:hidden;
+				img {height:90px; margin-top:30px}
+			}
+			.datos { background:#DBC808; height:$alcaldeHeight; padding:0 20px;
+				.tel {margin-top:60px}
+				div {margin:15px 0}
+			}
+			.bio, .inicioFin {background:#FCE809; width:250px; padding:20px; vertical-align:middle; height:-25px+$alcaldeHeight; margin-top:25px; font-size:95%}
+			.inicioFin { text-align:center;
+				b {padding-left:10px; background:#DBC808; display:inline-block; margin:3px 0; font-weight:normal;
+					big {color:black; background:#C1B10B; padding:2px 5px; vertical-align:middle; font-size:120%; display:inline-block}
+				}
+				b:last-of-type {margin-bottom:10px}
+				.dias, .porcentaje {display:inline-block; font-weight:bold; width:auto; padding:0 3px; height:30px; line-height:30px; vertical-align:middle;
+					i {font-style:normal}
+				}
+				.dias {background:#000; color:white; font-size:120%; padding:0 7px; }
+				.porcentaje {background:#DBC808; font-weight:normal}
+			}
+			a {color:black}
+		}
 	}
+
 
 	#template {display:none}
 
@@ -195,6 +215,7 @@ $com2:#151D39;
 						}
 						&:hover .hover {display:block}
 					}
+					&.picked {display:block}
 				}
 			}
 			&.picked {

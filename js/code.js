@@ -12,16 +12,40 @@ var TOOLS = {
 var QHHA = {
 	boot:function() {
 		//$('.compromisos a.compromiso').click( this.pickCompromiso );
+		$('#ejes #alcalde').css('margin-bottom', 0);
+		QHHA.screen.boot();
+	},
+	screen:{ 
+		boot:function() {
+			QHHA.screen.adjust();
+			$(window).resize( QHHA.screen.adjust );
+			QHHA.screen.header();
+		},
+		header:function() { var header = $('#header');
+			$(window).scroll(function() {
+				if($(document).scrollTop() > 100) {
+					header.addClass('small');
+				} else {
+					header.removeClass('small');
+				}
+			});
+		},
+		adjust:function() {var w = $(window).width(), h = $(window).height();
+			$('#guadalajara #ejes').css('height', h);
+			$('#ejes #alcalde').css('left', (w-parseFloat($('#ejes #alcalde').css('width')))/2 );
+		}
 	},
 	days:{
 		since:function() {
 			var dias = Math.ceil((new Date() - new Date("2015/October/1"))/(1e3*60*60*24)),
 				total = (new Date("2018/September/30") - new Date("2015/October/1"))/(1e3*60*60*24),
 				porcentaje = Math.ceil((dias*100)/total);
-			$('.alcalde .inicioFin .dias i').text(dias);
-			$('.alcalde .inicioFin .porcentaje i').text(porcentaje);
+			$('#alcalde .inicioFin .dias i').text(dias);
+			$('#alcalde .inicioFin .porcentaje i').text(porcentaje);
 		}
 	},
+
+	/* SHEET */
 	sheet: {
 		zap:'1KgtTvqqNeCZn4mCQEIRFYI3Wr4P2dvQvpub3toLFtoE',
 		gdl:'1KgtTvqqNeCZn4mCQEIRFYI3Wr4P2dvQvpub3toLFtoE',
@@ -79,18 +103,26 @@ var QHHA = {
 			}
 			return ('<div class="'+name+'">'+out+'</div>');
 		},
-		count: function() {
+		pickCompromiso:function() {
+			$(this).parents('li.compromiso').find('ul.indicadores').toggleClass('picked');
+			//$(this).parents('ul.compromisos').toggleClass('picked');
+		},
+		count: function() { var totalCompromisos = 0, totalIndicadores = 0;
 			$.each(QHHA.sheet.ejes, function() { var eje = {name:this}, indicadores = 0;
-				eje.html = $('.ejes .'+eje.name+' small')
+				eje.html = $('#ejes .'+eje.name+' small')
 				eje.data = QHHA.sheet.data[eje.name];
 
 				eje.html.find('.compromisos').text( eje.data.length );
+				totalCompromisos += eje.data.length;
 				$.each(eje.data, function() { var compromiso = this;
 					indicadores += compromiso.indicadores.length;
 				});
 				eje.html.find('.indicadores').text( indicadores );
+				totalIndicadores += indicadores;
 			})
-			$('.ejes').addClass('counted');
+			$('#ejes').addClass('counted').find('.bienvenida').
+				find('.totalCompromisos').text( totalCompromisos ).end().
+				find('.totalIndicadores').text( totalIndicadores );
 		},
 		load:function() { var teCompromiso = $('#template .compromiso'),
 				teIndicador = $('#template .indicador'),
@@ -125,13 +157,10 @@ var QHHA = {
 						);
 					});
 					elCompromiso.appendTo( compromisos );
-					elCompromiso.find('big').click( QHHA.pickCompromiso);
+					elCompromiso.find('big').click( QHHA.sheet.pickCompromiso );
 				});
 			});
 		}
-	},
-	pickCompromiso:function() {
-		$(this).parents('ul.compromisos').toggleClass('picked');
 	}
 };
 
