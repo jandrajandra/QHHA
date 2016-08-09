@@ -21,6 +21,7 @@ $com2:#151D39;
 
 /* BIENVENIDA */
 .bienvenida { 
+	h1 img { width:700px; }
 	a {color:black}
 	p {font-size:150%}
 
@@ -123,27 +124,28 @@ $com2:#151D39;
 		ul {list-style-type:none; width:80%; margin:0 auto; text-align:center;
 			li {color:white; margin:15px; padding:0; display:inline-block; width:600px; cursor:pointer; text-align:left;
 				@include transition(all 1s ease);
-				span { float:left; margin:0; margin-right:20px; padding:10px;
+				span.icon { float:left; margin:0; margin-right:20px; padding:10px;
 					img {height:80px; }
 				}
 				&.right {
 					big, small {margin-left:15px; text-align:right; display:block}
-					span {float:right; margin-right:0; margin-left:20px}
+					span.icon {float:right; margin-right:0; margin-left:20px}
+					small {display:none}
 				}
 				big {margin-top:15px}
 					a {color:white; text-decoration:none; font-weight:bold; font-size:150%}
-				small {font-size:110%}
+				small {font-size:110%; display:none}
 				&:hover {
 					a {text-decoration:underline}
 				}
 
-				&.seg {background-color:$seg; width:400px; margin-left:100px; span {background-color:$seg2;}}
-				&.urb {background-color:$urb; width:400px; margin-right:100px; span {background-color:$urb2;}}
-				&.eco {background-color:$eco; width:500px; margin-left:0; span {background-color:$eco2;}}
-				&.efi {background-color:$efi; width:500px; margin-right:0; span {background-color:$efi2;}}
-				&.pub {background-color:$pub; width:400px; margin-left:100px; span {background-color:$pub2;}}
-				&.med {background-color:$med; width:400px; margin-right:100px; span {background-color:$med2;}}
-				&.com {background-color:$com; width:550px; span {background-color:$com2;}}
+				&.seg {background-color:$seg; width:400px; margin-left:100px; span.icon {background-color:$seg2;}}
+				&.urb {background-color:$urb; width:400px; margin-right:100px; span.icon {background-color:$urb2;}}
+				&.eco {background-color:$eco; width:500px; margin-left:0; span.icon {background-color:$eco2;}}
+				&.efi {background-color:$efi; width:500px; margin-right:0; span.icon {background-color:$efi2;}}
+				&.pub {background-color:$pub; width:400px; margin-left:100px; span.icon {background-color:$pub2;}}
+				&.med {background-color:$med; width:400px; margin-right:100px; span.icon {background-color:$med2;}}
+				&.com {background-color:$com; width:550px; span.icon {background-color:$com2;}}
 				&:hover {
 					a {text-decoration:underline}
 					&.seg {background-color:$seg2;}
@@ -156,6 +158,7 @@ $com2:#151D39;
 				}
 			}
 		}
+		&.counted ul li small {display:block}
 	}
 
 	#template {display:none}
@@ -174,7 +177,6 @@ $com2:#151D39;
 			li.compromiso { padding:20px 40px; margin:0;
 				big {color:white; font-size:130%; cursor:pointer; padding:10px 20px; line-height:40px; display:inline-block;
 					margin-left:-50px; margin-right:50px;
-					&:hover {background:White; color:black}
 				} 
 				ul.indicadores {display:none; margin:0; padding:0; list-style-type:none;
 					li.indicador {padding:0; margin:20px 0; background:#ddd;
@@ -199,13 +201,13 @@ $com2:#151D39;
 				li.compromiso ul.indicadores {display:block}
 			}
 		}
-		&#seguridad {@include linear-gradient(to left, $seg2, $seg); h3 big {background-color:$seg;}}
-		&#desarrollo-urbano {@include linear-gradient(to left, $urb2, $urb); h3 big {background-color:$urb;}}
-		&#desarrollo-economico {@include linear-gradient(to left, $eco2, $eco); h3 big {background-color:$eco;}}
-		&#eficiencia {@include linear-gradient(to left, $efi2, $efi); h3 big {background-color:$efi;}}
-		&#servicios-publicos {@include linear-gradient(to left, $pub2, $pub); h3 big {background-color:$pub;}}
-		&#medio-ambiente {@include linear-gradient(to left, $med2, $med); h3 big {background-color:$med;}}
-		&#comunidad {@include linear-gradient(to left, $com2, $com); h3 big {background-color:$com;}}
+		&#seguridad {@include linear-gradient(to left, $seg2, $seg); li.compromiso { big {background-color:$seg2;} &:hover  big {background-color:$seg;}}}
+		&#desarrollo-urbano {@include linear-gradient(to left, $urb2, $urb); li.compromiso { big {background-color:$urb2;} &:hover  big {background-color:$urb;}}}
+		&#desarrollo-economico {@include linear-gradient(to left, $eco2, $eco); li.compromiso { big {background-color:$eco2;} &:hover  big {background-color:$eco;}}}
+		&#eficiencia {@include linear-gradient(to left, $efi2, $efi); li.compromiso { big {background-color:$efi2;} &:hover  big {background-color:$efi;}}}
+		&#servicios-publicos {@include linear-gradient(to left, $pub2, $pub); li.compromiso { big {background-color:$pub2;} &:hover  big {background-color:$pub;}}}
+		&#medio-ambiente {@include linear-gradient(to left, $med2, $med); li.compromiso { big {background-color:$med2;} &:hover  big {background-color:$med;}}}
+		&#comunidad {@include linear-gradient(to left, $com2, $com); li.compromiso { big {background-color:$com2;} &:hover  big {background-color:$com;}}}
 	}
 }
 

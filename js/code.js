@@ -15,8 +15,8 @@ var QHHA = {
 	},
 	days:{
 		since:function() {
-			var dias = Math.ceil((new Date() - new Date("2015/September/30"))/(1e3*60*60*24)),
-				total = (new Date("2018/September/30") - new Date("2015/September/30"))/(1e3*60*60*24),
+			var dias = Math.ceil((new Date() - new Date("2015/October/1"))/(1e3*60*60*24)),
+				total = (new Date("2018/September/30") - new Date("2015/October/1"))/(1e3*60*60*24),
 				porcentaje = Math.ceil((dias*100)/total);
 			$('.alcalde .inicioFin .dias i').text(dias);
 			$('.alcalde .inicioFin .porcentaje i').text(porcentaje);
@@ -57,6 +57,7 @@ var QHHA = {
 				S.data[eje] = compromisos;
 				S.done.push( eje );
 				if( TOOLS.isSame( S.done, S.ejes ) ) {
+					S.count();
 					S.load();
 				}
 			});
@@ -78,6 +79,19 @@ var QHHA = {
 			}
 			return ('<div class="'+name+'">'+out+'</div>');
 		},
+		count: function() {
+			$.each(QHHA.sheet.ejes, function() { var eje = {name:this}, indicadores = 0;
+				eje.html = $('.ejes .'+eje.name+' small')
+				eje.data = QHHA.sheet.data[eje.name];
+
+				eje.html.find('.compromisos').text( eje.data.length );
+				$.each(eje.data, function() { var compromiso = this;
+					indicadores += compromiso.indicadores.length;
+				});
+				eje.html.find('.indicadores').text( indicadores );
+			})
+			$('.ejes').addClass('counted');
+		},
 		load:function() { var teCompromiso = $('#template .compromiso'),
 				teIndicador = $('#template .indicador'),
 				data = QHHA.sheet.data,
@@ -85,6 +99,7 @@ var QHHA = {
 
 			$.each(QHHA.sheet.ejes, function() { var eje = this,
 					compromisos = $('.eje.'+eje+' .compromisos');
+
 
 				$.each(data[eje], function() { var daCompromiso = this,
 						elCompromiso = teCompromiso.clone(),
