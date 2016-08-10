@@ -447,13 +447,33 @@ body {
         font-size: 90%;
         margin: 0 auto;
         margin-top: 0.5em;
-        margin-bottom: 1em; }
+        margin-bottom: 1em;
+        text-align: center; }
     #guadalajara .eje ol.compromisos {
       width: 90em;
-      margin: 0 auto; }
+      margin: 0 auto;
+      counter-reset: compromiso 0; }
       #guadalajara .eje ol.compromisos li.compromiso {
-        padding: 2em 4em;
-        margin: 0; }
+        padding: 2em;
+        margin: 0;
+        list-style-type: none;
+        position: relative; }
+        #guadalajara .eje ol.compromisos li.compromiso::before {
+          background: white;
+          color: black;
+          width: 2em;
+          height: 2em;
+          line-height: 2em;
+          text-align: center;
+          display: inline-block;
+          position: absolute;
+          top: 1.45em;
+          left: -5.25em;
+          z-index: 2;
+          content: counter(compromiso);
+          counter-increment: compromiso;
+          font-size: 140%;
+          font-weight: bold; }
         #guadalajara .eje ol.compromisos li.compromiso big {
           color: white;
           font-size: 130%;
@@ -466,11 +486,30 @@ body {
         #guadalajara .eje ol.compromisos li.compromiso ol.indicadores {
           display: none;
           margin: 0;
-          padding: 0; }
+          padding: 0;
+          list-style-type: none;
+          counter-reset: indicador A; }
           #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador {
             padding: 0;
             margin: 2em 0;
-            background: #ddd; }
+            background: #ddd;
+            position: relative; }
+            #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador::before {
+              background: #ccc;
+              color: black;
+              width: 2em;
+              height: 2em;
+              line-height: 2em;
+              text-align: center;
+              display: inline-block;
+              position: absolute;
+              top: 0;
+              left: -2em;
+              z-index: 2;
+              content: counter(indicador,upper-alpha);
+              counter-increment: indicador;
+              font-size: 140%;
+              font-weight: bold; }
             #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador div {
               display: inline-block;
               text-align: center;

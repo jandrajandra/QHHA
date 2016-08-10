@@ -195,16 +195,24 @@ $smallHeaderHeight:8em;
 		}
 
 		p {color:white; margin:0 auto; font-size:150%; width:34em;
-			a.indicadores {display:block; color:white; font-size:90%; margin:0 auto; margin-top:0.5em; margin-bottom:1em}
+			a.indicadores {display:block; color:white; font-size:90%; margin:0 auto; margin-top:0.5em; margin-bottom:1em; text-align:center}
 		}
 
-		ol.compromisos {width:90em; margin:0 auto;
-			li.compromiso { padding:2em 4em; margin:0;
+		ol.compromisos {width:90em; margin:0 auto; counter-reset:compromiso 0;
+			li.compromiso { padding:2em; margin:0; list-style-type:none; position:relative;
+				&::before { background:white; color:black; width:2em; height:2em; line-height:2em; text-align:center;
+					display:inline-block; position:absolute; top:1.45em; left:-5.25em; z-index:2; content:counter(compromiso);
+					counter-increment:compromiso; font-size:140%; font-weight:bold
+				}
 				big {color:white; font-size:130%; cursor:pointer; padding:1em 2em; line-height:4em; display:inline-block;
 					margin-left:-5em; margin-right:5em;
 				} 
-				ol.indicadores {display:none; margin:0; padding:0;
-					li.indicador {padding:0; margin:2em 0; background:#ddd;
+				ol.indicadores {display:none; margin:0; padding:0; list-style-type:none; counter-reset:indicador A;
+					li.indicador {padding:0; margin:2em 0; background:#ddd; position:relative;
+						&::before { background:#ccc; color:black; width:2em; height:2em; line-height:2em; text-align:center;
+							display:inline-block; position:absolute; top:0; left:-2em; z-index:2; content:counter(indicador, upper-alpha);
+							counter-increment:indicador; font-size:140%; font-weight:bold
+						}
 						div {display:inline-block; text-align:center; vertical-align:top}
 						.descripción {width:60%; padding:1.5em; font-size:120%; display:inline-block; text-align:left; margin-right:0.5em}
 						.arranque, .actualización, .meta {width:6em; background:#ccc; padding:1em; margin:1em 0; 

@@ -20,6 +20,9 @@ var QHHA = {
 			this.indice();
 			this.ejes();
 		},
+		goToInnerLink:function() {
+			location.href = $(this).find('big a').attr('href');
+		},
 		indice:function() { var indice = $('#indice ul.indice');
 			$.each(QHHA.ejes, function(i) { var eje = {name:this+''},
 					indizado = $('#template .indizado').clone();
@@ -29,6 +32,7 @@ var QHHA = {
 					find('img').attr('src', QHHA.imgDir+eje.name+'.png').end().
 					find('big a').attr('href', '#'+eje.full.id).text(eje.full.shortLabel || eje.full.label);
 				indice.append( indizado );
+				indizado.click( QHHA.build.goToInnerLink );
 			});
 		},
 		ejes:function() { var ejes = $('#ejes');
