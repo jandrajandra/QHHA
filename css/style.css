@@ -441,16 +441,20 @@ body {
       margin: 0 auto;
       font-size: 150%;
       width: 34em; }
-      #guadalajara .eje p a {
-        color: white; }
-    #guadalajara .eje ul.compromisos {
+      #guadalajara .eje p a.indicadores {
+        display: block;
+        color: white;
+        font-size: 90%;
+        margin: 0 auto;
+        margin-top: 0.5em;
+        margin-bottom: 1em; }
+    #guadalajara .eje ol.compromisos {
       width: 90em;
-      margin: 0 auto;
-      list-style-type: none; }
-      #guadalajara .eje ul.compromisos li.compromiso {
+      margin: 0 auto; }
+      #guadalajara .eje ol.compromisos li.compromiso {
         padding: 2em 4em;
         margin: 0; }
-        #guadalajara .eje ul.compromisos li.compromiso big {
+        #guadalajara .eje ol.compromisos li.compromiso big {
           color: white;
           font-size: 130%;
           cursor: pointer;
@@ -459,27 +463,26 @@ body {
           display: inline-block;
           margin-left: -5em;
           margin-right: 5em; }
-        #guadalajara .eje ul.compromisos li.compromiso ul.indicadores {
+        #guadalajara .eje ol.compromisos li.compromiso ol.indicadores {
           display: none;
           margin: 0;
-          padding: 0;
-          list-style-type: none; }
-          #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador {
+          padding: 0; }
+          #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador {
             padding: 0;
             margin: 2em 0;
             background: #ddd; }
-            #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador div {
+            #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador div {
               display: inline-block;
               text-align: center;
               vertical-align: top; }
-            #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .descripción {
+            #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .descripción {
               width: 60%;
               padding: 1.5em;
               font-size: 120%;
               display: inline-block;
               text-align: left;
               margin-right: 0.5em; }
-            #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .arranque, #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .actualización, #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .meta {
+            #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .arranque, #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .actualización, #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .meta {
               width: 6em;
               background: #ccc;
               padding: 1em;
@@ -487,38 +490,38 @@ body {
               font-weight: bold;
               font-size: 120%;
               margin-top: 1.5em; }
-            #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .actualización {
+            #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .actualización {
               width: 10em;
               padding: 1.5em 1em;
               margin-top: 1em;
               background: #aaa; }
-            #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover {
+            #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover {
               display: none;
               background: #ccc;
               text-align: left;
               font-size: 90%; }
-              #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover .fuente {
+              #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fuente {
                 width: 20%;
                 text-align: center;
                 padding: 1em;
                 background: #999; }
-                #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover .fuente a {
+                #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fuente a {
                   font-style: italic; }
-              #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover .observaciones {
+              #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .observaciones {
                 width: 40%;
                 text-align: left;
                 padding: 1em; }
-              #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover .fechaarranque, #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover .fechaactualización, #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover .fechameta {
+              #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaarranque, #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaactualización, #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechameta {
                 width: 6em;
                 padding: 1em;
                 text-align: center; }
-              #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover .fechaactualización {
+              #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaactualización {
                 width: 10em; }
-            #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador:hover .hover {
+            #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador:hover .hover {
               display: block; }
-          #guadalajara .eje ul.compromisos li.compromiso ul.indicadores.picked {
+          #guadalajara .eje ol.compromisos li.compromiso ol.indicadores.picked {
             display: block; }
-      #guadalajara .eje ul.compromisos.picked li.compromiso ul.indicadores {
+      #guadalajara .eje ol.compromisos.picked li.compromiso ol.indicadores {
         display: block; }
     #guadalajara .eje#seguridad {
       background-color: #770013;

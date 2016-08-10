@@ -195,15 +195,15 @@ $smallHeaderHeight:8em;
 		}
 
 		p {color:white; margin:0 auto; font-size:150%; width:34em;
-			a {color:white}
+			a.indicadores {display:block; color:white; font-size:90%; margin:0 auto; margin-top:0.5em; margin-bottom:1em}
 		}
 
-		ul.compromisos {width:90em; margin:0 auto; list-style-type:none;
+		ol.compromisos {width:90em; margin:0 auto;
 			li.compromiso { padding:2em 4em; margin:0;
 				big {color:white; font-size:130%; cursor:pointer; padding:1em 2em; line-height:4em; display:inline-block;
 					margin-left:-5em; margin-right:5em;
 				} 
-				ul.indicadores {display:none; margin:0; padding:0; list-style-type:none;
+				ol.indicadores {display:none; margin:0; padding:0;
 					li.indicador {padding:0; margin:2em 0; background:#ddd;
 						div {display:inline-block; text-align:center; vertical-align:top}
 						.descripción {width:60%; padding:1.5em; font-size:120%; display:inline-block; text-align:left; margin-right:0.5em}
@@ -224,7 +224,7 @@ $smallHeaderHeight:8em;
 				}
 			}
 			&.picked {
-				li.compromiso ul.indicadores {display:block}
+				li.compromiso ol.indicadores {display:block}
 			}
 		}
 		&#seguridad {@include linear-gradient(to left, $seg2, $seg); li.compromiso { big {background-color:$seg2;} &:hover  big {background-color:$seg;}}}

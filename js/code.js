@@ -69,8 +69,8 @@ var QHHA = {
 			var dias = Math.ceil((new Date() - new Date("2015/October/1"))/(1e3*60*60*24)),
 				total = (new Date("2018/September/30") - new Date("2015/October/1"))/(1e3*60*60*24),
 				porcentaje = Math.ceil((dias*100)/total);
-			$('#alcalde .inicioFin .dias i').text(dias);
-			$('#alcalde .inicioFin .porcentaje i').text(porcentaje);
+			$('#alcalde .inicioFin').find('.dias i').text(dias).end().
+				find('.porcentaje i').text(porcentaje);
 		}
 	},
 
@@ -133,14 +133,14 @@ var QHHA = {
 		},
 		expand:{
 			thisOne:function() {
-				$(this).parents('li.compromiso').find('ul.indicadores').toggleClass('picked');
+				$(this).parents('li.compromiso').find('ol.indicadores').toggleClass('picked');
 			},
 			all:function() {
-				QHHA.test = $(this).parents('.eje').find('ul.compromisos');
+				QHHA.test = $(this).parents('.eje').find('ol.compromisos');
 				console.log('double!?');
 				
-				$(this).parents('.eje').find('ul.compromisos').toggleClass('picked').
-					find('ul.indicadores').removeClass('picked');
+				$(this).parents('.eje').find('ol.compromisos').toggleClass('picked').
+					find('ol.indicadores').removeClass('picked');
 			}
 		},
 		count: function() { var totalCompromisos = 0, totalIndicadores = 0;
@@ -167,41 +167,40 @@ var QHHA = {
 				find('.totalCompromisos').text( totalCompromisos ).end().
 				find('.totalIndicadores').text( totalIndicadores );
 		},
-		load:function() { var teCompromiso = $('#template .compromiso'),
-				teIndicador = $('#template .indicador'),
+		load:function() { var compromiso = {template:$('#template .compromiso')},
+				indicador = {template:$('#template .indicador')},
 				data = QHHA.sheet.data,
 				prop = QHHA.sheet.prop;
 
-			$.each(QHHA.ejes, function() { var eje = this,
-					compromisos = $('.eje.'+eje+' ul.compromisos');
-				$('.eje.'+eje+' a.indicadores').click( QHHA.sheet.expand.all );
+			$.each(QHHA.ejes, function() { var eje = {name:this+''};
+				eje.html = $('.eje.'+eje.name);
+				var compromisos = eje.html.find('ol.compromisos');
+				eje.html.find('a.indicadores').click( QHHA.sheet.expand.all );
 
+				$.each(data[eje.name], function() { compromiso.data = this;
+					compromiso.clone = compromiso.template.clone();
+					indicador.ol = compromiso.clone.find('ol.indicadores');
+					compromiso.clone.find('big').html( TOOLS.markdown( compromiso.data.compromiso ));
 
-				$.each(data[eje], function() { var daCompromiso = this,
-						elCompromiso = teCompromiso.clone(),
-						elIndicadores = elCompromiso.find('ul.indicadores');
-
-					elCompromiso.find('big').html( TOOLS.markdown( daCompromiso.compromiso ));
-
-					$.each(daCompromiso.indicadores, function() { var daIndicador = this;
-						elIndicadores.append(
-							teIndicador.clone().html(
-								prop(daIndicador, 'descripción')+
-								prop(daIndicador, 'arranque')+
-								prop(daIndicador, 'actualización')+
-								prop(daIndicador, 'meta')+
+					$.each(compromiso.data.indicadores, function() { indicador.data = this; var indi = this;
+						indicador.ol.append(
+							indicador.template.clone().html(
+								prop(indi, 'descripción')+
+								prop(indi, 'arranque')+
+								prop(indi, 'actualización')+
+								prop(indi, 'meta')+
 								'<div class="hover">'+
-									prop(daIndicador, 'fuente', 'enlacefuente', 'Fuente: ')+
-									prop(daIndicador, 'observaciones')+
-									prop(daIndicador, 'fechaarranque')+
-									prop(daIndicador, 'fechaactualización')+
-									prop(daIndicador, 'fechameta')+
+									prop(indi, 'fuente', 'enlacefuente', 'Fuente: ')+
+									prop(indi, 'observaciones')+
+									prop(indi, 'fechaarranque')+
+									prop(indi, 'fechaactualización')+
+									prop(indi, 'fechameta')+
 								'</div>'
 							)
 						);
 					});
-					elCompromiso.appendTo( compromisos );
-					elCompromiso.find('big').click( QHHA.sheet.expand.thisOne );
+					compromisos.append( compromiso.clone );
+					compromiso.clone.find('big').click( QHHA.sheet.expand.thisOne );
 				});
 			});
 		}
