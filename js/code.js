@@ -32,7 +32,7 @@ var QHHA = {
 					find('img').attr('src', QHHA.imgDir+eje.name+'.png').end().
 					find('big a').attr('href', '#'+eje.full.id).text(eje.full.shortLabel || eje.full.label);
 				indice.append( indizado );
-				((i+1)%2 == 0) && indice.append( '<br />' );
+				indice.append( '<br  '+(((i+1)%2 == 0) ? 'class="soloMovil"' : '')+' />' );
 				indizado.click( QHHA.build.goToInnerLink );
 			});
 		},
@@ -68,12 +68,15 @@ var QHHA = {
 			setTimeout(function() {$('#header').removeClass('easing')}, 1200);
 		},
 		adjust:function() {var w = $(window).width(), h = $(window).height(), hFontSize = 10, wFontSize = 10;
-			console.log('w: '+w+' | h: '+h);
 			if(h < 1050) { 
 				hFontSize = Math.min(10, Math.max(10*(h/1050),7));
 			}
 			if(w < 1100) { 
 				wFontSize = Math.min(10, Math.max(10*(w/1100),7)); 
+			}
+
+			if(w/h < 0.8) {
+				$('#guadalajara').addClass('movil');
 			}
 			$('#guadalajara').css('font-size', Math.min( hFontSize, wFontSize )+'px'); 
 			$('#guadalajara #indice').css('height', h);

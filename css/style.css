@@ -140,7 +140,7 @@ body {
     top: 0;
     left: 0;
     overflow: hidden;
-    z-index: 2; }
+    z-index: 3; }
     #guadalajara #header .home {
       display: inline-block;
       text-decoration: none;
@@ -331,6 +331,8 @@ body {
           background-color: #885C03; }
         #guadalajara #indice ul li:hover.com {
           background-color: #151D39; }
+        #guadalajara #indice ul li br.soloEnMovil {
+          display: none; }
     #guadalajara #indice.counted ul li small {
       display: block; }
     #guadalajara #indice #alcalde {
@@ -425,6 +427,18 @@ body {
           font-weight: normal; }
       #guadalajara #indice #alcalde a {
         color: black; }
+  #guadalajara.movil #indice {
+    font-size: 10px; }
+    #guadalajara.movil #indice ul li .right big, #guadalajara.movil #indice ul li .right small {
+      margin-left: 0;
+      text-align: left; }
+    #guadalajara.movil #indice ul li .right span.icon {
+      float: none;
+      margin-left: 0; }
+    #guadalajara.movil #indice ul li.seg, #guadalajara.movil #indice ul li.urb, #guadalajara.movil #indice ul li.eco, #guadalajara.movil #indice ul li.efi, #guadalajara.movil #indice ul li.pub, #guadalajara.movil #indice ul li.med, #guadalajara.movil #indice ul li.com {
+      margin: 2em auto; }
+    #guadalajara.movil #indice ul br.soloEnMovil {
+      display: block; }
   #guadalajara #template {
     display: none; }
   #guadalajara .eje {
@@ -457,8 +471,8 @@ body {
     #guadalajara .eje p {
       color: white;
       margin: 0 auto;
-      font-size: 150%;
-      width: 38em; }
+      font-size: 170%;
+      width: 35em; }
       #guadalajara .eje p a.indicadores {
         display: block;
         color: white;
