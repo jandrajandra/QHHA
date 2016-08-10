@@ -55,6 +55,10 @@ body {
     font-size: 180%; }
     #inicio .intro p.first {
       font-size: 130%; }
+    #inicio .intro a {
+      color: black; }
+    #inicio .intro ul.fuentes li {
+      margin: 0.8em 0; }
     #inicio .intro ul.ejes {
       list-style-type: none;
       font-size: 120%; }
