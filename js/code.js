@@ -1,19 +1,48 @@
-var TOOLS = {
-	isSame:function(array1, array2) { 
-		return array1.sort().join() == array2.sort().join()
-	},
-	markdown:function(str) {
-		return str.replace(/_([^_]+?)_/g,'<em>$1</em>').
-			replace(/\*([^*]+?)\*/g,'<strong>$1</strong>').
-			replace(/\n+/g,'<br />');
-	}
-};
-
 var QHHA = {
 	boot:function() {
-		//$('.compromisos a.compromiso').click( this.pickCompromiso );
-		$('#ejes #alcalde').css('margin-bottom', 0);
+		$('#indice #alcalde').css('margin-bottom', 0);
+		QHHA.build.boot();
 		QHHA.screen.boot();
+	},
+	ejes: [ 'seg', 'urb', 'eco', 'efi', 'pub', 'med', 'com' ],
+	imgDir: '/img/icons/',
+	ejesFull: {
+		seg:{label:'Seguridad y prevención del delito', shortLabel:'Seguridad', id:'seguridad'},
+		urb:{label:'Desarrollo Urbano', id:'desarrollo-urbano'},
+		eco:{label:'Desarrollo Económico', id:'desarrollo-economico'},
+		efi:{label:'Eficiencia Administrativa', id:'eficiencia'},
+		pub:{label:'Servicios Públicos', id:'servicios-publicos'},
+		med:{label:'Medio Ambiente', id:'medio-ambiente'},
+		com:{label:'Construcción de Comunidad', id:'comunidad'},
+	},
+	build:{
+		boot:function() {
+			this.indice();
+			this.ejes();
+		},
+		indice:function() { var indice = $('#indice ul.indice');
+			$.each(QHHA.ejes, function(i) { var eje = {name:this},
+					indizado = $('#template .indizado').clone();
+				eje.full = QHHA.ejesFull[ eje.name ];
+
+				indizado.addClass( eje.name + ( ((i%2 == 0) && (i != 6)) ? ' right' : '')).
+					find('img').attr('src', QHHA.imgDir+eje.name+'.png').end().
+					find('big a').attr('href', '#'+eje.full.id).text(eje.full.shortLabel || eje.full.label);
+				indice.append( indizado );
+			});
+		},
+		ejes:function() { var ejes = $('#ejes');
+			$.each(QHHA.ejes, function(i) { var eje = {name:this};
+				eje.template = $('#template .eje').clone();
+				eje.full = QHHA.ejesFull[ eje.name ];
+
+				eje.template.addClass( eje.name ).attr('id', eje.full.id).
+					find('h3 img').attr('src', QHHA.imgDir+eje.name+'.png').end().
+					find('h3 big').text(eje.full.label).end()
+
+				ejes.append( eje.template );
+			});
+		}
 	},
 	screen:{ 
 		boot:function() {
@@ -31,8 +60,8 @@ var QHHA = {
 			});
 		},
 		adjust:function() {var w = $(window).width(), h = $(window).height();
-			$('#guadalajara #ejes').css('height', h);
-			$('#ejes #alcalde').css('left', (w-parseFloat($('#ejes #alcalde').css('width')))/2 );
+			$('#guadalajara #indice').css('height', h);
+			$('#indice #alcalde').css('left', (w-parseFloat($('#indice #alcalde').css('width')))/2 );
 		}
 	},
 	days:{
@@ -49,7 +78,6 @@ var QHHA = {
 	sheet: {
 		zap:'1KgtTvqqNeCZn4mCQEIRFYI3Wr4P2dvQvpub3toLFtoE',
 		gdl:'1KgtTvqqNeCZn4mCQEIRFYI3Wr4P2dvQvpub3toLFtoE',
-		ejes: [ 'seg', 'urb', 'eco', 'efi', 'pub', 'med', 'com' ],
 			done: [],
 		data: {},
 		split:function(str) { 
@@ -80,14 +108,14 @@ var QHHA = {
 
 				S.data[eje] = compromisos;
 				S.done.push( eje );
-				if( TOOLS.isSame( S.done, S.ejes ) ) {
+				if( TOOLS.isSame( S.done, QHHA.ejes ) ) {
 					S.count();
 					S.load();
 				}
 			});
 		},
 		fetch:function(zapGdl) { var S = QHHA.sheet;
-			$.each(S.ejes, function(i) { var eje = this;
+			$.each(QHHA.ejes, function(i) { var eje = this;
 				S.getEje(zapGdl, eje, i+1);
 			})
 		},
@@ -103,24 +131,37 @@ var QHHA = {
 			}
 			return ('<div class="'+name+'">'+out+'</div>');
 		},
-		pickCompromiso:function() {
-			$(this).parents('li.compromiso').find('ul.indicadores').toggleClass('picked');
-			//$(this).parents('ul.compromisos').toggleClass('picked');
+		expand:{
+			thisOne:function() {
+				$(this).parents('li.compromiso').find('ul.indicadores').toggleClass('picked');
+			},
+			all:function() {
+				QHHA.test = $(this).parents('.eje').find('ul.compromisos');
+				console.log('double!?');
+				
+				$(this).parents('.eje').find('ul.compromisos').toggleClass('picked').
+					find('ul.indicadores').removeClass('picked');
+			}
 		},
 		count: function() { var totalCompromisos = 0, totalIndicadores = 0;
-			$.each(QHHA.sheet.ejes, function() { var eje = {name:this}, indicadores = 0;
-				eje.html = $('#ejes .'+eje.name+' small')
+			$.each(QHHA.ejes, function() { var eje = {name:this, de:{}}, indicadores = 0;
+				eje.de.indice = $('#indice .'+eje.name+' small');
+				eje.de.ejes = $('.eje.'+eje.name+' p');
 				eje.data = QHHA.sheet.data[eje.name];
 
-				eje.html.find('.compromisos').text( eje.data.length );
+				$( eje.de.indice.find('.compromisos'), eje.de.ejes.find('.compromisos') ).
+					text( eje.data.length );
 				totalCompromisos += eje.data.length;
+
 				$.each(eje.data, function() { var compromiso = this;
 					indicadores += compromiso.indicadores.length;
 				});
-				eje.html.find('.indicadores').text( indicadores );
+
+				$( eje.de.ejes.find('span.indicadores'), eje.de.indice.find('.indicadores') ).
+					text( indicadores );
 				totalIndicadores += indicadores;
 			})
-			$('#ejes').addClass('counted').find('.bienvenida').
+			$('#indice').addClass('counted').find('.bienvenida').
 				find('.totalCompromisos').text( totalCompromisos ).end().
 				find('.totalIndicadores').text( totalIndicadores );
 		},
@@ -129,8 +170,9 @@ var QHHA = {
 				data = QHHA.sheet.data,
 				prop = QHHA.sheet.prop;
 
-			$.each(QHHA.sheet.ejes, function() { var eje = this,
-					compromisos = $('.eje.'+eje+' .compromisos');
+			$.each(QHHA.ejes, function() { var eje = this,
+					compromisos = $('.eje.'+eje+' ul.compromisos');
+				$('.eje.'+eje+' a.indicadores').click( QHHA.sheet.expand.all );
 
 
 				$.each(data[eje], function() { var daCompromiso = this,
@@ -157,13 +199,23 @@ var QHHA = {
 						);
 					});
 					elCompromiso.appendTo( compromisos );
-					elCompromiso.find('big').click( QHHA.sheet.pickCompromiso );
+					elCompromiso.find('big').click( QHHA.sheet.expand.thisOne );
 				});
 			});
 		}
 	}
 };
 
+var TOOLS = {
+	isSame:function(array1, array2) { 
+		return array1.sort().join() == array2.sort().join()
+	},
+	markdown:function(str) {
+		return str.replace(/_([^_]+?)_/g,'<em>$1</em>').
+			replace(/\*([^*]+?)\*/g,'<strong>$1</strong>').
+			replace(/\n+/g,'<br />');
+	}
+};
 
 $( document ).ready(function() {
 	QHHA.boot();

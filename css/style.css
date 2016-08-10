@@ -6,126 +6,129 @@ body {
   background: white;
   font-family: sans-serif; }
 
-/* BIENVENIDA */
-.bienvenida h1 img {
-  width: 700px; }
-.bienvenida a {
-  color: black; }
-.bienvenida p {
-  font-size: 150%; }
-.bienvenida .municipio {
-  display: inline-block;
-  width: 400px;
-  height: 275px;
-  color: white;
-  text-decoration: none; }
-  .bienvenida .municipio h2 {
-    font-size: 50px;
-    margin-top: 50px;
-    margin-bottom: 0; }
-  .bienvenida .municipio h3 {
-    font-size: 30px;
-    margin-top: 10px; }
-  .bienvenida .municipio .mouseout {
-    display: inline-block; }
-  .bienvenida .municipio .mouseover {
-    display: none; }
-  .bienvenida .municipio.zap {
-    background: #5C5973 url(/img/zapgdl/zap-bkg.png) no-repeat center bottom;
-    background-size: auto 100%;
-    margin-right: 30px; }
-  .bienvenida .municipio.gdl {
-    background: #5C5973 url(/img/zapgdl/gdl-bkg.png) no-repeat center bottom;
-    background-size: auto 100%; }
-  .bienvenida .municipio:hover {
-    background-color: #121A2E;
-    color: white; }
-    .bienvenida .municipio:hover .mouseout {
-      display: none; }
-    .bienvenida .municipio:hover .mouseover {
+#inicio {
+  font-size: 10px;
+  /* BIENVENIDA */ }
+  #inicio h1, #inicio h2, #inicio h3 {
+    font-size: 100%; }
+  #inicio .bienvenida h1 img {
+    width: 70em; }
+  #inicio .bienvenida a {
+    color: black; }
+  #inicio .bienvenida p {
+    font-size: 150%; }
+  #inicio .bienvenida .municipio {
+    display: inline-block;
+    width: 40em;
+    height: 27.5em;
+    color: white;
+    text-decoration: none; }
+    #inicio .bienvenida .municipio h2 {
+      font-size: 5em;
+      margin-top: 5em;
+      margin-bottom: 0; }
+    #inicio .bienvenida .municipio h3 {
+      font-size: 3em;
+      margin-top: 1em; }
+    #inicio .bienvenida .municipio .mouseout {
       display: inline-block; }
-
-.intro {
-  width: 600px;
-  margin: 30px auto;
-  text-align: left;
-  font-size: 110%; }
-  .intro p.first {
-    font-size: 130%; }
-  .intro ul.ejes {
-    list-style-type: none;
-    font-size: 120%; }
-    .intro ul.ejes li {
-      font-weight: bold;
-      margin: 5px 0; }
-      .intro ul.ejes li span {
-        border-radius: 50%;
-        width: 70px;
-        height: 70px;
-        line-height: 70px;
-        vertical-align: middle;
-        font-size: 130%;
-        margin-right: 15px;
-        text-align: center;
-        color: #fff;
+    #inicio .bienvenida .municipio .mouseover {
+      display: none; }
+    #inicio .bienvenida .municipio.zap {
+      background: #5C5973 url(/img/zapgdl/zap-bkg.png) no-repeat center bottom;
+      background-size: auto 100%;
+      margin-right: 3em; }
+    #inicio .bienvenida .municipio.gdl {
+      background: #5C5973 url(/img/zapgdl/gdl-bkg.png) no-repeat center bottom;
+      background-size: auto 100%; }
+    #inicio .bienvenida .municipio:hover {
+      background-color: #121A2E;
+      color: white; }
+      #inicio .bienvenida .municipio:hover .mouseout {
+        display: none; }
+      #inicio .bienvenida .municipio:hover .mouseover {
         display: inline-block; }
-        .intro ul.ejes li span img {
-          height: 50px;
-          vertical-align: middle; }
-    .intro ul.ejes .seg {
-      color: #AF0B1E; }
-      .intro ul.ejes .seg span {
-        background-color: #AF0B1E; }
-    .intro ul.ejes .urb {
-      color: #CDDA1B; }
-      .intro ul.ejes .urb span {
-        background-color: #CDDA1B; }
-    .intro ul.ejes .eco {
-      color: #F6921F; }
-      .intro ul.ejes .eco span {
-        background-color: #F6921F; }
-    .intro ul.ejes .efi {
-      color: #8583A0; }
-      .intro ul.ejes .efi span {
-        background-color: #8583A0; }
-    .intro ul.ejes .pub {
-      color: #E50027; }
-      .intro ul.ejes .pub span {
-        background-color: #E50027; }
-    .intro ul.ejes .med {
-      color: #FBBF0E; }
-      .intro ul.ejes .med span {
-        background-color: #FBBF0E; }
-    .intro ul.ejes .com {
-      color: #253763; }
-      .intro ul.ejes .com span {
-        background-color: #253763; }
-  .intro .tabla {
-    text-align: center; }
-
-.sponsors {
-  padding-bottom: 50px;
-  margin-top: 40px;
-  padding-top: 30px;
-  border-top: 1px solid #aaa;
-  color: #aaa;
-  background: #eee; }
-  .sponsors img {
-    vertical-align: middle; }
-  .sponsors .jcv {
-    width: 200px;
-    margin-right: 50px; }
+  #inicio .intro {
+    width: 60em;
+    margin: 3em auto;
+    text-align: left;
+    font-size: 110%; }
+    #inicio .intro p.first {
+      font-size: 130%; }
+    #inicio .intro ul.ejes {
+      list-style-type: none;
+      font-size: 120%; }
+      #inicio .intro ul.ejes li {
+        font-weight: bold;
+        margin: 0.5em 0; }
+        #inicio .intro ul.ejes li span {
+          border-radius: 50%;
+          width: 7em;
+          height: 7em;
+          line-height: 7em;
+          vertical-align: middle;
+          font-size: 130%;
+          margin-right: 1.5em;
+          text-align: center;
+          color: #fff;
+          display: inline-block; }
+          #inicio .intro ul.ejes li span img {
+            height: 5em;
+            vertical-align: middle; }
+      #inicio .intro ul.ejes .seg {
+        color: #AF0B1E; }
+        #inicio .intro ul.ejes .seg span {
+          background-color: #AF0B1E; }
+      #inicio .intro ul.ejes .urb {
+        color: #CDDA1B; }
+        #inicio .intro ul.ejes .urb span {
+          background-color: #CDDA1B; }
+      #inicio .intro ul.ejes .eco {
+        color: #F6921F; }
+        #inicio .intro ul.ejes .eco span {
+          background-color: #F6921F; }
+      #inicio .intro ul.ejes .efi {
+        color: #8583A0; }
+        #inicio .intro ul.ejes .efi span {
+          background-color: #8583A0; }
+      #inicio .intro ul.ejes .pub {
+        color: #E50027; }
+        #inicio .intro ul.ejes .pub span {
+          background-color: #E50027; }
+      #inicio .intro ul.ejes .med {
+        color: #FBBF0E; }
+        #inicio .intro ul.ejes .med span {
+          background-color: #FBBF0E; }
+      #inicio .intro ul.ejes .com {
+        color: #253763; }
+        #inicio .intro ul.ejes .com span {
+          background-color: #253763; }
+    #inicio .intro .tabla {
+      text-align: center; }
+  #inicio .sponsors {
+    padding-bottom: 5em;
+    margin-top: 4em;
+    padding-top: 3em;
+    border-top: 1px solid #aaa;
+    color: #aaa;
+    background: #eee; }
+    #inicio .sponsors img {
+      vertical-align: middle; }
+    #inicio .sponsors .jcv {
+      width: 20em;
+      margin-right: 5em; }
 
 /* GUADALAJARA */
 #guadalajara {
+  font-size: 10px;
   /* Indice de ejes */
   /* EJE */ }
   #guadalajara #header {
     vertical-align: middle;
     background: #555;
-    height: 200px;
+    height: 20em;
     width: 100%;
-    line-height: 200px;
+    line-height: 20em;
     text-align: left;
     color: white;
     position: fixed;
@@ -141,26 +144,25 @@ body {
       text-decoration: none;
       background: #eee;
       float: left;
-      width: 500px;
+      width: 50em;
       text-align: center;
       -webkit-transition: all 1s ease;
       -moz-transition: all 1s ease;
       transition: all 1s ease;
-      height: 200px; }
+      height: 20em; }
       #guadalajara #header .home img {
-        width: 400px;
+        width: 40em;
         vertical-align: top;
-        margin-top: 30px;
+        margin-top: 3em;
         -webkit-transition: all 1s ease;
         -moz-transition: all 1s ease;
         transition: all 1s ease; }
     #guadalajara #header .top {
-      font-size: 250%;
-      height: 200px;
-      line-height: 200px;
+      height: 20em;
+      line-height: 20em;
       vertical-align: bottom;
       font-weight: bold;
-      margin: 0 20px;
+      margin: 0 2em;
       padding: 0;
       display: inline-block;
       text-decoration: none;
@@ -169,31 +171,32 @@ body {
       -moz-transition: all 1s ease;
       transition: all 1s ease; }
       #guadalajara #header .top img {
-        height: 200px;
+        height: 20em;
         vertical-align: top;
-        margin: 0 30px;
+        margin: 0 3em;
         -webkit-transition: all 1s ease;
         -moz-transition: all 1s ease;
         transition: all 1s ease; }
       #guadalajara #header .top span {
         display: inline-block;
         vertical-align: middle;
-        height: 120px; }
+        font-size: 4em;
+        margin-top: 0.75em; }
     #guadalajara #header.small {
-      height: 80px;
-      line-height: 80px; }
+      height: 8em;
+      line-height: 8em; }
       #guadalajara #header.small .home {
-        width: 225px;
-        height: 80px; }
+        width: 2.25em;
+        height: 8em; }
         #guadalajara #header.small .home img {
-          width: 200px;
+          width: 20em;
           margin-top: 0; }
       #guadalajara #header.small .top {
-        line-height: 80px;
+        line-height: 8em;
         font-size: 150%; }
         #guadalajara #header.small .top img {
-          height: 80px; }
-  #guadalajara #ejes {
+          height: 8em; }
+  #guadalajara #indice {
     padding: 0;
     background: #eee;
     height: 100%;
@@ -203,243 +206,259 @@ body {
     background-image: -webkit-linear-gradient(left, #bbb, #eee);
     background-image: linear-gradient(to right,#bbb, #eee);
     /* ALCALDE */ }
-    #guadalajara #ejes .bienvenida {
-      padding-top: 200px;
-      font-size: 150%;
-      margin: 60px 0 30px 0; }
-    #guadalajara #ejes big {
+    #guadalajara #indice .bienvenida {
+      padding-top: 20em;
+      margin: 2.5em 2em 1em 2em; }
+      #guadalajara #indice .bienvenida p {
+        margin: 0;
+        padding: 0;
+        font-size: 200%; }
+    #guadalajara #indice big {
       display: block; }
-    #guadalajara #ejes ul {
+    #guadalajara #indice ul {
       list-style-type: none;
       width: 80%;
       margin: 0 auto;
       text-align: center; }
-      #guadalajara #ejes ul li {
+      #guadalajara #indice ul li {
         color: white;
-        margin: 15px;
+        margin: 1.5em;
         padding: 0;
         display: inline-block;
-        width: 600px;
+        width: 60em;
         cursor: pointer;
         text-align: left;
         -webkit-transition: all 1s ease;
         -moz-transition: all 1s ease;
         transition: all 1s ease; }
-        #guadalajara #ejes ul li span.icon {
+        #guadalajara #indice ul li span.icon {
           float: left;
           margin: 0;
-          margin-right: 20px;
-          padding: 10px; }
-          #guadalajara #ejes ul li span.icon img {
-            height: 80px; }
-        #guadalajara #ejes ul li.right big, #guadalajara #ejes ul li.right small {
-          margin-left: 15px;
+          margin-right: 2em;
+          padding: 1em; }
+          #guadalajara #indice ul li span.icon img {
+            height: 8em; }
+        #guadalajara #indice ul li.right big, #guadalajara #indice ul li.right small {
+          margin-left: 1.5em;
           text-align: right;
           display: block; }
-        #guadalajara #ejes ul li.right span.icon {
+        #guadalajara #indice ul li.right span.icon {
           float: right;
           margin-right: 0;
-          margin-left: 20px; }
-        #guadalajara #ejes ul li.right small {
+          margin-left: 2em; }
+        #guadalajara #indice ul li.right small {
           display: none; }
-        #guadalajara #ejes ul li big {
-          margin-top: 15px; }
-        #guadalajara #ejes ul li a {
+        #guadalajara #indice ul li big {
+          margin-top: 1.5em;
+          font-size: 100%; }
+        #guadalajara #indice ul li a {
           color: white;
           text-decoration: none;
           font-weight: bold;
           font-size: 150%; }
-        #guadalajara #ejes ul li small {
+        #guadalajara #indice ul li small {
           font-size: 110%;
           display: none; }
-        #guadalajara #ejes ul li:hover a {
+        #guadalajara #indice ul li:hover a {
           text-decoration: underline; }
-        #guadalajara #ejes ul li.seg {
+        #guadalajara #indice ul li.seg {
           background-color: #AF0B1E;
-          width: 400px;
-          margin-left: 100px; }
-          #guadalajara #ejes ul li.seg span.icon {
+          width: 40em;
+          margin-left: 10em; }
+          #guadalajara #indice ul li.seg span.icon {
             background-color: #770013; }
-        #guadalajara #ejes ul li.urb {
+        #guadalajara #indice ul li.urb {
           background-color: #CDDA1B;
-          width: 400px;
-          margin-right: 100px; }
-          #guadalajara #ejes ul li.urb span.icon {
+          width: 40em;
+          margin-right: 10em; }
+          #guadalajara #indice ul li.urb span.icon {
             background-color: #7F9304; }
-        #guadalajara #ejes ul li.eco {
+        #guadalajara #indice ul li.eco {
           background-color: #F6921F;
-          width: 500px;
+          width: 50em;
           margin-left: 0; }
-          #guadalajara #ejes ul li.eco span.icon {
+          #guadalajara #indice ul li.eco span.icon {
             background-color: #8F4103; }
-        #guadalajara #ejes ul li.efi {
+        #guadalajara #indice ul li.efi {
           background-color: #8583A0;
-          width: 500px;
+          width: 50em;
           margin-right: 0; }
-          #guadalajara #ejes ul li.efi span.icon {
+          #guadalajara #indice ul li.efi span.icon {
             background-color: #3A374C; }
-        #guadalajara #ejes ul li.pub {
+        #guadalajara #indice ul li.pub {
           background-color: #E50027;
-          width: 400px;
-          margin-left: 100px; }
-          #guadalajara #ejes ul li.pub span.icon {
+          width: 40em;
+          margin-left: 10em; }
+          #guadalajara #indice ul li.pub span.icon {
             background-color: #7A000D; }
-        #guadalajara #ejes ul li.med {
+        #guadalajara #indice ul li.med {
           background-color: #FBBF0E;
-          width: 400px;
-          margin-right: 100px; }
-          #guadalajara #ejes ul li.med span.icon {
+          width: 40em;
+          margin-right: 10em; }
+          #guadalajara #indice ul li.med span.icon {
             background-color: #885C03; }
-        #guadalajara #ejes ul li.com {
+        #guadalajara #indice ul li.com {
           background-color: #253763;
-          width: 550px; }
-          #guadalajara #ejes ul li.com span.icon {
+          width: 55em; }
+          #guadalajara #indice ul li.com span.icon {
             background-color: #151D39; }
-        #guadalajara #ejes ul li:hover a {
+        #guadalajara #indice ul li:hover a {
           text-decoration: underline; }
-        #guadalajara #ejes ul li:hover.seg {
+        #guadalajara #indice ul li:hover.seg {
           background-color: #770013; }
-        #guadalajara #ejes ul li:hover.urb {
+        #guadalajara #indice ul li:hover.urb {
           background-color: #7F9304; }
-        #guadalajara #ejes ul li:hover.eco {
+        #guadalajara #indice ul li:hover.eco {
           background-color: #8F4103; }
-        #guadalajara #ejes ul li:hover.efi {
+        #guadalajara #indice ul li:hover.efi {
           background-color: #3A374C; }
-        #guadalajara #ejes ul li:hover.pub {
+        #guadalajara #indice ul li:hover.pub {
           background-color: #7A000D; }
-        #guadalajara #ejes ul li:hover.med {
+        #guadalajara #indice ul li:hover.med {
           background-color: #885C03; }
-        #guadalajara #ejes ul li:hover.com {
+        #guadalajara #indice ul li:hover.com {
           background-color: #151D39; }
-    #guadalajara #ejes.counted ul li small {
+    #guadalajara #indice.counted ul li small {
       display: block; }
-    #guadalajara #ejes #alcalde {
+    #guadalajara #indice #alcalde {
       text-align: center;
-      height: 200px;
-      line-height: 200px;
+      height: 20em;
+      line-height: 20em;
       position: absolute;
       bottom: 0;
       left: 0;
-      margin-bottom: -200px;
+      margin-bottom: -20em;
       -webkit-transition: margin-bottom 1s ease;
       -moz-transition: margin-bottom 1s ease;
       transition: margin-bottom 1s ease; }
-      #guadalajara #ejes #alcalde h2, #guadalajara #ejes #alcalde .bio, #guadalajara #ejes #alcalde .inicioFin, #guadalajara #ejes #alcalde .datos {
+      #guadalajara #indice #alcalde h2, #guadalajara #indice #alcalde .bio, #guadalajara #indice #alcalde .inicioFin, #guadalajara #indice #alcalde .datos {
         display: inline-block;
         text-align: left;
         line-height: normal;
         vertical-align: top; }
-      #guadalajara #ejes #alcalde h2 {
-        font-size: 150%;
+      #guadalajara #indice #alcalde h2 {
+        font-size: 100%;
         text-align: center;
         margin: 0;
         padding: 0;
         background: #DBC808;
-        height: 200px;
-        padding: 0 30px;
+        height: 20em;
+        padding: 0 3em;
         overflow: hidden; }
-        #guadalajara #ejes #alcalde h2 img {
-          height: 90px;
-          margin-top: 30px; }
-      #guadalajara #ejes #alcalde .datos {
+        #guadalajara #indice #alcalde h2 img {
+          height: 9em;
+          margin-top: 3em; }
+        #guadalajara #indice #alcalde h2 span {
+          display: block;
+          font-size: 150%; }
+      #guadalajara #indice #alcalde .datos {
         background: #DBC808;
-        height: 200px;
-        padding: 0 20px; }
-        #guadalajara #ejes #alcalde .datos .tel {
-          margin-top: 60px; }
-        #guadalajara #ejes #alcalde .datos div {
-          margin: 15px 0; }
-      #guadalajara #ejes #alcalde .bio, #guadalajara #ejes #alcalde .inicioFin {
+        height: 20em;
+        padding: 0 2em; }
+        #guadalajara #indice #alcalde .datos .tel {
+          margin-top: 6em; }
+        #guadalajara #indice #alcalde .datos div {
+          margin: 1.5em 0; }
+          #guadalajara #indice #alcalde .datos div span, #guadalajara #indice #alcalde .datos div a {
+            font-size: 120%; }
+      #guadalajara #indice #alcalde .bio, #guadalajara #indice #alcalde .inicioFin {
         background: #FCE809;
-        width: 250px;
-        padding: 20px;
+        width: 25em;
+        padding: 2em;
         vertical-align: middle;
-        height: 175px;
-        margin-top: 25px;
-        font-size: 95%; }
-      #guadalajara #ejes #alcalde .inicioFin {
+        height: 17.5em;
+        margin-top: 2.5em;
+        font-size: 100%; }
+      #guadalajara #indice #alcalde .inicioFin {
         text-align: center; }
-        #guadalajara #ejes #alcalde .inicioFin b {
-          padding-left: 10px;
+        #guadalajara #indice #alcalde .inicioFin b {
+          padding-left: 1em;
           background: #DBC808;
           display: inline-block;
-          margin: 3px 0;
+          margin: 0.3em 0;
           font-weight: normal; }
-          #guadalajara #ejes #alcalde .inicioFin b big {
+          #guadalajara #indice #alcalde .inicioFin b big {
             color: black;
             background: #C1B10B;
-            padding: 2px 5px;
+            padding: 0.2em 0.5em;
             vertical-align: middle;
-            font-size: 120%;
+            font-size: 100%;
             display: inline-block; }
-        #guadalajara #ejes #alcalde .inicioFin b:last-of-type {
-          margin-bottom: 10px; }
-        #guadalajara #ejes #alcalde .inicioFin .dias, #guadalajara #ejes #alcalde .inicioFin .porcentaje {
+        #guadalajara #indice #alcalde .inicioFin b:last-of-type {
+          margin-bottom: 1em; }
+        #guadalajara #indice #alcalde .inicioFin .dias, #guadalajara #indice #alcalde .inicioFin .porcentaje {
           display: inline-block;
           font-weight: bold;
           width: auto;
-          padding: 0 3px;
-          height: 30px;
-          line-height: 30px;
+          padding: 0 0.3em;
+          height: 3em;
+          line-height: 3em;
           vertical-align: middle; }
-          #guadalajara #ejes #alcalde .inicioFin .dias i, #guadalajara #ejes #alcalde .inicioFin .porcentaje i {
+          #guadalajara #indice #alcalde .inicioFin .dias i, #guadalajara #indice #alcalde .inicioFin .porcentaje i {
             font-style: normal; }
-        #guadalajara #ejes #alcalde .inicioFin .dias {
+        #guadalajara #indice #alcalde .inicioFin .dias {
           background: #000;
           color: white;
-          font-size: 120%;
-          padding: 0 7px; }
-        #guadalajara #ejes #alcalde .inicioFin .porcentaje {
+          font-size: 100%;
+          padding: 0 0.7em; }
+        #guadalajara #indice #alcalde .inicioFin .porcentaje {
           background: #DBC808;
           font-weight: normal; }
-      #guadalajara #ejes #alcalde a {
+      #guadalajara #indice #alcalde a {
         color: black; }
   #guadalajara #template {
     display: none; }
   #guadalajara .eje {
-    padding: 20px 0;
+    padding: 2em 0;
     margin: 0;
     text-align: left; }
     #guadalajara .eje h3 {
       text-align: center;
-      padding-top: 20px;
+      padding-top: 2em;
       font-weight: bold;
       color: white;
       margin: 0;
-      padding: 20px 0;
+      padding: 2em 0;
       font-size: 200%;
       width: 100%;
-      height: 100px;
-      line-height: 100px; }
+      height: 10em;
+      line-height: 10em; }
       #guadalajara .eje h3 span {
         display: inline-block;
         margin: 0;
-        padding: 0 10px;
-        line-height: 100px;
+        padding: 0 1em;
+        line-height: 10em;
         vertical-align: top; }
         #guadalajara .eje h3 span img {
-          height: 80px;
+          height: 8em;
           vertical-align: middle; }
       #guadalajara .eje h3 big {
         display: inline-block;
-        height: 100px;
-        padding: 0 30px; }
+        height: 10em;
+        padding: 0 3em; }
+    #guadalajara .eje p {
+      color: white;
+      margin: 0 auto;
+      font-size: 150%;
+      width: 34em; }
+      #guadalajara .eje p a {
+        color: white; }
     #guadalajara .eje ul.compromisos {
-      width: 900px;
+      width: 90em;
       margin: 0 auto;
       list-style-type: none; }
       #guadalajara .eje ul.compromisos li.compromiso {
-        padding: 20px 40px;
+        padding: 2em 4em;
         margin: 0; }
         #guadalajara .eje ul.compromisos li.compromiso big {
           color: white;
           font-size: 130%;
           cursor: pointer;
-          padding: 10px 20px;
-          line-height: 40px;
+          padding: 1em 2em;
+          line-height: 4em;
           display: inline-block;
-          margin-left: -50px;
-          margin-right: 50px; }
+          margin-left: -5em;
+          margin-right: 5em; }
         #guadalajara .eje ul.compromisos li.compromiso ul.indicadores {
           display: none;
           margin: 0;
@@ -447,7 +466,7 @@ body {
           list-style-type: none; }
           #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador {
             padding: 0;
-            margin: 20px 0;
+            margin: 2em 0;
             background: #ddd; }
             #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador div {
               display: inline-block;
@@ -455,23 +474,23 @@ body {
               vertical-align: top; }
             #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .descripción {
               width: 60%;
-              padding: 15px;
+              padding: 1.5em;
               font-size: 120%;
               display: inline-block;
               text-align: left;
-              margin-right: 5px; }
+              margin-right: 0.5em; }
             #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .arranque, #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .actualización, #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .meta {
-              width: 60px;
+              width: 6em;
               background: #ccc;
-              padding: 10px;
-              margin: 10px 0;
+              padding: 1em;
+              margin: 1em 0;
               font-weight: bold;
               font-size: 120%;
-              margin-top: 15px; }
+              margin-top: 1.5em; }
             #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .actualización {
-              width: 100px;
-              padding: 15px 10px;
-              margin-top: 10px;
+              width: 10em;
+              padding: 1.5em 1em;
+              margin-top: 1em;
               background: #aaa; }
             #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover {
               display: none;
@@ -481,20 +500,20 @@ body {
               #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover .fuente {
                 width: 20%;
                 text-align: center;
-                padding: 10px;
+                padding: 1em;
                 background: #999; }
                 #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover .fuente a {
                   font-style: italic; }
               #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover .observaciones {
                 width: 40%;
                 text-align: left;
-                padding: 10px; }
+                padding: 1em; }
               #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover .fechaarranque, #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover .fechaactualización, #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover .fechameta {
-                width: 60px;
-                padding: 10px;
+                width: 6em;
+                padding: 1em;
                 text-align: center; }
               #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador .hover .fechaactualización {
-                width: 100px; }
+                width: 10em; }
             #guadalajara .eje ul.compromisos li.compromiso ul.indicadores li.indicador:hover .hover {
               display: block; }
           #guadalajara .eje ul.compromisos li.compromiso ul.indicadores.picked {

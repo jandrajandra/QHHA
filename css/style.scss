@@ -19,85 +19,89 @@ $pub2:#7A000D;
 $med2:#885C03;
 $com2:#151D39;
 
-/* BIENVENIDA */
-.bienvenida { 
-	h1 img { width:700px; }
-	a {color:black}
-	p {font-size:150%}
 
-	.municipio {display:inline-block; width:400px; height:275px; color:white; text-decoration:none;
-		h2 {font-size:50px; margin-top:50px; margin-bottom:0}
-		h3 {font-size:30px; margin-top:10px}
+#inicio {font-size:10px;
+	h1, h2, h3 {font-size:100%}
+	/* BIENVENIDA */
+	.bienvenida { 
+		h1 img { width:70em; }
+		a {color:black}
+		p {font-size:150%}
 
-		.mouseout {display:inline-block}
-		.mouseover {display:none}
+		.municipio {display:inline-block; width:40em; height:27.5em; color:white; text-decoration:none;
+			h2 {font-size:5em; margin-top:5em; margin-bottom:0}
+			h3 {font-size:3em; margin-top:1em}
 
-		&.zap {
-			background:#5C5973 url(/img/zapgdl/zap-bkg.png) no-repeat center bottom;
-			background-size:auto 100%;
-			margin-right:30px;
-		}
-		&.gdl {
-			background:#5C5973 url(/img/zapgdl/gdl-bkg.png) no-repeat center bottom;
-			background-size:auto 100%;
-		}
+			.mouseout {display:inline-block}
+			.mouseover {display:none}
 
-		&:hover {
-			background-color:#121A2E;
-			color:white;
-			.mouseout {display:none}
-			.mouseover {display:inline-block}
-		}
-
-	}
-}
-
-.intro { width:600px; margin:30px auto; text-align:left; font-size:110%;
-	p.first {font-size:130%}
-	ul.fuentes {
-	}
-	ul.ejes {list-style-type:none; font-size:120%;
-		li {font-weight:bold; margin:5px 0; 
-			span {border-radius:50%; width:70px; height:70px; line-height:70px; vertical-align:middle;
-				font-size:130%; margin-right:15px; text-align:center; color:#fff; display:inline-block;
-				img {height:50px; vertical-align:middle;}
+			&.zap {
+				background:#5C5973 url(/img/zapgdl/zap-bkg.png) no-repeat center bottom;
+				background-size:auto 100%;
+				margin-right:3em;
 			}
+			&.gdl {
+				background:#5C5973 url(/img/zapgdl/gdl-bkg.png) no-repeat center bottom;
+				background-size:auto 100%;
+			}
+
+			&:hover {
+				background-color:#121A2E;
+				color:white;
+				.mouseout {display:none}
+				.mouseover {display:inline-block}
+			}
+
 		}
-		.seg {color:$seg; span {background-color:$seg}}
-		.urb {color:$urb; span {background-color:$urb}}
-		.eco {color:$eco; span {background-color:$eco}}
-		.efi {color:$efi; span {background-color:$efi}}
-		.pub {color:$pub; span {background-color:$pub}}
-		.med {color:$med; span {background-color:$med}}
-		.com {color:$com; span {background-color:$com}}
 	}
-	.tabla {
-		text-align:center;
+
+	.intro { width:60em; margin:3em auto; text-align:left; font-size:110%;
+		p.first {font-size:130%}
+		ul.fuentes {
+		}
+		ul.ejes {list-style-type:none; font-size:120%;
+			li {font-weight:bold; margin:0.5em 0; 
+				span {border-radius:50%; width:7em; height:7em; line-height:7em; vertical-align:middle;
+					font-size:130%; margin-right:1.5em; text-align:center; color:#fff; display:inline-block;
+					img {height:5em; vertical-align:middle;}
+				}
+			}
+			.seg {color:$seg; span {background-color:$seg}}
+			.urb {color:$urb; span {background-color:$urb}}
+			.eco {color:$eco; span {background-color:$eco}}
+			.efi {color:$efi; span {background-color:$efi}}
+			.pub {color:$pub; span {background-color:$pub}}
+			.med {color:$med; span {background-color:$med}}
+			.com {color:$com; span {background-color:$com}}
+		}
+		.tabla {
+			text-align:center;
+		}
+	}
+
+	.sponsors {padding-bottom:5em; margin-top:4em; padding-top:3em; border-top:1px solid #aaa; color:#aaa; background:#eee;
+		img {vertical-align:middle}
+		.jcv {width:20em; margin-right:5em}
 	}
 }
 
-.sponsors {padding-bottom:50px; margin-top:40px; padding-top:30px; border-top:1px solid #aaa; color:#aaa; background:#eee;
-	img {vertical-align:middle}
-	.jcv {width:200px; margin-right:50px}
-}
 
-
-$headerHeight:200px;
-$smallHeaderHeight:80px;
+$headerHeight:20em;
+$smallHeaderHeight:8em;
 
 /* GUADALAJARA */
-#guadalajara {
+#guadalajara {font-size:10px;
 	#header { vertical-align:middle; background:#555; height:$headerHeight; width:100%; line-height:$headerHeight; text-align:left; color:white; position:fixed; top:0; left:0; overflow:hidden; z-index:2; @include transition(all 1s ease);
-		.home {display:inline-block; text-decoration:none; background:#eee; float:left; width:500px; text-align:center; @include transition(all 1s ease); height:$headerHeight;
-			img {width:400px; vertical-align:top; margin-top:30px; @include transition(all 1s ease);}
+		.home {display:inline-block; text-decoration:none; background:#eee; float:left; width:50em; text-align:center; @include transition(all 1s ease); height:$headerHeight;
+			img {width:40em; vertical-align:top; margin-top:3em; @include transition(all 1s ease);}
 		}
-		.top {font-size:250%; height:$headerHeight; line-height:$headerHeight; vertical-align:bottom; font-weight:bold; margin:0 20px; padding:0; display:inline-block; text-decoration:none; color:white; @include transition(all 1s ease);
-			img {height:$headerHeight; vertical-align:top; margin:0 30px; @include transition(all 1s ease);}
-			span {display:inline-block; vertical-align:middle; height:120px}
+		.top {height:$headerHeight; line-height:$headerHeight; vertical-align:bottom; font-weight:bold; margin:0 2em; padding:0; display:inline-block; text-decoration:none; color:white; @include transition(all 1s ease);
+			img {height:$headerHeight; vertical-align:top; margin:0 3em; @include transition(all 1s ease);}
+			span {display:inline-block; vertical-align:middle; font-size:4em; margin-top:0.75em}
 		}
 		&.small { height:$smallHeaderHeight; line-height:$smallHeaderHeight;
-			.home {width:225px; height:$smallHeaderHeight;
-				img {width:200px; margin-top:0}
+			.home {width:2.25em; height:$smallHeaderHeight;
+				img {width:20em; margin-top:0}
 			}
 			.top {line-height:$smallHeaderHeight; font-size:150%;
 				img {height:$smallHeaderHeight}
@@ -106,36 +110,38 @@ $smallHeaderHeight:80px;
 	}
 
 	/* Indice de ejes */
-	#ejes {padding:0; background:#eee; height:100%; position:relative; overflow:hidden;
+	#indice {padding:0; background:#eee; height:100%; position:relative; overflow:hidden;
 		@include linear-gradient(to right, #bbb, #eee);
 
-		.bienvenida { padding-top:$headerHeight; font-size:150%; margin:60px 0 30px 0}
+		.bienvenida { padding-top:$headerHeight; margin:2.5em 2em 1em 2em;
+			p {margin:0; padding:0; font-size:200%;}
+		}
 		big {display:block}
 		ul {list-style-type:none; width:80%; margin:0 auto; text-align:center;
-			li {color:white; margin:15px; padding:0; display:inline-block; width:600px; cursor:pointer; text-align:left;
+			li {color:white; margin:1.5em; padding:0; display:inline-block; width:60em; cursor:pointer; text-align:left;
 				@include transition(all 1s ease);
-				span.icon { float:left; margin:0; margin-right:20px; padding:10px;
-					img {height:80px; }
+				span.icon { float:left; margin:0; margin-right:2em; padding:1em;
+					img {height:8em;}
 				}
 				&.right {
-					big, small {margin-left:15px; text-align:right; display:block}
-					span.icon {float:right; margin-right:0; margin-left:20px}
+					big, small {margin-left:1.5em; text-align:right; display:block}
+					span.icon {float:right; margin-right:0; margin-left:2em}
 					small {display:none}
 				}
-				big {margin-top:15px}
+				big {margin-top:1.5em; font-size:100%}
 					a {color:white; text-decoration:none; font-weight:bold; font-size:150%}
 				small {font-size:110%; display:none}
 				&:hover {
 					a {text-decoration:underline}
 				}
 
-				&.seg {background-color:$seg; width:400px; margin-left:100px; span.icon {background-color:$seg2;}}
-				&.urb {background-color:$urb; width:400px; margin-right:100px; span.icon {background-color:$urb2;}}
-				&.eco {background-color:$eco; width:500px; margin-left:0; span.icon {background-color:$eco2;}}
-				&.efi {background-color:$efi; width:500px; margin-right:0; span.icon {background-color:$efi2;}}
-				&.pub {background-color:$pub; width:400px; margin-left:100px; span.icon {background-color:$pub2;}}
-				&.med {background-color:$med; width:400px; margin-right:100px; span.icon {background-color:$med2;}}
-				&.com {background-color:$com; width:550px; span.icon {background-color:$com2;}}
+				&.seg {background-color:$seg; width:40em; margin-left:10em; span.icon {background-color:$seg2;}}
+				&.urb {background-color:$urb; width:40em; margin-right:10em; span.icon {background-color:$urb2;}}
+				&.eco {background-color:$eco; width:50em; margin-left:0; span.icon {background-color:$eco2;}}
+				&.efi {background-color:$efi; width:50em; margin-right:0; span.icon {background-color:$efi2;}}
+				&.pub {background-color:$pub; width:40em; margin-left:10em; span.icon {background-color:$pub2;}}
+				&.med {background-color:$med; width:40em; margin-right:10em; span.icon {background-color:$med2;}}
+				&.com {background-color:$com; width:55em; span.icon {background-color:$com2;}}
 				&:hover {
 					a {text-decoration:underline}
 					&.seg {background-color:$seg2;}
@@ -150,30 +156,33 @@ $smallHeaderHeight:80px;
 		}
 		&.counted ul li small {display:block}
 
-		$alcaldeHeight:200px;
+		$alcaldeHeight:20em;
 		/* ALCALDE */
 		#alcalde {text-align:center; height:$alcaldeHeight; line-height:$alcaldeHeight; 
 			position:absolute; bottom:0; left:0; margin-bottom:-$alcaldeHeight; @include transition(margin-bottom 1s ease);
 
 			h2, .bio, .inicioFin, .datos {display:inline-block; text-align:left; line-height:normal; vertical-align:top}
-			h2 {font-size:150%; text-align:center; margin:0; padding:0; background:#DBC808; height:$alcaldeHeight;
-				padding:0 30px; overflow:hidden;
-				img {height:90px; margin-top:30px}
+			h2 {font-size:100%; text-align:center; margin:0; padding:0; background:#DBC808; height:$alcaldeHeight;
+				padding:0 3em; overflow:hidden;
+				img {height:9em; margin-top:3em}
+				span {display:block; font-size:150%}
 			}
-			.datos { background:#DBC808; height:$alcaldeHeight; padding:0 20px;
-				.tel {margin-top:60px}
-				div {margin:15px 0}
-			}
-			.bio, .inicioFin {background:#FCE809; width:250px; padding:20px; vertical-align:middle; height:-25px+$alcaldeHeight; margin-top:25px; font-size:95%}
-			.inicioFin { text-align:center;
-				b {padding-left:10px; background:#DBC808; display:inline-block; margin:3px 0; font-weight:normal;
-					big {color:black; background:#C1B10B; padding:2px 5px; vertical-align:middle; font-size:120%; display:inline-block}
+			.datos { background:#DBC808; height:$alcaldeHeight; padding:0 2em;
+				.tel {margin-top:6em}
+				div {margin:1.5em 0;
+					span, a {font-size:120%}
 				}
-				b:last-of-type {margin-bottom:10px}
-				.dias, .porcentaje {display:inline-block; font-weight:bold; width:auto; padding:0 3px; height:30px; line-height:30px; vertical-align:middle;
+			}
+			.bio, .inicioFin {background:#FCE809; width:25em; padding:2em; vertical-align:middle; height:-2.5em+$alcaldeHeight; margin-top:2.5em; font-size:100%}
+			.inicioFin { text-align:center;
+				b {padding-left:1em; background:#DBC808; display:inline-block; margin:0.3em 0; font-weight:normal;
+					big {color:black; background:#C1B10B; padding:0.2em 0.5em; vertical-align:middle; font-size:100%; display:inline-block}
+				}
+				b:last-of-type {margin-bottom:1em}
+				.dias, .porcentaje {display:inline-block; font-weight:bold; width:auto; padding:0 0.3em; height:3em; line-height:3em; vertical-align:middle;
 					i {font-style:normal}
 				}
-				.dias {background:#000; color:white; font-size:120%; padding:0 7px; }
+				.dias {background:#000; color:white; font-size:100%; padding:0 0.7em;}
 				.porcentaje {background:#DBC808; font-weight:normal}
 			}
 			a {color:black}
@@ -184,34 +193,38 @@ $smallHeaderHeight:80px;
 	#template {display:none}
 
 	/* EJE */
-	.eje { padding:20px 0; margin:0; text-align:left;
-		h3 {text-align:center; padding-top:20px;
-			font-weight:bold; color:white; margin:0; padding:20px 0; font-size:200%; width:100%; height:100px; line-height:100px;
-			span { display:inline-block; margin:0; padding:0 10px; line-height:100px; vertical-align:top;
-				img {height:80px; vertical-align:middle}
+	.eje { padding:2em 0; margin:0; text-align:left;
+		h3 {text-align:center; padding-top:2em;
+			font-weight:bold; color:white; margin:0; padding:2em 0; font-size:200%; width:100%; height:10em; line-height:10em;
+			span { display:inline-block; margin:0; padding:0 1em; line-height:10em; vertical-align:top;
+				img {height:8em; vertical-align:middle}
 			}
-			big {display:inline-block; height:100px; padding:0 30px;}
+			big {display:inline-block; height:10em; padding:0 3em;}
 		}
 
-		ul.compromisos {width:900px; margin:0 auto; list-style-type:none;
-			li.compromiso { padding:20px 40px; margin:0;
-				big {color:white; font-size:130%; cursor:pointer; padding:10px 20px; line-height:40px; display:inline-block;
-					margin-left:-50px; margin-right:50px;
+		p {color:white; margin:0 auto; font-size:150%; width:34em;
+			a {color:white}
+		}
+
+		ul.compromisos {width:90em; margin:0 auto; list-style-type:none;
+			li.compromiso { padding:2em 4em; margin:0;
+				big {color:white; font-size:130%; cursor:pointer; padding:1em 2em; line-height:4em; display:inline-block;
+					margin-left:-5em; margin-right:5em;
 				} 
 				ul.indicadores {display:none; margin:0; padding:0; list-style-type:none;
-					li.indicador {padding:0; margin:20px 0; background:#ddd;
+					li.indicador {padding:0; margin:2em 0; background:#ddd;
 						div {display:inline-block; text-align:center; vertical-align:top}
-						.descripción {width:60%; padding:15px; font-size:120%; display:inline-block; text-align:left; margin-right:5px}
-						.arranque, .actualización, .meta {width:60px; background:#ccc; padding:10px; margin:10px 0; 
-							font-weight:bold; font-size:120%; margin-top:15px}
-						.actualización {width:100px; padding:15px 10px; margin-top:10px; background:#aaa}
+						.descripción {width:60%; padding:1.5em; font-size:120%; display:inline-block; text-align:left; margin-right:0.5em}
+						.arranque, .actualización, .meta {width:6em; background:#ccc; padding:1em; margin:1em 0; 
+							font-weight:bold; font-size:120%; margin-top:1.5em}
+						.actualización {width:10em; padding:1.5em 1em; margin-top:1em; background:#aaa}
 						.hover {display:none; background:#ccc; text-align:left; font-size:90%;
-							.fuente {width:20%; text-align:center; padding:10px; background:#999; 
+							.fuente {width:20%; text-align:center; padding:1em; background:#999; 
 								a {font-style:italic;}
 							}
-							.observaciones {width:40%; text-align:left; padding:10px}
-							.fechaarranque, .fechaactualización, .fechameta {width:60px; padding:10px; text-align:center;}
-							.fechaactualización {width:100px}
+							.observaciones {width:40%; text-align:left; padding:1em}
+							.fechaarranque, .fechaactualización, .fechameta {width:6em; padding:1em; text-align:center;}
+							.fechaactualización {width:10em}
 						}
 						&:hover .hover {display:block}
 					}
