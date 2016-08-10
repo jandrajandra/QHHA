@@ -32,6 +32,7 @@ var QHHA = {
 					find('img').attr('src', QHHA.imgDir+eje.name+'.png').end().
 					find('big a').attr('href', '#'+eje.full.id).text(eje.full.shortLabel || eje.full.label);
 				indice.append( indizado );
+				((i+1)%2 == 0) && indice.append( '<br />' );
 				indizado.click( QHHA.build.goToInnerLink );
 			});
 		},
@@ -126,11 +127,11 @@ var QHHA = {
 		prop: function(col, name, link, caption) {
 			var out = '&nbsp';
 			if(col[name]) {
+				out = (caption || '')
 				if(link && col[link]) {
-					out = (caption || '') +
-						'<a href="'+col[link]+'" target="new">'+TOOLS.markdown( col[name] )+'</a>';
+					out += '<a href="'+col[link]+'" target="new">'+TOOLS.markdown( col[name] )+'</a>';
 				} else {
-					out = TOOLS.markdown( col[name] );
+					out += (caption ? '<em>':'') + TOOLS.markdown( col[name] ) + (caption ? '</em>':'');
 				}
 			}
 			return ('<div class="'+name+'">'+out+'</div>');
@@ -189,11 +190,12 @@ var QHHA = {
 					$.each(compromiso.data.indicadores, function() { indicador.data = this; var indi = this;
 						indicador.ol.append(
 							indicador.template.clone().html(
-								prop(indi, 'descripción')+
-								prop(indi, 'arranque')+
-								prop(indi, 'actualización')+
-								prop(indi, 'meta')+
-								'<div class="hover">'+
+								'<div class="li">'+
+									prop(indi, 'descripción')+
+									prop(indi, 'arranque')+
+									prop(indi, 'actualización')+
+									prop(indi, 'meta')+
+								'</div><div class="hover">'+
 									prop(indi, 'fuente', 'enlacefuente', 'Fuente: ')+
 									prop(indi, 'observaciones')+
 									prop(indi, 'fechaarranque')+

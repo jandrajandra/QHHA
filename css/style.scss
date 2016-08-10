@@ -18,11 +18,11 @@ $com:#253763;  $com2:#151D39;
 	.bienvenida { 
 		h1 img { width:70em; }
 		a {color:black}
-		p {font-size:150%}
+		p {font-size:220%}
 
 		.municipio {display:inline-block; width:40em; height:27.5em; color:white; text-decoration:none;
-			h2 {font-size:5em; margin-top:5em; margin-bottom:0}
-			h3 {font-size:3em; margin-top:1em}
+			h2 {font-size:5em; margin-top:1em; margin-bottom:0}
+			h3 {font-size:3em; margin-top:0.33em}
 
 			.mouseout {display:inline-block}
 			.mouseover {display:none}
@@ -47,15 +47,15 @@ $com:#253763;  $com2:#151D39;
 		}
 	}
 
-	.intro { width:60em; margin:3em auto; text-align:left; font-size:110%;
+	.intro { width:35em; margin:2em auto; text-align:left; font-size:180%;
 		p.first {font-size:130%}
 		ul.fuentes {
 		}
 		ul.ejes {list-style-type:none; font-size:120%;
 			li {font-weight:bold; margin:0.5em 0; 
-				span {border-radius:50%; width:7em; height:7em; line-height:7em; vertical-align:middle;
-					font-size:130%; margin-right:1.5em; text-align:center; color:#fff; display:inline-block;
-					img {height:5em; vertical-align:middle;}
+				span {border-radius:50%; width:2em; height:2em; line-height:2em; vertical-align:middle;
+					font-size:130%; margin-right:0.5em; text-align:center; color:#fff; display:inline-block;
+					img {height:1.3em; vertical-align:middle;}
 				}
 			}
 			.seg {color:$seg; span {background-color:$seg}}
@@ -72,6 +72,8 @@ $com:#253763;  $com2:#151D39;
 	}
 
 	.sponsors {padding-bottom:5em; margin-top:4em; padding-top:3em; border-top:1px solid #aaa; color:#aaa; background:#eee;
+		p {font-size:160%;}
+		a {text-decoration:none;}
 		img {vertical-align:middle}
 		.jcv {width:20em; margin-right:5em}
 	}
@@ -109,7 +111,7 @@ $smallHeaderHeight:8em;
 			p {margin:0; padding:0; font-size:200%;}
 		}
 		big {display:block}
-		ul {list-style-type:none; width:80%; margin:0 auto; text-align:center;
+		ul {list-style-type:none; width:100%; margin:0 auto; text-align:center;
 			li {color:white; margin:1.5em; padding:0; display:inline-block; width:60em; cursor:pointer; text-align:left;
 				@include transition(all 1s ease);
 				span.icon { float:left; margin:0; margin-right:2em; padding:1em;
@@ -121,8 +123,8 @@ $smallHeaderHeight:8em;
 					small {display:none}
 				}
 				big {margin-top:1.5em; font-size:100%}
-					a {color:white; text-decoration:none; font-weight:bold; font-size:150%}
-				small {font-size:110%; display:none}
+					a {color:white; text-decoration:none; font-weight:bold; font-size:280%}
+				small {font-size:160%; display:none; margin-top:0.3em}
 				&:hover {
 					a {text-decoration:underline}
 				}
@@ -148,30 +150,34 @@ $smallHeaderHeight:8em;
 		}
 		&.counted ul li small {display:block}
 
-		$alcaldeHeight:20em;
+		$alcaldeHeight:23em;
 		/* ALCALDE */
 		#alcalde {text-align:center; height:$alcaldeHeight; line-height:$alcaldeHeight; 
 			position:absolute; bottom:0; left:0; margin-bottom:-$alcaldeHeight; @include transition(margin-bottom 1s ease);
 
-			h2, .bio, .inicioFin, .datos {display:inline-block; text-align:left; line-height:normal; vertical-align:top}
+			h2, .bio, .inicioFin, .datos {display:inline-block; text-align:left; line-height:normal; vertical-align:top;
+				div.text {font-size:160%}
+			}
 			h2 {font-size:100%; text-align:center; margin:0; padding:0; background:#DBC808; height:$alcaldeHeight;
 				padding:0 3em; overflow:hidden;
-				img {height:9em; margin-top:3em}
-				span {display:block; font-size:150%}
+				img {height:11em; margin-top:3em}
+				span {display:block; font-size:220%; 0.5em}
 			}
 			.datos { background:#DBC808; height:$alcaldeHeight; padding:0 2em;
-				.tel {margin-top:6em}
-				div {margin:1.5em 0;
-					span, a {font-size:120%}
+				.tel, .email, .twitter {margin:1.5em 0;
+					span, a {font-size:160%}
 				}
+				.tel {margin-top:5em}
 			}
-			.bio, .inicioFin {background:#FCE809; width:25em; padding:2em; vertical-align:middle; height:-2.5em+$alcaldeHeight; margin-top:2.5em; font-size:100%}
+			.bio, .inicioFin {background:#FCE809; width:28em; padding:2em; vertical-align:middle; height:-2.5em+$alcaldeHeight; margin-top:2.5em; font-size:100%;
+			}
+			.bio .text {margin:1em}
 			.inicioFin { text-align:center;
 				b {padding-left:1em; background:#DBC808; display:inline-block; margin:0.3em 0; font-weight:normal;
 					big {color:black; background:#C1B10B; padding:0.2em 0.5em; vertical-align:middle; font-size:100%; display:inline-block}
 				}
 				b:last-of-type {margin-bottom:1em}
-				.dias, .porcentaje {display:inline-block; font-weight:bold; width:auto; padding:0 0.3em; height:3em; line-height:3em; vertical-align:middle;
+				.dias, .porcentaje {display:inline-block; font-weight:bold; width:auto; padding:0 0.3em; height:2em; line-height:2em; vertical-align:middle;
 					i {font-style:normal}
 				}
 				.dias {background:#000; color:white; font-size:100%; padding:0 0.7em;}
@@ -187,14 +193,14 @@ $smallHeaderHeight:8em;
 	/* EJE */
 	.eje { padding:2em 0; margin:0; text-align:left;
 		h3 {text-align:center; padding-top:2em;
-			font-weight:bold; color:white; margin:0; padding:2em 0; font-size:200%; width:100%; height:10em; line-height:10em;
-			span { display:inline-block; margin:0; padding:0 1em; line-height:10em; vertical-align:top;
+			font-weight:bold; color:white; margin:0; padding:2em 0; font-size:100%; width:100%; height:10em; line-height:10em;
+			span { display:inline-block; margin:0; padding:0 2em; line-height:10em; vertical-align:top;
 				img {height:8em; vertical-align:middle}
 			}
-			big {display:inline-block; height:10em; padding:0 3em;}
+			big {display:inline-block; font-size:400%}
 		}
 
-		p {color:white; margin:0 auto; font-size:150%; width:34em;
+		p {color:white; margin:0 auto; font-size:150%; width:38em;
 			a.indicadores {display:block; color:white; font-size:90%; margin:0 auto; margin-top:0.5em; margin-bottom:1em; text-align:center}
 		}
 
@@ -204,27 +210,30 @@ $smallHeaderHeight:8em;
 					display:inline-block; position:absolute; top:1.45em; left:-5.25em; z-index:2; content:counter(compromiso);
 					counter-increment:compromiso; font-size:140%; font-weight:bold
 				}
-				big {color:white; font-size:130%; cursor:pointer; padding:1em 2em; line-height:4em; display:inline-block;
-					margin-left:-5em; margin-right:5em;
+				big {color:white; font-size:200%; cursor:pointer; padding:1.2em 2em; line-height:1.2em; display:inline-block;
+					margin-left:-3.25em; margin-right:0;
 				} 
 				ol.indicadores {display:none; margin:0; padding:0; list-style-type:none; counter-reset:indicador A;
-					li.indicador {padding:0; margin:2em 0; background:#ddd; position:relative;
+					li.indicador {padding:0; margin:2em 0; position:relative;
 						&::before { background:#ccc; color:black; width:2em; height:2em; line-height:2em; text-align:center;
 							display:inline-block; position:absolute; top:0; left:-2em; z-index:2; content:counter(indicador, upper-alpha);
 							counter-increment:indicador; font-size:140%; font-weight:bold
 						}
 						div {display:inline-block; text-align:center; vertical-align:top}
-						.descripción {width:60%; padding:1.5em; font-size:120%; display:inline-block; text-align:left; margin-right:0.5em}
-						.arranque, .actualización, .meta {width:6em; background:#ccc; padding:1em; margin:1em 0; 
-							font-weight:bold; font-size:120%; margin-top:1.5em}
-						.actualización {width:10em; padding:1.5em 1em; margin-top:1em; background:#aaa}
-						.hover {display:none; background:#ccc; text-align:left; font-size:90%;
-							.fuente {width:20%; text-align:center; padding:1em; background:#999; 
-								a {font-style:italic;}
+						.li {background:#ddd; width:100%;
+							.descripción {width:60%; padding:1em; font-size:200%; display:inline-block; text-align:left; margin-right:0.2em}
+							.arranque, .actualización, .meta {width:4em; background:#ccc; padding:0.2em; margin:0.3em 0; 
+								font-weight:bold; font-size:200%; margin-top:0.8em}
+							.actualización {width:5em; padding:0.5em 0.2em; margin-top:0.5em; background:#aaa}
+						}
+						.hover {display:none; background:#ccc; text-align:left; font-size:90%; margin:0 2em;
+							.fuente {width:20%; text-align:center; padding:1em; background:#999; font-size:150%;
+								a {font-style:italic; color:black}
 							}
 							.observaciones {width:40%; text-align:left; padding:1em}
-							.fechaarranque, .fechaactualización, .fechameta {width:6em; padding:1em; text-align:center;}
-							.fechaactualización {width:10em}
+							.fechaarranque, .fechaactualización, .fechameta {width:5em; padding:0.7em 0.2em; text-align:center; font-size:180%}
+							.fechaactualización {width:6.5em}
+							.fechameta {width:4.5em}
 						}
 						&:hover .hover {display:block}
 					}
