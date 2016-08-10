@@ -21,7 +21,7 @@ var QHHA = {
 			this.ejes();
 		},
 		indice:function() { var indice = $('#indice ul.indice');
-			$.each(QHHA.ejes, function(i) { var eje = {name:this},
+			$.each(QHHA.ejes, function(i) { var eje = {name:this+''},
 					indizado = $('#template .indizado').clone();
 				eje.full = QHHA.ejesFull[ eje.name ];
 
@@ -32,13 +32,13 @@ var QHHA = {
 			});
 		},
 		ejes:function() { var ejes = $('#ejes');
-			$.each(QHHA.ejes, function(i) { var eje = {name:this};
+			$.each(QHHA.ejes, function(i) { var eje = {name:this+''};
 				eje.template = $('#template .eje').clone();
 				eje.full = QHHA.ejesFull[ eje.name ];
 
 				eje.template.addClass( eje.name ).attr('id', eje.full.id).
 					find('h3 img').attr('src', QHHA.imgDir+eje.name+'.png').end().
-					find('h3 big').text(eje.full.label).end()
+					find('h3 big').text(eje.full.label).end();
 
 				ejes.append( eje.template );
 			});
@@ -144,21 +144,23 @@ var QHHA = {
 			}
 		},
 		count: function() { var totalCompromisos = 0, totalIndicadores = 0;
-			$.each(QHHA.ejes, function() { var eje = {name:this, de:{}}, indicadores = 0;
+			$.each(QHHA.ejes, function() { var eje = {name:this+'', de:{}}, indicadores = 0;
 				eje.de.indice = $('#indice .'+eje.name+' small');
 				eje.de.ejes = $('.eje.'+eje.name+' p');
 				eje.data = QHHA.sheet.data[eje.name];
 
-				$( eje.de.indice.find('.compromisos'), eje.de.ejes.find('.compromisos') ).
-					text( eje.data.length );
+				$( [eje.de.indice.find('.compromisos'), eje.de.ejes.find('.compromisos')] ).each(function() {
+					$(this).text( eje.data.length );
+				});
 				totalCompromisos += eje.data.length;
 
 				$.each(eje.data, function() { var compromiso = this;
 					indicadores += compromiso.indicadores.length;
 				});
 
-				$( eje.de.ejes.find('span.indicadores'), eje.de.indice.find('.indicadores') ).
-					text( indicadores );
+				$( [eje.de.ejes.find('a.indicadores span.indicadores'), eje.de.indice.find('.indicadores')] ).each(function() {
+					$(this).text( indicadores );
+				});
 				totalIndicadores += indicadores;
 			})
 			$('#indice').addClass('counted').find('.bienvenida').
