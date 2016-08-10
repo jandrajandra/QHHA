@@ -105,22 +105,25 @@ body {
           background-color: #253763; }
     #inicio .intro .tabla {
       text-align: center; }
-  #inicio .sponsors {
-    padding-bottom: 5em;
-    margin-top: 4em;
-    padding-top: 3em;
-    border-top: 1px solid #aaa;
-    color: #aaa;
-    background: #eee; }
-    #inicio .sponsors p {
-      font-size: 160%; }
-    #inicio .sponsors a {
-      text-decoration: none; }
-    #inicio .sponsors img {
+
+.sponsors {
+  padding-bottom: 5em;
+  margin-top: 0;
+  padding-top: 3em;
+  border-top: 1px solid #aaa;
+  color: #777;
+  background: #ccc; }
+  .sponsors p {
+    font-size: 160%; }
+  .sponsors a {
+    text-decoration: none; }
+    .sponsors a.canaco {
+      margin-left: 5em; }
+    .sponsors a img {
       vertical-align: middle; }
-    #inicio .sponsors .jcv {
-      width: 20em;
-      margin-right: 5em; }
+  .sponsors .jcv {
+    width: 20em;
+    margin-right: 5em; }
 
 /* GUADALAJARA */
 #guadalajara {
@@ -331,8 +334,8 @@ body {
           background-color: #885C03; }
         #guadalajara #indice ul li:hover.com {
           background-color: #151D39; }
-        #guadalajara #indice ul li br.soloEnMovil {
-          display: none; }
+      #guadalajara #indice ul br.soloEnMovil {
+        display: none; }
     #guadalajara #indice.counted ul li small {
       display: block; }
     #guadalajara #indice #alcalde {

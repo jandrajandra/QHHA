@@ -32,7 +32,7 @@ var QHHA = {
 					find('img').attr('src', QHHA.imgDir+eje.name+'.png').end().
 					find('big a').attr('href', '#'+eje.full.id).text(eje.full.shortLabel || eje.full.label);
 				indice.append( indizado );
-				indice.append( '<br  '+(((i+1)%2 == 0) ? 'class="soloMovil"' : '')+' />' );
+				indice.append( '<br  '+(((i+1)%2 == 0) ? '' : 'class="soloEnMovil"')+' />' );
 				indizado.click( QHHA.build.goToInnerLink );
 			});
 		},
@@ -77,6 +77,8 @@ var QHHA = {
 
 			if(w/h < 0.8) {
 				$('#guadalajara').addClass('movil');
+			} else {
+				$('#guadalajara').removeClass('movil');
 			}
 			$('#guadalajara').css('font-size', Math.min( hFontSize, wFontSize )+'px'); 
 			$('#guadalajara #indice').css('height', h);

@@ -21,6 +21,9 @@ end
 File.open(root+"head.html") do |f|
 	head = readAndEncode( f )
 end
+File.open(root+"footer.html") do |f|
+	footer = readAndEncode( f )
+end
 
 def readProp(prop, html)
 	out = html.match(/^\s*#{prop}:(.*)$/);

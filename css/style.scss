@@ -70,15 +70,16 @@ $com:#253763;  $com2:#151D39;
 			text-align:center;
 		}
 	}
-
-	.sponsors {padding-bottom:5em; margin-top:4em; padding-top:3em; border-top:1px solid #aaa; color:#aaa; background:#eee;
-		p {font-size:160%;}
-		a {text-decoration:none;}
-		img {vertical-align:middle}
-		.jcv {width:20em; margin-right:5em}
-	}
 }
 
+.sponsors {padding-bottom:5em; margin-top:0; padding-top:3em; border-top:1px solid #aaa; color:#777; background:#ccc;
+	p {font-size:160%;}
+	a {text-decoration:none;
+		&.canaco {margin-left:5em}
+		img {vertical-align:middle}
+	}
+	.jcv {width:20em; margin-right:5em}
+}
 
 $headerHeight:20em;
 $smallHeaderHeight:8em;
@@ -157,8 +158,8 @@ $smallHeaderHeight:8em;
 					&.med {background-color:$med2;}
 					&.com {background-color:$com2;}
 				}
-				br.soloEnMovil {display:none}
 			}
+			br.soloEnMovil {display:none}
 		}
 		&.counted ul li small {display:block}
 
