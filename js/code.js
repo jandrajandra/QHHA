@@ -58,15 +58,28 @@ var QHHA = {
 		header:function() { var header = $('#header');
 			$(window).scroll(function() {
 				if($(document).scrollTop() > 100) {
-					header.addClass('small');
+					header.addClass('easing').addClass('small');
 				} else {
-					header.removeClass('small');
+					header.addClass('easing').removeClass('small');
 				}
 			});
 		},
-		adjust:function() {var w = $(window).width(), h = $(window).height();
+		stopEasing:function() {
+			setTimeout(function() {$('#header').removeClass('easing')}, 1200);
+		},
+		adjust:function() {var w = $(window).width(), h = $(window).height(), hFontSize = 10, wFontSize = 10;
+			console.log('w: '+w+' | h: '+h);
+			if(h < 1050) { 
+				hFontSize = Math.min(10, Math.max(10*(h/1050),7));
+			}
+			if(w < 1100) { 
+				wFontSize = Math.min(10, Math.max(10*(w/1100),7)); 
+			}
+			$('#guadalajara').css('font-size', Math.min( hFontSize, wFontSize )+'px'); 
 			$('#guadalajara #indice').css('height', h);
-			$('#indice #alcalde').css('left', (w-parseFloat($('#indice #alcalde').css('width')))/2 );
+
+			var alcaldeWidth = parseFloat($('#indice #alcalde').css('width'));
+			$('#indice #alcalde').css('left', (w-alcaldeWidth)/2 );
 		}
 	},
 	days:{

@@ -85,20 +85,31 @@ $smallHeaderHeight:8em;
 
 /* GUADALAJARA */
 #guadalajara {font-size:10px;
-	#header { vertical-align:middle; background:#555; height:$headerHeight; width:100%; line-height:$headerHeight; text-align:left; color:white; position:fixed; top:0; left:0; overflow:hidden; z-index:2; @include transition(all 1s ease);
-		.home {display:inline-block; text-decoration:none; background:#eee; float:left; width:50em; text-align:center; @include transition(all 1s ease); height:$headerHeight;
-			img {width:40em; vertical-align:top; margin-top:3em; @include transition(all 1s ease);}
+
+	/* HEADER */
+	#header { vertical-align:middle; background:#555; height:$headerHeight; width:100%; line-height:$headerHeight; text-align:left; color:white; position:fixed; top:0; left:0; overflow:hidden; z-index:2; 
+		.home {display:inline-block; text-decoration:none; background:#eee; float:left; width:50em; text-align:center; height:$headerHeight;
+			img {width:40em; vertical-align:top; margin-top:3em;}
 		}
-		.top {height:$headerHeight; line-height:$headerHeight; vertical-align:bottom; font-weight:bold; margin:0 2em; padding:0; display:inline-block; text-decoration:none; color:white; @include transition(all 1s ease);
-			img {height:$headerHeight; vertical-align:top; margin:0 3em; @include transition(all 1s ease);}
+		.top {height:$headerHeight; line-height:$headerHeight; vertical-align:bottom; font-weight:bold; margin:0 2em; padding:0; display:inline-block; text-decoration:none; color:white;
+			img {height:$headerHeight; vertical-align:top; margin:0 3em;}
 			span {display:inline-block; vertical-align:middle; font-size:4em; margin-top:0.75em}
 		}
 		&.small { height:$smallHeaderHeight; line-height:$smallHeaderHeight;
-			.home {width:2.25em; height:$smallHeaderHeight;
+			.home {width:25em; height:$smallHeaderHeight;
 				img {width:20em; margin-top:0}
 			}
-			.top {line-height:$smallHeaderHeight; font-size:150%;
+			.top {line-height:$smallHeaderHeight;
 				img {height:$smallHeaderHeight}
+				span {font-size:2.5em; margin-top:0.5em}
+			}
+		}
+		&.easing { @include transition(all 1s ease);
+			.home {@include transition(all 1s ease);
+				img {@include transition(all 1s ease);}
+			}
+			.top {@include transition(all 1s ease);
+				img {@include transition(all 1s ease);}
 			}
 		}
 	}
@@ -152,7 +163,7 @@ $smallHeaderHeight:8em;
 
 		$alcaldeHeight:23em;
 		/* ALCALDE */
-		#alcalde {text-align:center; height:$alcaldeHeight; line-height:$alcaldeHeight; 
+		#alcalde {text-align:center; height:$alcaldeHeight; line-height:$alcaldeHeight; width:111em;
 			position:absolute; bottom:0; left:0; margin-bottom:-$alcaldeHeight; @include transition(margin-bottom 1s ease);
 
 			h2, .bio, .inicioFin, .datos {display:inline-block; text-align:left; line-height:normal; vertical-align:top;
@@ -161,7 +172,7 @@ $smallHeaderHeight:8em;
 			h2 {font-size:100%; text-align:center; margin:0; padding:0; background:#DBC808; height:$alcaldeHeight;
 				padding:0 3em; overflow:hidden;
 				img {height:11em; margin-top:3em}
-				span {display:block; font-size:220%; 0.5em}
+				span {display:block; font-size:220%; margin-top:0.5em}
 			}
 			.datos { background:#DBC808; height:$alcaldeHeight; padding:0 2em;
 				.tel, .email, .twitter {margin:1.5em 0;
