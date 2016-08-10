@@ -109,21 +109,30 @@ body {
 .sponsors {
   padding-bottom: 5em;
   margin-top: 0;
-  padding-top: 3em;
+  padding-top: 2em;
   border-top: 1px solid #aaa;
   color: #777;
   background: #ccc; }
   .sponsors p {
-    font-size: 160%; }
+    font-size: 160%;
+    padding-bottom: 1em; }
   .sponsors a {
     text-decoration: none; }
-    .sponsors a.canaco {
-      margin-left: 5em; }
     .sponsors a img {
       vertical-align: middle; }
-  .sponsors .jcv {
-    width: 20em;
-    margin-right: 5em; }
+    .sponsors a.jcv img {
+      width: 24em;
+      margin-right: 2em; }
+    .sponsors a.canaco img {
+      margin-left: 5em;
+      width: 20em; }
+    .sponsors a.ccij img {
+      width: 8em;
+      margin-right: 4em;
+      margin-left: 10em; }
+    .sponsors a.iteso img {
+      width: 9em;
+      margin-right: 4em; }
 
 /* GUADALAJARA */
 #guadalajara {

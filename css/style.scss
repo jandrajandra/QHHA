@@ -72,13 +72,15 @@ $com:#253763;  $com2:#151D39;
 	}
 }
 
-.sponsors {padding-bottom:5em; margin-top:0; padding-top:3em; border-top:1px solid #aaa; color:#777; background:#ccc;
-	p {font-size:160%;}
+.sponsors {padding-bottom:5em; margin-top:0; padding-top:2em; border-top:1px solid #aaa; color:#777; background:#ccc;
+	p {font-size:160%; padding-bottom:1em;}
 	a {text-decoration:none;
-		&.canaco {margin-left:5em}
 		img {vertical-align:middle}
+		&.jcv img {width:24em; margin-right:2em}
+		&.canaco img {margin-left:5em; width:20em}
+		&.ccij img {width:8em; margin-right:4em; margin-left:10em}
+		&.iteso img {width:9em; margin-right:4em}
 	}
-	.jcv {width:20em; margin-right:5em}
 }
 
 $headerHeight:20em;
