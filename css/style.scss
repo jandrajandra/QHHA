@@ -88,9 +88,8 @@ $com:#253763;  $com2:#151D39;
 $headerHeight:20em;
 $smallHeaderHeight:8em;
 
-/* GUADALAJARA */
-#guadalajara {font-size:10px;
-
+/* ZAPOPAN & GUADALAJARA */
+#zapGdl {font-size:10px;
 	/* HEADER */
 	#header { vertical-align:middle; background:#555; height:$headerHeight; width:100%; line-height:$headerHeight; text-align:left; color:white; position:fixed; top:0; left:0; overflow:hidden; z-index:3;
 		.home {display:inline-block; text-decoration:none; background:#eee; float:left; width:50em; text-align:center; height:$headerHeight;
@@ -181,7 +180,7 @@ $smallHeaderHeight:8em;
 				img {height:11em; margin-top:3em}
 				span {display:block; font-size:220%; margin-top:0.5em}
 			}
-			.datos { background:#DBC808; height:$alcaldeHeight; padding:0 2em;
+			.datos { background:#DBC808; height:$alcaldeHeight; padding:0 2em; padding-left:0;
 				.tel, .email, .twitter {margin:1.5em 0;
 					span, a {font-size:160%}
 				}
@@ -189,8 +188,10 @@ $smallHeaderHeight:8em;
 			}
 			.bio, .inicioFin {background:#FCE809; width:28em; padding:2em; vertical-align:middle; height:-2.5em+$alcaldeHeight; margin-top:2.5em; font-size:100%;
 			}
-			.bio .text {margin:1em}
-			.inicioFin { text-align:center;
+			.bio {padding-right:0;
+				.text {margin:1em}
+			}
+			.inicioFin { text-align:center; padding-left:0;
 				b {padding-left:1em; background:#DBC808; display:inline-block; margin:0.3em 0; font-weight:normal;
 					big {color:black; background:#C1B10B; padding:0.2em 0.5em; vertical-align:middle; font-size:100%; display:inline-block}
 				}

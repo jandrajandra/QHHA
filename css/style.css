@@ -138,13 +138,13 @@ body {
       width: 9em;
       margin-right: 4em; }
 
-/* GUADALAJARA */
-#guadalajara {
+/* ZAPOPAN & GUADALAJARA */
+#zapGdl {
   font-size: 10px;
   /* HEADER */
   /* Indice de ejes */
   /* EJE */ }
-  #guadalajara #header {
+  #zapGdl #header {
     vertical-align: middle;
     background: #555;
     height: 20em;
@@ -157,7 +157,7 @@ body {
     left: 0;
     overflow: hidden;
     z-index: 3; }
-    #guadalajara #header .home {
+    #zapGdl #header .home {
       display: inline-block;
       text-decoration: none;
       background: #eee;
@@ -165,11 +165,11 @@ body {
       width: 50em;
       text-align: center;
       height: 20em; }
-      #guadalajara #header .home img {
+      #zapGdl #header .home img {
         width: 40em;
         vertical-align: top;
         margin-top: 3em; }
-    #guadalajara #header .top {
+    #zapGdl #header .top {
       height: 20em;
       line-height: 20em;
       vertical-align: bottom;
@@ -179,52 +179,52 @@ body {
       display: inline-block;
       text-decoration: none;
       color: white; }
-      #guadalajara #header .top img {
+      #zapGdl #header .top img {
         height: 20em;
         vertical-align: top;
         margin: 0 3em; }
-      #guadalajara #header .top span {
+      #zapGdl #header .top span {
         display: inline-block;
         vertical-align: middle;
         font-size: 4em;
         margin-top: 0.75em; }
-    #guadalajara #header.small {
+    #zapGdl #header.small {
       height: 8em;
       line-height: 8em; }
-      #guadalajara #header.small .home {
+      #zapGdl #header.small .home {
         width: 25em;
         height: 8em; }
-        #guadalajara #header.small .home img {
+        #zapGdl #header.small .home img {
           width: 20em;
           margin-top: 0; }
-      #guadalajara #header.small .top {
+      #zapGdl #header.small .top {
         line-height: 8em; }
-        #guadalajara #header.small .top img {
+        #zapGdl #header.small .top img {
           height: 8em; }
-        #guadalajara #header.small .top span {
+        #zapGdl #header.small .top span {
           font-size: 2.5em;
           margin-top: 0.5em; }
-    #guadalajara #header.easing {
+    #zapGdl #header.easing {
       -webkit-transition: all 1s ease;
       -moz-transition: all 1s ease;
       transition: all 1s ease; }
-      #guadalajara #header.easing .home {
+      #zapGdl #header.easing .home {
         -webkit-transition: all 1s ease;
         -moz-transition: all 1s ease;
         transition: all 1s ease; }
-        #guadalajara #header.easing .home img {
+        #zapGdl #header.easing .home img {
           -webkit-transition: all 1s ease;
           -moz-transition: all 1s ease;
           transition: all 1s ease; }
-      #guadalajara #header.easing .top {
+      #zapGdl #header.easing .top {
         -webkit-transition: all 1s ease;
         -moz-transition: all 1s ease;
         transition: all 1s ease; }
-        #guadalajara #header.easing .top img {
+        #zapGdl #header.easing .top img {
           -webkit-transition: all 1s ease;
           -moz-transition: all 1s ease;
           transition: all 1s ease; }
-  #guadalajara #indice {
+  #zapGdl #indice {
     padding: 0;
     background: #eee;
     height: 100%;
@@ -234,21 +234,21 @@ body {
     background-image: -webkit-linear-gradient(left, #bbb, #eee);
     background-image: linear-gradient(to right,#bbb, #eee);
     /* ALCALDE */ }
-    #guadalajara #indice .bienvenida {
+    #zapGdl #indice .bienvenida {
       padding-top: 20em;
       margin: 2.5em 2em 1em 2em; }
-      #guadalajara #indice .bienvenida p {
+      #zapGdl #indice .bienvenida p {
         margin: 0;
         padding: 0;
         font-size: 200%; }
-    #guadalajara #indice big {
+    #zapGdl #indice big {
       display: block; }
-    #guadalajara #indice ul {
+    #zapGdl #indice ul {
       list-style-type: none;
       width: 100%;
       margin: 0 auto;
       text-align: center; }
-      #guadalajara #indice ul li {
+      #zapGdl #indice ul li {
         color: white;
         margin: 1.5em;
         padding: 0;
@@ -259,99 +259,99 @@ body {
         -webkit-transition: all 1s ease;
         -moz-transition: all 1s ease;
         transition: all 1s ease; }
-        #guadalajara #indice ul li span.icon {
+        #zapGdl #indice ul li span.icon {
           float: left;
           margin: 0;
           margin-right: 2em;
           padding: 1em; }
-          #guadalajara #indice ul li span.icon img {
+          #zapGdl #indice ul li span.icon img {
             height: 8em; }
-        #guadalajara #indice ul li.right big, #guadalajara #indice ul li.right small {
+        #zapGdl #indice ul li.right big, #zapGdl #indice ul li.right small {
           margin-left: 1.5em;
           text-align: right;
           display: block; }
-        #guadalajara #indice ul li.right span.icon {
+        #zapGdl #indice ul li.right span.icon {
           float: right;
           margin-right: 0;
           margin-left: 2em; }
-        #guadalajara #indice ul li.right small {
+        #zapGdl #indice ul li.right small {
           display: none; }
-        #guadalajara #indice ul li big {
+        #zapGdl #indice ul li big {
           margin-top: 1.5em;
           font-size: 100%; }
-        #guadalajara #indice ul li a {
+        #zapGdl #indice ul li a {
           color: white;
           text-decoration: none;
           font-weight: bold;
           font-size: 280%; }
-        #guadalajara #indice ul li small {
+        #zapGdl #indice ul li small {
           font-size: 160%;
           display: none;
           margin-top: 0.3em; }
-        #guadalajara #indice ul li:hover a {
+        #zapGdl #indice ul li:hover a {
           text-decoration: underline; }
-        #guadalajara #indice ul li.seg {
+        #zapGdl #indice ul li.seg {
           background-color: #AF0B1E;
           width: 40em;
           margin-left: 10em; }
-          #guadalajara #indice ul li.seg span.icon {
+          #zapGdl #indice ul li.seg span.icon {
             background-color: #770013; }
-        #guadalajara #indice ul li.urb {
+        #zapGdl #indice ul li.urb {
           background-color: #CDDA1B;
           width: 40em;
           margin-right: 10em; }
-          #guadalajara #indice ul li.urb span.icon {
+          #zapGdl #indice ul li.urb span.icon {
             background-color: #7F9304; }
-        #guadalajara #indice ul li.eco {
+        #zapGdl #indice ul li.eco {
           background-color: #F6921F;
           width: 50em;
           margin-left: 0; }
-          #guadalajara #indice ul li.eco span.icon {
+          #zapGdl #indice ul li.eco span.icon {
             background-color: #8F4103; }
-        #guadalajara #indice ul li.efi {
+        #zapGdl #indice ul li.efi {
           background-color: #8583A0;
           width: 50em;
           margin-right: 0; }
-          #guadalajara #indice ul li.efi span.icon {
+          #zapGdl #indice ul li.efi span.icon {
             background-color: #3A374C; }
-        #guadalajara #indice ul li.pub {
+        #zapGdl #indice ul li.pub {
           background-color: #E50027;
           width: 40em;
           margin-left: 10em; }
-          #guadalajara #indice ul li.pub span.icon {
+          #zapGdl #indice ul li.pub span.icon {
             background-color: #7A000D; }
-        #guadalajara #indice ul li.med {
+        #zapGdl #indice ul li.med {
           background-color: #FBBF0E;
           width: 40em;
           margin-right: 10em; }
-          #guadalajara #indice ul li.med span.icon {
+          #zapGdl #indice ul li.med span.icon {
             background-color: #885C03; }
-        #guadalajara #indice ul li.com {
+        #zapGdl #indice ul li.com {
           background-color: #253763;
           width: 55em; }
-          #guadalajara #indice ul li.com span.icon {
+          #zapGdl #indice ul li.com span.icon {
             background-color: #151D39; }
-        #guadalajara #indice ul li:hover a {
+        #zapGdl #indice ul li:hover a {
           text-decoration: underline; }
-        #guadalajara #indice ul li:hover.seg {
+        #zapGdl #indice ul li:hover.seg {
           background-color: #770013; }
-        #guadalajara #indice ul li:hover.urb {
+        #zapGdl #indice ul li:hover.urb {
           background-color: #7F9304; }
-        #guadalajara #indice ul li:hover.eco {
+        #zapGdl #indice ul li:hover.eco {
           background-color: #8F4103; }
-        #guadalajara #indice ul li:hover.efi {
+        #zapGdl #indice ul li:hover.efi {
           background-color: #3A374C; }
-        #guadalajara #indice ul li:hover.pub {
+        #zapGdl #indice ul li:hover.pub {
           background-color: #7A000D; }
-        #guadalajara #indice ul li:hover.med {
+        #zapGdl #indice ul li:hover.med {
           background-color: #885C03; }
-        #guadalajara #indice ul li:hover.com {
+        #zapGdl #indice ul li:hover.com {
           background-color: #151D39; }
-      #guadalajara #indice ul br.soloEnMovil {
+      #zapGdl #indice ul br.soloEnMovil {
         display: none; }
-    #guadalajara #indice.counted ul li small {
+    #zapGdl #indice.counted ul li small {
       display: block; }
-    #guadalajara #indice #alcalde {
+    #zapGdl #indice #alcalde {
       text-align: center;
       height: 23em;
       line-height: 23em;
@@ -363,14 +363,14 @@ body {
       -webkit-transition: margin-bottom 1s ease;
       -moz-transition: margin-bottom 1s ease;
       transition: margin-bottom 1s ease; }
-      #guadalajara #indice #alcalde h2, #guadalajara #indice #alcalde .bio, #guadalajara #indice #alcalde .inicioFin, #guadalajara #indice #alcalde .datos {
+      #zapGdl #indice #alcalde h2, #zapGdl #indice #alcalde .bio, #zapGdl #indice #alcalde .inicioFin, #zapGdl #indice #alcalde .datos {
         display: inline-block;
         text-align: left;
         line-height: normal;
         vertical-align: top; }
-        #guadalajara #indice #alcalde h2 div.text, #guadalajara #indice #alcalde .bio div.text, #guadalajara #indice #alcalde .inicioFin div.text, #guadalajara #indice #alcalde .datos div.text {
+        #zapGdl #indice #alcalde h2 div.text, #zapGdl #indice #alcalde .bio div.text, #zapGdl #indice #alcalde .inicioFin div.text, #zapGdl #indice #alcalde .datos div.text {
           font-size: 160%; }
-      #guadalajara #indice #alcalde h2 {
+      #zapGdl #indice #alcalde h2 {
         font-size: 100%;
         text-align: center;
         margin: 0;
@@ -379,24 +379,25 @@ body {
         height: 23em;
         padding: 0 3em;
         overflow: hidden; }
-        #guadalajara #indice #alcalde h2 img {
+        #zapGdl #indice #alcalde h2 img {
           height: 11em;
           margin-top: 3em; }
-        #guadalajara #indice #alcalde h2 span {
+        #zapGdl #indice #alcalde h2 span {
           display: block;
           font-size: 220%;
           margin-top: 0.5em; }
-      #guadalajara #indice #alcalde .datos {
+      #zapGdl #indice #alcalde .datos {
         background: #DBC808;
         height: 23em;
-        padding: 0 2em; }
-        #guadalajara #indice #alcalde .datos .tel, #guadalajara #indice #alcalde .datos .email, #guadalajara #indice #alcalde .datos .twitter {
+        padding: 0 2em;
+        padding-left: 0; }
+        #zapGdl #indice #alcalde .datos .tel, #zapGdl #indice #alcalde .datos .email, #zapGdl #indice #alcalde .datos .twitter {
           margin: 1.5em 0; }
-          #guadalajara #indice #alcalde .datos .tel span, #guadalajara #indice #alcalde .datos .tel a, #guadalajara #indice #alcalde .datos .email span, #guadalajara #indice #alcalde .datos .email a, #guadalajara #indice #alcalde .datos .twitter span, #guadalajara #indice #alcalde .datos .twitter a {
+          #zapGdl #indice #alcalde .datos .tel span, #zapGdl #indice #alcalde .datos .tel a, #zapGdl #indice #alcalde .datos .email span, #zapGdl #indice #alcalde .datos .email a, #zapGdl #indice #alcalde .datos .twitter span, #zapGdl #indice #alcalde .datos .twitter a {
             font-size: 160%; }
-        #guadalajara #indice #alcalde .datos .tel {
+        #zapGdl #indice #alcalde .datos .tel {
           margin-top: 5em; }
-      #guadalajara #indice #alcalde .bio, #guadalajara #indice #alcalde .inicioFin {
+      #zapGdl #indice #alcalde .bio, #zapGdl #indice #alcalde .inicioFin {
         background: #FCE809;
         width: 28em;
         padding: 2em;
@@ -404,26 +405,29 @@ body {
         height: 20.5em;
         margin-top: 2.5em;
         font-size: 100%; }
-      #guadalajara #indice #alcalde .bio .text {
-        margin: 1em; }
-      #guadalajara #indice #alcalde .inicioFin {
-        text-align: center; }
-        #guadalajara #indice #alcalde .inicioFin b {
+      #zapGdl #indice #alcalde .bio {
+        padding-right: 0; }
+        #zapGdl #indice #alcalde .bio .text {
+          margin: 1em; }
+      #zapGdl #indice #alcalde .inicioFin {
+        text-align: center;
+        padding-left: 0; }
+        #zapGdl #indice #alcalde .inicioFin b {
           padding-left: 1em;
           background: #DBC808;
           display: inline-block;
           margin: 0.3em 0;
           font-weight: normal; }
-          #guadalajara #indice #alcalde .inicioFin b big {
+          #zapGdl #indice #alcalde .inicioFin b big {
             color: black;
             background: #C1B10B;
             padding: 0.2em 0.5em;
             vertical-align: middle;
             font-size: 100%;
             display: inline-block; }
-        #guadalajara #indice #alcalde .inicioFin b:last-of-type {
+        #zapGdl #indice #alcalde .inicioFin b:last-of-type {
           margin-bottom: 1em; }
-        #guadalajara #indice #alcalde .inicioFin .dias, #guadalajara #indice #alcalde .inicioFin .porcentaje {
+        #zapGdl #indice #alcalde .inicioFin .dias, #zapGdl #indice #alcalde .inicioFin .porcentaje {
           display: inline-block;
           font-weight: bold;
           width: auto;
@@ -431,37 +435,37 @@ body {
           height: 2em;
           line-height: 2em;
           vertical-align: middle; }
-          #guadalajara #indice #alcalde .inicioFin .dias i, #guadalajara #indice #alcalde .inicioFin .porcentaje i {
+          #zapGdl #indice #alcalde .inicioFin .dias i, #zapGdl #indice #alcalde .inicioFin .porcentaje i {
             font-style: normal; }
-        #guadalajara #indice #alcalde .inicioFin .dias {
+        #zapGdl #indice #alcalde .inicioFin .dias {
           background: #000;
           color: white;
           font-size: 100%;
           padding: 0 0.7em; }
-        #guadalajara #indice #alcalde .inicioFin .porcentaje {
+        #zapGdl #indice #alcalde .inicioFin .porcentaje {
           background: #DBC808;
           font-weight: normal; }
-      #guadalajara #indice #alcalde a {
+      #zapGdl #indice #alcalde a {
         color: black; }
-  #guadalajara.movil #indice {
+  #zapGdl.movil #indice {
     font-size: 10px; }
-    #guadalajara.movil #indice ul li .right big, #guadalajara.movil #indice ul li .right small {
+    #zapGdl.movil #indice ul li .right big, #zapGdl.movil #indice ul li .right small {
       margin-left: 0;
       text-align: left; }
-    #guadalajara.movil #indice ul li .right span.icon {
+    #zapGdl.movil #indice ul li .right span.icon {
       float: none;
       margin-left: 0; }
-    #guadalajara.movil #indice ul li.seg, #guadalajara.movil #indice ul li.urb, #guadalajara.movil #indice ul li.eco, #guadalajara.movil #indice ul li.efi, #guadalajara.movil #indice ul li.pub, #guadalajara.movil #indice ul li.med, #guadalajara.movil #indice ul li.com {
+    #zapGdl.movil #indice ul li.seg, #zapGdl.movil #indice ul li.urb, #zapGdl.movil #indice ul li.eco, #zapGdl.movil #indice ul li.efi, #zapGdl.movil #indice ul li.pub, #zapGdl.movil #indice ul li.med, #zapGdl.movil #indice ul li.com {
       margin: 2em auto; }
-    #guadalajara.movil #indice ul br.soloEnMovil {
+    #zapGdl.movil #indice ul br.soloEnMovil {
       display: block; }
-  #guadalajara #template {
+  #zapGdl #template {
     display: none; }
-  #guadalajara .eje {
+  #zapGdl .eje {
     padding: 2em 0;
     margin: 0;
     text-align: left; }
-    #guadalajara .eje h3 {
+    #zapGdl .eje h3 {
       text-align: center;
       padding-top: 2em;
       font-weight: bold;
@@ -472,24 +476,24 @@ body {
       width: 100%;
       height: 10em;
       line-height: 10em; }
-      #guadalajara .eje h3 span {
+      #zapGdl .eje h3 span {
         display: inline-block;
         margin: 0;
         padding: 0 2em;
         line-height: 10em;
         vertical-align: top; }
-        #guadalajara .eje h3 span img {
+        #zapGdl .eje h3 span img {
           height: 8em;
           vertical-align: middle; }
-      #guadalajara .eje h3 big {
+      #zapGdl .eje h3 big {
         display: inline-block;
         font-size: 400%; }
-    #guadalajara .eje p {
+    #zapGdl .eje p {
       color: white;
       margin: 0 auto;
       font-size: 170%;
       width: 35em; }
-      #guadalajara .eje p a.indicadores {
+      #zapGdl .eje p a.indicadores {
         display: block;
         color: white;
         font-size: 90%;
@@ -497,16 +501,16 @@ body {
         margin-top: 0.5em;
         margin-bottom: 1em;
         text-align: center; }
-    #guadalajara .eje ol.compromisos {
+    #zapGdl .eje ol.compromisos {
       width: 90em;
       margin: 0 auto;
       counter-reset: compromiso 0; }
-      #guadalajara .eje ol.compromisos li.compromiso {
+      #zapGdl .eje ol.compromisos li.compromiso {
         padding: 2em;
         margin: 0;
         list-style-type: none;
         position: relative; }
-        #guadalajara .eje ol.compromisos li.compromiso::before {
+        #zapGdl .eje ol.compromisos li.compromiso::before {
           background: white;
           color: black;
           width: 2em;
@@ -522,7 +526,7 @@ body {
           counter-increment: compromiso;
           font-size: 140%;
           font-weight: bold; }
-        #guadalajara .eje ol.compromisos li.compromiso big {
+        #zapGdl .eje ol.compromisos li.compromiso big {
           color: white;
           font-size: 200%;
           cursor: pointer;
@@ -531,17 +535,17 @@ body {
           display: inline-block;
           margin-left: -3.25em;
           margin-right: 0; }
-        #guadalajara .eje ol.compromisos li.compromiso ol.indicadores {
+        #zapGdl .eje ol.compromisos li.compromiso ol.indicadores {
           display: none;
           margin: 0;
           padding: 0;
           list-style-type: none;
           counter-reset: indicador A; }
-          #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador {
+          #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador {
             padding: 0;
             margin: 2em 0;
             position: relative; }
-            #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador::before {
+            #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador::before {
               background: #ccc;
               color: black;
               width: 2em;
@@ -557,21 +561,21 @@ body {
               counter-increment: indicador;
               font-size: 140%;
               font-weight: bold; }
-            #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador div {
+            #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador div {
               display: inline-block;
               text-align: center;
               vertical-align: top; }
-            #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li {
+            #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li {
               background: #ddd;
               width: 100%; }
-              #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .descripción {
+              #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .descripción {
                 width: 60%;
                 padding: 1em;
                 font-size: 200%;
                 display: inline-block;
                 text-align: left;
                 margin-right: 0.2em; }
-              #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .arranque, #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .actualización, #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .meta {
+              #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .arranque, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .actualización, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .meta {
                 width: 4em;
                 background: #ccc;
                 padding: 0.2em;
@@ -579,100 +583,100 @@ body {
                 font-weight: bold;
                 font-size: 200%;
                 margin-top: 0.8em; }
-              #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .actualización {
+              #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .actualización {
                 width: 5em;
                 padding: 0.5em 0.2em;
                 margin-top: 0.5em;
                 background: #aaa; }
-            #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover {
+            #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover {
               display: none;
               background: #ccc;
               text-align: left;
               font-size: 90%;
               margin: 0 2em; }
-              #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fuente {
+              #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fuente {
                 width: 20%;
                 text-align: center;
                 padding: 1em;
                 background: #999;
                 font-size: 150%; }
-                #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fuente a {
+                #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fuente a {
                   font-style: italic;
                   color: black; }
-              #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .observaciones {
+              #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .observaciones {
                 width: 40%;
                 text-align: left;
                 padding: 1em; }
-              #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaarranque, #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaactualización, #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechameta {
+              #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaarranque, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaactualización, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechameta {
                 width: 5em;
                 padding: 0.7em 0.2em;
                 text-align: center;
                 font-size: 180%; }
-              #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaactualización {
+              #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaactualización {
                 width: 6.5em; }
-              #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechameta {
+              #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechameta {
                 width: 4.5em; }
-            #guadalajara .eje ol.compromisos li.compromiso ol.indicadores li.indicador:hover .hover {
+            #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador:hover .hover {
               display: block; }
-          #guadalajara .eje ol.compromisos li.compromiso ol.indicadores.picked {
+          #zapGdl .eje ol.compromisos li.compromiso ol.indicadores.picked {
             display: block; }
-      #guadalajara .eje ol.compromisos.picked li.compromiso ol.indicadores {
+      #zapGdl .eje ol.compromisos.picked li.compromiso ol.indicadores {
         display: block; }
-    #guadalajara .eje#seguridad {
+    #zapGdl .eje#seguridad {
       background-color: #770013;
       background-image: -webkit-linear-gradient(right, #770013, #AF0B1E);
       background-image: linear-gradient(to left,#770013, #AF0B1E); }
-      #guadalajara .eje#seguridad li.compromiso big {
+      #zapGdl .eje#seguridad li.compromiso big {
         background-color: #770013; }
-      #guadalajara .eje#seguridad li.compromiso:hover big {
+      #zapGdl .eje#seguridad li.compromiso:hover big {
         background-color: #AF0B1E; }
-    #guadalajara .eje#desarrollo-urbano {
+    #zapGdl .eje#desarrollo-urbano {
       background-color: #7F9304;
       background-image: -webkit-linear-gradient(right, #7F9304, #CDDA1B);
       background-image: linear-gradient(to left,#7F9304, #CDDA1B); }
-      #guadalajara .eje#desarrollo-urbano li.compromiso big {
+      #zapGdl .eje#desarrollo-urbano li.compromiso big {
         background-color: #7F9304; }
-      #guadalajara .eje#desarrollo-urbano li.compromiso:hover big {
+      #zapGdl .eje#desarrollo-urbano li.compromiso:hover big {
         background-color: #CDDA1B; }
-    #guadalajara .eje#desarrollo-economico {
+    #zapGdl .eje#desarrollo-economico {
       background-color: #8F4103;
       background-image: -webkit-linear-gradient(right, #8F4103, #F6921F);
       background-image: linear-gradient(to left,#8F4103, #F6921F); }
-      #guadalajara .eje#desarrollo-economico li.compromiso big {
+      #zapGdl .eje#desarrollo-economico li.compromiso big {
         background-color: #8F4103; }
-      #guadalajara .eje#desarrollo-economico li.compromiso:hover big {
+      #zapGdl .eje#desarrollo-economico li.compromiso:hover big {
         background-color: #F6921F; }
-    #guadalajara .eje#eficiencia {
+    #zapGdl .eje#eficiencia {
       background-color: #3A374C;
       background-image: -webkit-linear-gradient(right, #3A374C, #8583A0);
       background-image: linear-gradient(to left,#3A374C, #8583A0); }
-      #guadalajara .eje#eficiencia li.compromiso big {
+      #zapGdl .eje#eficiencia li.compromiso big {
         background-color: #3A374C; }
-      #guadalajara .eje#eficiencia li.compromiso:hover big {
+      #zapGdl .eje#eficiencia li.compromiso:hover big {
         background-color: #8583A0; }
-    #guadalajara .eje#servicios-publicos {
+    #zapGdl .eje#servicios-publicos {
       background-color: #7A000D;
       background-image: -webkit-linear-gradient(right, #7A000D, #E50027);
       background-image: linear-gradient(to left,#7A000D, #E50027); }
-      #guadalajara .eje#servicios-publicos li.compromiso big {
+      #zapGdl .eje#servicios-publicos li.compromiso big {
         background-color: #7A000D; }
-      #guadalajara .eje#servicios-publicos li.compromiso:hover big {
+      #zapGdl .eje#servicios-publicos li.compromiso:hover big {
         background-color: #E50027; }
-    #guadalajara .eje#medio-ambiente {
+    #zapGdl .eje#medio-ambiente {
       background-color: #885C03;
       background-image: -webkit-linear-gradient(right, #885C03, #FBBF0E);
       background-image: linear-gradient(to left,#885C03, #FBBF0E); }
-      #guadalajara .eje#medio-ambiente li.compromiso big {
+      #zapGdl .eje#medio-ambiente li.compromiso big {
         background-color: #885C03; }
-      #guadalajara .eje#medio-ambiente li.compromiso:hover big {
+      #zapGdl .eje#medio-ambiente li.compromiso:hover big {
         background-color: #FBBF0E; }
-    #guadalajara .eje#comunidad {
+    #zapGdl .eje#comunidad {
       background-color: #151D39;
       background-image: -webkit-linear-gradient(right, #151D39, #253763);
       background-image: linear-gradient(to left,#151D39, #253763); }
-      #guadalajara .eje#comunidad li.compromiso big {
+      #zapGdl .eje#comunidad li.compromiso big {
         background-color: #151D39; }
-      #guadalajara .eje#comunidad li.compromiso:hover big {
+      #zapGdl .eje#comunidad li.compromiso:hover big {
         background-color: #253763; }
 
 /*# sourceMappingURL=style.css.map */

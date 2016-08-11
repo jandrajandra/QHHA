@@ -76,12 +76,12 @@ var QHHA = {
 			}
 
 			if(w/h < 0.8) {
-				$('#guadalajara').addClass('movil');
+				$('#zapGdl').addClass('movil');
 			} else {
-				$('#guadalajara').removeClass('movil');
+				$('#zapGdl').removeClass('movil');
 			}
-			$('#guadalajara').css('font-size', Math.min( hFontSize, wFontSize )+'px'); 
-			$('#guadalajara #indice').css('height', h);
+			$('#zapGdl').css('font-size', Math.min( hFontSize, wFontSize )+'px'); 
+			$('#zapGdl #indice').css('height', h);
 
 			var alcaldeWidth = parseFloat($('#indice #alcalde').css('width'));
 			$('#indice #alcalde').css('left', (w-alcaldeWidth)/2 );
@@ -99,7 +99,7 @@ var QHHA = {
 
 	/* SHEET */
 	sheet: {
-		zap:'1KgtTvqqNeCZn4mCQEIRFYI3Wr4P2dvQvpub3toLFtoE',
+		zap:'1xFOEq-kHbPpTp69XOPPOS3xM6h-2hBPNGJLpc49gWLg',
 		gdl:'1KgtTvqqNeCZn4mCQEIRFYI3Wr4P2dvQvpub3toLFtoE',
 			done: [],
 		data: {},

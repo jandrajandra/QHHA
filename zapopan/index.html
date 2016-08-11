@@ -27,146 +27,94 @@
 	</head>
 -
 
-<body id="zapopan">
-	<div class="header">
-		<a href="/" title="Regresar al inicio">
-			<img src="/img/logos/qhha-horizontal.png" alt="¿Qué has hecho alcalde?" />
-		</a>
-		<h1>Zapopan</h1>
-		<p>
-			Su gestión inició el 1ero de Octubre de 2015 y finaliza el 30 de septiembre de 2018.
-		</p>
-		<p>
-			Es la primera vez que incursiona en el servicio público. Antes fue empresario en el ramo financiero, conductor de un programa de radio y presidente de Coparmex Jalisco de 2008 a 2011.
-		</p>
+<body id="zapGdl">
+	<script>
+		$( document ).ready(function() {
+			QHHA.sheet.fetch('zap');
+			QHHA.days.since();
+		});
+	</script>
+	<!--TEMPLATES-->
+	<div id="template">
+		<li class="indizado">
+			<span class="icon"><img /></span>
+			<big><a href="javascript:void(0)"></a></big>
+			<small><span class="compromisos">n</span> compromisos, <span class="indicadores">m</span> indicadores</small>
+		</li>
+
+		<div class="eje">
+			<h3>
+				<span><img /></span>
+				<big></big>
+			</h3>
+			<p>
+				Pablo Lemus hizo <span class="compromisos"></span> compromisos en este tema. Conoce su desempeño haciendo click en cada compromiso para ver sus indicadores. <a href="javascript:void(0)" class="indicadores">(O explora <em>todos</em> los <span class="indicadores">m</span> indicadores.)</a>
+			</p>
+			<ol class="compromisos"></ol>
+		</div>
+
+		<li class="compromiso">
+			<big></big>
+			<ol class="indicadores">
+			</ol>
+		</li>
+
+		<li class="indicador"></li>
 	</div>
-	<div class="ejes">
-		<ul>
-			<li class="seg">
-				<big><a href="#seguridad">Seguridad y prevención del delito</a></big>
-				<small>n indicadores, m actualizados</small>
-			</li>
-			<li class="urb">
-				<big><a href="#desarrollo-urbano">Desarrollo urbano</a></big>
-				<small>n indicadores, m actualizados</small>
-			</li>
-			<li class="eco">
-				<big><a href="#desarrollo-economico">Desarrollo Económico</a></big>
-				<small>n indicadores, m actualizados</small>
-			</li>
-			<li class="efi">
-				<big><a href="#eficiencia-administrativa">Eficiencia Administrativa</a></big>
-				<small>n indicadores, m actualizados</small>
-			</li>
-			<li class="pub">
-				<big><a href="#servicios-publicos">Servicios Públicos</a></big>
-				<small>n indicadores, m actualizados</small>
-			</li>
-			<li class="med">
-				<big><a href="#servicios-publicos">Medio Ambiente</a></big>
-				<small>n indicadores, m actualizados</small>
-			</li>
-			<li class="com">
-				<big><a href="#servicios-publicos">Construcción de Comunidad</a></big>
-				<small>n indicadores, m actualizados</small>
-			</li>
-		</ul>
+	
+	<!--HEADER-->
+	<div id="header">
+		<a href="/" title="Regresar al inicio" class="home">
+			<img src="/img/logos/qhha-3-horizontal.png" alt="Qué has hecho, alcalde" />
+		</a>
+		<a href="#bienvenida" class="top">
+			<img src="/img/zapgdl/zap-bkg.png" />
+			<span>Zapopan</span>
+		</a>
+	</div>
+	
+	<!--INDICE-->
+	<div id="indice">
+		<div class="bienvenida">
+			<p>
+				<strong>Pablo Lemus</strong> hizo <span class="totalCompromisos"></span> compromisos en estos 7 temas, conoce su desempeño explorando los <span class="totalIndicadores"></span> indicadores.
+			</p>
+		</div>
+		<ul class="indice"></ul>
+		<div id="alcalde">
+			<h2>
+				<img src="/img/zapgdl/lemus-0.png" />
+				<span>Pablo Lemus</span>
+			</h2><div class="datos">
+					<div class="tel">
+						<span>3818 2200 (ext. 2600 y 2601)</span>
+					</div>
+					<div class="email">
+						<a href="mailto:pablo.lemus@zapopan.gob.mx">pablo.lemus@zapopan.gob.mx</a>
+					</div>
+					<div class="twitter">
+						<a href="https://twitter.com/PabloLemusN">PabloLemusN</a>
+					</div>
+				</div><div class="bio">
+					<div class="text">
+						Es la primera vez que incursiona en el servicio público. Antes fue empresario en el ramo financiero, conductor de un programa de radio y presidente de Coparmex Jalisco de 2008 a 2011.
+					</div>
+				</div><div class="inicioFin">
+					<div class="text">
+						Su gestión inició el
+							<b>1 de octubre de <big>2015</big></b><br/>
+							y finaliza el<br/>
+						<b>30 de septiembre de <big>2018</big></b>.<br/>
+
+						Van <div class="dias"><i>n</i> días</div><div class="porcentaje">(<i>0=m</i>%)</div>.
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<div class="eje" id="seguridad">
-		<big>Seguridad y prevención del delito</big>
-		<div class="compromisos">
-			<ul class="compromisos">
-				<li>
-					<a href="javascript:void(0);" class="compromiso">Policia metropolitana con mando</a>
-					<ul class="indicadores">
-						<li>Manual del nuevo sistema operativo de Policía por cuadrantes.</li>
-						<li>Número de cuadrantes operando bajo el nuevo sistema operativo.</li>
-						<li>Número de policías asignados por cuadrante.</li>
-						<li>Porcentaje de ciudadanos con confianza en la policía municipal.</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:void(0);" class="compromiso">
-						Garantizar la seguridad y respeto los derechos humanos y las libertades que otorga la ley.
-					</a>
-					<ul class="indicadores">
-						<li>Tasa de delitos del fuero común por cada mil habitantes.</li>
-						<li>Tasa de homicidios por cada cien mil habitantes.</li>
-						<li>Porcentaje de ciudadanos que sufrieron un delito en el último año.</li>
-						<li>Porcentaje de ciudadanos satisfechos con la seguridad pública que le brindan.</li>
-						<li>Índice de Paz Metropolitano</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="eje" id="desarrollo-urbano">
-		<big>Desarrollo urbano</big>
-		<div class="compromisos">
-			<ul class="compromisos">
-				<li>Policia metropolitana con mando</li>
-				<li>Policia metropolitana con mando</li>
-				<li>Policia metropolitana con mando</li>
-				<li>Policia metropolitana con mando</li>
-			</ul>
-		</div>
-	</div>
-	<div class="eje">
-		<big>Desarrollo Económico</big>
-		<div class="compromisos">
-			<ul class="compromisos">
-				<li>Policia metropolitana con mando</li>
-				<li>Policia metropolitana con mando</li>
-				<li>Policia metropolitana con mando</li>
-				<li>Policia metropolitana con mando</li>
-			</ul>
-		</div>
-	</div>
-	<div class="eje">
-		<big>Eficiencia Administrativa</big>
-		<div class="compromisos">
-			<ul class="compromisos">
-				<li>Policia metropolitana con mando</li>
-				<li>Policia metropolitana con mando</li>
-				<li>Policia metropolitana con mando</li>
-				<li>Policia metropolitana con mando</li>
-			</ul>
-		</div>
-	</div>
-	<div class="eje">
-		<big>Servicios Públicos</big>
-		<div class="compromisos">
-			<ul class="compromisos">
-				<li>Policia metropolitana con mando</li>
-				<li>Policia metropolitana con mando</li>
-				<li>Policia metropolitana con mando</li>
-				<li>Policia metropolitana con mando</li>
-			</ul>
-		</div>
-	</div>
-	<div class="eje">
-		<big>Medio Ambiente</big>
-		<div class="compromisos">
-			<ul class="compromisos">
-				<li>Policia metropolitana con mando</li>
-				<li>Policia metropolitana con mando</li>
-				<li>Policia metropolitana con mando</li>
-				<li>Policia metropolitana con mando</li>
-			</ul>
-		</div>
-	</div>
-	<div class="eje">
-		<big>Construcción de Comunidad</big>
-		<div class="compromisos">
-			<ul class="compromisos">
-				<li>Policia metropolitana con mando</li>
-				<li>Policia metropolitana con mando</li>
-				<li>Policia metropolitana con mando</li>
-				<li>Policia metropolitana con mando</li>
-			</ul>
-		</div>
-	</div>
+	<!--EJES-->
+	<div id="ejes"></div>
 	<div class="sponsors">
 		<p>
 			Iniciativa de:
