@@ -1,7 +1,8 @@
 @charset "UTF-8";
 @import "bourbon/bourbon";
 
-body {margin:0; padding:0; text-align:center; background:white; font-family:sans-serif}
+body {margin:0; padding:0; text-align:center; background:white; font-family:'Roboto', sans-serif}
+
 
 $seg:#AF0B1E;  $seg2:#770013; 
 $urb:#CDDA1B;  $urb2:#7F9304;
@@ -15,12 +16,14 @@ $com:#253763;  $com2:#151D39;
 #inicio {font-size:10px;
 	h1, h2, h3 {font-size:100%}
 	/* BIENVENIDA */
-	.bienvenida { 
-		h1 img { width:70em; }
+	.bienvenida { background:#CCE030;
+		h1 { background:white; padding: 2em 0 4em 0;
+			img { width:70em; }
+		}
 		a {color:black}
-		p {font-size:220%}
+		p {font-size:180%}
 
-		.municipio {display:inline-block; width:40em; height:27.5em; color:white; text-decoration:none;
+		.municipio {display:inline-block; width:40em; height:27.5em; color:white; text-decoration:none; margin-top:3em; margin-bottom:8em;
 			h2 {font-size:5em; margin-top:1em; margin-bottom:0}
 			h3 {font-size:3em; margin-top:0.33em}
 
@@ -47,35 +50,37 @@ $com:#253763;  $com2:#151D39;
 		}
 	}
 
-	.intro { width:35em; margin:2em auto; text-align:left; font-size:180%;
-		p.first {font-size:130%}
-		a {color:black}
-		ul.fuentes {
-			li {margin:0.8em 0}
+	.page { width:100%;
+		.explicacion {width:70em; margin:2em auto; text-align:left; font-size:100%;
+			p {font-size:250%}
+			b {font-family:'Roboto Bold'}
 		}
-		ul.ejes {list-style-type:none; font-size:120%;
-			li {font-weight:bold; margin:0.5em 0; 
-				span {border-radius:50%; width:2em; height:2em; line-height:2em; vertical-align:middle;
-					font-size:130%; margin-right:0.5em; text-align:center; color:#fff; display:inline-block;
-					img {height:1.3em; vertical-align:middle;}
-				}
+		.inside {width:35em; padding:5em 0; margin:0 auto; text-align:left; font-size:220%;
+			a {color:black}
+			ul.fuentes {
+				li {margin:0.8em 0}
 			}
-			.seg {color:$seg; span {background-color:$seg}}
-			.urb {color:$urb; span {background-color:$urb}}
-			.eco {color:$eco; span {background-color:$eco}}
-			.efi {color:$efi; span {background-color:$efi}}
-			.pub {color:$pub; span {background-color:$pub}}
-			.med {color:$med; span {background-color:$med}}
-			.com {color:$com; span {background-color:$com}}
-		}
-		.tabla {
-			text-align:center;
+			ul.ejes {list-style-type:none; font-size:120%;
+				li {font-weight:bold; margin:0.5em 0; 
+					span {border-radius:50%; width:2em; height:2em; line-height:2em; vertical-align:middle;
+						font-size:130%; margin-right:0.5em; text-align:center; color:#fff; display:inline-block;
+						img {height:1.3em; vertical-align:middle;}
+					}
+				}
+				.seg {color:$seg; span {background-color:$seg}}
+				.urb {color:$urb; span {background-color:$urb}}
+				.eco {color:$eco; span {background-color:$eco}}
+				.efi {color:$efi; span {background-color:$efi}}
+				.pub {color:$pub; span {background-color:$pub}}
+				.med {color:$med; span {background-color:$med}}
+				.com {color:$com; span {background-color:$com}}
+			}
 		}
 	}
 }
 
 .sponsors {padding-bottom:5em; margin-top:0; padding-top:2em; border-top:1px solid #aaa; color:#777; background:#ccc; font-size:5px;
-	p {font-size:320%; padding-bottom:1em;}
+	p {font-size:320%;}
 	a {text-decoration:none;
 		img {vertical-align:middle}
 		&.jcv img {width:24em; margin-right:2em}

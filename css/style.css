@@ -4,111 +4,126 @@ body {
   padding: 0;
   text-align: center;
   background: white;
-  font-family: sans-serif; }
+  font-family: 'Roboto', sans-serif; }
 
 #inicio {
   font-size: 10px;
   /* BIENVENIDA */ }
   #inicio h1, #inicio h2, #inicio h3 {
     font-size: 100%; }
-  #inicio .bienvenida h1 img {
-    width: 70em; }
-  #inicio .bienvenida a {
-    color: black; }
-  #inicio .bienvenida p {
-    font-size: 220%; }
-  #inicio .bienvenida .municipio {
-    display: inline-block;
-    width: 40em;
-    height: 27.5em;
-    color: white;
-    text-decoration: none; }
-    #inicio .bienvenida .municipio h2 {
-      font-size: 5em;
-      margin-top: 1em;
-      margin-bottom: 0; }
-    #inicio .bienvenida .municipio h3 {
-      font-size: 3em;
-      margin-top: 0.33em; }
-    #inicio .bienvenida .municipio .mouseout {
-      display: inline-block; }
-    #inicio .bienvenida .municipio .mouseover {
-      display: none; }
-    #inicio .bienvenida .municipio.zap {
-      background: #5C5973 url(/img/zapgdl/zap-bkg.png) no-repeat center bottom;
-      background-size: auto 100%;
-      margin-right: 3em; }
-    #inicio .bienvenida .municipio.gdl {
-      background: #5C5973 url(/img/zapgdl/gdl-bkg.png) no-repeat center bottom;
-      background-size: auto 100%; }
-    #inicio .bienvenida .municipio:hover {
-      background-color: #121A2E;
-      color: white; }
-      #inicio .bienvenida .municipio:hover .mouseout {
-        display: none; }
-      #inicio .bienvenida .municipio:hover .mouseover {
-        display: inline-block; }
-  #inicio .intro {
-    width: 35em;
-    margin: 2em auto;
-    text-align: left;
-    font-size: 180%; }
-    #inicio .intro p.first {
-      font-size: 130%; }
-    #inicio .intro a {
+  #inicio .bienvenida {
+    background: #CCE030; }
+    #inicio .bienvenida h1 {
+      background: white;
+      padding: 2em 0 4em 0; }
+      #inicio .bienvenida h1 img {
+        width: 70em; }
+    #inicio .bienvenida a {
       color: black; }
-    #inicio .intro ul.fuentes li {
-      margin: 0.8em 0; }
-    #inicio .intro ul.ejes {
-      list-style-type: none;
-      font-size: 120%; }
-      #inicio .intro ul.ejes li {
-        font-weight: bold;
-        margin: 0.5em 0; }
-        #inicio .intro ul.ejes li span {
-          border-radius: 50%;
-          width: 2em;
-          height: 2em;
-          line-height: 2em;
-          vertical-align: middle;
-          font-size: 130%;
-          margin-right: 0.5em;
-          text-align: center;
-          color: #fff;
+    #inicio .bienvenida p {
+      font-size: 180%; }
+    #inicio .bienvenida .municipio {
+      display: inline-block;
+      width: 40em;
+      height: 27.5em;
+      color: white;
+      text-decoration: none;
+      margin-top: 3em;
+      margin-bottom: 8em; }
+      #inicio .bienvenida .municipio h2 {
+        font-size: 5em;
+        margin-top: 1em;
+        margin-bottom: 0; }
+      #inicio .bienvenida .municipio h3 {
+        font-size: 3em;
+        margin-top: 0.33em; }
+      #inicio .bienvenida .municipio .mouseout {
+        display: inline-block; }
+      #inicio .bienvenida .municipio .mouseover {
+        display: none; }
+      #inicio .bienvenida .municipio.zap {
+        background: #5C5973 url(/img/zapgdl/zap-bkg.png) no-repeat center bottom;
+        background-size: auto 100%;
+        margin-right: 3em; }
+      #inicio .bienvenida .municipio.gdl {
+        background: #5C5973 url(/img/zapgdl/gdl-bkg.png) no-repeat center bottom;
+        background-size: auto 100%; }
+      #inicio .bienvenida .municipio:hover {
+        background-color: #121A2E;
+        color: white; }
+        #inicio .bienvenida .municipio:hover .mouseout {
+          display: none; }
+        #inicio .bienvenida .municipio:hover .mouseover {
           display: inline-block; }
-          #inicio .intro ul.ejes li span img {
-            height: 1.3em;
-            vertical-align: middle; }
-      #inicio .intro ul.ejes .seg {
-        color: #AF0B1E; }
-        #inicio .intro ul.ejes .seg span {
-          background-color: #AF0B1E; }
-      #inicio .intro ul.ejes .urb {
-        color: #CDDA1B; }
-        #inicio .intro ul.ejes .urb span {
-          background-color: #CDDA1B; }
-      #inicio .intro ul.ejes .eco {
-        color: #F6921F; }
-        #inicio .intro ul.ejes .eco span {
-          background-color: #F6921F; }
-      #inicio .intro ul.ejes .efi {
-        color: #8583A0; }
-        #inicio .intro ul.ejes .efi span {
-          background-color: #8583A0; }
-      #inicio .intro ul.ejes .pub {
-        color: #E50027; }
-        #inicio .intro ul.ejes .pub span {
-          background-color: #E50027; }
-      #inicio .intro ul.ejes .med {
-        color: #FBBF0E; }
-        #inicio .intro ul.ejes .med span {
-          background-color: #FBBF0E; }
-      #inicio .intro ul.ejes .com {
-        color: #253763; }
-        #inicio .intro ul.ejes .com span {
-          background-color: #253763; }
-    #inicio .intro .tabla {
-      text-align: center; }
+  #inicio .page {
+    width: 100%; }
+    #inicio .page .explicacion {
+      width: 70em;
+      margin: 2em auto;
+      text-align: left;
+      font-size: 100%; }
+      #inicio .page .explicacion p {
+        font-size: 250%; }
+      #inicio .page .explicacion b {
+        font-family: 'Roboto Bold'; }
+    #inicio .page .inside {
+      width: 35em;
+      padding: 5em 0;
+      margin: 0 auto;
+      text-align: left;
+      font-size: 220%; }
+      #inicio .page .inside a {
+        color: black; }
+      #inicio .page .inside ul.fuentes li {
+        margin: 0.8em 0; }
+      #inicio .page .inside ul.ejes {
+        list-style-type: none;
+        font-size: 120%; }
+        #inicio .page .inside ul.ejes li {
+          font-weight: bold;
+          margin: 0.5em 0; }
+          #inicio .page .inside ul.ejes li span {
+            border-radius: 50%;
+            width: 2em;
+            height: 2em;
+            line-height: 2em;
+            vertical-align: middle;
+            font-size: 130%;
+            margin-right: 0.5em;
+            text-align: center;
+            color: #fff;
+            display: inline-block; }
+            #inicio .page .inside ul.ejes li span img {
+              height: 1.3em;
+              vertical-align: middle; }
+        #inicio .page .inside ul.ejes .seg {
+          color: #AF0B1E; }
+          #inicio .page .inside ul.ejes .seg span {
+            background-color: #AF0B1E; }
+        #inicio .page .inside ul.ejes .urb {
+          color: #CDDA1B; }
+          #inicio .page .inside ul.ejes .urb span {
+            background-color: #CDDA1B; }
+        #inicio .page .inside ul.ejes .eco {
+          color: #F6921F; }
+          #inicio .page .inside ul.ejes .eco span {
+            background-color: #F6921F; }
+        #inicio .page .inside ul.ejes .efi {
+          color: #8583A0; }
+          #inicio .page .inside ul.ejes .efi span {
+            background-color: #8583A0; }
+        #inicio .page .inside ul.ejes .pub {
+          color: #E50027; }
+          #inicio .page .inside ul.ejes .pub span {
+            background-color: #E50027; }
+        #inicio .page .inside ul.ejes .med {
+          color: #FBBF0E; }
+          #inicio .page .inside ul.ejes .med span {
+            background-color: #FBBF0E; }
+        #inicio .page .inside ul.ejes .com {
+          color: #253763; }
+          #inicio .page .inside ul.ejes .com span {
+            background-color: #253763; }
 
 .sponsors {
   padding-bottom: 5em;
@@ -119,8 +134,7 @@ body {
   background: #ccc;
   font-size: 5px; }
   .sponsors p {
-    font-size: 320%;
-    padding-bottom: 1em; }
+    font-size: 320%; }
   .sponsors a {
     text-decoration: none; }
     .sponsors a img {

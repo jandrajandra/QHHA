@@ -81,7 +81,7 @@ var QHHA = {
 				$('#zapGdl').removeClass('movil');
 			}
 			$('#zapGdl').css('font-size', Math.min( hFontSize, wFontSize )+'px'); 
-			$('#zapGdl #indice').css('height', h);
+			$('#zapGdl #indice, #inicio .page, #inicio .bienvenida').css('height', h);
 
 			var alcaldeWidth = parseFloat($('#indice #alcalde').css('width'));
 			$('#indice #alcalde').css('left', (w-alcaldeWidth)/2 );
