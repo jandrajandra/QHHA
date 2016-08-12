@@ -132,8 +132,9 @@ var QHHA = {
 				S.data[eje] = compromisos;
 				S.done.push( eje );
 				if( TOOLS.isSame( S.done, QHHA.ejes ) ) {
-					S.count();
 					S.load();
+					S.count();
+					S.gauge();
 				}
 			});
 		},
@@ -142,46 +143,64 @@ var QHHA = {
 				S.getEje(zapGdl, eje, i+1);
 			})
 		},
-		prop: function(col, name, link, caption) {
+		gauge:function() {
+			$('#ejes .eje li.indicador').each(function() { 
+				//var arranque = parseFloat($(this).find('.arranque span').text()),
+					//actualizacion = {html:$(this).find('.actualización span')},
+					//meta = parseFloat($(this).find('.meta span').text());
+
+				//actualizacion.data = parseFloat($(this).find('.actualización span').text()),
+
+				//if( arranque && actualizacion && meta ) {
+					//var track = {data:meta - arranque, screen:$(this).find('.actualización').width() },
+						//advance = {data:meta - actualizacion };
+					//advance.screen = (advance.data/track.data) * track.screen;
+					//actualizacion.css('
+				//}
+			});
+		},
+		show: function(col, name, link, caption) {
 			var out = '&nbsp';
 			if(col[name]) {
 				out = (caption || '')
 				if(link && col[link]) {
 					out += '<a href="'+col[link]+'" target="new">'+TOOLS.markdown( col[name] )+'</a>';
 				} else {
-					out += (caption ? '<em>':'') + TOOLS.markdown( col[name] ) + (caption ? '</em>':'');
+					if( (name == 'arranque')||(name == 'actualización')||(name == 'meta') ) {
+						out += '<span>'+col[name].replace(/[\d.,]+/,'<b>$&</b>')+'</span>';
+					} else {
+						out += (caption ? '<em>':'') + TOOLS.markdown( col[name] ) + (caption ? '</em>':'');
+					}
 				}
 			}
 			return ('<div class="'+name+'">'+out+'</div>');
 		},
 		expand:{
 			thisOne:function() {
-				$(this).parents('li.compromiso').find('ol.indicadores').toggleClass('picked');
+				$(this).parents('li.compromiso').toggleClass('picked');
 			},
 			all:function() {
-				QHHA.test = $(this).parents('.eje').find('ol.compromisos');
-				console.log('double!?');
-				
-				$(this).parents('.eje').find('ol.compromisos').toggleClass('picked').
-					find('ol.indicadores').removeClass('picked');
+				$(this).parents('.eje').find('li.compromiso')[ ($(this).hasClass('ocultar') ? 'remove' : 'add' )+'Class']('picked');
+				$(this).toggleClass('ocultar');
 			}
 		},
 		count: function() { var totalCompromisos = 0, totalIndicadores = 0;
 			$.each(QHHA.ejes, function() { var eje = {name:this+'', de:{}}, indicadores = 0;
 				eje.de.indice = $('#indice .'+eje.name+' small');
-				eje.de.ejes = $('.eje.'+eje.name+' p');
+				eje.de.ejes = $('.eje.'+eje.name);
 				eje.data = QHHA.sheet.data[eje.name];
 
-				$( [eje.de.indice.find('.compromisos'), eje.de.ejes.find('.compromisos')] ).each(function() {
+				$( [eje.de.indice.find('.compromisos'), eje.de.ejes.find('p .compromisos')] ).each(function() {
 					$(this).text( eje.data.length );
 				});
 				totalCompromisos += eje.data.length;
 
-				$.each(eje.data, function() { var compromiso = this;
-					indicadores += compromiso.indicadores.length;
+				$.each(eje.data, function(i) { var compromiso = this, l = compromiso.indicadores.length
+					indicadores += l;
+					eje.de.ejes.find('ol.compromisos li.compromiso:eq('+i+') span.indicadores').text( l );
 				});
 
-				$( [eje.de.ejes.find('a.indicadores span.indicadores'), eje.de.indice.find('.indicadores')] ).each(function() {
+				$( [eje.de.ejes.find('p a.indicadores span.indicadores'), eje.de.indice.find('.indicadores')] ).each(function() {
 					$(this).text( indicadores );
 				});
 				totalIndicadores += indicadores;
@@ -192,33 +211,36 @@ var QHHA = {
 		},
 		load:function() { var compromiso = {template:$('#template .compromiso')},
 				indicador = {template:$('#template .indicador')},
+				veSusIndicadores = $('#template .veSusIndicadores'),
 				data = QHHA.sheet.data,
-				prop = QHHA.sheet.prop;
+				show = QHHA.sheet.show;
 
 			$.each(QHHA.ejes, function() { var eje = {name:this+''};
 				eje.html = $('.eje.'+eje.name);
 				var compromisos = eje.html.find('ol.compromisos');
 				eje.html.find('a.indicadores').click( QHHA.sheet.expand.all );
 
-				$.each(data[eje.name], function() { compromiso.data = this;
+				$.each(data[eje.name], function(i) { compromiso.data = this;
 					compromiso.clone = compromiso.template.clone();
 					indicador.ol = compromiso.clone.find('ol.indicadores');
-					compromiso.clone.find('big').html( TOOLS.markdown( compromiso.data.compromiso ));
-
+					compromiso.clone.find('big').html( TOOLS.markdown( compromiso.data.compromiso )).
+						append(veSusIndicadores.clone()).
+						after('<img class="icon" src="/img/icons/'+eje.name+'-'+(i+1)+'.png" />');
+					
 					$.each(compromiso.data.indicadores, function() { indicador.data = this; var indi = this;
 						indicador.ol.append(
 							indicador.template.clone().html(
 								'<div class="li">'+
-									prop(indi, 'descripción')+
-									prop(indi, 'arranque')+
-									prop(indi, 'actualización')+
-									prop(indi, 'meta')+
+									show(indi, 'descripción')+
+									show(indi, 'arranque')+
+									show(indi, 'actualización')+
+									show(indi, 'meta')+
 								'</div><div class="hover">'+
-									prop(indi, 'fuente', 'enlacefuente', 'Fuente: ')+
-									prop(indi, 'observaciones')+
-									prop(indi, 'fechaarranque')+
-									prop(indi, 'fechaactualización')+
-									prop(indi, 'fechameta')+
+									show(indi, 'fuente', 'enlacefuente', 'Fuente: ')+
+									show(indi, 'observaciones')+
+									show(indi, 'fechaarranque')+
+									show(indi, 'fechaactualización')+
+									show(indi, 'fechameta')+
 								'</div>'
 							)
 						);

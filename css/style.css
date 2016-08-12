@@ -116,9 +116,10 @@ body {
   padding-top: 2em;
   border-top: 1px solid #aaa;
   color: #777;
-  background: #ccc; }
+  background: #ccc;
+  font-size: 5px; }
   .sponsors p {
-    font-size: 160%;
+    font-size: 320%;
     padding-bottom: 1em; }
   .sponsors a {
     text-decoration: none; }
@@ -127,16 +128,23 @@ body {
     .sponsors a.jcv img {
       width: 24em;
       margin-right: 2em; }
+    .sponsors a.coparmex img {
+      height: 15em; }
     .sponsors a.canaco img {
-      margin-left: 5em;
-      width: 20em; }
+      margin-left: 3em;
+      width: 23em; }
     .sponsors a.ccij img {
       width: 8em;
-      margin-right: 4em;
-      margin-left: 10em; }
+      margin-right: 4em; }
     .sponsors a.iteso img {
       width: 9em;
       margin-right: 4em; }
+    .sponsors a.tomala img {
+      width: 23em;
+      margin-right: 4em; }
+    .sponsors a.extra img {
+      width: 20em;
+      margin-left: 2em; }
 
 /* ZAPOPAN & GUADALAJARA */
 #zapGdl {
@@ -226,13 +234,10 @@ body {
           transition: all 1s ease; }
   #zapGdl #indice {
     padding: 0;
-    background: #eee;
+    background: #fff;
     height: 100%;
     position: relative;
     overflow: hidden;
-    background-color: #bbb;
-    background-image: -webkit-linear-gradient(left, #bbb, #eee);
-    background-image: linear-gradient(to right,#bbb, #eee);
     /* ALCALDE */ }
     #zapGdl #indice .bienvenida {
       padding-top: 20em;
@@ -241,6 +246,12 @@ body {
         margin: 0;
         padding: 0;
         font-size: 200%; }
+        #zapGdl #indice .bienvenida p span {
+          background: #ddd;
+          padding: 0.2em 0.3em; }
+        #zapGdl #indice .bienvenida p .totalCompromisos, #zapGdl #indice .bienvenida p .totalIndicadores {
+          background: black;
+          color: white; }
     #zapGdl #indice big {
       display: block; }
     #zapGdl #indice ul {
@@ -391,12 +402,18 @@ body {
         height: 23em;
         padding: 0 2em;
         padding-left: 0; }
+        #zapGdl #indice #alcalde .datos img {
+          height: 2em;
+          vertical-align: middle;
+          margin-right: 0.5em; }
         #zapGdl #indice #alcalde .datos .tel, #zapGdl #indice #alcalde .datos .email, #zapGdl #indice #alcalde .datos .twitter {
           margin: 1.5em 0; }
           #zapGdl #indice #alcalde .datos .tel span, #zapGdl #indice #alcalde .datos .tel a, #zapGdl #indice #alcalde .datos .email span, #zapGdl #indice #alcalde .datos .email a, #zapGdl #indice #alcalde .datos .twitter span, #zapGdl #indice #alcalde .datos .twitter a {
             font-size: 160%; }
         #zapGdl #indice #alcalde .datos .tel {
           margin-top: 5em; }
+          #zapGdl #indice #alcalde .datos .tel img {
+            height: 3em; }
       #zapGdl #indice #alcalde .bio, #zapGdl #indice #alcalde .inicioFin {
         background: #FCE809;
         width: 28em;
@@ -463,15 +480,15 @@ body {
     display: none; }
   #zapGdl .eje {
     padding: 2em 0;
+    padding-bottom: 4em;
     margin: 0;
     text-align: left; }
     #zapGdl .eje h3 {
       text-align: center;
-      padding-top: 2em;
       font-weight: bold;
       color: white;
       margin: 0;
-      padding: 2em 0;
+      padding: qem 0;
       font-size: 100%;
       width: 100%;
       height: 10em;
@@ -487,141 +504,264 @@ body {
           vertical-align: middle; }
       #zapGdl .eje h3 big {
         display: inline-block;
-        font-size: 400%; }
+        font-size: 500%; }
     #zapGdl .eje p {
       color: white;
       margin: 0 auto;
       font-size: 170%;
-      width: 35em; }
+      width: 35em;
+      line-height: 1.4em; }
+      #zapGdl .eje p span {
+        background: rgba(200, 200, 200, 0.3);
+        padding: 0.2em 0.3em; }
       #zapGdl .eje p a.indicadores {
         display: block;
         color: white;
-        font-size: 90%;
-        margin: 0 auto;
+        font-size: 80%;
         margin-top: 0.5em;
         margin-bottom: 1em;
-        text-align: center; }
-    #zapGdl .eje ol.compromisos {
-      width: 90em;
-      margin: 0 auto;
-      counter-reset: compromiso 0; }
-      #zapGdl .eje ol.compromisos li.compromiso {
-        padding: 2em;
-        margin: 0;
-        list-style-type: none;
-        position: relative; }
-        #zapGdl .eje ol.compromisos li.compromiso::before {
+        text-align: center;
+        text-decoration: none; }
+        #zapGdl .eje p a.indicadores:hover {
+          text-decoration: underline; }
+        #zapGdl .eje p a.indicadores i, #zapGdl .eje p a.indicadores em {
+          font-style: normal; }
+        #zapGdl .eje p a.indicadores em {
+          display: none; }
+        #zapGdl .eje p a.indicadores.ocultar i {
+          display: none; }
+        #zapGdl .eje p a.indicadores.ocultar em {
+          display: inline-block; }
+      #zapGdl .eje p span.compromisos, #zapGdl .eje p span.indicadores {
+        background: rgba(255, 255, 255, 0.5);
+        color: black;
+        font-weight: bold; }
+    #zapGdl .eje ol {
+      counter-reset: compromiso; }
+      #zapGdl .eje ol li {
+        counter-increment: compromiso; }
+        #zapGdl .eje ol li::before {
           background: white;
           color: black;
-          width: 2em;
-          height: 2em;
-          line-height: 2em;
-          text-align: center;
+          width: 1.5em;
+          height: 1.5em;
+          line-height: 1.5em;
+          text-align: left;
           display: inline-block;
           position: absolute;
-          top: 1.45em;
-          left: -5.25em;
+          top: 0;
+          left: -2em;
           z-index: 2;
-          content: counter(compromiso);
-          counter-increment: compromiso;
-          font-size: 140%;
-          font-weight: bold; }
+          content: counters(compromiso,".") " ";
+          font-size: 220%;
+          font-weight: bold;
+          padding-left: 0.5em;
+          margin-top: 1em; }
+    #zapGdl .eje ol.compromisos {
+      width: 90em;
+      margin: 0 auto; }
+      #zapGdl .eje ol.compromisos li.compromiso {
+        padding: 0 2em;
+        margin: 2em 0;
+        list-style-type: none;
+        position: relative; }
         #zapGdl .eje ol.compromisos li.compromiso big {
           color: white;
           font-size: 200%;
           cursor: pointer;
-          padding: 1.2em 2em;
+          padding: 1.2em 1em;
           line-height: 1.2em;
           display: inline-block;
-          margin-left: -3.25em;
-          margin-right: 0; }
+          margin-left: -1em;
+          margin-right: 0;
+          max-width: 30em;
+          position: relative;
+          margin-top: 1em; }
+          #zapGdl .eje ol.compromisos li.compromiso big .veSusIndicadores {
+            position: absolute;
+            bottom: -2em;
+            right: 0;
+            text-decoration: none;
+            font-size: 70%;
+            color: white;
+            opacity: 0.5; }
+            #zapGdl .eje ol.compromisos li.compromiso big .veSusIndicadores i, #zapGdl .eje ol.compromisos li.compromiso big .veSusIndicadores em {
+              font-style: normal; }
+            #zapGdl .eje ol.compromisos li.compromiso big .veSusIndicadores em {
+              display: none; }
+            #zapGdl .eje ol.compromisos li.compromiso big .veSusIndicadores span {
+              background: rgba(200, 200, 200, 0.3);
+              padding: 0.2em 0.3em; }
+              #zapGdl .eje ol.compromisos li.compromiso big .veSusIndicadores span.indicadores {
+                background: rgba(255, 255, 255, 0.5);
+                color: black;
+                font-weight: bold; }
+          #zapGdl .eje ol.compromisos li.compromiso big:hover .veSusIndicadores {
+            text-decoration: underline;
+            opacity: 1; }
+        #zapGdl .eje ol.compromisos li.compromiso img.icon {
+          vertical-align: top;
+          height: 7em;
+          margin-left: 2em;
+          margin-top: 2em; }
         #zapGdl .eje ol.compromisos li.compromiso ol.indicadores {
           display: none;
           margin: 0;
+          margin-top: 5em;
           padding: 0;
-          list-style-type: none;
-          counter-reset: indicador A; }
+          list-style-type: none; }
           #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador {
             padding: 0;
             margin: 2em 0;
             position: relative; }
             #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador::before {
-              background: #ccc;
-              color: black;
-              width: 2em;
-              height: 2em;
-              line-height: 2em;
-              text-align: center;
-              display: inline-block;
-              position: absolute;
-              top: 0;
-              left: -2em;
-              z-index: 2;
-              content: counter(indicador,upper-alpha);
-              counter-increment: indicador;
-              font-size: 140%;
-              font-weight: bold; }
+              width: 2.3em;
+              left: -2.5em;
+              background: #555;
+              color: white;
+              font-size: 200%; }
             #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador div {
               display: inline-block;
               text-align: center;
               vertical-align: top; }
             #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li {
-              background: #ddd;
               width: 100%; }
               #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .descripción {
-                width: 60%;
+                width: 50%;
                 padding: 1em;
-                font-size: 200%;
+                background: white;
+                font-size: 180%;
                 display: inline-block;
                 text-align: left;
-                margin-right: 0.2em; }
+                margin-right: 0; }
               #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .arranque, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .actualización, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .meta {
                 width: 4em;
-                background: #ccc;
-                padding: 0.2em;
-                margin: 0.3em 0;
-                font-weight: bold;
+                padding: 0 0.2em;
+                margin: 0;
+                color: white;
+                line-height: 2.5em;
+                font-weight: normal;
                 font-size: 200%;
-                margin-top: 0.8em; }
+                margin-top: 0.1em;
+                vertical-align: bottom; }
+                #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .arranque span, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .actualización span, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .meta span {
+                  font-size: 90%; }
+                  #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .arranque span b, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .actualización span b, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .meta span b {
+                    font-size: 110%;
+                    margin-right: 0.2em;
+                    display: inline-block;
+                    vertical-align: middle; }
+              #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .arranque {
+                text-align: right;
+                position: relative;
+                border-right: 1px solid white;
+                line-height: 2.8em; }
+                #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .arranque span {
+                  display: inline-block;
+                  vertical-align: bottom;
+                  height: 2.5em; }
+                #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .arranque::before {
+                  content: "ARRANQUE";
+                  display: block;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  background: white;
+                  color: black;
+                  font-size: 0.5em;
+                  font-weight: bold;
+                  height: 2em;
+                  line-height: 2em;
+                  padding: 0 0.3em;
+                  margin: 0; }
               #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .actualización {
-                width: 5em;
-                padding: 0.5em 0.2em;
-                margin-top: 0.5em;
-                background: #aaa; }
+                width: 10em;
+                padding: 0;
+                margin-top: 0em;
+                border-bottom: 2px solid white;
+                text-align: left;
+                line-height: 1.8em; }
+                #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .actualización span {
+                  background: white;
+                  color: black;
+                  padding: 0.2em 0.5em;
+                  padding-top: 0;
+                  position: relative;
+                  border-radius: 0.3em;
+                  text-align: center; }
+                  #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .actualización span:before {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    font-size: 0;
+                    line-height: 0;
+                    border-right: 10px solid transparent;
+                    border-top: 10px solid white;
+                    position: absolute;
+                    bottom: -6px;
+                    left: 0; }
+              #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .meta {
+                text-align: left;
+                border-left: 1px solid white;
+                padding-left: 0.4em;
+                position: relative;
+                line-height: 2.8em; }
+                #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .meta span {
+                  display: inline-block;
+                  vertical-align: bottom;
+                  height: 2.5em; }
+                #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .meta::before {
+                  content: "META";
+                  display: block;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  background: black;
+                  color: white;
+                  font-size: 0.5em;
+                  font-weight: bold;
+                  height: 2em;
+                  line-height: 2em;
+                  padding: 0 0.3em;
+                  margin: 0; }
+              #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .arranque span, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .meta span {
+                font-size: 85%; }
             #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover {
               display: none;
-              background: #ccc;
               text-align: left;
               font-size: 90%;
-              margin: 0 2em; }
+              margin: 0;
+              color: white; }
               #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fuente {
                 width: 20%;
                 text-align: center;
                 padding: 1em;
-                background: #999;
                 font-size: 150%; }
                 #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fuente a {
                   font-style: italic;
-                  color: black; }
+                  color: white; }
               #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .observaciones {
-                width: 40%;
+                width: 30%;
                 text-align: left;
                 padding: 1em; }
               #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaarranque, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaactualización, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechameta {
                 width: 5em;
-                padding: 0.7em 0.2em;
+                padding: 0.7em 0.3em;
                 text-align: center;
-                font-size: 180%; }
+                font-size: 180%;
+                color: #ccc; }
               #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaactualización {
-                width: 6.5em; }
+                width: 12em; }
               #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechameta {
                 width: 4.5em; }
             #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador:hover .hover {
               display: block; }
-          #zapGdl .eje ol.compromisos li.compromiso ol.indicadores.picked {
-            display: block; }
-      #zapGdl .eje ol.compromisos.picked li.compromiso ol.indicadores {
-        display: block; }
+        #zapGdl .eje ol.compromisos li.compromiso.picked .veSusIndicadores i {
+          display: none; }
+        #zapGdl .eje ol.compromisos li.compromiso.picked .veSusIndicadores em {
+          display: inline-block; }
+        #zapGdl .eje ol.compromisos li.compromiso.picked ol.indicadores {
+          display: block; }
     #zapGdl .eje#seguridad {
       background-color: #770013;
       background-image: -webkit-linear-gradient(right, #770013, #AF0B1E);

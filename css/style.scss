@@ -74,14 +74,17 @@ $com:#253763;  $com2:#151D39;
 	}
 }
 
-.sponsors {padding-bottom:5em; margin-top:0; padding-top:2em; border-top:1px solid #aaa; color:#777; background:#ccc;
-	p {font-size:160%; padding-bottom:1em;}
+.sponsors {padding-bottom:5em; margin-top:0; padding-top:2em; border-top:1px solid #aaa; color:#777; background:#ccc; font-size:5px;
+	p {font-size:320%; padding-bottom:1em;}
 	a {text-decoration:none;
 		img {vertical-align:middle}
 		&.jcv img {width:24em; margin-right:2em}
-		&.canaco img {margin-left:5em; width:20em}
-		&.ccij img {width:8em; margin-right:4em; margin-left:10em}
+		&.coparmex img {height:15em}
+		&.canaco img {margin-left:3em; width:23em}
+		&.ccij img {width:8em; margin-right:4em;}
 		&.iteso img {width:9em; margin-right:4em}
+		&.tomala img {width:23em; margin-right:4em}
+		&.extra img {width:20em; margin-left:2em}
 	}
 }
 
@@ -119,11 +122,13 @@ $smallHeaderHeight:8em;
 	}
 
 	/* Indice de ejes */
-	#indice {padding:0; background:#eee; height:100%; position:relative; overflow:hidden;
-		@include linear-gradient(to right, #bbb, #eee);
+	#indice {padding:0; background:#fff; height:100%; position:relative; overflow:hidden;
 
 		.bienvenida { padding-top:$headerHeight; margin:2.5em 2em 1em 2em;
-			p {margin:0; padding:0; font-size:200%;}
+			p {margin:0; padding:0; font-size:200%;
+				span {background:#ddd; padding:0.2em 0.3em}
+				.totalCompromisos, .totalIndicadores {background:black; color:white}
+			}
 		}
 		big {display:block}
 		ul {list-style-type:none; width:100%; margin:0 auto; text-align:center;
@@ -181,10 +186,13 @@ $smallHeaderHeight:8em;
 				span {display:block; font-size:220%; margin-top:0.5em}
 			}
 			.datos { background:#DBC808; height:$alcaldeHeight; padding:0 2em; padding-left:0;
+				img {height:2em; vertical-align:middle; margin-right:0.5em}
 				.tel, .email, .twitter {margin:1.5em 0;
 					span, a {font-size:160%}
 				}
-				.tel {margin-top:5em}
+				.tel {margin-top:5em;
+					img {height:3em}
+				}
 			}
 			.bio, .inicioFin {background:#FCE809; width:28em; padding:2em; vertical-align:middle; height:-2.5em+$alcaldeHeight; margin-top:2.5em; font-size:100%;
 			}
@@ -222,57 +230,101 @@ $smallHeaderHeight:8em;
 	#template {display:none}
 
 	/* EJE */
-	.eje { padding:2em 0; margin:0; text-align:left;
-		h3 {text-align:center; padding-top:2em;
-			font-weight:bold; color:white; margin:0; padding:2em 0; font-size:100%; width:100%; height:10em; line-height:10em;
+	.eje { padding:2em 0; padding-bottom:4em; margin:0; text-align:left;
+		h3 {text-align:center; font-weight:bold; color:white; margin:0; padding:qem 0; font-size:100%;
+			width:100%; height:10em; line-height:10em;
 			span { display:inline-block; margin:0; padding:0 2em; line-height:10em; vertical-align:top;
 				img {height:8em; vertical-align:middle}
 			}
-			big {display:inline-block; font-size:400%}
+			big {display:inline-block; font-size:500%}
 		}
 
-		p {color:white; margin:0 auto; font-size:170%; width:35em;
-			a.indicadores {display:block; color:white; font-size:90%; margin:0 auto; margin-top:0.5em; margin-bottom:1em; text-align:center}
+		p {color:white; margin:0 auto; font-size:170%; width:35em; line-height:1.4em;
+			span {background:rgba(200,200,200, 0.3); padding:0.2em 0.3em}
+			a.indicadores {display:block; color:white; font-size:80%; margin-top:0.5em; margin-bottom:1em; text-align:center; text-decoration:none;
+				&:hover {text-decoration:underline}
+				i, em {font-style:normal} em {display:none}
+				&.ocultar {i {display:none} em {display:inline-block}}
+			}
+			span.compromisos, span.indicadores {background:rgba(255, 255, 255, 0.5); color:black; font-weight:bold}
 		}
 
-		ol.compromisos {width:90em; margin:0 auto; counter-reset:compromiso 0;
-			li.compromiso { padding:2em; margin:0; list-style-type:none; position:relative;
-				&::before { background:white; color:black; width:2em; height:2em; line-height:2em; text-align:center;
-					display:inline-block; position:absolute; top:1.45em; left:-5.25em; z-index:2; content:counter(compromiso);
-					counter-increment:compromiso; font-size:140%; font-weight:bold
+		ol { counter-reset:compromiso;
+			li { counter-increment:compromiso;
+				&::before { background:white; color:black; width:1.5em; height:1.5em; line-height:1.5em; text-align:left;
+					display:inline-block; position:absolute; top:0; left:-2em; z-index:2; content:counters(compromiso, ".") " ";
+					font-size:220%; font-weight:bold; padding-left:0.5em; margin-top:1em
 				}
-				big {color:white; font-size:200%; cursor:pointer; padding:1.2em 2em; line-height:1.2em; display:inline-block;
-					margin-left:-3.25em; margin-right:0;
+			}
+		}
+		ol.compromisos {width:90em; margin:0 auto; ;
+			li.compromiso { padding:0 2em; margin:2em 0; list-style-type:none; position:relative;
+				big {color:white; font-size:200%; cursor:pointer; padding:1.2em 1em; line-height:1.2em; display:inline-block;
+					margin-left:-1em; margin-right:0; max-width:30em; position:relative; margin-top:1em;
+					.veSusIndicadores {position:absolute; bottom:-2em; right:0; text-decoration:none; font-size:70%; color:white;
+						opacity:0.5;
+						i, em {font-style:normal} em {display:none}
+						span {background:rgba(200,200,200, 0.3); padding:0.2em 0.3em;
+							&.indicadores {background:rgba(255, 255, 255, 0.5); color:black; font-weight:bold}
+						}
+					}
+					&:hover .veSusIndicadores {text-decoration:underline; opacity:1}
 				} 
-				ol.indicadores {display:none; margin:0; padding:0; list-style-type:none; counter-reset:indicador A;
+				img.icon {vertical-align:top; height:7em; margin-left:2em; margin-top:2em}
+				ol.indicadores {display:none; margin:0; margin-top:5em; padding:0; list-style-type:none;
 					li.indicador {padding:0; margin:2em 0; position:relative;
-						&::before { background:#ccc; color:black; width:2em; height:2em; line-height:2em; text-align:center;
-							display:inline-block; position:absolute; top:0; left:-2em; z-index:2; content:counter(indicador, upper-alpha);
-							counter-increment:indicador; font-size:140%; font-weight:bold
-						}
+						&::before {width:2.3em; left:-2.5em; background:#555; color:white; font-size:200%}
 						div {display:inline-block; text-align:center; vertical-align:top}
-						.li {background:#ddd; width:100%;
-							.descripción {width:60%; padding:1em; font-size:200%; display:inline-block; text-align:left; margin-right:0.2em}
-							.arranque, .actualización, .meta {width:4em; background:#ccc; padding:0.2em; margin:0.3em 0; 
-								font-weight:bold; font-size:200%; margin-top:0.8em}
-							.actualización {width:5em; padding:0.5em 0.2em; margin-top:0.5em; background:#aaa}
-						}
-						.hover {display:none; background:#ccc; text-align:left; font-size:90%; margin:0 2em;
-							.fuente {width:20%; text-align:center; padding:1em; background:#999; font-size:150%;
-								a {font-style:italic; color:black}
+						.li {width:100%;
+							.descripción {width:50%; padding:1em; background:white; font-size:180%; display:inline-block; text-align:left; margin-right:0; }
+							.arranque, .actualización, .meta {width:4em; padding:0 0.2em; margin:0; color:white; line-height:2.5em;
+								font-weight:normal; font-size:200%; margin-top:0.1em; vertical-align:bottom;
+								span { font-size:90%; 
+									b {font-size:110%; margin-right:0.2em; display:inline-block; vertical-align:middle}
+								}
 							}
-							.observaciones {width:40%; text-align:left; padding:1em}
-							.fechaarranque, .fechaactualización, .fechameta {width:5em; padding:0.7em 0.2em; text-align:center; font-size:180%}
-							.fechaactualización {width:6.5em}
+							.arranque {text-align:right; position:relative; border-right:1px solid white; line-height:2.8em;
+								span {display:inline-block; vertical-align:bottom; height:2.5em;}
+								&::before {content:"ARRANQUE"; display:block; position:absolute; top:0; right:0;
+									background:white; color:black; font-size:0.5em; font-weight:bold; height:2em;
+									line-height:2em; padding:0 0.3em; margin:0;
+								}
+							}
+							.actualización {width:10em; padding:0; margin-top:0em; border-bottom:2px solid white; text-align:left; line-height:1.8em;
+								span {background:white; color:black; padding:0.2em 0.5em; padding-top:0; position:relative;
+									border-radius:0.3em; text-align:center;
+									&:before {content:""; width:0; height:0; font-size:0; line-height:0;
+											border-right:10px solid transparent;
+											border-top:10px solid white;
+											position:absolute; bottom:-6px; left:0;
+									}
+								}
+							}
+							.meta {text-align:left; border-left:1px solid white; padding-left:0.4em; position:relative; line-height:2.8em;
+								span {display:inline-block; vertical-align:bottom; height:2.5em}
+								&::before {content:"META"; display:block; position:absolute; top:0; left:0;
+									background:black; color:white; font-size:0.5em; font-weight:bold; height:2em;
+									line-height:2em; padding:0 0.3em; margin:0;
+								}
+							}
+							.arranque, .meta { span { font-size:85%; } }
+						}
+						.hover {display:none; text-align:left; font-size:90%; margin:0; color:white;
+							.fuente {width:20%; text-align:center; padding:1em; font-size:150%;
+								a {font-style:italic; color:white}
+							}
+							.observaciones {width:30%; text-align:left; padding:1em}
+							.fechaarranque, .fechaactualización, .fechameta {width:5em; padding:0.7em 0.3em; text-align:center; font-size:180%; color:#ccc}
+							.fechaactualización {width:12em}
 							.fechameta {width:4.5em}
 						}
 						&:hover .hover {display:block}
 					}
-					&.picked {display:block}
 				}
-			}
-			&.picked {
-				li.compromiso ol.indicadores {display:block}
+				&.picked {
+					.veSusIndicadores {i {display:none} em {display:inline-block}} 
+					ol.indicadores {display:block; }
+				}
 			}
 		}
 		&#seguridad {@include linear-gradient(to left, $seg2, $seg); li.compromiso { big {background-color:$seg2;} &:hover  big {background-color:$seg;}}}
