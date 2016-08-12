@@ -81,8 +81,8 @@ $com:#253763;  $com2:#151D39;
 		&.jcv img {width:24em; margin-right:2em}
 		&.coparmex img {height:15em}
 		&.canaco img {margin-left:3em; width:23em}
-		&.ccij img {width:8em; margin-right:4em;}
-		&.iteso img {width:9em; margin-right:4em}
+		&.ccij img {width:8em; margin:0 4em;}
+		&.iteso img {width:25em; margin-right:4em}
 		&.tomala img {width:23em; margin-right:4em}
 		&.extra img {width:20em; margin-left:2em}
 	}
@@ -273,7 +273,7 @@ $smallHeaderHeight:8em;
 				img.icon {vertical-align:top; height:7em; margin-left:2em; margin-top:2em}
 				ol.indicadores {display:none; margin:0; margin-top:5em; padding:0; list-style-type:none;
 					li.indicador {padding:0; margin:2em 0; position:relative;
-						&::before {width:2.3em; left:-2.5em; background:#555; color:white; font-size:200%}
+						&::before {width:2.3em; top:-1em; left:-2.5em; background:#555; color:white; font-size:200%}
 						div {display:inline-block; text-align:center; vertical-align:top}
 						.li {width:100%;
 							.descripción {width:50%; padding:1em; background:white; font-size:180%; display:inline-block; text-align:left; margin-right:0; }
@@ -290,12 +290,14 @@ $smallHeaderHeight:8em;
 									line-height:2em; padding:0 0.3em; margin:0;
 								}
 							}
-							.actualización {width:10em; padding:0; margin-top:0em; border-bottom:2px solid white; text-align:left; line-height:1.8em;
-								span {background:white; color:black; padding:0.2em 0.5em; padding-top:0; position:relative;
+							.actualización {width:10em; padding:0; margin-top:0em; border-bottom:2px solid white; text-align:left; line-height:2.2em;
+								div.bar {display:inline-block; vertical-align:bottom; height:1em; background:rgba(119,119,119, 0.7); border-right:1px solid black}
+								span {background:#ccc; color:black; padding:0.2em 0.5em; padding-top:0; position:relative; z-index:3;
+									display:inline-block; height:1.5em; line-height:1.5em; vertical-align:top;
 									border-radius:0.3em; text-align:center;
 									&:before {content:""; width:0; height:0; font-size:0; line-height:0;
 											border-right:10px solid transparent;
-											border-top:10px solid white;
+											border-top:10px solid #ccc;
 											position:absolute; bottom:-6px; left:0;
 									}
 								}
@@ -314,9 +316,13 @@ $smallHeaderHeight:8em;
 								a {font-style:italic; color:white}
 							}
 							.observaciones {width:30%; text-align:left; padding:1em}
-							.fechaarranque, .fechaactualización, .fechameta {width:5em; padding:0.7em 0.3em; text-align:center; font-size:180%; color:#ccc}
+							.fechaarranque, .fechaactualización, .fechameta {width:5em; padding:0.7em 0.3em; text-align:center; font-size:180%; color:#ccc;
+							}
+							.fechaarranque, .fechameta {width:7.5em; padding:1em 0.45em; text-align:center; font-size:120%; color:#ccc;
+								b {font-size:150%; display:block}
+							}
+							.fechameta {width:6.75em}
 							.fechaactualización {width:12em}
-							.fechameta {width:4.5em}
 						}
 						&:hover .hover {display:block}
 					}

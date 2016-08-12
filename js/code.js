@@ -145,19 +145,19 @@ var QHHA = {
 		},
 		gauge:function() {
 			$('#ejes .eje li.indicador').each(function() { 
-				//var arranque = parseFloat($(this).find('.arranque span').text()),
-					//actualizacion = {html:$(this).find('.actualización span')},
-					//meta = parseFloat($(this).find('.meta span').text());
+				var arranque = TOOLS.parse($(this).find('.arranque span').text()),
+					actualizacion = {html:$(this).find('.actualización span')},
+					meta = TOOLS.parse($(this).find('.meta span').text());
+				actualizacion.data = TOOLS.parse($(this).find('.actualización span').text());
 
-				//actualizacion.data = parseFloat($(this).find('.actualización span').text()),
-
-				//if( arranque && actualizacion && meta ) {
-					//var track = {data:meta - arranque, screen:$(this).find('.actualización').width() },
-						//advance = {data:meta - actualizacion };
-					//advance.screen = (advance.data/track.data) * track.screen;
-					//actualizacion.css('
-				//}
-			});
+				if( !isNaN(arranque) && !isNaN(actualizacion.data) && !isNaN(meta) ) {
+					var track = {data:meta - arranque, screen:$(this).find('.actualización').width() },
+						advance = {data:actualizacion.data - arranque };
+					advance.screen = Math.abs(advance.data/track.data) * track.screen;
+					actualizacion.html.before('<div class="bar" style="width:'+advance.screen+'px"></div>');
+					//console.log( arranque, meta, actualizacion.data, advance.data, track.data, advance.screen)
+				}
+			})
 		},
 		show: function(col, name, link, caption) {
 			var out = '&nbsp';
@@ -168,6 +168,8 @@ var QHHA = {
 				} else {
 					if( (name == 'arranque')||(name == 'actualización')||(name == 'meta') ) {
 						out += '<span>'+col[name].replace(/[\d.,]+/,'<b>$&</b>')+'</span>';
+					} else if( (name == 'fechaarranque')||(name == 'fechaactualización')||(name == 'fechameta') ) {
+						out += col[name].replace(/[\d.,]+/,'<b>$&</b>');
 					} else {
 						out += (caption ? '<em>':'') + TOOLS.markdown( col[name] ) + (caption ? '</em>':'');
 					}
@@ -261,6 +263,9 @@ var TOOLS = {
 		return str.replace(/_([^_]+?)_/g,'<em>$1</em>').
 			replace(/\*([^*]+?)\*/g,'<strong>$1</strong>').
 			replace(/\n+/g,'<br />');
+	},
+	parse:function(str) {
+		return parseFloat( str.replace(/#/,'') );
 	}
 };
 

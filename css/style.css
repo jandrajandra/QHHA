@@ -135,9 +135,9 @@ body {
       width: 23em; }
     .sponsors a.ccij img {
       width: 8em;
-      margin-right: 4em; }
+      margin: 0 4em; }
     .sponsors a.iteso img {
-      width: 9em;
+      width: 25em;
       margin-right: 4em; }
     .sponsors a.tomala img {
       width: 23em;
@@ -616,6 +616,7 @@ body {
             position: relative; }
             #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador::before {
               width: 2.3em;
+              top: -1em;
               left: -2.5em;
               background: #555;
               color: white;
@@ -680,13 +681,24 @@ body {
                 margin-top: 0em;
                 border-bottom: 2px solid white;
                 text-align: left;
-                line-height: 1.8em; }
+                line-height: 2.2em; }
+                #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .actualización div.bar {
+                  display: inline-block;
+                  vertical-align: bottom;
+                  height: 1em;
+                  background: rgba(119, 119, 119, 0.7);
+                  border-right: 1px solid black; }
                 #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .actualización span {
-                  background: white;
+                  background: #ccc;
                   color: black;
                   padding: 0.2em 0.5em;
                   padding-top: 0;
                   position: relative;
+                  z-index: 3;
+                  display: inline-block;
+                  height: 1.5em;
+                  line-height: 1.5em;
+                  vertical-align: top;
                   border-radius: 0.3em;
                   text-align: center; }
                   #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .actualización span:before {
@@ -696,7 +708,7 @@ body {
                     font-size: 0;
                     line-height: 0;
                     border-right: 10px solid transparent;
-                    border-top: 10px solid white;
+                    border-top: 10px solid #ccc;
                     position: absolute;
                     bottom: -6px;
                     left: 0; }
@@ -750,10 +762,19 @@ body {
                 text-align: center;
                 font-size: 180%;
                 color: #ccc; }
+              #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaarranque, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechameta {
+                width: 7.5em;
+                padding: 1em 0.45em;
+                text-align: center;
+                font-size: 120%;
+                color: #ccc; }
+                #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaarranque b, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechameta b {
+                  font-size: 150%;
+                  display: block; }
+              #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechameta {
+                width: 6.75em; }
               #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaactualización {
                 width: 12em; }
-              #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechameta {
-                width: 4.5em; }
             #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador:hover .hover {
               display: block; }
         #zapGdl .eje ol.compromisos li.compromiso.picked .veSusIndicadores i {
