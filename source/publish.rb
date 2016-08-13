@@ -30,7 +30,7 @@ def readProp(prop, html)
 	out ? out[1].strip : '';
 end
 
-pages = ['index', 'guadalajara', 'zapopan', 'tabla']
+pages = ['index', 'guadalajara', 'zapopan']
 
 pages.each do |page|
 	File.open(root+page+".html") do |f|
