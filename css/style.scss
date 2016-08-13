@@ -256,7 +256,7 @@ $smallHeaderHeight:8em;
 
 		ol { counter-reset:compromiso;
 			li { counter-increment:compromiso;
-				&::before { background:white; color:black; width:1.5em; height:1.5em; line-height:1.5em; text-align:left;
+				&::before { background:white; color:black; width:1.5em; height:1.5em; line-height:1.5em; text-align:center;
 					display:inline-block; position:absolute; top:-0.1em; left:-1.5em; z-index:2; content:counters(compromiso, ".") " ";
 					font-size:220%; font-weight:100; margin-top:1em;
 				}
@@ -317,10 +317,12 @@ $smallHeaderHeight:8em;
 							.arranque, .meta { span { font-size:85%; } }
 						}
 						.hover {display:none; text-align:left; font-size:90%; margin:0; color:white;
-							.fuente {width:20%; text-align:center; padding:1em; font-size:150%;
+							.fuente, .observaciones { text-align:center; padding:1em 0.5em 0 0.5em; font-size:150% }
+							.fuente {width:20%; font-weight:bold;
+								em {font-weight:100}
 								a {font-style:italic; color:white}
 							}
-							.observaciones {width:30%; text-align:left; padding:1em}
+							.observaciones {width:30%; }
 							.fechaarranque, .fechaactualización, .fechameta {width:5em; padding:0.7em 0.3em; text-align:center; font-size:180%; color:#ccc;
 							}
 							.fechaarranque, .fechameta {width:7.5em; padding:1em 0.45em; text-align:center; font-size:120%; color:#ccc;

@@ -1,11 +1,13 @@
 var QHHA = {
 	boot:function() {
 		$('#indice #alcalde').css('margin-bottom', 0);
+		QHHA.zapGdl = $('body').data('zapGdl');
 		QHHA.build.boot();
 		QHHA.screen.boot();
 	},
 	ejes: [ 'seg', 'urb', 'eco', 'efi', 'pub', 'med', 'com' ],
 	imgDir: '/img/icons/',
+	zapGdl:'gdl',
 	ejesFull: {
 		seg:{label:'Seguridad y Prevención del Delito', shortLabel:'Seguridad', id:'seguridad'},
 		urb:{label:'Desarrollo Urbano', id:'desarrollo-urbano'},
@@ -167,7 +169,7 @@ var QHHA = {
 					out += '<a href="'+col[link]+'" target="new">'+TOOLS.markdown( col[name] )+'</a>';
 				} else {
 					if( (name == 'arranque')||(name == 'actualización')||(name == 'meta') ) {
-						out += '<span>'+col[name].replace(/[\d.,]+/,'<b>$&</b>')+'</span>';
+						out += '<span>'+col[name].replace(/\s*[\d.,]+\s*/,'<b>$&</b>')+'</span>';
 					} else if( (name == 'fechaarranque')||(name == 'fechaactualización')||(name == 'fechameta') ) {
 						out += col[name].replace(/[\d.,]+/,'<b>$&</b>');
 					} else {
@@ -227,7 +229,7 @@ var QHHA = {
 					indicador.ol = compromiso.clone.find('ol.indicadores');
 					compromiso.clone.find('big').html( TOOLS.markdown( compromiso.data.compromiso )).
 						append(veSusIndicadores.clone()).
-						after('<img class="icon" src="/img/icons/'+eje.name+'-'+(i+1)+'.png" />');
+						after('<img class="icon" src="/img/icons/'+eje.name+'-'+QHHA.zapGdl+'-'+(i+1)+'.png" />');
 					
 					$.each(compromiso.data.indicadores, function() { indicador.data = this; var indi = this;
 						indicador.ol.append(

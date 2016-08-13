@@ -566,7 +566,7 @@ body {
           width: 1.5em;
           height: 1.5em;
           line-height: 1.5em;
-          text-align: left;
+          text-align: center;
           display: inline-block;
           position: absolute;
           top: -0.1em;
@@ -763,18 +763,20 @@ body {
               font-size: 90%;
               margin: 0;
               color: white; }
+              #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fuente, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .observaciones {
+                text-align: center;
+                padding: 1em 0.5em 0 0.5em;
+                font-size: 150%; }
               #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fuente {
                 width: 20%;
-                text-align: center;
-                padding: 1em;
-                font-size: 150%; }
+                font-weight: bold; }
+                #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fuente em {
+                  font-weight: 100; }
                 #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fuente a {
                   font-style: italic;
                   color: white; }
               #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .observaciones {
-                width: 30%;
-                text-align: left;
-                padding: 1em; }
+                width: 30%; }
               #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaarranque, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaactualización, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechameta {
                 width: 5em;
                 padding: 0.7em 0.3em;
