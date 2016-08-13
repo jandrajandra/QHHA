@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import "bourbon/bourbon";
 
-body {margin:0; padding:0; text-align:center; background:white; font-family:'Roboto', sans-serif}
+body {margin:0; padding:0; text-align:center; background:white; font-family:'Roboto', sans-serif; font-weight:100}
 
 
 $seg:#AF0B1E;  $seg2:#770013; 
@@ -103,9 +103,9 @@ $smallHeaderHeight:8em;
 		.home {display:inline-block; text-decoration:none; background:#eee; float:left; width:50em; text-align:center; height:$headerHeight;
 			img {width:40em; vertical-align:top; margin-top:3em;}
 		}
-		.top {height:$headerHeight; line-height:$headerHeight; vertical-align:bottom; font-weight:bold; margin:0 2em; padding:0; display:inline-block; text-decoration:none; color:white;
+		.top {height:$headerHeight; line-height:$headerHeight; vertical-align:bottom; font-weight:100; margin:0 2em; padding:0; display:inline-block; text-decoration:none; color:white; text-transform:uppercase;
 			img {height:$headerHeight; vertical-align:top; margin:0 3em;}
-			span {display:inline-block; vertical-align:middle; font-size:4em; margin-top:0.75em}
+			span {display:inline-block; vertical-align:middle; font-size:7em; margin-top:0.75em}
 		}
 		&.small { height:$smallHeaderHeight; line-height:$smallHeaderHeight;
 			.home {width:25em; height:$smallHeaderHeight;
@@ -113,7 +113,7 @@ $smallHeaderHeight:8em;
 			}
 			.top {line-height:$smallHeaderHeight;
 				img {height:$smallHeaderHeight}
-				span {font-size:2.5em; margin-top:0.5em}
+				span {font-size:4em; margin-top:0}
 			}
 		}
 		&.easing { @include transition(all 1s ease);
@@ -137,7 +137,7 @@ $smallHeaderHeight:8em;
 		}
 		big {display:block}
 		ul {list-style-type:none; width:100%; margin:0 auto; text-align:center;
-			li {color:white; margin:1.5em; padding:0; display:inline-block; width:60em; cursor:pointer; text-align:left;
+			li {color:white; margin:1em; padding:0; display:inline-block; width:60em; cursor:pointer; text-align:left;
 				@include transition(all 1s ease);
 				span.icon { float:left; margin:0; margin-right:2em; padding:1em;
 					img {height:8em;}
@@ -147,20 +147,20 @@ $smallHeaderHeight:8em;
 					span.icon {float:right; margin-right:0; margin-left:2em}
 					small {display:none}
 				}
-				big {margin-top:1.5em; font-size:100%}
-					a {color:white; text-decoration:none; font-weight:bold; font-size:280%}
+				big {margin-top:2em; font-size:100%}
+					a {color:white; text-decoration:none; font-weight:100; font-size:300%; text-transform:uppercase}
 				small {font-size:160%; display:none; margin-top:0.3em}
 				&:hover {
 					a {text-decoration:underline}
 				}
 
 				&.seg {background-color:$seg; width:40em; margin-left:10em; span.icon {background-color:$seg2;}}
-				&.urb {background-color:$urb; width:40em; margin-right:10em; span.icon {background-color:$urb2;}}
+				&.urb {background-color:$urb; width:45em; margin-right:5em; span.icon {background-color:$urb2;}}
 				&.eco {background-color:$eco; width:50em; margin-left:0; span.icon {background-color:$eco2;}}
-				&.efi {background-color:$efi; width:50em; margin-right:0; span.icon {background-color:$efi2;}}
-				&.pub {background-color:$pub; width:40em; margin-left:10em; span.icon {background-color:$pub2;}}
+				&.efi {background-color:$efi; width:53em; margin-right:-3em; span.icon {background-color:$efi2;}}
+				&.pub {background-color:$pub; width:45em; margin-left:5em; span.icon {background-color:$pub2;}}
 				&.med {background-color:$med; width:40em; margin-right:10em; span.icon {background-color:$med2;}}
-				&.com {background-color:$com; width:55em; span.icon {background-color:$com2;}}
+				&.com {background-color:$com; width:60em; span.icon {background-color:$com2;}}
 				&:hover {
 					a {text-decoration:underline}
 					&.seg {background-color:$seg2;}
@@ -235,13 +235,13 @@ $smallHeaderHeight:8em;
 	#template {display:none}
 
 	/* EJE */
-	.eje { padding:2em 0; padding-bottom:4em; margin:0; text-align:left;
-		h3 {text-align:center; font-weight:bold; color:white; margin:0; padding:qem 0; font-size:100%;
+	.eje { padding:6em 0; padding-bottom:10em; margin:0; text-align:left;
+		h3 {text-align:center; font-weight:100; color:white; margin:0; padding:2em 0; font-size:100%;
 			width:100%; height:10em; line-height:10em;
-			span { display:inline-block; margin:0; padding:0 2em; line-height:10em; vertical-align:top;
+			span { display:inline-block; margin:0; margin-left:-8em; padding-right:2em; line-height:10em; vertical-align:top;
 				img {height:8em; vertical-align:middle}
 			}
-			big {display:inline-block; font-size:500%}
+			big {display:inline-block; font-size:550%; font-weight:100; text-transform:uppercase}
 		}
 
 		p {color:white; margin:0 auto; font-size:170%; width:35em; line-height:1.4em;
@@ -257,8 +257,8 @@ $smallHeaderHeight:8em;
 		ol { counter-reset:compromiso;
 			li { counter-increment:compromiso;
 				&::before { background:white; color:black; width:1.5em; height:1.5em; line-height:1.5em; text-align:left;
-					display:inline-block; position:absolute; top:0; left:-2em; z-index:2; content:counters(compromiso, ".") " ";
-					font-size:220%; font-weight:bold; padding-left:0.5em; margin-top:1em
+					display:inline-block; position:absolute; top:-0.1em; left:-1.5em; z-index:2; content:counters(compromiso, ".") " ";
+					font-size:220%; font-weight:100; margin-top:1em;
 				}
 			}
 		}
@@ -278,7 +278,7 @@ $smallHeaderHeight:8em;
 				img.icon {vertical-align:top; height:7em; margin-left:2em; margin-top:2em}
 				ol.indicadores {display:none; margin:0; margin-top:5em; padding:0; list-style-type:none;
 					li.indicador {padding:0; margin:2em 0; position:relative;
-						&::before {width:2.3em; top:-1em; left:-2.5em; background:#555; color:white; font-size:200%}
+						&::before {width:2.3em; top:-1em; left:-2em; background:#555; color:white; font-size:200%}
 						div {display:inline-block; text-align:center; vertical-align:top}
 						.li {width:100%;
 							.descripción {width:50%; padding:1em; background:white; font-size:180%; display:inline-block; text-align:left; margin-right:0; }

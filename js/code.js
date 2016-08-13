@@ -7,7 +7,7 @@ var QHHA = {
 	ejes: [ 'seg', 'urb', 'eco', 'efi', 'pub', 'med', 'com' ],
 	imgDir: '/img/icons/',
 	ejesFull: {
-		seg:{label:'Seguridad y prevención del delito', shortLabel:'Seguridad', id:'seguridad'},
+		seg:{label:'Seguridad y Prevención del Delito', shortLabel:'Seguridad', id:'seguridad'},
 		urb:{label:'Desarrollo Urbano', id:'desarrollo-urbano'},
 		eco:{label:'Desarrollo Económico', id:'desarrollo-economico'},
 		efi:{label:'Eficiencia Administrativa', id:'eficiencia'},
