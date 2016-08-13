@@ -11,6 +11,7 @@ require 'iconv' unless String.method_defined?(:encode) #because http://stackover
 root = '/Users/bex/Dropbox/prjcts/else/jcv/qhha/source/' #Dir.pwd+'/'
 publicDir =  root.gsub(/source\/$/,'')
 head = ''
+template = ''
 footer = ''
 
 
@@ -25,20 +26,37 @@ File.open(root+"footer.html") do |f|
 	footer = readAndEncode( f )
 end
 
-def readProp(prop, html)
-	out = html.match(/^\s*#{prop}:(.*)$/);
-	out ? out[1].strip : '';
+def readProps( html, props ) out = {}
+	props.each do |prop|
+		maybe = html.match(/^\s*#{prop}:(.*)$/)
+		out[prop] = maybe ? maybe[1].strip : ''
+	end
+	out
+end
+def replaceProps( html, props ) 
+	props.each do |key, value|
+		puts key
+		html.gsub!(/{{#{key}}}/, value)
+	end
+	html
 end
 
 pages = ['index', 'guadalajara', 'zapopan']
 
 pages.each do |page|
+	File.open(root+"template.html") do |f|
+		template = readAndEncode( f )
+	end
 	File.open(root+page+".html") do |f|
 		html = readAndEncode( f )
 
 		# FRONT MATTER
-		title = readProp('title', html);
-		headTemp = head.gsub(/{{title}}/, title);
+		props = readProps( html, %w(title short alcalde apellido email telefono twitter bio) )
+
+		headTemp = replaceProps( head, props );
+		if( page == 'guadalajara' or page == 'zapopan')
+			html = replaceProps( template, props)
+		end
 
 		html.gsub!(/---.*?---/m, '') #trim front matter
 
