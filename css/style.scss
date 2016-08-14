@@ -91,7 +91,7 @@ $com:#253763;  $com2:#151D39;
 	}
 }
 
-.sponsors {padding-bottom:5em; margin-top:0; padding-top:2em; border-top:1px solid #aaa; color:#777; background:#ccc; font-size:5px; width:100%;
+.sponsors {padding-bottom:5em; margin-top:0; padding-top:2em; border-top:1px solid #aaa; color:#777; background:#ccc; font-size:5px; width:100%; overflow:hidden;
 	p {font-size:320%; margin-bottom:0}
 	.list {line-height:25em; height:25em; overflow:hidden; width:200%; margin-left:-50%; text-align:center;
 		a {text-decoration:none; vertical-align:middle; display:inline-block;
@@ -101,6 +101,7 @@ $com:#253763;  $com2:#151D39;
 			&.canaco img {width:23em}
 			&.ccij img {width:8em;}
 			&.iteso img {width:25em;}
+			&.cj img {width:16em;}
 			&.tomala img {width:23em;}
 			&.extra img {width:20em;}
 

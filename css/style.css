@@ -146,7 +146,8 @@ body {
   color: #777;
   background: #ccc;
   font-size: 5px;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
   .sponsors p {
     font-size: 320%;
     margin-bottom: 0; }
@@ -177,6 +178,8 @@ body {
         width: 8em; }
       .sponsors .list a.iteso img {
         width: 25em; }
+      .sponsors .list a.cj img {
+        width: 16em; }
       .sponsors .list a.tomala img {
         width: 23em; }
       .sponsors .list a.extra img {
