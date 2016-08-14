@@ -5,6 +5,19 @@ var QHHA = {
 		QHHA.build.boot();
 		QHHA.screen.boot();
 		QHHA.dockZoom.boot();
+		 
+		var wHeight = $(window).height();
+
+		$('.slide')
+			.height(wHeight)
+			.scrollie({
+				scrollOffset : -50,
+				scrollingInView : function(elem) {
+					 var bgColor = elem.data('background');
+					 
+					 $('body').css('background-color', bgColor);
+				}
+			});
 	},
 	ejes: [ 'seg', 'urb', 'eco', 'efi', 'pub', 'med', 'com' ],
 	imgDir: '/img/icons/',
@@ -111,7 +124,7 @@ var QHHA = {
 				$('#zapGdl').removeClass('movil');
 			}
 			$('#zapGdl').css('font-size', Math.min( hFontSize, wFontSize )+'px'); 
-			$('#zapGdl #indice, #inicio .page, #inicio .bienvenida').css('height', h);
+			$('#zapGdl #indice').css('height', h);
 
 			var alcaldeWidth = parseFloat($('#indice #alcalde').css('width'));
 			$('#indice #alcalde').css('left', (w-alcaldeWidth)/2 );
