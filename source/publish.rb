@@ -3,10 +3,8 @@
 require 'rubygems'
 #require 'htmlentities'
 #require 'unicode'
-require 'iconv' unless String.method_defined?(:encode) #because http://stackoverflow.com/questions/2982677/ruby-1-9-invalid-byte-sequence-in-utf-8
-#ruby -run -ehttpd . -p8000
 
-#$KCODE = 'UTF-8'
+$localOnline = :local
 
 root = '/Users/bex/Dropbox/prjcts/else/jcv/qhha/source/' #Dir.pwd+'/'
 publicDir =  root.gsub(/source\/$/,'')
@@ -15,8 +13,15 @@ template = ''
 footer = ''
 
 
+def parse str
+	other = $localOnline == :online ? :local : :online
+	str.gsub!(/{{#{$localOnline}Only(Start|End)}}/, '')
+	str.gsub!(/{{#{other}OnlyStart}}[\s\S]*?{{#{other}OnlyEnd}}/x, '')
+	str
+end
+
 def readAndEncode f
-	File.read(f, :encoding => 'utf-8')
+	parse File.read(f, :encoding => 'utf-8')
 end
 
 File.open(root+"head.html") do |f|
@@ -35,7 +40,6 @@ def readProps( html, props ) out = {}
 end
 def replaceProps( html, props ) 
 	props.each do |key, value|
-		puts key
 		html.gsub!(/{{#{key}}}/, value)
 	end
 	html

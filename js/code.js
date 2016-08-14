@@ -1,9 +1,10 @@
 var QHHA = {
 	boot:function() {
 		$('#indice #alcalde').css('margin-bottom', 0);
-		QHHA.zapGdl = $('body').data('zapGdl');
+		QHHA.zapGdl = $('body').data('zapgdl');
 		QHHA.build.boot();
 		QHHA.screen.boot();
+		QHHA.dockZoom.boot();
 	},
 	ejes: [ 'seg', 'urb', 'eco', 'efi', 'pub', 'med', 'com' ],
 	imgDir: '/img/icons/',
@@ -17,6 +18,31 @@ var QHHA = {
 		med:{label:'Medio Ambiente', id:'medio-ambiente'},
 		com:{label:'Construcción de Comunidad', id:'comunidad'},
 	},
+
+	days:{
+		since:function() {
+			var dias = Math.ceil((new Date() - new Date("2015/October/1"))/(1e3*60*60*24)),
+				total = (new Date("2018/September/30") - new Date("2015/October/1"))/(1e3*60*60*24),
+				porcentaje = Math.ceil((dias*100)/total);
+			$('#alcalde .inicioFin').find('.dias i').text(dias).end().
+				find('.porcentaje i').text(porcentaje);
+		}
+	},
+
+	dockZoom: {
+		boot:function() {
+			$('.sponsors a').hover( QHHA.dockZoom.over, QHHA.dockZoom.out );
+		},
+		over:function() {
+			QHHA.dockZoom.out.apply(this);
+			$(this).addClass('zoomed').prev().addClass('zoomedAdj').next().next().addClass('zoomedAdj');
+		},
+		out:function() {
+			$(this).add($(this).siblings()).removeClass('zoomed zoomedAdj');
+		}
+	},
+
+	/* BUILD */
 	build:{
 		boot:function() {
 			this.indice();
@@ -51,6 +77,8 @@ var QHHA = {
 			});
 		}
 	},
+
+	/* SCREEN */
 	screen:{ 
 		boot:function() {
 			QHHA.screen.adjust();
@@ -87,15 +115,6 @@ var QHHA = {
 
 			var alcaldeWidth = parseFloat($('#indice #alcalde').css('width'));
 			$('#indice #alcalde').css('left', (w-alcaldeWidth)/2 );
-		}
-	},
-	days:{
-		since:function() {
-			var dias = Math.ceil((new Date() - new Date("2015/October/1"))/(1e3*60*60*24)),
-				total = (new Date("2018/September/30") - new Date("2015/October/1"))/(1e3*60*60*24),
-				porcentaje = Math.ceil((dias*100)/total);
-			$('#alcalde .inicioFin').find('.dias i').text(dias).end().
-				find('.porcentaje i').text(porcentaje);
 		}
 	},
 

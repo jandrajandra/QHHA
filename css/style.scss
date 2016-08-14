@@ -79,17 +79,22 @@ $com:#253763;  $com2:#151D39;
 	}
 }
 
-.sponsors {padding-bottom:5em; margin-top:0; padding-top:2em; border-top:1px solid #aaa; color:#777; background:#ccc; font-size:5px;
-	p {font-size:320%;}
-	a {text-decoration:none;
-		img {vertical-align:middle}
-		&.jcv img {width:24em; margin-right:2em}
-		&.coparmex img {height:15em}
-		&.canaco img {margin-left:3em; width:23em}
-		&.ccij img {width:8em; margin:0 4em;}
-		&.iteso img {width:25em; margin-right:4em}
-		&.tomala img {width:23em; margin-right:4em}
-		&.extra img {width:20em; margin-left:2em}
+.sponsors {padding-bottom:5em; margin-top:0; padding-top:2em; border-top:1px solid #aaa; color:#777; background:#ccc; font-size:5px; width:100%;
+	p {font-size:320%; margin-bottom:0}
+	.list {line-height:25em; height:25em; overflow:hidden; width:200%; margin-left:-50%; text-align:center;
+		a {text-decoration:none; vertical-align:middle; display:inline-block;
+			img {vertical-align:middle; margin-right:4em; @include transition(all 0.5s ease-out);}
+			&.jcv img {width:24em;}
+			&.coparmex img {height:15em}
+			&.canaco img {width:23em}
+			&.ccij img {width:8em;}
+			&.iteso img {width:25em;}
+			&.tomala img {width:23em;}
+			&.extra img {width:20em;}
+
+			&.zoomed img {font-size:200%; margin-right:2em}
+			&.zoomedAdj img {font-size:150%; margin-right:2.6em}
+		}
 	}
 }
 

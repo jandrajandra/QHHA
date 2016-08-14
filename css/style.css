@@ -133,33 +133,48 @@ body {
   border-top: 1px solid #aaa;
   color: #777;
   background: #ccc;
-  font-size: 5px; }
+  font-size: 5px;
+  width: 100%; }
   .sponsors p {
-    font-size: 320%; }
-  .sponsors a {
-    text-decoration: none; }
-    .sponsors a img {
-      vertical-align: middle; }
-    .sponsors a.jcv img {
-      width: 24em;
-      margin-right: 2em; }
-    .sponsors a.coparmex img {
-      height: 15em; }
-    .sponsors a.canaco img {
-      margin-left: 3em;
-      width: 23em; }
-    .sponsors a.ccij img {
-      width: 8em;
-      margin: 0 4em; }
-    .sponsors a.iteso img {
-      width: 25em;
-      margin-right: 4em; }
-    .sponsors a.tomala img {
-      width: 23em;
-      margin-right: 4em; }
-    .sponsors a.extra img {
-      width: 20em;
-      margin-left: 2em; }
+    font-size: 320%;
+    margin-bottom: 0; }
+  .sponsors .list {
+    line-height: 25em;
+    height: 25em;
+    overflow: hidden;
+    width: 200%;
+    margin-left: -50%;
+    text-align: center; }
+    .sponsors .list a {
+      text-decoration: none;
+      vertical-align: middle;
+      display: inline-block; }
+      .sponsors .list a img {
+        vertical-align: middle;
+        margin-right: 4em;
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out; }
+      .sponsors .list a.jcv img {
+        width: 24em; }
+      .sponsors .list a.coparmex img {
+        height: 15em; }
+      .sponsors .list a.canaco img {
+        width: 23em; }
+      .sponsors .list a.ccij img {
+        width: 8em; }
+      .sponsors .list a.iteso img {
+        width: 25em; }
+      .sponsors .list a.tomala img {
+        width: 23em; }
+      .sponsors .list a.extra img {
+        width: 20em; }
+      .sponsors .list a.zoomed img {
+        font-size: 200%;
+        margin-right: 2em; }
+      .sponsors .list a.zoomedAdj img {
+        font-size: 150%;
+        margin-right: 2.6em; }
 
 /* ZAPOPAN & GUADALAJARA */
 #zapGdl {
