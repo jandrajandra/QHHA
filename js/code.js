@@ -1,7 +1,7 @@
 var QHHA = {
 	boot:function() {
 		$('#indice #alcalde').css('margin-bottom', 0);
-		$('#header .top').click( QHHA.toTop );
+		$('#header .top, #menu .indice').click( QHHA.toTop );
 		QHHA.zapGdl = $('body').data('zapgdl');
 
 		QHHA.build.boot();
@@ -21,6 +21,7 @@ var QHHA = {
 		},
 		transition:function(domEl) { var slide = $(domEl);
 			var bgColor = slide.data('background');
+			console.log(bgColor);
 
 			$('body').css('background-color', bgColor);
 			if( slide.data('bkgimage') || (slide.attr('id') && slide.hasClass('eje')) ) {
@@ -29,7 +30,6 @@ var QHHA = {
 				$('body').css('background-image', 'none');
 			}
 
-			console.log( "[href='#"+slide.attr('id')+"']" );
 			$('#menu a').removeClass('here').filter("[href='#"+slide.attr('id')+"']").addClass('here');
 		}
 	},
@@ -39,6 +39,7 @@ var QHHA = {
 			scrollTop: 0
 		}, 1000);
 		history.pushState('', document.title, window.location.pathname);
+		return void(0);
 	},
 	ejes: [ 'seg', 'urb', 'eco', 'efi', 'pub', 'med', 'com' ],
 	imgDir: '/img/icons/',
@@ -146,7 +147,7 @@ var QHHA = {
 				$('#zapGdl').removeClass('movil');
 			}
 			$('#zapGdl').css('font-size', Math.min( hFontSize, wFontSize )+'px'); 
-			$('#zapGdl #indice, #inicio .slide').css('height', h);
+			$('#zapGdl #indice, #zapGdl #feedback, #inicio .slide').css('height', h);
 
 			var alcaldeWidth = parseFloat($('#indice #alcalde').css('width'));
 			$('#indice #alcalde').css('left', (w-alcaldeWidth)/2 );
@@ -211,7 +212,6 @@ var QHHA = {
 						advance = {data:actualizacion.data - arranque };
 					advance.screen = Math.abs(advance.data/track.data) * track.screen;
 					actualizacion.html.before('<div class="bar" style="width:'+advance.screen+'px"></div>');
-					//console.log( arranque, meta, actualizacion.data, advance.data, track.data, advance.screen)
 				}
 			})
 		},

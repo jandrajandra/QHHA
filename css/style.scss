@@ -3,8 +3,6 @@
 
 body {margin:0; padding:0; text-align:center; background:white; font-family:'Roboto', sans-serif; font-weight:100}
 
-
-
 $seg:#AF0B1E;  $seg2:#770013; 
 $urb:#CDDA1B;  $urb2:#7F9304;
 $eco:#F6921F;  $eco2:#8F4103;
@@ -13,7 +11,7 @@ $pub:#E50027;  $pub2:#7A000D;
 $med:#FBBF0E;  $med2:#885C03;
 $com:#253763;  $com2:#151D39;
 
-#menu {position:fixed; z-index:4; right:3em; top:0; text-align:right; display:table; height:100%;
+#menu {position:fixed; z-index:4; right:4.5em; top:0; text-align:right; display:table; height:100%;
 	.middle {display:table-cell; vertical-align:middle; clear:both;
 		a {display:block; line-height:3em; height:3em;
 			span {display:inline-block; vertical-align:middle; width:1em; height:1em; border-radius:1em;
@@ -25,11 +23,30 @@ $com:#253763;  $com2:#151D39;
 			}
 
 			&:hover { 
-				span {width:2.5em; height:2.5em; border-radius:2.5em; margin-right:-0.75em}
+				span {width:2.5em; height:2.5em; border-radius:2.5em; margin-top:-0.75em; margin-right:-0.75em}
 				big {display:inline-block;}
 			}
 		}
 	}
+}
+
+#zapGdl #menu .middle a {
+	span {border-color:transparent; background:#ccc}
+	big {color:white}
+	&.indice, &.feedback {
+		big { color:black }
+	}
+	&.here {
+		span {width:2.5em; height:2.5em; border-radius:2.5em; margin-top:-0.75em; margin-right:-0.75em; border-color:white}
+	}
+
+	&.seguridad {span, big {background-color:$seg}}
+	&.desarrollo-urbano {span, big {background-color:$urb}}
+	&.desarrollo-economico {span, big {background-color:$eco}}
+	&.eficiencia {span, big {background-color:$efi}}
+	&.servicios-publicos {span, big {background-color:$pub}}
+	&.medio-ambiente {span, big {background-color:$med}}
+	&.comunidad {span, big {background-color:$com}}
 }
 
 #inicio {font-size:10px; transition:background 1s ease; color:#fff; background:#FBBF0E;
@@ -313,7 +330,7 @@ $smallHeaderHeight:8em;
 
 	/* EJE */
 	.eje { padding:0; margin:0; text-align:left; 
-		h3 {text-align:center; font-weight:100; color:white; margin:0; padding:2em 0; padding-top:43em; font-size:100%;
+		h3 {text-align:center; font-weight:100; color:white; margin:0; padding:2em 0; padding-top:38em; font-size:100%;
 			width:100%; height:10em; line-height:10em;
 			span { display:inline-block; margin:0; margin-left:-8em; padding-right:2em; line-height:10em; vertical-align:top;
 				img {height:8em; vertical-align:middle}
@@ -425,6 +442,11 @@ $smallHeaderHeight:8em;
 		&#medio-ambiente {li.compromiso { big {background-color:$med2;} &:hover  big {background-color:$med;}}}
 		&#comunidad {li.compromiso { big {background-color:$com2;} &:hover  big {background-color:$com;}}}
 	}
+	#feedback { color:white;
+		h2 {font-size:5em; font-weight:100; text-transform:uppercase; padding-top:10em}
+		p {font-size:200%;}
+	}
 }
+
 
 body.zap#zapGdl #header.small .top img.up {margin:0 4.93em}
