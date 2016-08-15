@@ -1,23 +1,36 @@
 var QHHA = {
 	boot:function() {
 		$('#indice #alcalde').css('margin-bottom', 0);
+		$('#header .top').click( QHHA.toTop );
 		QHHA.zapGdl = $('body').data('zapgdl');
+
 		QHHA.build.boot();
 		QHHA.screen.boot();
 		QHHA.dockZoom.boot();
-		 
-		var wHeight = $(window).height();
+		QHHA.slide.boot();
+	},
+	slide:{
+		boot:function() {
+			QHHA.slide.color();
+		},
+		color:function() {
+			var wHeight = $(window).height();
 
-		$('.slide')
-			.height(wHeight)
-			.scrollie({
-				scrollOffset : -50,
-				scrollingInView : function(elem) {
-					 var bgColor = elem.data('background');
-					 
-					 $('body').css('background-color', bgColor);
-				}
-			});
+			$('.slide')
+				.height(wHeight)
+				.scrollie({
+					scrollOffset : -50,
+					scrollingInView : function(elem) {
+						 var bgColor = elem.data('background');
+						 
+						 $('body').css('background-color', bgColor);
+					}
+				});
+		}
+	},
+	toTop:function() {
+		$(window).scrollTop(0);
+		history.pushState('', document.title, window.location.pathname);
 	},
 	ejes: [ 'seg', 'urb', 'eco', 'efi', 'pub', 'med', 'com' ],
 	imgDir: '/img/icons/',

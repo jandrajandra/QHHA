@@ -31,7 +31,7 @@
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
 	</head>
-<body id="zapGdl" data-zapGdl="gdl">
+<body id="zapGdl" class="gdl" data-zapGdl="gdl">
 	<script>
 		$( document ).ready(function() {
 			QHHA.sheet.fetch('gdl');
@@ -78,8 +78,9 @@
 		<a href="/" title="Regresar al inicio" class="home">
 			<img src="/img/logos/qhha-3-horizontal.png" alt="Qué has hecho, alcalde" />
 		</a>
-		<a href="#bienvenida" class="top">
-			<img src="/img/zapgdl/gdl-bkg.png" />
+		<a href="javascript:void(0)" class="top">
+			<img src="/img/zapgdl/gdl-bkg.png" class="zapGdl" />
+			<img src="/img/icons/up.png" class="up" />
 			<span>Guadalajara</span>
 		</a>
 	</div>
@@ -88,13 +89,13 @@
 	<div id="indice">
 		<div class="bienvenida">
 			<p>
-				<strong>Enrique Alfaro</strong> hizo <span class="totalCompromisos"></span><span>compromisos</span> en estos 7 ejes, conoce su desempeño explorando los <span class="totalIndicadores"></span><span>indicadores</span>.
+				Cuando votamos por nuestro alcalde votamos también por sus propuestas. Recuperamos aquí <span class="totalCompromisos"></span><span>compromisos</span> para darles seguimiento con <span class="totalIndicadores"></span><span>indicadores</span>.
 			</p>
 		</div>
 		<ul class="indice"></ul>
 		<div id="alcalde">
 			<h2>
-				<img src="/img/zapgdl/Alfaro-0.png" />
+				<img src="/img/zapgdl/alfaro-0.png" />
 				<span>Enrique Alfaro</span>
 			</h2><div class="datos">
 					<div class="tel">

@@ -169,15 +169,15 @@ body {
         -moz-transition: all 0.5s ease-out;
         transition: all 0.5s ease-out; }
       .sponsors .list a.jcv img {
-        width: 24em; }
+        width: 28em; }
       .sponsors .list a.coparmex img {
-        height: 15em; }
+        height: 12em; }
       .sponsors .list a.canaco img {
-        width: 23em; }
-      .sponsors .list a.ccij img {
-        width: 8em; }
-      .sponsors .list a.iteso img {
         width: 25em; }
+      .sponsors .list a.ccij img {
+        width: 11em; }
+      .sponsors .list a.iteso img {
+        width: 26em; }
       .sponsors .list a.cj img {
         width: 16em; }
       .sponsors .list a.tomala img {
@@ -237,6 +237,9 @@ body {
         height: 20em;
         vertical-align: top;
         margin: 0 3em; }
+        #zapGdl #header .top img.up {
+          display: none;
+          margin: 0 2.2em; }
       #zapGdl #header .top span {
         display: inline-block;
         vertical-align: middle;
@@ -258,6 +261,10 @@ body {
         #zapGdl #header.small .top span {
           font-size: 4em;
           margin-top: 0; }
+      #zapGdl #header.small:hover .top img.zapGdl {
+        display: none; }
+      #zapGdl #header.small:hover .top img.up {
+        display: inline-block; }
     #zapGdl #header.easing {
       -webkit-transition: all 1s ease;
       -moz-transition: all 1s ease;
@@ -449,6 +456,10 @@ body {
         height: 23em;
         padding: 0 2em;
         padding-left: 0; }
+        #zapGdl #indice #alcalde .datos a {
+          text-decoration: none; }
+          #zapGdl #indice #alcalde .datos a:hover {
+            text-decoration: underline; }
         #zapGdl #indice #alcalde .datos img {
           height: 2em;
           vertical-align: middle;
@@ -890,5 +901,8 @@ body {
         background-color: #151D39; }
       #zapGdl .eje#comunidad li.compromiso:hover big {
         background-color: #253763; }
+
+body.zap#zapGdl #header.small .top img.up {
+  margin: 0 4.93em; }
 
 /*# sourceMappingURL=style.css.map */

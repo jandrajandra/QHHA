@@ -1,4 +1,4 @@
-<body id="zapGdl" data-zapGdl="{{short}}">
+<body id="zapGdl" class="{{short}}" data-zapGdl="{{short}}">
 	<script>
 		$( document ).ready(function() {
 			QHHA.sheet.fetch('{{short}}');
@@ -45,8 +45,9 @@
 		<a href="/" title="Regresar al inicio" class="home">
 			<img src="/img/logos/qhha-3-horizontal.png" alt="Qué has hecho, alcalde" />
 		</a>
-		<a href="#bienvenida" class="top">
-			<img src="/img/zapgdl/{{short}}-bkg.png" />
+		<a href="javascript:void(0)" class="top">
+			<img src="/img/zapgdl/{{short}}-bkg.png" class="zapGdl" />
+			<img src="/img/icons/up.png" class="up" />
 			<span>{{title}}</span>
 		</a>
 	</div>
@@ -55,7 +56,7 @@
 	<div id="indice">
 		<div class="bienvenida">
 			<p>
-				<strong>{{alcalde}}</strong> hizo <span class="totalCompromisos"></span><span>compromisos</span> en estos 7 ejes, conoce su desempeño explorando los <span class="totalIndicadores"></span><span>indicadores</span>.
+				Cuando votamos por nuestro alcalde votamos también por sus propuestas. Recuperamos aquí <span class="totalCompromisos"></span><span>compromisos</span> para darles seguimiento con <span class="totalIndicadores"></span><span>indicadores</span>.
 			</p>
 		</div>
 		<ul class="indice"></ul>

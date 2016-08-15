@@ -96,11 +96,11 @@ $com:#253763;  $com2:#151D39;
 	.list {line-height:25em; height:25em; overflow:hidden; width:200%; margin-left:-50%; text-align:center;
 		a {text-decoration:none; vertical-align:middle; display:inline-block;
 			img {vertical-align:middle; margin-right:4em; @include transition(all 0.5s ease-out);}
-			&.jcv img {width:24em;}
-			&.coparmex img {height:15em}
-			&.canaco img {width:23em}
-			&.ccij img {width:8em;}
-			&.iteso img {width:25em;}
+			&.jcv img {width:28em;}
+			&.coparmex img {height:12em}
+			&.canaco img {width:25em}
+			&.ccij img {width:11em;}
+			&.iteso img {width:26em;}
 			&.cj img {width:16em;}
 			&.tomala img {width:23em;}
 			&.extra img {width:20em;}
@@ -122,7 +122,9 @@ $smallHeaderHeight:8em;
 			img {width:40em; vertical-align:top; margin-top:3em;}
 		}
 		.top {height:$headerHeight; line-height:$headerHeight; vertical-align:bottom; font-weight:100; margin:0 2em; padding:0; display:inline-block; text-decoration:none; color:white; text-transform:uppercase;
-			img {height:$headerHeight; vertical-align:top; margin:0 3em;}
+			img {height:$headerHeight; vertical-align:top; margin:0 3em;
+				&.up {display:none; margin:0 2.2em}
+			}
 			span {display:inline-block; vertical-align:middle; font-size:7em; margin-top:0.75em}
 		}
 		&.small { height:$smallHeaderHeight; line-height:$smallHeaderHeight;
@@ -132,6 +134,10 @@ $smallHeaderHeight:8em;
 			.top {line-height:$smallHeaderHeight;
 				img {height:$smallHeaderHeight}
 				span {font-size:4em; margin-top:0}
+			}
+			&:hover .top {
+				img.zapGdl {display:none}
+				img.up {display:inline-block; }
 			}
 		}
 		&.easing { @include transition(all 1s ease);
@@ -209,6 +215,9 @@ $smallHeaderHeight:8em;
 				span {display:block; font-size:220%; margin-top:0.5em}
 			}
 			.datos { background:#DBC808; height:$alcaldeHeight; padding:0 2em; padding-left:0;
+				a {text-decoration:none;
+					&:hover {text-decoration:underline};
+				}
 				img {height:2em; vertical-align:middle; margin-right:0.5em}
 				.tel, .email, .twitter {margin:1.5em 0;
 					span, a {font-size:160%}
@@ -368,3 +377,4 @@ $smallHeaderHeight:8em;
 	}
 }
 
+body.zap#zapGdl #header.small .top img.up {margin:0 4.93em}
