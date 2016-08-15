@@ -7,11 +7,24 @@ var QHHA = {
 		QHHA.build.boot();
 		QHHA.screen.boot();
 		QHHA.dockZoom.boot();
+
+		QHHA.scroll = ScrollReveal();
+		QHHA.scroll.reveal('.flor .icon', {
+			reset:true, delay:500
+		});
+		QHHA.scroll.reveal('.flor span.seg, .flor span.urb, .flor span.com', {
+			reset:true, delay:1000, duration:1000, scale:0.6, origin:'left'
+		});
+		QHHA.scroll.reveal('.flor span.eco, .flor span.efi, .flor span.pub, .flor span.med', {
+			reset:true, delay:1000, duration:1000, scale:0.6, origin:'right'
+		});
+
 		QHHA.slide.boot();
 	},
+	scroll:false,
 	slide:{
 		boot:function() {
-			ScrollReveal().reveal('.slide', {
+			QHHA.scroll.reveal('.slide', {
 				reset:true,
 				duration:800,
 				scale:0.6,
@@ -21,7 +34,6 @@ var QHHA = {
 		},
 		transition:function(domEl) { var slide = $(domEl);
 			var bgColor = slide.data('background');
-			console.log(bgColor);
 
 			$('body').css('background-color', bgColor);
 			if( slide.data('bkgimage') || (slide.attr('id') && slide.hasClass('eje')) ) {
