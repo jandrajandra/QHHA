@@ -13,7 +13,7 @@ $med:#FBBF0E;  $med2:#885C03;
 $com:#253763;  $com2:#151D39;
 
 
-#inicio {font-size:10px; transition:background 1s ease; color:#fff;
+#inicio {font-size:10px; transition:background 1s ease; color:#fff; background:#FBBF0E;
 	a {color:#fff}
 	.slide {
 		 .inside { display: table; height: 100%; width: 100%; padding: 0 3em;
@@ -34,7 +34,7 @@ $com:#253763;  $com2:#151D39;
 		h1 { padding: 0 0 4em 0;
 			img { width:70em; }
 		}
-		p {font-size:250%; margin-top:0}
+		p {font-size:310%; margin-top:0.5em}
 
 		.municipio {display:inline-block; width:40em; height:27.5em; color:white; text-decoration:none; margin-top:3em; margin-bottom:8em;
 			h2 {font-size:5em; font-weight:100; text-transform:uppercase; margin-top:1em; margin-bottom:0}
@@ -141,7 +141,7 @@ $headerHeight:20em;
 $smallHeaderHeight:8em;
 
 /* ZAPOPAN & GUADALAJARA */
-#zapGdl {font-size:10px;
+#zapGdl {font-size:10px; background:#fff; transition:background 1s ease;
 	/* HEADER */
 	#header { vertical-align:middle; background:#555; height:$headerHeight; width:100%; line-height:$headerHeight; text-align:left; color:white; position:fixed; top:0; left:0; overflow:hidden; z-index:3;
 		.home {display:inline-block; text-decoration:none; background:#eee; float:left; width:50em; text-align:center; height:$headerHeight;
@@ -177,10 +177,10 @@ $smallHeaderHeight:8em;
 	}
 
 	/* Indice de ejes */
-	#indice {padding:0; background:#fff; height:100%; position:relative; overflow:hidden;
+	#indice {padding:0; height:100%; position:relative; overflow:hidden;
 
 		.bienvenida { padding-top:$headerHeight; margin:2.5em 2em 1em 2em;
-			p {margin:0; padding:0; font-size:200%;
+			p {margin:0; padding:0.5em 0; line-height:1.6em; font-size:200%;
 				span {background:#ddd; padding:0.2em 0.3em}
 				.totalCompromisos, .totalIndicadores {background:black; color:white}
 			}
@@ -230,7 +230,7 @@ $smallHeaderHeight:8em;
 		$alcaldeHeight:23em;
 		/* ALCALDE */
 		#alcalde {text-align:center; height:$alcaldeHeight; line-height:$alcaldeHeight; width:111em;
-			position:absolute; bottom:0; left:0; margin-bottom:-$alcaldeHeight; @include transition(margin-bottom 1s ease);
+			position:absolute; bottom:2em; left:0; margin-bottom:-$alcaldeHeight; @include transition(margin-bottom 1s ease);
 
 			h2, .bio, .inicioFin, .datos {display:inline-block; text-align:left; line-height:normal; vertical-align:top;
 				div.text {font-size:160%}
@@ -252,7 +252,7 @@ $smallHeaderHeight:8em;
 					img {height:3em}
 				}
 			}
-			.bio, .inicioFin {background:#FCE809; width:28em; padding:2em; vertical-align:middle; height:-2.5em+$alcaldeHeight; margin-top:2.5em; font-size:100%;
+			.bio, .inicioFin {background:#FCE809; width:28em; padding:2em; vertical-align:middle; height:15em; margin-top:0.5em; font-size:100%;
 			}
 			.bio {padding-right:0;
 				.text {margin:1em}
@@ -288,7 +288,7 @@ $smallHeaderHeight:8em;
 	#template {display:none}
 
 	/* EJE */
-	.eje { padding:6em 0; padding-bottom:10em; margin:0; text-align:left;
+	.eje { padding:30em 0; padding-bottom:10em; margin:0; text-align:left; 
 		h3 {text-align:center; font-weight:100; color:white; margin:0; padding:2em 0; font-size:100%;
 			width:100%; height:10em; line-height:10em;
 			span { display:inline-block; margin:0; margin-left:-8em; padding-right:2em; line-height:10em; vertical-align:top;
@@ -393,13 +393,13 @@ $smallHeaderHeight:8em;
 				}
 			}
 		}
-		&#seguridad {@include linear-gradient(to left, $seg2, $seg); li.compromiso { big {background-color:$seg2;} &:hover  big {background-color:$seg;}}}
-		&#desarrollo-urbano {@include linear-gradient(to left, $urb2, $urb); li.compromiso { big {background-color:$urb2;} &:hover  big {background-color:$urb;}}}
-		&#desarrollo-economico {@include linear-gradient(to left, $eco2, $eco); li.compromiso { big {background-color:$eco2;} &:hover  big {background-color:$eco;}}}
-		&#eficiencia {@include linear-gradient(to left, $efi2, $efi); li.compromiso { big {background-color:$efi2;} &:hover  big {background-color:$efi;}}}
-		&#servicios-publicos {@include linear-gradient(to left, $pub2, $pub); li.compromiso { big {background-color:$pub2;} &:hover  big {background-color:$pub;}}}
-		&#medio-ambiente {@include linear-gradient(to left, $med2, $med); li.compromiso { big {background-color:$med2;} &:hover  big {background-color:$med;}}}
-		&#comunidad {@include linear-gradient(to left, $com2, $com); li.compromiso { big {background-color:$com2;} &:hover  big {background-color:$com;}}}
+		&#seguridad {li.compromiso { big {background-color:$seg2;} &:hover  big {background-color:$seg;}}}
+		&#desarrollo-urbano {li.compromiso { big {background-color:$urb2;} &:hover  big {background-color:$urb;}}}
+		&#desarrollo-economico {li.compromiso { big {background-color:$eco2;} &:hover  big {background-color:$eco;}}}
+		&#eficiencia {li.compromiso { big {background-color:$efi2;} &:hover  big {background-color:$efi;}}}
+		&#servicios-publicos {li.compromiso { big {background-color:$pub2;} &:hover  big {background-color:$pub;}}}
+		&#medio-ambiente {li.compromiso { big {background-color:$med2;} &:hover  big {background-color:$med;}}}
+		&#comunidad {li.compromiso { big {background-color:$com2;} &:hover  big {background-color:$com;}}}
 	}
 }
 

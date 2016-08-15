@@ -11,38 +11,39 @@ var QHHA = {
 	},
 	slide:{
 		boot:function() {
-			QHHA.slide.color();
+			ScrollReveal().reveal('.slide', {
+				reset:true,
+				duration:800,
+				scale:0.6,
+				viewFactor:0.5,
+				beforeReveal:QHHA.slide.transition
+			});
 		},
-		color:function() {
-			var wHeight = $(window).height();
+		transition:function(domEl) { var slide = $(domEl);
+			var bgColor = slide.data('background');
 
-			$('.slide')
-				.height(wHeight)
-				.scrollie({
-					scrollOffset : -300,
-					scrollingInView : function(slide) {
-						 var bgColor = slide.data('background');
-						 
-						 $('body').css('background-color', bgColor);
-					}
-				});
+			$('body').css('background-color', bgColor);
 		}
 	},
 	toTop:function() {
-		$(window).scrollTop(0);
+		event.preventDefault();
+		$('html, body').stop().animate({
+			scrollTop: 0
+		}, 1000);
 		history.pushState('', document.title, window.location.pathname);
 	},
 	ejes: [ 'seg', 'urb', 'eco', 'efi', 'pub', 'med', 'com' ],
 	imgDir: '/img/icons/',
 	zapGdl:'gdl',
+
 	ejesFull: {
-		seg:{label:'Seguridad y Prevención del Delito', shortLabel:'Seguridad', id:'seguridad'},
-		urb:{label:'Desarrollo Urbano', id:'desarrollo-urbano'},
-		eco:{label:'Desarrollo Económico', id:'desarrollo-economico'},
-		efi:{label:'Eficiencia Administrativa', id:'eficiencia'},
-		pub:{label:'Servicios Públicos', id:'servicios-publicos'},
-		med:{label:'Medio Ambiente', id:'medio-ambiente'},
-		com:{label:'Construcción de Comunidad', id:'comunidad'},
+		seg:{label:'Seguridad y Prevención del Delito', shortLabel:'Seguridad', id:'seguridad', color:'#AF0B1E'},
+		urb:{label:'Desarrollo Urbano', id:'desarrollo-urbano', color:'#CDDA1B'},
+		eco:{label:'Desarrollo Económico', id:'desarrollo-economico', color:'#F6921F'},
+		efi:{label:'Eficiencia Administrativa', id:'eficiencia', color:'#8583A0'},
+		pub:{label:'Servicios Públicos', id:'servicios-publicos', color:'#E50027'},
+		med:{label:'Medio Ambiente', id:'medio-ambiente', color:'#FBBF0E'},
+		com:{label:'Construcción de Comunidad', id:'comunidad', color:'#253763'},
 	},
 
 	days:{
@@ -95,7 +96,7 @@ var QHHA = {
 				eje.template = $('#template .eje').clone();
 				eje.full = QHHA.ejesFull[ eje.name ];
 
-				eje.template.addClass( eje.name ).attr('id', eje.full.id).
+				eje.template.data('background', eje.full.color).addClass( eje.name ).attr('id', eje.full.id).
 					find('h3 img').attr('src', QHHA.imgDir+eje.name+'.png').end().
 					find('h3 big').text(eje.full.label).end();
 
@@ -137,7 +138,7 @@ var QHHA = {
 				$('#zapGdl').removeClass('movil');
 			}
 			$('#zapGdl').css('font-size', Math.min( hFontSize, wFontSize )+'px'); 
-			$('#zapGdl #indice').css('height', h);
+			$('#zapGdl #indice, #inicio .slide').css('height', h);
 
 			var alcaldeWidth = parseFloat($('#indice #alcalde').css('width'));
 			$('#indice #alcalde').css('left', (w-alcaldeWidth)/2 );

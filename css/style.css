@@ -11,6 +11,7 @@ body {
   font-size: 10px;
   transition: background 1s ease;
   color: #fff;
+  background: #FBBF0E;
   /* BIENVENIDA */ }
   #inicio a {
     color: #fff; }
@@ -34,8 +35,8 @@ body {
     #inicio .bienvenida h1 img {
       width: 70em; }
   #inicio .bienvenida p {
-    font-size: 250%;
-    margin-top: 0; }
+    font-size: 310%;
+    margin-top: 0.5em; }
   #inicio .bienvenida .municipio {
     display: inline-block;
     width: 40em;
@@ -238,6 +239,8 @@ body {
 /* ZAPOPAN & GUADALAJARA */
 #zapGdl {
   font-size: 10px;
+  background: #fff;
+  transition: background 1s ease;
   /* HEADER */
   /* Indice de ejes */
   /* EJE */ }
@@ -331,7 +334,6 @@ body {
           transition: all 1s ease; }
   #zapGdl #indice {
     padding: 0;
-    background: #fff;
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -341,7 +343,8 @@ body {
       margin: 2.5em 2em 1em 2em; }
       #zapGdl #indice .bienvenida p {
         margin: 0;
-        padding: 0;
+        padding: 0.5em 0;
+        line-height: 1.6em;
         font-size: 200%; }
         #zapGdl #indice .bienvenida p span {
           background: #ddd;
@@ -466,7 +469,7 @@ body {
       line-height: 23em;
       width: 111em;
       position: absolute;
-      bottom: 0;
+      bottom: 2em;
       left: 0;
       margin-bottom: -23em;
       -webkit-transition: margin-bottom 1s ease;
@@ -521,8 +524,8 @@ body {
         width: 28em;
         padding: 2em;
         vertical-align: middle;
-        height: 20.5em;
-        margin-top: 2.5em;
+        height: 15em;
+        margin-top: 0.5em;
         font-size: 100%; }
       #zapGdl #indice #alcalde .bio {
         padding-right: 0; }
@@ -581,7 +584,7 @@ body {
   #zapGdl #template {
     display: none; }
   #zapGdl .eje {
-    padding: 6em 0;
+    padding: 30em 0;
     padding-bottom: 10em;
     margin: 0;
     text-align: left; }
@@ -889,62 +892,34 @@ body {
           display: inline-block; }
         #zapGdl .eje ol.compromisos li.compromiso.picked ol.indicadores {
           display: block; }
-    #zapGdl .eje#seguridad {
-      background-color: #770013;
-      background-image: -webkit-linear-gradient(right, #770013, #AF0B1E);
-      background-image: linear-gradient(to left,#770013, #AF0B1E); }
-      #zapGdl .eje#seguridad li.compromiso big {
-        background-color: #770013; }
-      #zapGdl .eje#seguridad li.compromiso:hover big {
-        background-color: #AF0B1E; }
-    #zapGdl .eje#desarrollo-urbano {
-      background-color: #7F9304;
-      background-image: -webkit-linear-gradient(right, #7F9304, #CDDA1B);
-      background-image: linear-gradient(to left,#7F9304, #CDDA1B); }
-      #zapGdl .eje#desarrollo-urbano li.compromiso big {
-        background-color: #7F9304; }
-      #zapGdl .eje#desarrollo-urbano li.compromiso:hover big {
-        background-color: #CDDA1B; }
-    #zapGdl .eje#desarrollo-economico {
-      background-color: #8F4103;
-      background-image: -webkit-linear-gradient(right, #8F4103, #F6921F);
-      background-image: linear-gradient(to left,#8F4103, #F6921F); }
-      #zapGdl .eje#desarrollo-economico li.compromiso big {
-        background-color: #8F4103; }
-      #zapGdl .eje#desarrollo-economico li.compromiso:hover big {
-        background-color: #F6921F; }
-    #zapGdl .eje#eficiencia {
-      background-color: #3A374C;
-      background-image: -webkit-linear-gradient(right, #3A374C, #8583A0);
-      background-image: linear-gradient(to left,#3A374C, #8583A0); }
-      #zapGdl .eje#eficiencia li.compromiso big {
-        background-color: #3A374C; }
-      #zapGdl .eje#eficiencia li.compromiso:hover big {
-        background-color: #8583A0; }
-    #zapGdl .eje#servicios-publicos {
-      background-color: #7A000D;
-      background-image: -webkit-linear-gradient(right, #7A000D, #E50027);
-      background-image: linear-gradient(to left,#7A000D, #E50027); }
-      #zapGdl .eje#servicios-publicos li.compromiso big {
-        background-color: #7A000D; }
-      #zapGdl .eje#servicios-publicos li.compromiso:hover big {
-        background-color: #E50027; }
-    #zapGdl .eje#medio-ambiente {
-      background-color: #885C03;
-      background-image: -webkit-linear-gradient(right, #885C03, #FBBF0E);
-      background-image: linear-gradient(to left,#885C03, #FBBF0E); }
-      #zapGdl .eje#medio-ambiente li.compromiso big {
-        background-color: #885C03; }
-      #zapGdl .eje#medio-ambiente li.compromiso:hover big {
-        background-color: #FBBF0E; }
-    #zapGdl .eje#comunidad {
-      background-color: #151D39;
-      background-image: -webkit-linear-gradient(right, #151D39, #253763);
-      background-image: linear-gradient(to left,#151D39, #253763); }
-      #zapGdl .eje#comunidad li.compromiso big {
-        background-color: #151D39; }
-      #zapGdl .eje#comunidad li.compromiso:hover big {
-        background-color: #253763; }
+    #zapGdl .eje#seguridad li.compromiso big {
+      background-color: #770013; }
+    #zapGdl .eje#seguridad li.compromiso:hover big {
+      background-color: #AF0B1E; }
+    #zapGdl .eje#desarrollo-urbano li.compromiso big {
+      background-color: #7F9304; }
+    #zapGdl .eje#desarrollo-urbano li.compromiso:hover big {
+      background-color: #CDDA1B; }
+    #zapGdl .eje#desarrollo-economico li.compromiso big {
+      background-color: #8F4103; }
+    #zapGdl .eje#desarrollo-economico li.compromiso:hover big {
+      background-color: #F6921F; }
+    #zapGdl .eje#eficiencia li.compromiso big {
+      background-color: #3A374C; }
+    #zapGdl .eje#eficiencia li.compromiso:hover big {
+      background-color: #8583A0; }
+    #zapGdl .eje#servicios-publicos li.compromiso big {
+      background-color: #7A000D; }
+    #zapGdl .eje#servicios-publicos li.compromiso:hover big {
+      background-color: #E50027; }
+    #zapGdl .eje#medio-ambiente li.compromiso big {
+      background-color: #885C03; }
+    #zapGdl .eje#medio-ambiente li.compromiso:hover big {
+      background-color: #FBBF0E; }
+    #zapGdl .eje#comunidad li.compromiso big {
+      background-color: #151D39; }
+    #zapGdl .eje#comunidad li.compromiso:hover big {
+      background-color: #253763; }
 
 body.zap#zapGdl #header.small .top img.up {
   margin: 0 4.93em; }
