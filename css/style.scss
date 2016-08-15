@@ -397,7 +397,9 @@ $smallHeaderHeight:8em;
 						&::before {width:2.3em; top:-1em; left:-2em; background:#555; color:white; font-size:200%}
 						div {display:inline-block; text-align:center; vertical-align:top}
 						.li {width:100%;
-							.descripción {width:50%; padding:1em; background:white; font-size:180%; display:inline-block; text-align:left; margin-right:0; }
+							.descripción {width:50%; padding:1em; background:white; font-size:180%; display:inline-block; text-align:left; margin-right:0; 
+								strong {color:black}
+							}
 							.arranque, .actualización, .meta {width:4em; padding:0 0.2em; margin:0; color:white; line-height:2.5em;
 								font-weight:normal; font-size:200%; margin-top:0.1em; vertical-align:bottom;
 								span { font-size:90%; 
@@ -412,6 +414,9 @@ $smallHeaderHeight:8em;
 								}
 							}
 							.actualización {width:10em; padding:0; margin-top:0em; border-bottom:2px solid white; text-align:left; line-height:2.2em;
+								background-image:url(/img/indicador/fondo.png); background-repeat:no-repeat; background-size:100% auto;
+
+
 								div.bar {display:inline-block; vertical-align:bottom; height:1em; background:rgba(119,119,119, 0.7); border-right:1px solid black}
 								span {background:#ccc; color:black; padding:0.2em 0.5em; padding-top:0; position:relative; z-index:3;
 									display:inline-block; height:1.5em; line-height:1.5em; vertical-align:top;
@@ -431,6 +436,18 @@ $smallHeaderHeight:8em;
 								}
 							}
 							.arranque, .meta { span { font-size:85%; } }
+
+						}
+						&.evidencia .li { 
+							.arranque span {padding-right:0.3em;}
+							.actualización {text-align:center; background-image:none; border-bottom:0; 
+								span {
+									padding:0 0.2em; font-weight:700; border:2px solid white; background:transparent; color:white; border-radius:0;
+									@include transform( rotate(-7deg) );
+
+									&::before {display:none}
+								}
+							}
 						}
 						.hover {display:none; text-align:left; font-size:90%; margin:0; color:white;
 							.fuente, .observaciones { text-align:center; padding:1em 0.5em 0 0.5em; font-size:150% }
@@ -438,7 +455,7 @@ $smallHeaderHeight:8em;
 								em {font-weight:100}
 								a {font-style:italic; color:white}
 							}
-							.observaciones {width:30%; }
+							.observaciones {width:31.5%; }
 							.fechaarranque, .fechaactualización, .fechameta {width:5em; padding:0.7em 0.3em; text-align:center; font-size:180%; color:#ccc;
 							}
 							.fechaarranque, .fechameta {width:7.5em; padding:1em 0.45em; text-align:center; font-size:120%; color:#ccc;

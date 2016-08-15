@@ -213,17 +213,28 @@ var QHHA = {
 			})
 		},
 		gauge:function() {
-			$('#ejes .eje li.indicador').each(function() { 
-				var arranque = TOOLS.parse($(this).find('.arranque span').text()),
-					actualizacion = {html:$(this).find('.actualización span')},
-					meta = TOOLS.parse($(this).find('.meta span').text());
-				actualizacion.data = TOOLS.parse($(this).find('.actualización span').text());
+			$('#ejes .eje li.indicador').each(function() { var indi = $(this);
+				var arranque = {html:indi.find('.arranque span')},
+					actualizacion = {html:indi.find('.actualización span')},
+					meta = {html:indi.find('.meta span')};
 
-				if( !isNaN(arranque) && !isNaN(actualizacion.data) && !isNaN(meta) ) {
-					var track = {data:meta - arranque, screen:$(this).find('.actualización').width() },
-						advance = {data:actualizacion.data - arranque };
-					advance.screen = Math.abs(advance.data/track.data) * track.screen;
-					actualizacion.html.before('<div class="bar" style="width:'+advance.screen+'px"></div>');
+				arranque.number = TOOLS.parse( arranque.html.text() );
+				meta.number = TOOLS.parse( meta.html.text() );
+				actualizacion.number = TOOLS.parse(indi.find('.actualización span').text());
+
+				if( !isNaN(arranque.number) && !isNaN(actualizacion.number) && !isNaN(meta.number) ) {
+					var track = {number:meta.number - arranque.number, pixels:indi.find('.actualización').width() },
+						advance = {number:actualizacion.number - arranque.number };
+					advance.pixels = Math.abs(advance.number/track.number) * track.pixels;
+					actualizacion.html.before('<div class="bar" style="width:'+advance.pixels+'px"></div>');
+				}
+
+				if( arranque.html.text().match(/NO/) ) {
+					indi.addClass('evidencia');
+					if( actualizacion.html.text().match(/^S/) ) {
+						indi.addClass('entregado');
+						actualizacion.html.text('✓ ENTREGADO');
+					}
 				}
 			})
 		},
