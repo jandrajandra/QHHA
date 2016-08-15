@@ -23,12 +23,14 @@ var QHHA = {
 			var bgColor = slide.data('background');
 
 			$('body').css('background-color', bgColor);
-			console.log ( slide.attr('id') );
 			if( slide.data('bkgimage') || (slide.attr('id') && slide.hasClass('eje')) ) {
 				$('body').css('background-image', 'url(/img/gradients/'+(slide.data('bkgimage')||slide.attr('id'))+'.png)');
 			} else {
 				$('body').css('background-image', 'none');
 			}
+
+			console.log( "[href='#"+slide.attr('id')+"']" );
+			$('#menu a').removeClass('here').filter("[href='#"+slide.attr('id')+"']").addClass('here');
 		}
 	},
 	toTop:function() {

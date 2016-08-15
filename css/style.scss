@@ -4,6 +4,7 @@
 body {margin:0; padding:0; text-align:center; background:white; font-family:'Roboto', sans-serif; font-weight:100}
 
 
+
 $seg:#AF0B1E;  $seg2:#770013; 
 $urb:#CDDA1B;  $urb2:#7F9304;
 $eco:#F6921F;  $eco2:#8F4103;
@@ -12,6 +13,24 @@ $pub:#E50027;  $pub2:#7A000D;
 $med:#FBBF0E;  $med2:#885C03;
 $com:#253763;  $com2:#151D39;
 
+#menu {position:fixed; z-index:4; right:3em; top:0; text-align:right; display:table; height:100%;
+	.middle {display:table-cell; vertical-align:middle; clear:both;
+		a {display:block; line-height:3em; height:3em;
+			span {display:inline-block; vertical-align:middle; width:1em; height:1em; border-radius:1em;
+				border:2px solid white; background:white; transition:all 0.5s ease; margin-left:2em}
+			big {display:none; vertical-align:middle; background:white; color:black; font-size:2em; padding:0.3em 0.6em}
+
+			&.here {
+				span {background:transparent}
+			}
+
+			&:hover { 
+				span {width:2.5em; height:2.5em; border-radius:2.5em; margin-right:-0.75em}
+				big {display:inline-block;}
+			}
+		}
+	}
+}
 
 #inicio {font-size:10px; transition:background 1s ease; color:#fff; background:#FBBF0E;
 	a {color:#fff}
@@ -29,9 +48,9 @@ $com:#253763;  $com2:#151D39;
 
 	h1, h2, h3 {font-size:100%}
 	/* BIENVENIDA */
-	.bienvenida {
+	#bienvenida {
 		&.slide .inside .middle { text-align:center; }
-		h1 { padding: 0 0 4em 0;
+		h1 { padding: 0 0 4em 0; padding-top:10em;
 			img { width:70em; }
 		}
 		p {font-size:310%; margin-top:0.5em}
@@ -69,7 +88,7 @@ $com:#253763;  $com2:#151D39;
 			b {font-family:'Roboto Bold'}
 		}
 		.inside {width:35em; padding:5em 0; margin:0 auto; text-align:left; font-size:220%; text-align:left;
-			h2 {font-weight:100; text-transform:uppercase; font-size:250%; text-align:center;}
+			h2 {font-weight:100; text-transform:uppercase; font-size:250%; text-align:center; padding-top:4em}
 			ul.ejes {list-style-type:none; font-size:120%;
 				li {font-weight:bold; margin:0.5em 0; 
 					span {border-radius:50%; width:2em; height:2em; line-height:2em; vertical-align:middle;
@@ -86,7 +105,7 @@ $com:#253763;  $com2:#151D39;
 				.com {color:$com; span {background-color:$com}}
 			}
 		}
-		&.queEs .inside { width:100%;
+		&#que-es .inside { width:100%;
 			.middle2 {width:35em; margin:0 auto;}
 			.middle {
 				h2 {margin-top:0}
@@ -94,7 +113,7 @@ $com:#253763;  $com2:#151D39;
 				.logos p {font-size:400%}
 			}
 		}
-		&.deDondeSurgen .inside {width:100%;
+		&#fuentes .inside {width:100%;
 			.middle {text-align:center;
 				h2 {width:25em; margin:0 auto}
 				ul.fuentes {
@@ -109,10 +128,10 @@ $com:#253763;  $com2:#151D39;
 				}
 			}
 		}
-		&.comoEstanAgrupados .inside .middle {text-align:center;
-				.flor {width:30em}
+		&#ejes .inside .middle {text-align:center;
+			.flor {width:30em}
 		}
-		&.comoSeMiden .inside .middle {text-align:left;
+		&#como-se-miden .inside .middle {text-align:left;
 		}
 	}
 }

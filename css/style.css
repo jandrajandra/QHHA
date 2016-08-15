@@ -7,6 +7,49 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 100; }
 
+#menu {
+  position: fixed;
+  z-index: 4;
+  right: 3em;
+  top: 0;
+  text-align: right;
+  display: table;
+  height: 100%; }
+  #menu .middle {
+    display: table-cell;
+    vertical-align: middle;
+    clear: both; }
+    #menu .middle a {
+      display: block;
+      line-height: 3em;
+      height: 3em; }
+      #menu .middle a span {
+        display: inline-block;
+        vertical-align: middle;
+        width: 1em;
+        height: 1em;
+        border-radius: 1em;
+        border: 2px solid white;
+        background: white;
+        transition: all 0.5s ease;
+        margin-left: 2em; }
+      #menu .middle a big {
+        display: none;
+        vertical-align: middle;
+        background: white;
+        color: black;
+        font-size: 2em;
+        padding: 0.3em 0.6em; }
+      #menu .middle a.here span {
+        background: transparent; }
+      #menu .middle a:hover span {
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 2.5em;
+        margin-right: -0.75em; }
+      #menu .middle a:hover big {
+        display: inline-block; }
+
 #inicio {
   font-size: 10px;
   transition: background 1s ease;
@@ -28,16 +71,17 @@ body {
       text-align: left; }
   #inicio h1, #inicio h2, #inicio h3 {
     font-size: 100%; }
-  #inicio .bienvenida.slide .inside .middle {
+  #inicio #bienvenida.slide .inside .middle {
     text-align: center; }
-  #inicio .bienvenida h1 {
-    padding: 0 0 4em 0; }
-    #inicio .bienvenida h1 img {
+  #inicio #bienvenida h1 {
+    padding: 0 0 4em 0;
+    padding-top: 10em; }
+    #inicio #bienvenida h1 img {
       width: 70em; }
-  #inicio .bienvenida p {
+  #inicio #bienvenida p {
     font-size: 310%;
     margin-top: 0.5em; }
-  #inicio .bienvenida .municipio {
+  #inicio #bienvenida .municipio {
     display: inline-block;
     width: 40em;
     height: 27.5em;
@@ -45,32 +89,32 @@ body {
     text-decoration: none;
     margin-top: 3em;
     margin-bottom: 8em; }
-    #inicio .bienvenida .municipio h2 {
+    #inicio #bienvenida .municipio h2 {
       font-size: 5em;
       font-weight: 100;
       text-transform: uppercase;
       margin-top: 1em;
       margin-bottom: 0; }
-    #inicio .bienvenida .municipio h3 {
+    #inicio #bienvenida .municipio h3 {
       font-size: 3em;
       margin-top: 0.33em; }
-    #inicio .bienvenida .municipio .mouseout {
+    #inicio #bienvenida .municipio .mouseout {
       display: inline-block; }
-    #inicio .bienvenida .municipio .mouseover {
+    #inicio #bienvenida .municipio .mouseover {
       display: none; }
-    #inicio .bienvenida .municipio.zap {
+    #inicio #bienvenida .municipio.zap {
       background: #5C5973 url(/img/zapgdl/zap-bkg.png) no-repeat center bottom;
       background-size: auto 100%;
       margin-right: 3em; }
-    #inicio .bienvenida .municipio.gdl {
+    #inicio #bienvenida .municipio.gdl {
       background: #5C5973 url(/img/zapgdl/gdl-bkg.png) no-repeat center bottom;
       background-size: auto 100%; }
-    #inicio .bienvenida .municipio:hover {
+    #inicio #bienvenida .municipio:hover {
       background-color: #121A2E;
       color: white; }
-      #inicio .bienvenida .municipio:hover .mouseout {
+      #inicio #bienvenida .municipio:hover .mouseout {
         display: none; }
-      #inicio .bienvenida .municipio:hover .mouseover {
+      #inicio #bienvenida .municipio:hover .mouseover {
         display: inline-block; }
   #inicio .page {
     width: 100%; }
@@ -94,7 +138,8 @@ body {
         font-weight: 100;
         text-transform: uppercase;
         font-size: 250%;
-        text-align: center; }
+        text-align: center;
+        padding-top: 4em; }
       #inicio .page .inside ul.ejes {
         list-style-type: none;
         font-size: 120%; }
@@ -143,25 +188,25 @@ body {
           color: #253763; }
           #inicio .page .inside ul.ejes .com span {
             background-color: #253763; }
-    #inicio .page.queEs .inside {
+    #inicio .page#que-es .inside {
       width: 100%; }
-      #inicio .page.queEs .inside .middle2 {
+      #inicio .page#que-es .inside .middle2 {
         width: 35em;
         margin: 0 auto; }
-      #inicio .page.queEs .inside .middle h2 {
+      #inicio .page#que-es .inside .middle h2 {
         margin-top: 0; }
-      #inicio .page.queEs .inside .middle p {
+      #inicio .page#que-es .inside .middle p {
         font-size: 120%; }
-      #inicio .page.queEs .inside .middle .logos p {
+      #inicio .page#que-es .inside .middle .logos p {
         font-size: 400%; }
-    #inicio .page.deDondeSurgen .inside {
+    #inicio .page#fuentes .inside {
       width: 100%; }
-      #inicio .page.deDondeSurgen .inside .middle {
+      #inicio .page#fuentes .inside .middle {
         text-align: center; }
-        #inicio .page.deDondeSurgen .inside .middle h2 {
+        #inicio .page#fuentes .inside .middle h2 {
           width: 25em;
           margin: 0 auto; }
-        #inicio .page.deDondeSurgen .inside .middle ul.fuentes li {
+        #inicio .page#fuentes .inside .middle ul.fuentes li {
           width: 25%;
           height: 45%;
           margin: 2% 6%;
@@ -169,25 +214,25 @@ body {
           display: inline-block;
           text-align: center;
           vertical-align: top; }
-          #inicio .page.deDondeSurgen .inside .middle ul.fuentes li .pages {
+          #inicio .page#fuentes .inside .middle ul.fuentes li .pages {
             height: 12em;
             line-height: 12em; }
-            #inicio .page.deDondeSurgen .inside .middle ul.fuentes li .pages a {
+            #inicio .page#fuentes .inside .middle ul.fuentes li .pages a {
               display: inline-block;
               vertical-align: top; }
-              #inicio .page.deDondeSurgen .inside .middle ul.fuentes li .pages a img {
+              #inicio .page#fuentes .inside .middle ul.fuentes li .pages a img {
                 width: 8em;
                 border: 1px solid #555;
                 -webkit-transition: all 0.5s ease;
                 -moz-transition: all 0.5s ease;
                 transition: all 0.5s ease; }
-              #inicio .page.deDondeSurgen .inside .middle ul.fuentes li .pages a:hover img {
+              #inicio .page#fuentes .inside .middle ul.fuentes li .pages a:hover img {
                 width: 10em; }
-    #inicio .page.comoEstanAgrupados .inside .middle {
+    #inicio .page#ejes .inside .middle {
       text-align: center; }
-      #inicio .page.comoEstanAgrupados .inside .middle .flor {
+      #inicio .page#ejes .inside .middle .flor {
         width: 30em; }
-    #inicio .page.comoSeMiden .inside .middle {
+    #inicio .page#como-se-miden .inside .middle {
       text-align: left; }
 
 .sponsors {
