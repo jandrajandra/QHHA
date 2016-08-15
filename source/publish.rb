@@ -11,6 +11,7 @@ publicDir =  root.gsub(/source\/$/,'')
 head = ''
 template = ''
 footer = ''
+$logos = ''
 
 
 def parse str
@@ -21,9 +22,13 @@ def parse str
 end
 
 def readAndEncode f
-	parse File.read(f, :encoding => 'utf-8')
+	parse(File.read(f, :encoding => 'utf-8')).
+		gsub(/{{logos}}/, $logos)
 end
 
+File.open(root+"logos.html") do |f|
+	$logos = readAndEncode( f )
+end
 File.open(root+"head.html") do |f|
 	head = readAndEncode( f )
 end

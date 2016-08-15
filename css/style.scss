@@ -13,7 +13,8 @@ $med:#FBBF0E;  $med2:#885C03;
 $com:#253763;  $com2:#151D39;
 
 
-#inicio {font-size:10px; background:#3498db; transition:background 1s ease;
+#inicio {font-size:10px; transition:background 1s ease; color:#fff;
+	a {color:#fff}
 	.slide {
 		 .inside { display: table; height: 100%; width: 100%; padding: 0 3em;
 			 .middle {
@@ -21,7 +22,7 @@ $com:#253763;  $com2:#151D39;
 				width: 100%;
 				clear: both;
 				vertical-align: middle; 
-				text-align: center; 
+				text-align: left; 
 			 }
 		  }
 	}
@@ -29,11 +30,11 @@ $com:#253763;  $com2:#151D39;
 	h1, h2, h3 {font-size:100%}
 	/* BIENVENIDA */
 	.bienvenida {
-		h1 { padding: 2em 0 4em 0;
+		&.slide .inside .middle { text-align:center; }
+		h1 { padding: 0 0 4em 0;
 			img { width:70em; }
 		}
-		a {color:black}
-		p {font-size:180%}
+		p {font-size:250%; margin-top:0}
 
 		.municipio {display:inline-block; width:40em; height:27.5em; color:white; text-decoration:none; margin-top:3em; margin-bottom:8em;
 			h2 {font-size:5em; font-weight:100; text-transform:uppercase; margin-top:1em; margin-bottom:0}
@@ -67,11 +68,8 @@ $com:#253763;  $com2:#151D39;
 			p {font-size:250%}
 			b {font-family:'Roboto Bold'}
 		}
-		.inside {width:35em; padding:5em 0; margin:0 auto; text-align:left; font-size:220%;
-			a {color:black}
-			ul.fuentes {
-				li {margin:0.8em 0}
-			}
+		.inside {width:35em; padding:5em 0; margin:0 auto; text-align:left; font-size:220%; text-align:left;
+			h2 {font-weight:100; text-transform:uppercase; font-size:250%; text-align:center;}
 			ul.ejes {list-style-type:none; font-size:120%;
 				li {font-weight:bold; margin:0.5em 0; 
 					span {border-radius:50%; width:2em; height:2em; line-height:2em; vertical-align:middle;
@@ -88,11 +86,39 @@ $com:#253763;  $com2:#151D39;
 				.com {color:$com; span {background-color:$com}}
 			}
 		}
+		&.queEs .inside { width:100%;
+			.middle2 {width:35em; margin:0 auto;}
+			.middle {
+				h2 {margin-top:0}
+				p {font-size:120%;}
+				.logos p {font-size:400%}
+			}
+		}
+		&.deDondeSurgen .inside {width:100%;
+			.middle {text-align:center;
+				h2 {width:25em; margin:0 auto}
+				ul.fuentes {
+					li {width:35%; height:45%; margin:2% 6%; display:inline-block; text-align:center; vertical-align:top;
+						a {display:inline-block;
+							img {width:8em; border:1px solid #555;}
+						}
+					}
+				}
+			}
+		}
+		&.comoEstanAgrupados .inside .middle {text-align:center;
+				.flor {width:30em}
+		}
+		&.comoSeMiden .inside .middle {text-align:left;
+		}
 	}
 }
 
-.sponsors {padding-bottom:5em; margin-top:0; padding-top:2em; border-top:1px solid #aaa; color:#777; background:#ccc; font-size:5px; width:100%; overflow:hidden;
-	p {font-size:320%; margin-bottom:0}
+.sponsors {padding-bottom:5em; margin-top:0; padding-top:2em; border-top:1px solid #aaa; color:#555; background:#ccc;
+}
+
+.sponsors, #inicio .logos {font-size:5px; width:100%; overflow:hidden; text-align:center;
+	p {font-size:350%; margin-bottom:0}
 	.list {line-height:25em; height:25em; overflow:hidden; width:200%; margin-left:-50%; text-align:center;
 		a {text-decoration:none; vertical-align:middle; display:inline-block;
 			img {vertical-align:middle; margin-right:4em; @include transition(all 0.5s ease-out);}

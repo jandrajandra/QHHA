@@ -9,9 +9,11 @@ body {
 
 #inicio {
   font-size: 10px;
-  background: #3498db;
   transition: background 1s ease;
+  color: #fff;
   /* BIENVENIDA */ }
+  #inicio a {
+    color: #fff; }
   #inicio .slide .inside {
     display: table;
     height: 100%;
@@ -22,17 +24,18 @@ body {
       width: 100%;
       clear: both;
       vertical-align: middle;
-      text-align: center; }
+      text-align: left; }
   #inicio h1, #inicio h2, #inicio h3 {
     font-size: 100%; }
+  #inicio .bienvenida.slide .inside .middle {
+    text-align: center; }
   #inicio .bienvenida h1 {
-    padding: 2em 0 4em 0; }
+    padding: 0 0 4em 0; }
     #inicio .bienvenida h1 img {
       width: 70em; }
-  #inicio .bienvenida a {
-    color: black; }
   #inicio .bienvenida p {
-    font-size: 180%; }
+    font-size: 250%;
+    margin-top: 0; }
   #inicio .bienvenida .municipio {
     display: inline-block;
     width: 40em;
@@ -84,11 +87,13 @@ body {
       padding: 5em 0;
       margin: 0 auto;
       text-align: left;
-      font-size: 220%; }
-      #inicio .page .inside a {
-        color: black; }
-      #inicio .page .inside ul.fuentes li {
-        margin: 0.8em 0; }
+      font-size: 220%;
+      text-align: left; }
+      #inicio .page .inside h2 {
+        font-weight: 100;
+        text-transform: uppercase;
+        font-size: 250%;
+        text-align: center; }
       #inicio .page .inside ul.ejes {
         list-style-type: none;
         font-size: 120%; }
@@ -137,57 +142,96 @@ body {
           color: #253763; }
           #inicio .page .inside ul.ejes .com span {
             background-color: #253763; }
+    #inicio .page.queEs .inside {
+      width: 100%; }
+      #inicio .page.queEs .inside .middle2 {
+        width: 35em;
+        margin: 0 auto; }
+      #inicio .page.queEs .inside .middle h2 {
+        margin-top: 0; }
+      #inicio .page.queEs .inside .middle p {
+        font-size: 120%; }
+      #inicio .page.queEs .inside .middle .logos p {
+        font-size: 400%; }
+    #inicio .page.deDondeSurgen .inside {
+      width: 100%; }
+      #inicio .page.deDondeSurgen .inside .middle {
+        text-align: center; }
+        #inicio .page.deDondeSurgen .inside .middle h2 {
+          width: 25em;
+          margin: 0 auto; }
+        #inicio .page.deDondeSurgen .inside .middle ul.fuentes li {
+          width: 35%;
+          height: 45%;
+          margin: 2% 6%;
+          display: inline-block;
+          text-align: center;
+          vertical-align: top; }
+          #inicio .page.deDondeSurgen .inside .middle ul.fuentes li a {
+            display: inline-block; }
+            #inicio .page.deDondeSurgen .inside .middle ul.fuentes li a img {
+              width: 8em;
+              border: 1px solid #555; }
+    #inicio .page.comoEstanAgrupados .inside .middle {
+      text-align: center; }
+      #inicio .page.comoEstanAgrupados .inside .middle .flor {
+        width: 30em; }
+    #inicio .page.comoSeMiden .inside .middle {
+      text-align: left; }
 
 .sponsors {
   padding-bottom: 5em;
   margin-top: 0;
   padding-top: 2em;
   border-top: 1px solid #aaa;
-  color: #777;
-  background: #ccc;
+  color: #555;
+  background: #ccc; }
+
+.sponsors, #inicio .logos {
   font-size: 5px;
   width: 100%;
-  overflow: hidden; }
-  .sponsors p {
-    font-size: 320%;
+  overflow: hidden;
+  text-align: center; }
+  .sponsors p, #inicio .logos p {
+    font-size: 350%;
     margin-bottom: 0; }
-  .sponsors .list {
+  .sponsors .list, #inicio .logos .list {
     line-height: 25em;
     height: 25em;
     overflow: hidden;
     width: 200%;
     margin-left: -50%;
     text-align: center; }
-    .sponsors .list a {
+    .sponsors .list a, #inicio .logos .list a {
       text-decoration: none;
       vertical-align: middle;
       display: inline-block; }
-      .sponsors .list a img {
+      .sponsors .list a img, #inicio .logos .list a img {
         vertical-align: middle;
         margin-right: 4em;
         -webkit-transition: all 0.5s ease-out;
         -moz-transition: all 0.5s ease-out;
         transition: all 0.5s ease-out; }
-      .sponsors .list a.jcv img {
+      .sponsors .list a.jcv img, #inicio .logos .list a.jcv img {
         width: 28em; }
-      .sponsors .list a.coparmex img {
+      .sponsors .list a.coparmex img, #inicio .logos .list a.coparmex img {
         height: 12em; }
-      .sponsors .list a.canaco img {
+      .sponsors .list a.canaco img, #inicio .logos .list a.canaco img {
         width: 25em; }
-      .sponsors .list a.ccij img {
+      .sponsors .list a.ccij img, #inicio .logos .list a.ccij img {
         width: 11em; }
-      .sponsors .list a.iteso img {
+      .sponsors .list a.iteso img, #inicio .logos .list a.iteso img {
         width: 26em; }
-      .sponsors .list a.cj img {
+      .sponsors .list a.cj img, #inicio .logos .list a.cj img {
         width: 16em; }
-      .sponsors .list a.tomala img {
+      .sponsors .list a.tomala img, #inicio .logos .list a.tomala img {
         width: 23em; }
-      .sponsors .list a.extra img {
+      .sponsors .list a.extra img, #inicio .logos .list a.extra img {
         width: 20em; }
-      .sponsors .list a.zoomed img {
+      .sponsors .list a.zoomed img, #inicio .logos .list a.zoomed img {
         font-size: 200%;
         margin-right: 2em; }
-      .sponsors .list a.zoomedAdj img {
+      .sponsors .list a.zoomedAdj img, #inicio .logos .list a.zoomedAdj img {
         font-size: 150%;
         margin-right: 2.6em; }
 

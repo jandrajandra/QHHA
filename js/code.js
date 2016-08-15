@@ -19,9 +19,9 @@ var QHHA = {
 			$('.slide')
 				.height(wHeight)
 				.scrollie({
-					scrollOffset : -50,
-					scrollingInView : function(elem) {
-						 var bgColor = elem.data('background');
+					scrollOffset : -300,
+					scrollingInView : function(slide) {
+						 var bgColor = slide.data('background');
 						 
 						 $('body').css('background-color', bgColor);
 					}
@@ -57,7 +57,7 @@ var QHHA = {
 
 	dockZoom: {
 		boot:function() {
-			$('.sponsors a').hover( QHHA.dockZoom.over, QHHA.dockZoom.out );
+			$('.sponsors a, #inicio .logos a').hover( QHHA.dockZoom.over, QHHA.dockZoom.out );
 		},
 		over:function() {
 			QHHA.dockZoom.out.apply(this);
