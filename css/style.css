@@ -1086,7 +1086,7 @@ body {
                 width: 6.75em; }
               #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaactualización {
                 width: 12em; }
-            #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador:hover .hover {
+            #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.clicked .hover, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador:hover .hover {
               display: block; }
         #zapGdl .eje ol.compromisos li.compromiso.picked .veSusIndicadores i {
           display: none; }

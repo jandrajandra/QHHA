@@ -28,7 +28,7 @@ var QHHA = {
 				reset:true,
 				duration:800,
 				scale:0.6,
-				viewFactor:0.5,
+				viewFactor:0.3,
 				beforeReveal:QHHA.slide.transition
 			});
 		},
@@ -330,6 +330,7 @@ var QHHA = {
 					compromiso.clone.find('big').click( QHHA.sheet.expand.thisOne );
 				});
 			});
+			$('li.indicador').click(function() {$(this).addClass('clicked')});
 		}
 	}
 };

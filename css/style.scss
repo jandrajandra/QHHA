@@ -477,7 +477,7 @@ $smallHeaderHeight:8em;
 							.fechameta {width:6.75em}
 							.fechaactualización {width:12em}
 						}
-						&:hover .hover {display:block}
+						&.clicked .hover, &:hover .hover {display:block}
 					}
 				}
 				&.picked {
