@@ -168,11 +168,13 @@ body {
           display: inline-block;
           text-align: center;
           vertical-align: top; }
-          #inicio .page.deDondeSurgen .inside .middle ul.fuentes li a {
+          #inicio .page.deDondeSurgen .inside .middle ul.fuentes li .pages a {
             display: inline-block; }
-            #inicio .page.deDondeSurgen .inside .middle ul.fuentes li a img {
+            #inicio .page.deDondeSurgen .inside .middle ul.fuentes li .pages a img {
               width: 8em;
               border: 1px solid #555; }
+            #inicio .page.deDondeSurgen .inside .middle ul.fuentes li .pages a:hover img {
+              width: 12em; }
     #inicio .page.comoEstanAgrupados .inside .middle {
       text-align: center; }
       #inicio .page.comoEstanAgrupados .inside .middle .flor {

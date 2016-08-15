@@ -99,8 +99,11 @@ $com:#253763;  $com2:#151D39;
 				h2 {width:25em; margin:0 auto}
 				ul.fuentes {
 					li {width:25%; height:45%; margin:2% 6%; display:inline-block; text-align:center; vertical-align:top;
-						a {display:inline-block;
-							img {width:8em; border:1px solid #555;}
+						.pages {
+							a {display:inline-block;
+								img {width:8em; border:1px solid #555;}
+								&:hover img {width:12em}
+							}
 						}
 					}
 				}
