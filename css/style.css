@@ -329,6 +329,10 @@ body {
             left: 1.5em; }
     #inicio .page#como-se-miden .inside .middle {
       text-align: left; }
+      #inicio .page#como-se-miden .inside .middle img {
+        float: left;
+        width: 20em;
+        margin: 0 1em 1em -3em; }
 
 .sponsors {
   padding-bottom: 5em;
