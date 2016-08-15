@@ -98,11 +98,11 @@ $com:#253763;  $com2:#151D39;
 			.middle {text-align:center;
 				h2 {width:25em; margin:0 auto}
 				ul.fuentes {
-					li {width:25%; height:45%; margin:2% 6%; display:inline-block; text-align:center; vertical-align:top;
-						.pages {
-							a {display:inline-block;
-								img {width:8em; border:1px solid #555;}
-								&:hover img {width:12em}
+					li {width:25%; height:45%; margin:2% 6%; margin-bottom:0; display:inline-block; text-align:center; vertical-align:top;
+						.pages {height:12em; line-height:12em;
+							a {display:inline-block; vertical-align:top;
+								img {width:8em; border:1px solid #555; @include transition(all 0.5s ease); }
+								&:hover img {width:10em}
 							}
 						}
 					}

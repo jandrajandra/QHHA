@@ -165,16 +165,24 @@ body {
           width: 25%;
           height: 45%;
           margin: 2% 6%;
+          margin-bottom: 0;
           display: inline-block;
           text-align: center;
           vertical-align: top; }
-          #inicio .page.deDondeSurgen .inside .middle ul.fuentes li .pages a {
-            display: inline-block; }
-            #inicio .page.deDondeSurgen .inside .middle ul.fuentes li .pages a img {
-              width: 8em;
-              border: 1px solid #555; }
-            #inicio .page.deDondeSurgen .inside .middle ul.fuentes li .pages a:hover img {
-              width: 12em; }
+          #inicio .page.deDondeSurgen .inside .middle ul.fuentes li .pages {
+            height: 12em;
+            line-height: 12em; }
+            #inicio .page.deDondeSurgen .inside .middle ul.fuentes li .pages a {
+              display: inline-block;
+              vertical-align: top; }
+              #inicio .page.deDondeSurgen .inside .middle ul.fuentes li .pages a img {
+                width: 8em;
+                border: 1px solid #555;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                transition: all 0.5s ease; }
+              #inicio .page.deDondeSurgen .inside .middle ul.fuentes li .pages a:hover img {
+                width: 10em; }
     #inicio .page.comoEstanAgrupados .inside .middle {
       text-align: center; }
       #inicio .page.comoEstanAgrupados .inside .middle .flor {
