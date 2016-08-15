@@ -24,8 +24,8 @@ var QHHA = {
 
 			$('body').css('background-color', bgColor);
 			console.log ( slide.attr('id') );
-			if( slide.attr('id') && slide.hasClass('eje') ) {
-				$('body').css('background-image', 'url(/img/gradients/'+slide.attr('id')+'.png)');
+			if( slide.data('bkgimage') || (slide.attr('id') && slide.hasClass('eje')) ) {
+				$('body').css('background-image', 'url(/img/gradients/'+(slide.data('bkgimage')||slide.attr('id'))+'.png)');
 			} else {
 				$('body').css('background-image', 'none');
 			}
