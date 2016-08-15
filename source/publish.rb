@@ -4,7 +4,7 @@ require 'rubygems'
 #require 'htmlentities'
 #require 'unicode'
 
-$localOnline = :local
+$localOnline = :online
 
 root = '/Users/bex/Dropbox/prjcts/else/jcv/qhha/source/' #Dir.pwd+'/'
 publicDir =  root.gsub(/source\/$/,'')
