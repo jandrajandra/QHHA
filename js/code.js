@@ -1,6 +1,7 @@
 var QHHA = {
 	boot:function() {
 		$('#header .top, #menu a:first').click( QHHA.toTop );
+		$('.showIconCredits').click(function() {$('.creditList').toggle()});
 		QHHA.zapGdl = $('body').data('zapgdl');
 
 		QHHA.build.boot();
@@ -155,11 +156,11 @@ var QHHA = {
 			if(w/h < 0.8) {
 				$('#zapGdl').addClass('portrait');
 				$('#inicio .slide .inside').css('min-height', h);
-				$('.list').css('font-size', '4px');
+				$('.logoList').css('font-size', '4px');
 			} else {
 				$('#zapGdl').removeClass('portrait');
 				$('#inicio .slide .inside').css('min-height', 'auto');
-				$('.list').css('font-size', '5px');
+				$('.logoList').css('font-size', '5px');
 			}
 			$('#zapGdl, #inicio').css('font-size', Math.min( hFontSize, wFontSize )+'px'); 
 		}

@@ -263,7 +263,7 @@ body {
       text-align: center; }
       #inicio .page#ejes .inside .middle div.flor {
         width: 50em;
-        height: 30em;
+        height: 35em;
         position: relative;
         margin-top: 1em;
         overflow-y: hidden; }
@@ -352,45 +352,70 @@ body {
   .sponsors p, #inicio .logos p {
     font-size: 350%;
     margin-bottom: 0; }
-  .sponsors .list, #inicio .logos .list {
+  .sponsors .logoList, #inicio .logos .logoList {
     line-height: 25em;
     height: 25em;
     overflow: hidden;
     width: 200%;
     margin-left: -50%;
     text-align: center; }
-    .sponsors .list a, #inicio .logos .list a {
+    .sponsors .logoList a, #inicio .logos .logoList a {
       text-decoration: none;
       vertical-align: middle;
       display: inline-block; }
-      .sponsors .list a img, #inicio .logos .list a img {
+      .sponsors .logoList a img, #inicio .logos .logoList a img {
         vertical-align: middle;
         margin-right: 4em;
         -webkit-transition: all 0.5s ease-out;
         -moz-transition: all 0.5s ease-out;
         transition: all 0.5s ease-out; }
-      .sponsors .list a.jcv img, #inicio .logos .list a.jcv img {
+      .sponsors .logoList a.jcv img, #inicio .logos .logoList a.jcv img {
         width: 28em; }
-      .sponsors .list a.coparmex img, #inicio .logos .list a.coparmex img {
+      .sponsors .logoList a.coparmex img, #inicio .logos .logoList a.coparmex img {
         height: 12em; }
-      .sponsors .list a.canaco img, #inicio .logos .list a.canaco img {
+      .sponsors .logoList a.canaco img, #inicio .logos .logoList a.canaco img {
         width: 25em; }
-      .sponsors .list a.ccij img, #inicio .logos .list a.ccij img {
+      .sponsors .logoList a.ccij img, #inicio .logos .logoList a.ccij img {
         width: 11em; }
-      .sponsors .list a.iteso img, #inicio .logos .list a.iteso img {
+      .sponsors .logoList a.iteso img, #inicio .logos .logoList a.iteso img {
         width: 26em; }
-      .sponsors .list a.cj img, #inicio .logos .list a.cj img {
+      .sponsors .logoList a.cj img, #inicio .logos .logoList a.cj img {
         width: 16em; }
-      .sponsors .list a.tomala img, #inicio .logos .list a.tomala img {
+      .sponsors .logoList a.tomala img, #inicio .logos .logoList a.tomala img {
         width: 23em; }
-      .sponsors .list a.extra img, #inicio .logos .list a.extra img {
+      .sponsors .logoList a.extra img, #inicio .logos .logoList a.extra img {
         width: 20em; }
-      .sponsors .list a.zoomed img, #inicio .logos .list a.zoomed img {
+      .sponsors .logoList a.zoomed img, #inicio .logos .logoList a.zoomed img {
         font-size: 200%;
         margin-right: 2em; }
-      .sponsors .list a.zoomedAdj img, #inicio .logos .list a.zoomedAdj img {
+      .sponsors .logoList a.zoomedAdj img, #inicio .logos .logoList a.zoomedAdj img {
         font-size: 150%;
         margin-right: 2.6em; }
+
+.credits {
+  font-size: 2em;
+  text-align: center;
+  background: #bbb;
+  padding: 0.5em 0;
+  color: black; }
+  .credits a {
+    color: black; }
+  .credits .inside {
+    width: 40em;
+    margin: 0 auto; }
+    .credits .inside .showIconCredits {
+      display: block;
+      text-align: center;
+      font-size: 90%; }
+    .credits .inside .creditList {
+      display: none; }
+      .credits .inside .creditList table {
+        margin: 0 auto; }
+        .credits .inside .creditList table td {
+          vertical-align: top; }
+
+#inicio .credits a, #zapGdl .credits a {
+  color: black; }
 
 /* ZAPOPAN & GUADALAJARA */
 #zapGdl {
