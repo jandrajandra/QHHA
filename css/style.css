@@ -267,10 +267,12 @@ body {
         #inicio .page#ejes .inside .middle div.flor img.flor {
           position: absolute;
           top: 0;
-          left: 10em; }
+          left: 10em;
+          z-index: 1; }
         #inicio .page#ejes .inside .middle div.flor img.icon {
           visibility: hidden;
-          position: absolute; }
+          position: absolute;
+          z-index: 2; }
           #inicio .page#ejes .inside .middle div.flor img.icon.seg {
             top: 5em;
             left: 12em; }

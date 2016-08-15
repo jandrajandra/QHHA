@@ -147,8 +147,8 @@ $com:#253763;  $com2:#151D39;
 		}
 		&#ejes .inside .middle {text-align:center;
 			div.flor {width:50em; height:30em; position:relative;
-				img.flor {position:absolute; top:0; left:10em;}
-				img.icon {visibility:hidden; position:absolute;
+				img.flor {position:absolute; top:0; left:10em; z-index:1}
+				img.icon {visibility:hidden; position:absolute; z-index:2;
 					&.seg {top:5em; left:12em}
 					&.urb {top:1em; left:14em}
 					&.eco {top:1em; left:18em}
