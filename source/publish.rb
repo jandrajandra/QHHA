@@ -12,6 +12,7 @@ head = ''
 template = ''
 footer = ''
 $logos = ''
+$feedback = ''
 
 
 def parse str
@@ -23,12 +24,17 @@ end
 
 def readAndEncode f
 	parse(File.read(f, :encoding => 'utf-8')).
-		gsub(/{{logos}}/, $logos)
+		gsub(/{{logos}}/, $logos).
+		gsub(/{{feedback}}/, $feedback)
 end
 
 File.open(root+"logos.html") do |f|
 	$logos = readAndEncode( f )
 end
+File.open(root+"feedback.html") do |f|
+	$feedback = readAndEncode( f )
+end
+
 File.open(root+"head.html") do |f|
 	head = readAndEncode( f )
 end
