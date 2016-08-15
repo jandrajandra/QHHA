@@ -1,7 +1,6 @@
 var QHHA = {
 	boot:function() {
-		$('#indice #alcalde').css('margin-bottom', 0);
-		$('#header .top, #menu .indice').click( QHHA.toTop );
+		$('#header .top, #menu a:first').click( QHHA.toTop );
 		QHHA.zapGdl = $('body').data('zapgdl');
 
 		QHHA.build.boot();
@@ -158,11 +157,7 @@ var QHHA = {
 			} else {
 				$('#zapGdl').removeClass('movil');
 			}
-			$('#zapGdl').css('font-size', Math.min( hFontSize, wFontSize )+'px'); 
-			$('#zapGdl #indice, #inicio .slide').css('height', h);
-
-			var alcaldeWidth = parseFloat($('#indice #alcalde').css('width'));
-			$('#indice #alcalde').css('left', (w-alcaldeWidth)/2 );
+			$('#zapGdl, #inicio').css('font-size', Math.min( hFontSize, wFontSize )+'px'); 
 		}
 	},
 

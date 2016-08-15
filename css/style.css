@@ -239,7 +239,7 @@ body {
           width: 25em;
           margin: 0 auto; }
         #inicio .page#fuentes .inside .middle ul.fuentes li {
-          width: 25%;
+          width: 30%;
           height: 45%;
           margin: 2% 6%;
           margin-bottom: 0;
@@ -269,6 +269,8 @@ body {
         margin-top: 1em; }
         #inicio .page#ejes .inside .middle div.flor img.flor {
           position: absolute;
+          height: 32em;
+          width: 32em;
           top: 0;
           left: 10em;
           z-index: 1; }
@@ -624,13 +626,7 @@ body {
       height: 23em;
       line-height: 23em;
       width: 111em;
-      position: absolute;
-      bottom: 2em;
-      left: 0;
-      margin-bottom: -23em;
-      -webkit-transition: margin-bottom 1s ease;
-      -moz-transition: margin-bottom 1s ease;
-      transition: margin-bottom 1s ease; }
+      margin: 2em auto; }
       #zapGdl #indice #alcalde h2, #zapGdl #indice #alcalde .bio, #zapGdl #indice #alcalde .inicioFin, #zapGdl #indice #alcalde .datos {
         display: inline-block;
         text-align: left;
@@ -1102,8 +1098,7 @@ body {
     #zapGdl .eje#comunidad li.compromiso:hover big {
       background-color: #253763; }
   #zapGdl #feedback {
-    color: white;
-    padding-bottom: 6em; }
+    color: white; }
     #zapGdl #feedback h2 {
       font-size: 5em;
       font-weight: 100;
@@ -1113,13 +1108,14 @@ body {
       font-size: 200%; }
     #zapGdl #feedback iframe {
       font-size: 200%;
-      height: 46em; }
+      height: 65em; }
 
 #feedback .middle {
-  text-align: center !important; }
+  text-align: center !important;
+  padding-bottom: 4em; }
   #feedback .middle iframe {
-    width: 29em;
-    height: 42em;
+    width: 40em;
+    height: 60em;
     margin: 0 auto; }
 
 body.zap#zapGdl #header.small .top img.up {

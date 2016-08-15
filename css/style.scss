@@ -135,7 +135,7 @@ $com:#253763;  $com2:#151D39;
 			.middle {text-align:center;
 				h2 {width:25em; margin:0 auto}
 				ul.fuentes {
-					li {width:25%; height:45%; margin:2% 6%; margin-bottom:0; display:inline-block; text-align:center; vertical-align:top;
+					li {width:30%; height:45%; margin:2% 6%; margin-bottom:0; display:inline-block; text-align:center; vertical-align:top;
 						.pages {height:12em; line-height:12em;
 							a {display:inline-block; vertical-align:top;
 								img {width:8em; border:1px solid #555; @include transition(all 0.5s ease); }
@@ -148,7 +148,7 @@ $com:#253763;  $com2:#151D39;
 		}
 		&#ejes .inside .middle {text-align:center;
 			div.flor {width:50em; height:30em; position:relative; margin-top:1em;
-				img.flor {position:absolute; top:0; left:10em; z-index:1}
+				img.flor {position:absolute; height:32em; width:32em; top:0; left:10em; z-index:1}
 				img.icon {position:absolute; z-index:2; width:5.5em; height:5.5em;
 					&.seg {top:11.5em; left:13.5em}
 					&.urb {top:4.5em; left:19.5em}
@@ -293,9 +293,7 @@ $smallHeaderHeight:8em;
 
 		$alcaldeHeight:23em;
 		/* ALCALDE */
-		#alcalde {text-align:center; height:$alcaldeHeight; line-height:$alcaldeHeight; width:111em;
-			position:absolute; bottom:2em; left:0; margin-bottom:-$alcaldeHeight; @include transition(margin-bottom 1s ease);
-
+		#alcalde {text-align:center; height:$alcaldeHeight; line-height:$alcaldeHeight; width:111em; margin:2em auto;
 			h2, .bio, .inicioFin, .datos {display:inline-block; text-align:left; line-height:normal; vertical-align:top;
 				div.text {font-size:160%}
 			}
@@ -482,15 +480,15 @@ $smallHeaderHeight:8em;
 		&#medio-ambiente {li.compromiso { big {background-color:$med2;} &:hover  big {background-color:$med;}}}
 		&#comunidad {li.compromiso { big {background-color:$com2;} &:hover  big {background-color:$com;}}}
 	}
-	#feedback { color:white; padding-bottom:6em;
+	#feedback { color:white;
 		h2 {font-size:5em; font-weight:100; text-transform:uppercase; padding-top:10em}
 		p {font-size:200%;}
-		iframe {font-size:200%; height:46em}
+		iframe {font-size:200%; height:65em}
 	}
 }
 
-#feedback .middle {text-align:center !important;
-	iframe { width:29em; height:42em; margin:0 auto }
+#feedback .middle {text-align:center !important; padding-bottom:4em;
+	iframe { width:40em; height:60em; margin:0 auto }
 }
 
 body.zap#zapGdl #header.small .top img.up {margin:0 4.93em}
