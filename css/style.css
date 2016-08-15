@@ -260,8 +260,38 @@ body {
                 width: 10em; }
     #inicio .page#ejes .inside .middle {
       text-align: center; }
-      #inicio .page#ejes .inside .middle .flor {
-        width: 30em; }
+      #inicio .page#ejes .inside .middle div.flor {
+        width: 50em;
+        height: 30em;
+        position: relative; }
+        #inicio .page#ejes .inside .middle div.flor img.flor {
+          position: absolute;
+          top: 0;
+          left: 10em; }
+        #inicio .page#ejes .inside .middle div.flor img.icon {
+          visibility: hidden;
+          position: absolute; }
+          #inicio .page#ejes .inside .middle div.flor img.icon.seg {
+            top: 5em;
+            left: 12em; }
+          #inicio .page#ejes .inside .middle div.flor img.icon.urb {
+            top: 1em;
+            left: 14em; }
+          #inicio .page#ejes .inside .middle div.flor img.icon.eco {
+            top: 1em;
+            left: 18em; }
+          #inicio .page#ejes .inside .middle div.flor img.icon.efi {
+            top: 5em;
+            left: 25em; }
+          #inicio .page#ejes .inside .middle div.flor img.icon.pub {
+            top: 10em;
+            left: 22em; }
+          #inicio .page#ejes .inside .middle div.flor img.icon.med {
+            top: 20em;
+            left: 15em; }
+          #inicio .page#ejes .inside .middle div.flor img.icon.com {
+            top: 10em;
+            left: 10em; }
     #inicio .page#como-se-miden .inside .middle {
       text-align: left; }
 
