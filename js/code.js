@@ -159,7 +159,7 @@ var QHHA = {
 				$('#zapGdl').removeClass('movil');
 			}
 			$('#zapGdl').css('font-size', Math.min( hFontSize, wFontSize )+'px'); 
-			$('#zapGdl #indice, #zapGdl #feedback, #inicio .slide').css('height', h);
+			$('#zapGdl #indice, #inicio .slide').css('height', h);
 
 			var alcaldeWidth = parseFloat($('#indice #alcalde').css('width'));
 			$('#indice #alcalde').css('left', (w-alcaldeWidth)/2 );

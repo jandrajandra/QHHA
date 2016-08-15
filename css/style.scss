@@ -464,14 +464,15 @@ $smallHeaderHeight:8em;
 		&#medio-ambiente {li.compromiso { big {background-color:$med2;} &:hover  big {background-color:$med;}}}
 		&#comunidad {li.compromiso { big {background-color:$com2;} &:hover  big {background-color:$com;}}}
 	}
-	#feedback { color:white;
+	#feedback { color:white; padding-bottom:6em;
 		h2 {font-size:5em; font-weight:100; text-transform:uppercase; padding-top:10em}
 		p {font-size:200%;}
+		iframe {font-size:200%; height:46em}
 	}
 }
 
 #feedback .middle {text-align:center !important;
-	iframe { width:80%; height:103%; margin:0 auto }
+	iframe { width:29em; height:42em; margin:0 auto }
 }
 
 body.zap#zapGdl #header.small .top img.up {margin:0 4.93em}

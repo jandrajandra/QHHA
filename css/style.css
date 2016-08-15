@@ -1073,7 +1073,8 @@ body {
     #zapGdl .eje#comunidad li.compromiso:hover big {
       background-color: #253763; }
   #zapGdl #feedback {
-    color: white; }
+    color: white;
+    padding-bottom: 6em; }
     #zapGdl #feedback h2 {
       font-size: 5em;
       font-weight: 100;
@@ -1081,12 +1082,15 @@ body {
       padding-top: 10em; }
     #zapGdl #feedback p {
       font-size: 200%; }
+    #zapGdl #feedback iframe {
+      font-size: 200%;
+      height: 46em; }
 
 #feedback .middle {
   text-align: center !important; }
   #feedback .middle iframe {
-    width: 80%;
-    height: 103%;
+    width: 29em;
+    height: 42em;
     margin: 0 auto; }
 
 body.zap#zapGdl #header.small .top img.up {
