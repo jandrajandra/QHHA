@@ -107,7 +107,7 @@ var QHHA = {
 					find('img').attr('src', QHHA.imgDir+eje.name+'.png').end().
 					find('big a').attr('href', '#'+eje.full.id).text(eje.full.shortLabel || eje.full.label);
 				indice.append( indizado );
-				indice.append( '<br  '+(((i+1)%2 == 0) ? '' : 'class="soloEnMovil"')+' />' );
+				indice.append( '<br  '+(((i+1)%2 == 0) ? '' : 'class="onlyInPortrait"')+' />' );
 				indizado.click( QHHA.build.goToInnerLink );
 			});
 		},
@@ -153,9 +153,13 @@ var QHHA = {
 			}
 
 			if(w/h < 0.8) {
-				$('#zapGdl').addClass('movil');
+				$('#zapGdl').addClass('portrait');
+				$('#inicio .slide .inside').css('min-height', h);
+				$('.list').css('font-size', '4px');
 			} else {
-				$('#zapGdl').removeClass('movil');
+				$('#zapGdl').removeClass('portrait');
+				$('#inicio .slide .inside').css('min-height', 'auto');
+				$('.list').css('font-size', '5px');
 			}
 			$('#zapGdl, #inicio').css('font-size', Math.min( hFontSize, wFontSize )+'px'); 
 		}

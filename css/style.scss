@@ -53,7 +53,7 @@ $com:#253763;  $com2:#151D39;
 	background-repeat:repeat-y; background-size:100% auto;
 	a {color:#fff}
 	.slide {
-		 .inside { display: table; height: 100%; width: 100%; padding: 0 3em;
+		 .inside { display: table; height: 100%; width: 100%;
 			 .middle {
 				display: table-cell;
 				width: 100%;
@@ -147,7 +147,7 @@ $com:#253763;  $com2:#151D39;
 			}
 		}
 		&#ejes .inside .middle {text-align:center;
-			div.flor {width:50em; height:30em; position:relative; margin-top:1em;
+			div.flor {width:50em; height:30em; position:relative; margin-top:1em; overflow-y:hidden;
 				img.flor {position:absolute; height:32em; width:32em; top:0; left:10em; z-index:1}
 				img.icon {position:absolute; z-index:2; width:5.5em; height:5.5em;
 					&.seg {top:11.5em; left:13.5em}
@@ -286,7 +286,7 @@ $smallHeaderHeight:8em;
 					&.com {background-color:$com2;}
 				}
 			}
-			br.soloEnMovil {display:none}
+			br.onlyInPortrait {display:none}
 		}
 		&.counted ul li small {display:block}
 
@@ -334,7 +334,7 @@ $smallHeaderHeight:8em;
 		}
 	}
 
-	&.movil #indice {font-size:10px;
+	&.portrait #indice {font-size:10px;
 		ul {
 			li {
 				.right {
@@ -343,7 +343,7 @@ $smallHeaderHeight:8em;
 				}
 				&.seg, &.urb, &.eco, &.efi, &.pub, &.med, &.com {margin:2em auto}
 			}
-			br.soloEnMovil {display:block}
+			br.onlyInPortrait {display:block}
 		}
 	}
 

@@ -93,8 +93,7 @@ body {
   #inicio .slide .inside {
     display: table;
     height: 100%;
-    width: 100%;
-    padding: 0 3em; }
+    width: 100%; }
     #inicio .slide .inside .middle {
       display: table-cell;
       width: 100%;
@@ -266,7 +265,8 @@ body {
         width: 50em;
         height: 30em;
         position: relative;
-        margin-top: 1em; }
+        margin-top: 1em;
+        overflow-y: hidden; }
         #inicio .page#ejes .inside .middle div.flor img.flor {
           position: absolute;
           height: 32em;
@@ -617,7 +617,7 @@ body {
           background-color: #885C03; }
         #zapGdl #indice ul li:hover.com {
           background-color: #151D39; }
-      #zapGdl #indice ul br.soloEnMovil {
+      #zapGdl #indice ul br.onlyInPortrait {
         display: none; }
     #zapGdl #indice.counted ul li small {
       display: block; }
@@ -721,17 +721,17 @@ body {
           font-weight: normal; }
       #zapGdl #indice #alcalde a {
         color: black; }
-  #zapGdl.movil #indice {
+  #zapGdl.portrait #indice {
     font-size: 10px; }
-    #zapGdl.movil #indice ul li .right big, #zapGdl.movil #indice ul li .right small {
+    #zapGdl.portrait #indice ul li .right big, #zapGdl.portrait #indice ul li .right small {
       margin-left: 0;
       text-align: left; }
-    #zapGdl.movil #indice ul li .right span.icon {
+    #zapGdl.portrait #indice ul li .right span.icon {
       float: none;
       margin-left: 0; }
-    #zapGdl.movil #indice ul li.seg, #zapGdl.movil #indice ul li.urb, #zapGdl.movil #indice ul li.eco, #zapGdl.movil #indice ul li.efi, #zapGdl.movil #indice ul li.pub, #zapGdl.movil #indice ul li.med, #zapGdl.movil #indice ul li.com {
+    #zapGdl.portrait #indice ul li.seg, #zapGdl.portrait #indice ul li.urb, #zapGdl.portrait #indice ul li.eco, #zapGdl.portrait #indice ul li.efi, #zapGdl.portrait #indice ul li.pub, #zapGdl.portrait #indice ul li.med, #zapGdl.portrait #indice ul li.com {
       margin: 2em auto; }
-    #zapGdl.movil #indice ul br.soloEnMovil {
+    #zapGdl.portrait #indice ul br.onlyInPortrait {
       display: block; }
   #zapGdl #template {
     display: none; }
