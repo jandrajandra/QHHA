@@ -37,7 +37,7 @@ var QHHA = {
 
 			$('body').css('background-color', bgColor);
 			if( slide.data('bkgimage') || (slide.attr('id') && slide.hasClass('eje')) ) {
-				$('body').css('background-image', 'url(/img/gradients/'+(slide.data('bkgimage')||slide.attr('id'))+'.png)');
+				//$('body').css('background-image', 'url(/img/gradients/'+(slide.data('bkgimage')||slide.attr('id'))+'.png)');
 			} else {
 				$('body').css('background-image', 'none');
 			}
@@ -60,7 +60,7 @@ var QHHA = {
 	ejesFull: {
 		seg:{label:'Seguridad y Prevención del Delito', shortLabel:'Seguridad', id:'seguridad', color:'#AF0B1E'},
 		urb:{label:'Desarrollo Urbano', id:'desarrollo-urbano', color:'#CDDA1B'},
-		eco:{label:'Desarrollo Económico', id:'desarrollo-economico', color:'#F6921F'},
+		eco:{label:'Desarrollo Económico', id:'desarrollo-economico', color:'#AF0B1E'},
 		efi:{label:'Eficiencia Administrativa', id:'eficiencia', color:'#8583A0'},
 		pub:{label:'Servicios Públicos', id:'servicios-publicos', color:'#E50027'},
 		med:{label:'Medio Ambiente', id:'medio-ambiente', color:'#FBBF0E'},
