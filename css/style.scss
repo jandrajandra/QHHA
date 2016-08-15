@@ -470,5 +470,8 @@ $smallHeaderHeight:8em;
 	}
 }
 
+#feedback .middle {text-align:center !important;
+	iframe { width:80%; height:103%; margin:0 auto }
+}
 
 body.zap#zapGdl #header.small .top img.up {margin:0 4.93em}
