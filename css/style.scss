@@ -98,7 +98,7 @@ $com:#253763;  $com2:#151D39;
 			.middle {text-align:center;
 				h2 {width:25em; margin:0 auto}
 				ul.fuentes {
-					li {width:35%; height:45%; margin:2% 6%; display:inline-block; text-align:center; vertical-align:top;
+					li {width:25%; height:45%; margin:2% 6%; display:inline-block; text-align:center; vertical-align:top;
 						a {display:inline-block;
 							img {width:8em; border:1px solid #555;}
 						}
@@ -141,7 +141,8 @@ $headerHeight:20em;
 $smallHeaderHeight:8em;
 
 /* ZAPOPAN & GUADALAJARA */
-#zapGdl {font-size:10px; background:#fff; transition:background 1s ease;
+#zapGdl {font-size:10px; background-color:#fff; transition:background 1s ease;
+	background-repeat:repeat-y; background-size:100% auto;
 	/* HEADER */
 	#header { vertical-align:middle; background:#555; height:$headerHeight; width:100%; line-height:$headerHeight; text-align:left; color:white; position:fixed; top:0; left:0; overflow:hidden; z-index:3;
 		.home {display:inline-block; text-decoration:none; background:#eee; float:left; width:50em; text-align:center; height:$headerHeight;

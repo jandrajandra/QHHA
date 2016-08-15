@@ -162,7 +162,7 @@ body {
           width: 25em;
           margin: 0 auto; }
         #inicio .page.deDondeSurgen .inside .middle ul.fuentes li {
-          width: 35%;
+          width: 25%;
           height: 45%;
           margin: 2% 6%;
           display: inline-block;
@@ -239,8 +239,10 @@ body {
 /* ZAPOPAN & GUADALAJARA */
 #zapGdl {
   font-size: 10px;
-  background: #fff;
+  background-color: #fff;
   transition: background 1s ease;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
   /* HEADER */
   /* Indice de ejes */
   /* EJE */ }
