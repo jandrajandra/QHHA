@@ -258,7 +258,7 @@ $smallHeaderHeight:8em;
 	}
 
 	/* Indice de ejes */
-	#indice {padding:0; padding-bottom:50em; position:relative; overflow:hidden;
+	#indice {padding:0; padding-bottom:20em; position:relative; overflow:hidden;
 
 		.bienvenida { padding-top:$headerHeight; margin:2.5em 2em 1em 2em;
 			p {margin:0 auto; padding:0.5em 0; line-height:1.6em; font-size:200%; width:65%;
@@ -371,7 +371,7 @@ $smallHeaderHeight:8em;
 	#template {display:none}
 
 	/* EJE */
-	.eje { padding:0; margin:0; text-align:left;
+	.eje { padding:0; margin:0; text-align:left; padding-bottom:40em;
 		h3 {text-align:center; font-weight:100; color:white; margin:0 auto; padding:2em 0; padding-top:38em;
 			span { display:inline-block; margin:0; margin-left:-8em; padding-right:2em; line-height:10em; vertical-align:middle;
 				img {height:8em; vertical-align:middle}
@@ -411,7 +411,7 @@ $smallHeaderHeight:8em;
 					&:hover .veSusIndicadores {text-decoration:underline; opacity:1}
 				} 
 				img.icon {vertical-align:top; height:7em; margin-left:2em; margin-top:2em}
-				ol.indicadores {display:none; margin:0; margin-top:5em; padding:0; list-style-type:none;
+				ol.indicadores {visibility:hidden; height:0; overflow:hidden; margin:0; margin-top:5em; padding:0; list-style-type:none;
 					li.indicador {padding:0; margin:2em 0; position:relative; text-align:left;
 						&::before {width:2.3em; top:-1em; left:-2em; background:#555; color:white; font-size:200%}
 						div {display:inline-block; text-align:center; vertical-align:top}
@@ -488,7 +488,7 @@ $smallHeaderHeight:8em;
 				}
 				&.picked {
 					.veSusIndicadores {i {display:none} em {display:inline-block}} 
-					ol.indicadores {display:block; }
+					ol.indicadores {visibility:visible; height:auto; overflow:visible; }
 				}
 			}
 		}

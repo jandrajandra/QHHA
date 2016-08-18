@@ -532,7 +532,7 @@ body {
           transition: all 1s ease; }
   #zapGdl #indice {
     padding: 0;
-    padding-bottom: 50em;
+    padding-bottom: 20em;
     position: relative;
     overflow: hidden;
     /* ALCALDE */ }
@@ -785,7 +785,8 @@ body {
   #zapGdl .eje {
     padding: 0;
     margin: 0;
-    text-align: left; }
+    text-align: left;
+    padding-bottom: 40em; }
     #zapGdl .eje h3 {
       text-align: center;
       font-weight: 100;
@@ -909,7 +910,9 @@ body {
           margin-left: 2em;
           margin-top: 2em; }
         #zapGdl .eje ol.compromisos li.compromiso ol.indicadores {
-          display: none;
+          visibility: hidden;
+          height: 0;
+          overflow: hidden;
           margin: 0;
           margin-top: 5em;
           padding: 0;
@@ -1115,7 +1118,9 @@ body {
         #zapGdl .eje ol.compromisos li.compromiso.picked .veSusIndicadores em {
           display: inline-block; }
         #zapGdl .eje ol.compromisos li.compromiso.picked ol.indicadores {
-          display: block; }
+          visibility: visible;
+          height: auto;
+          overflow: visible; }
     #zapGdl .eje#seguridad li.compromiso big {
       background-color: #770013; }
     #zapGdl .eje#seguridad li.compromiso:hover big {

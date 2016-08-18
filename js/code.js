@@ -71,7 +71,7 @@ var QHHA = {
 		slide:{
 			boot:function() {
 				QHHA.fx.scroll.sr.reveal('.slide', {
-					duration:800,
+					duration:1200,
 					scale:0.6,
 					viewFactor:0.3,
 					distance:'5em',
@@ -195,6 +195,7 @@ var QHHA = {
 				$('.logoList').css('font-size', '5px');
 			}
 			$('#inicio .wHeight').css('height', h+'px')
+			$('#zapGdl .slide').css('min-height', h+'px')
 			$('#zapGdl, #inicio').css('font-size', Math.min( hFontSize, wFontSize )+'px'); 
 		}
 	},
