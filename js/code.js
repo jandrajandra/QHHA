@@ -1,50 +1,110 @@
 var QHHA = {
+	/* variables */
+	ejes: [ 'seg', 'urb', 'eco', 'efi', 'pub', 'med', 'com' ],
+	imgDir: '/img/icons/',
+	zapGdl: 'gdl',
+	ejesFull: {
+		seg: {label:'Seguridad y Prevención del Delito', shortLabel:'Seguridad', id:'seguridad', color:'#AF0B1E'},
+		urb: {label:'Desarrollo Urbano', id:'desarrollo-urbano', color:'#CDDA1B'},
+		eco: {label:'Desarrollo Económico', id:'desarrollo-economico', color:'#F6921F'},
+		efi: {label:'Eficiencia Administrativa', id:'eficiencia', color:'#8583A0'},
+		pub: {label:'Servicios Públicos', id:'servicios-publicos', color:'#E50027'},
+		med: {label:'Medio Ambiente', id:'medio-ambiente', color:'#FBBF0E'},
+		com: {label:'Construcción de Comunidad', id:'comunidad', color:'#253763'}
+	},
+
 	boot:function() {
+		QHHA.build.boot();
+		QHHA.screen.boot();
+		QHHA.fx.dockZoom.boot();
+		QHHA.fx.scroll.boot();
+		QHHA.fx.slide.boot();
+
 		$('#header .top, #menu a:first').click( QHHA.toTop );
 		$('.showIconCredits').click(function() {$('.creditList').toggle()});
 		QHHA.zapGdl = $('body').data('zapgdl');
-
-		QHHA.build.boot();
-		QHHA.screen.boot();
-		QHHA.dockZoom.boot();
-
-		QHHA.scroll = ScrollReveal();
-		QHHA.scroll.reveal('.flor .icon', {
-			reset:true, delay:500
-		});
-		QHHA.scroll.reveal('.flor span.seg, .flor span.urb, .flor span.com', {
-			reset:true, delay:1000, duration:1000, scale:0.6, origin:'left'
-		});
-		QHHA.scroll.reveal('.flor span.eco, .flor span.efi, .flor span.pub, .flor span.med', {
-			reset:true, delay:1000, duration:1000, scale:0.6, origin:'right'
-		});
-
-		QHHA.slide.boot();
 	},
-	scroll:false,
-	slide:{
-		boot:function() {
-			QHHA.scroll.reveal('.slide', {
-				reset:true,
-				duration:800,
-				scale:0.6,
-				viewFactor:0.3,
-				beforeReveal:QHHA.slide.transition
-			});
-		},
-		transition:function(domEl) { var slide = $(domEl);
-			var bgColor = slide.data('background');
 
-			$('body').css('background-color', bgColor);
-			if( slide.data('bkgimage') || (slide.attr('id') && slide.hasClass('eje')) ) {
-				$('body').css('background-image', 'url(/img/gradients/'+(slide.data('bkgimage')||slide.attr('id'))+'.png)');
-			} else {
-				$('body').css('background-image', 'none');
+	/* Visual EFFECTS */
+	fx:{
+		scroll:{
+			boot:function() { var scroll = QHHA.fx.scroll;
+				scroll.sr = ScrollReveal();
+				scroll.bienvenida();
+				scroll.flor();
+				scroll.fuentes();
+				scroll.logos();
+			},
+			bienvenida:function() { var sr = QHHA.fx.scroll.sr;
+				sr.reveal('#bienvenida .municipio.zap', {
+					reset:true, origin:'left', delay:600
+				});
+				sr.reveal('#bienvenida .municipio.gdl', {
+					reset:true, origin:'right', delay:600
+				});
+				sr.reveal('#bienvenida .municipio img.mouseout', {
+					reset:true, delay:1000
+				});
+			},
+			fuentes:function() { var sr = QHHA.fx.scroll.sr;
+				sr.reveal('#fuentes .pages a', {
+					reset:true, delay:600
+				});
+			},
+			logos:function() { var sr = QHHA.fx.scroll.sr;
+				sr.reveal('.logoList a', {
+					reset:true, delay:600
+				});
+			},
+			flor:function() { var sr = QHHA.fx.scroll.sr;
+				sr.reveal('.flor .icon', {
+					reset:true, delay:500
+				});
+				sr.reveal('.flor span.seg, .flor span.urb, .flor span.com', {
+					reset:true, delay:1000, duration:1000, scale:0.6, origin:'left'
+				});
+				sr.reveal('.flor span.eco, .flor span.efi, .flor span.pub, .flor span.med', {
+					reset:true, delay:1000, duration:1000, scale:0.6, origin:'right'
+				});
 			}
+		},
+		slide:{
+			boot:function() {
+				QHHA.fx.scroll.sr.reveal('.slide', {
+					reset:true,
+					duration:800,
+					scale:0.6,
+					viewFactor:0.3,
+					beforeReveal:QHHA.fx.slide.transition
+				});
+			},
+			transition:function(domEl) { var slide = $(domEl);
+				var bgColor = slide.data('background');
 
-			$('#menu a').removeClass('here').filter("[href='#"+slide.attr('id')+"']").addClass('here');
+				$('body').css('background-color', bgColor);
+				if( slide.data('bkgimage') || (slide.attr('id') && slide.hasClass('eje')) ) {
+					$('body').css('background-image', 'url(/img/gradients/'+(slide.data('bkgimage')||slide.attr('id'))+'.png)');
+				} else {
+					$('body').css('background-image', 'none');
+				}
+
+				$('#menu a').removeClass('here').filter("[href='#"+slide.attr('id')+"']").addClass('here');
+			}
+		},
+		dockZoom: {
+			boot:function() {
+				$('.sponsors a, #inicio .logos a').hover( QHHA.fx.dockZoom.over, QHHA.fx.dockZoom.out );
+			},
+			over:function() {
+				QHHA.fx.dockZoom.out.apply(this);
+				$(this).addClass('zoomed').prev().addClass('zoomedAdj').next().next().addClass('zoomedAdj');
+			},
+			out:function() {
+				$(this).add($(this).siblings()).removeClass('zoomed zoomedAdj');
+			}
 		}
 	},
+
 	toTop:function() {
 		event.preventDefault();
 		$('html, body').stop().animate({
@@ -52,19 +112,6 @@ var QHHA = {
 		}, 1000);
 		history.pushState('', document.title, window.location.pathname);
 		return void(0);
-	},
-	ejes: [ 'seg', 'urb', 'eco', 'efi', 'pub', 'med', 'com' ],
-	imgDir: '/img/icons/',
-	zapGdl:'gdl',
-
-	ejesFull: {
-		seg:{label:'Seguridad y Prevención del Delito', shortLabel:'Seguridad', id:'seguridad', color:'#AF0B1E'},
-		urb:{label:'Desarrollo Urbano', id:'desarrollo-urbano', color:'#CDDA1B'},
-		eco:{label:'Desarrollo Económico', id:'desarrollo-economico', color:'#F6921F'},
-		efi:{label:'Eficiencia Administrativa', id:'eficiencia', color:'#8583A0'},
-		pub:{label:'Servicios Públicos', id:'servicios-publicos', color:'#E50027'},
-		med:{label:'Medio Ambiente', id:'medio-ambiente', color:'#FBBF0E'},
-		com:{label:'Construcción de Comunidad', id:'comunidad', color:'#253763'},
 	},
 
 	days:{
@@ -74,19 +121,6 @@ var QHHA = {
 				porcentaje = Math.ceil((dias*100)/total);
 			$('#alcalde .inicioFin').find('.dias i').text(dias).end().
 				find('.porcentaje i').text(porcentaje);
-		}
-	},
-
-	dockZoom: {
-		boot:function() {
-			$('.sponsors a, #inicio .logos a').hover( QHHA.dockZoom.over, QHHA.dockZoom.out );
-		},
-		over:function() {
-			QHHA.dockZoom.out.apply(this);
-			$(this).addClass('zoomed').prev().addClass('zoomedAdj').next().next().addClass('zoomedAdj');
-		},
-		out:function() {
-			$(this).add($(this).siblings()).removeClass('zoomed zoomedAdj');
 		}
 	},
 
@@ -142,9 +176,6 @@ var QHHA = {
 				}
 			});
 		},
-		stopEasing:function() {
-			setTimeout(function() {$('#header').removeClass('easing')}, 1200);
-		},
 		adjust:function() {var w = $(window).width(), h = $(window).height(), hFontSize = 10, wFontSize = 10;
 			if(h < 1050) { 
 				hFontSize = Math.min(10, Math.max(10*(h/1050),7));
@@ -162,6 +193,7 @@ var QHHA = {
 				$('#inicio .slide .inside').css('min-height', 'auto');
 				$('.logoList').css('font-size', '5px');
 			}
+			$('#inicio .wHeight').css('height', h+'px')
 			$('#zapGdl, #inicio').css('font-size', Math.min( hFontSize, wFontSize )+'px'); 
 		}
 	},
@@ -203,7 +235,7 @@ var QHHA = {
 				if( TOOLS.isSame( S.done, QHHA.ejes ) ) {
 					S.load();
 					S.count();
-					S.gauge();
+					S.medidor();
 				}
 			});
 		},
@@ -212,7 +244,7 @@ var QHHA = {
 				S.getEje(zapGdl, eje, i+1);
 			})
 		},
-		gauge:function() {
+		medidor:function() {
 			$('#ejes .eje li.indicador').each(function() { var indi = $(this);
 				var arranque = {html:indi.find('.arranque span')},
 					actualizacion = {html:indi.find('.actualización span')},

@@ -22,7 +22,8 @@ body {
     #menu .middle a {
       display: block;
       line-height: 3em;
-      height: 3em; }
+      height: 3em;
+      vertical-align: middle; }
       #menu .middle a span {
         display: inline-block;
         vertical-align: middle;
@@ -40,13 +41,15 @@ body {
         color: black;
         font-size: 2em;
         padding: 0.3em 0.6em; }
+      #menu .middle a strong {
+        color: black; }
       #menu .middle a.here span {
         background: transparent; }
       #menu .middle a:hover span {
         width: 2.5em;
         height: 2.5em;
         border-radius: 2.5em;
-        margin-top: -0.75em;
+        margin-top: -1.25em;
         margin-right: -0.75em; }
       #menu .middle a:hover big {
         display: inline-block; }
@@ -105,8 +108,7 @@ body {
   #inicio #bienvenida.slide .inside .middle {
     text-align: center; }
   #inicio #bienvenida h1 {
-    padding: 0 0 4em 0;
-    padding-top: 10em; }
+    padding: 0 0 4em 0; }
     #inicio #bienvenida h1 img {
       width: 70em; }
   #inicio #bienvenida p {
@@ -231,42 +233,53 @@ body {
       #inicio .page#que-es .inside .middle .logos p {
         font-size: 400%; }
     #inicio .page#fuentes .inside {
-      width: 100%; }
+      width: 100%;
+      padding: 0; }
       #inicio .page#fuentes .inside .middle {
         text-align: center; }
         #inicio .page#fuentes .inside .middle h2 {
-          width: 25em;
           margin: 0 auto; }
-        #inicio .page#fuentes .inside .middle ul.fuentes li {
-          width: 30%;
-          height: 45%;
-          margin: 2% 6%;
-          margin-bottom: 0;
-          display: inline-block;
-          text-align: center;
-          vertical-align: top; }
-          #inicio .page#fuentes .inside .middle ul.fuentes li .pages {
-            height: 12em;
-            line-height: 12em; }
-            #inicio .page#fuentes .inside .middle ul.fuentes li .pages a {
-              display: inline-block;
-              vertical-align: top; }
-              #inicio .page#fuentes .inside .middle ul.fuentes li .pages a img {
-                width: 8em;
-                border: 1px solid #555;
-                -webkit-transition: all 0.5s ease;
-                -moz-transition: all 0.5s ease;
-                transition: all 0.5s ease; }
-              #inicio .page#fuentes .inside .middle ul.fuentes li .pages a:hover img {
-                width: 10em; }
+        #inicio .page#fuentes .inside .middle p {
+          width: 90%;
+          margin: 0 auto;
+          margin-bottom: 1em; }
+        #inicio .page#fuentes .inside .middle ul.fuentes {
+          padding: 0;
+          margin: 0 auto;
+          margin-top: 1.5em;
+          text-align: center; }
+          #inicio .page#fuentes .inside .middle ul.fuentes li {
+            width: 35%;
+            height: 45%;
+            margin: 0 1% 2% 0;
+            display: inline-block;
+            text-align: center;
+            vertical-align: top; }
+            #inicio .page#fuentes .inside .middle ul.fuentes li .pages {
+              height: 15em;
+              line-height: 15em;
+              overflow: hidden; }
+              #inicio .page#fuentes .inside .middle ul.fuentes li .pages a {
+                display: inline-block;
+                vertical-align: top; }
+                #inicio .page#fuentes .inside .middle ul.fuentes li .pages a img {
+                  width: 8em;
+                  border: 1px solid #555;
+                  -webkit-transition: all 0.5s ease;
+                  -moz-transition: all 0.5s ease;
+                  transition: all 0.5s ease; }
+                #inicio .page#fuentes .inside .middle ul.fuentes li .pages a:hover img {
+                  width: 10em; }
     #inicio .page#ejes .inside .middle {
       text-align: center; }
       #inicio .page#ejes .inside .middle div.flor {
-        width: 50em;
+        width: 55em;
         height: 35em;
         position: relative;
+        margin: 0 auto;
         margin-top: 1em;
-        overflow-y: hidden; }
+        overflow-y: hidden;
+        font-size: 80%; }
         #inicio .page#ejes .inside .middle div.flor img.flor {
           position: absolute;
           height: 32em;
@@ -335,6 +348,9 @@ body {
         float: left;
         width: 20em;
         margin: 0 1em 1em -3em; }
+      #inicio .page#como-se-miden .inside .middle p.evidencia {
+        border-top: 1px solid white;
+        padding-top: 1em; }
 
 .sponsors {
   padding-bottom: 5em;
@@ -1139,8 +1155,8 @@ body {
   text-align: center !important;
   padding-bottom: 4em; }
   #feedback .middle iframe {
-    width: 40em;
-    height: 60em;
+    width: 30em;
+    height: 45em;
     margin: 0 auto; }
 
 body.zap#zapGdl #header.small .top img.up {

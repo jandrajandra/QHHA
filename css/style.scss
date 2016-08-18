@@ -13,17 +13,18 @@ $com:#253763;  $com2:#151D39;
 
 #menu {position:fixed; z-index:4; right:4.5em; top:0; text-align:right; display:table; height:100%;
 	.middle {display:table-cell; vertical-align:middle; clear:both;
-		a {display:block; line-height:3em; height:3em;
+		a {display:block; line-height:3em; height:3em; vertical-align:middle;
 			span {display:inline-block; vertical-align:middle; width:1em; height:1em; border-radius:1em;
 				border:2px solid white; background:white; transition:all 0.5s ease; margin-left:2em}
 			big {display:none; vertical-align:middle; background:white; color:black; font-size:2em; padding:0.3em 0.6em}
+			strong {color:black}
 
 			&.here {
 				span {background:transparent}
 			}
 
 			&:hover { 
-				span {width:2.5em; height:2.5em; border-radius:2.5em; margin-top:-0.75em; margin-right:-0.75em}
+				span {width:2.5em; height:2.5em; border-radius:2.5em; margin-top:-1.25em; margin-right:-0.75em}
 				big {display:inline-block;}
 			}
 		}
@@ -68,7 +69,7 @@ $com:#253763;  $com2:#151D39;
 	/* BIENVENIDA */
 	#bienvenida {
 		&.slide .inside .middle { text-align:center; }
-		h1 { padding: 0 0 4em 0; padding-top:10em;
+		h1 { padding: 0 0 4em 0;
 			img { width:70em; }
 		}
 		p {font-size:310%; margin-top:0.5em}
@@ -131,12 +132,13 @@ $com:#253763;  $com2:#151D39;
 				.logos p {font-size:400%}
 			}
 		}
-		&#fuentes .inside {width:100%;
+		&#fuentes .inside {width:100%; padding:0;
 			.middle {text-align:center;
-				h2 {width:25em; margin:0 auto}
-				ul.fuentes {
-					li {width:30%; height:45%; margin:2% 6%; margin-bottom:0; display:inline-block; text-align:center; vertical-align:top;
-						.pages {height:12em; line-height:12em;
+				h2 {margin:0 auto}
+				p {width:90%; margin:0 auto; margin-bottom:1em;}
+				ul.fuentes {padding:0; margin:0 auto; margin-top:1.5em; text-align:center;
+					li {width:35%; height:45%; margin:0 1% 2% 0; display:inline-block; text-align:center; vertical-align:top;
+						.pages {height:15em; line-height:15em; overflow:hidden;
 							a {display:inline-block; vertical-align:top;
 								img {width:8em; border:1px solid #555; @include transition(all 0.5s ease); }
 								&:hover img {width:10em}
@@ -147,7 +149,7 @@ $com:#253763;  $com2:#151D39;
 			}
 		}
 		&#ejes .inside .middle {text-align:center;
-			div.flor {width:50em; height:35em; position:relative; margin-top:1em; overflow-y:hidden;
+			div.flor {width:55em; height:35em; position:relative; margin:0 auto; margin-top:1em; overflow-y:hidden; font-size:80%;
 				img.flor {position:absolute; height:32em; width:32em; top:0; left:10em; z-index:1}
 				img.icon {position:absolute; z-index:2; width:5.5em; height:5.5em;
 					&.seg {top:11.5em; left:13.5em}
@@ -172,6 +174,7 @@ $com:#253763;  $com2:#151D39;
 		}
 		&#como-se-miden .inside .middle {text-align:left;
 			img {float:left; width:20em; margin:0 1em 1em -3em}
+			p.evidencia {border-top:1px solid white; padding-top:1em}
 		}
 	}
 }
@@ -502,7 +505,7 @@ $smallHeaderHeight:8em;
 }
 
 #feedback .middle {text-align:center !important; padding-bottom:4em;
-	iframe { width:40em; height:60em; margin:0 auto }
+	iframe { width:30em; height:45em; margin:0 auto }
 }
 
 body.zap#zapGdl #header.small .top img.up {margin:0 4.93em}
