@@ -224,15 +224,15 @@ $smallHeaderHeight:8em;
 	background-repeat:repeat-y; background-size:100% auto;
 	/* HEADER */
 	#header { vertical-align:middle; background:#555; height:$headerHeight; width:100%; line-height:$headerHeight; text-align:left; color:white; position:fixed; top:0; left:0; overflow:hidden; z-index:3;
-		.home {display:inline-block; text-decoration:none; background:#eee; float:left; width:50em; text-align:center; height:$headerHeight;
-			img {width:40em; vertical-align:top; margin-top:3em;}
+		.home {display:inline-block; text-decoration:none; background:#eee; float:left; width:40em; text-align:center; height:$headerHeight;
+			img {width:35em; vertical-align:middle;}
 		}
 		.top {height:$headerHeight; line-height:$headerHeight; vertical-align:bottom; font-weight:100; margin:0 2em; padding:0; 
 				display:block; text-decoration:none; color:white; text-transform:uppercase;
 			img {height:$headerHeight; vertical-align:top; margin:0 3em;
 				&.up {display:none; margin:0 2.2em}
 			}
-			span {display:inline-block; vertical-align:middle; font-size:7em; margin-top:0.75em}
+			span {display:inline-block; vertical-align:middle; font-size:6em; margin-top:0.75em}
 		}
 		&.small { height:$smallHeaderHeight; line-height:$smallHeaderHeight;
 			.home {width:25em; height:$smallHeaderHeight;
@@ -258,16 +258,16 @@ $smallHeaderHeight:8em;
 	}
 
 	/* Indice de ejes */
-	#indice {padding:0; height:100%; position:relative; overflow:hidden;
+	#indice {padding:0; padding-bottom:50em; position:relative; overflow:hidden;
 
 		.bienvenida { padding-top:$headerHeight; margin:2.5em 2em 1em 2em;
-			p {margin:0; padding:0.5em 0; line-height:1.6em; font-size:200%;
-				span {background:#ddd; padding:0.2em 0.3em}
+			p {margin:0 auto; padding:0.5em 0; line-height:1.6em; font-size:200%; width:65%;
+				span {background:#ddd; padding:0.2em 0.3em;}
 				.totalCompromisos, .totalIndicadores {background:black; color:white}
 			}
 		}
 		big {display:block}
-		ul {list-style-type:none; width:100%; margin:0 auto; text-align:center;
+		ul {list-style-type:none; width:100%; margin:3em auto; text-align:center; padding:0;
 			li {color:white; margin:1em; padding:0; display:inline-block; width:60em; cursor:pointer; text-align:left;
 				@include transition(all 1s ease);
 				span.icon { float:left; margin:0; margin-right:2em; padding:1em;
@@ -324,7 +324,7 @@ $smallHeaderHeight:8em;
 					&:hover {text-decoration:underline};
 				}
 				img {height:2em; vertical-align:middle; margin-right:0.5em}
-				.tel, .email, .twitter {margin:1.5em 0;
+				.tel, .email, .twitter {margin:2.5em 0; font-size:90%;
 					span, a {font-size:160%}
 				}
 				.tel {margin-top:5em;
@@ -351,29 +351,32 @@ $smallHeaderHeight:8em;
 		}
 	}
 
-	&.portrait #indice {font-size:10px;
-		ul {
-			li {
-				.right {
-					big, small {margin-left:0; text-align:left}
-					span.icon {float:none; margin-left:0; }
-				}
-				&.seg, &.urb, &.eco, &.efi, &.pub, &.med, &.com {margin:2em auto}
-			}
+	&.portrait {
+		#indice {font-size:10px;
+			#alcalde {text-align:left;}
 			br.onlyInPortrait {display:block}
+			ul {
+				li {
+					.right {
+						big, small {margin-left:0; text-align:left}
+						span.icon {float:none; margin-left:0; }
+					}
+					&.seg, &.urb, &.eco, &.efi, &.pub, &.med, &.com {margin:1em auto}
+				}
+				br.onlyInPortrait {display:block}
+			}
 		}
 	}
 
 	#template {display:none}
 
 	/* EJE */
-	.eje { padding:0; margin:0; text-align:left; 
-		h3 {text-align:center; font-weight:100; color:white; margin:0; padding:2em 0; padding-top:38em; font-size:100%;
-			width:100%; height:10em; line-height:10em;
-			span { display:inline-block; margin:0; margin-left:-8em; padding-right:2em; line-height:10em; vertical-align:top;
+	.eje { padding:0; margin:0; text-align:left;
+		h3 {text-align:center; font-weight:100; color:white; margin:0 auto; padding:2em 0; padding-top:38em;
+			span { display:inline-block; margin:0; margin-left:-8em; padding-right:2em; line-height:10em; vertical-align:middle;
 				img {height:8em; vertical-align:middle}
 			}
-			big {display:inline-block; font-size:550%; font-weight:100; text-transform:uppercase}
+			big {display:inline-block; font-size:450%; font-weight:100; text-transform:uppercase; vertical-align:middle}
 		}
 
 		p {color:white; margin:0 auto; font-size:170%; width:35em; line-height:1.4em;
@@ -386,7 +389,7 @@ $smallHeaderHeight:8em;
 			span.compromisos, span.indicadores {background:rgba(255, 255, 255, 0.5); color:black; font-weight:bold}
 		}
 
-		ol { counter-reset:compromiso;
+		ol { counter-reset:compromiso; padding:0;
 			li { counter-increment:compromiso;
 				&::before { background:white; color:black; width:1.5em; height:1.5em; line-height:1.5em; text-align:center;
 					display:inline-block; position:absolute; top:-0.1em; left:-1.5em; z-index:2; content:counters(compromiso, ".") " ";
@@ -409,10 +412,10 @@ $smallHeaderHeight:8em;
 				} 
 				img.icon {vertical-align:top; height:7em; margin-left:2em; margin-top:2em}
 				ol.indicadores {display:none; margin:0; margin-top:5em; padding:0; list-style-type:none;
-					li.indicador {padding:0; margin:2em 0; position:relative;
+					li.indicador {padding:0; margin:2em 0; position:relative; text-align:left;
 						&::before {width:2.3em; top:-1em; left:-2em; background:#555; color:white; font-size:200%}
 						div {display:inline-block; text-align:center; vertical-align:top}
-						.li {width:100%;
+						.li {width:100%; text-align:left;
 							.descripción {width:50%; padding:1em; background:white; font-size:180%; display:inline-block; text-align:left; margin-right:0; 
 								strong {color:black}
 							}
@@ -497,11 +500,19 @@ $smallHeaderHeight:8em;
 		&#medio-ambiente {li.compromiso { big {background-color:$med2;} &:hover  big {background-color:$med;}}}
 		&#comunidad {li.compromiso { big {background-color:$com2;} &:hover  big {background-color:$com;}}}
 	}
+
+	&.portrait {
+		.eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .descripción {width:40%}
+		.eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .observaciones {width:21.5%}
+		.eje ol.compromisos li.compromiso big {max-width:25em}
+	}
+
 	#feedback { color:white;
 		h2 {font-size:5em; font-weight:100; text-transform:uppercase; padding-top:10em}
 		p {font-size:200%;}
 		iframe {font-size:200%; height:65em}
 	}
+
 }
 
 #feedback .middle {text-align:center !important; padding-bottom:4em;

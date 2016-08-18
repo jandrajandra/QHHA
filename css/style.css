@@ -461,13 +461,12 @@ body {
       text-decoration: none;
       background: #eee;
       float: left;
-      width: 50em;
+      width: 40em;
       text-align: center;
       height: 20em; }
       #zapGdl #header .home img {
-        width: 40em;
-        vertical-align: top;
-        margin-top: 3em; }
+        width: 35em;
+        vertical-align: middle; }
     #zapGdl #header .top {
       height: 20em;
       line-height: 20em;
@@ -489,7 +488,7 @@ body {
       #zapGdl #header .top span {
         display: inline-block;
         vertical-align: middle;
-        font-size: 7em;
+        font-size: 6em;
         margin-top: 0.75em; }
     #zapGdl #header.small {
       height: 8em;
@@ -533,7 +532,7 @@ body {
           transition: all 1s ease; }
   #zapGdl #indice {
     padding: 0;
-    height: 100%;
+    padding-bottom: 50em;
     position: relative;
     overflow: hidden;
     /* ALCALDE */ }
@@ -541,10 +540,11 @@ body {
       padding-top: 20em;
       margin: 2.5em 2em 1em 2em; }
       #zapGdl #indice .bienvenida p {
-        margin: 0;
+        margin: 0 auto;
         padding: 0.5em 0;
         line-height: 1.6em;
-        font-size: 200%; }
+        font-size: 200%;
+        width: 65%; }
         #zapGdl #indice .bienvenida p span {
           background: #ddd;
           padding: 0.2em 0.3em; }
@@ -556,8 +556,9 @@ body {
     #zapGdl #indice ul {
       list-style-type: none;
       width: 100%;
-      margin: 0 auto;
-      text-align: center; }
+      margin: 3em auto;
+      text-align: center;
+      padding: 0; }
       #zapGdl #indice ul li {
         color: white;
         margin: 1em;
@@ -705,7 +706,8 @@ body {
           vertical-align: middle;
           margin-right: 0.5em; }
         #zapGdl #indice #alcalde .datos .tel, #zapGdl #indice #alcalde .datos .email, #zapGdl #indice #alcalde .datos .twitter {
-          margin: 1.5em 0; }
+          margin: 2.5em 0;
+          font-size: 90%; }
           #zapGdl #indice #alcalde .datos .tel span, #zapGdl #indice #alcalde .datos .tel a, #zapGdl #indice #alcalde .datos .email span, #zapGdl #indice #alcalde .datos .email a, #zapGdl #indice #alcalde .datos .twitter span, #zapGdl #indice #alcalde .datos .twitter a {
             font-size: 160%; }
         #zapGdl #indice #alcalde .datos .tel {
@@ -764,6 +766,10 @@ body {
         color: black; }
   #zapGdl.portrait #indice {
     font-size: 10px; }
+    #zapGdl.portrait #indice #alcalde {
+      text-align: left; }
+    #zapGdl.portrait #indice br.onlyInPortrait {
+      display: block; }
     #zapGdl.portrait #indice ul li .right big, #zapGdl.portrait #indice ul li .right small {
       margin-left: 0;
       text-align: left; }
@@ -771,7 +777,7 @@ body {
       float: none;
       margin-left: 0; }
     #zapGdl.portrait #indice ul li.seg, #zapGdl.portrait #indice ul li.urb, #zapGdl.portrait #indice ul li.eco, #zapGdl.portrait #indice ul li.efi, #zapGdl.portrait #indice ul li.pub, #zapGdl.portrait #indice ul li.med, #zapGdl.portrait #indice ul li.com {
-      margin: 2em auto; }
+      margin: 1em auto; }
     #zapGdl.portrait #indice ul br.onlyInPortrait {
       display: block; }
   #zapGdl #template {
@@ -784,28 +790,25 @@ body {
       text-align: center;
       font-weight: 100;
       color: white;
-      margin: 0;
+      margin: 0 auto;
       padding: 2em 0;
-      padding-top: 38em;
-      font-size: 100%;
-      width: 100%;
-      height: 10em;
-      line-height: 10em; }
+      padding-top: 38em; }
       #zapGdl .eje h3 span {
         display: inline-block;
         margin: 0;
         margin-left: -8em;
         padding-right: 2em;
         line-height: 10em;
-        vertical-align: top; }
+        vertical-align: middle; }
         #zapGdl .eje h3 span img {
           height: 8em;
           vertical-align: middle; }
       #zapGdl .eje h3 big {
         display: inline-block;
-        font-size: 550%;
+        font-size: 450%;
         font-weight: 100;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        vertical-align: middle; }
     #zapGdl .eje p {
       color: white;
       margin: 0 auto;
@@ -838,7 +841,8 @@ body {
         color: black;
         font-weight: bold; }
     #zapGdl .eje ol {
-      counter-reset: compromiso; }
+      counter-reset: compromiso;
+      padding: 0; }
       #zapGdl .eje ol li {
         counter-increment: compromiso; }
         #zapGdl .eje ol li::before {
@@ -913,7 +917,8 @@ body {
           #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador {
             padding: 0;
             margin: 2em 0;
-            position: relative; }
+            position: relative;
+            text-align: left; }
             #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador::before {
               width: 2.3em;
               top: -1em;
@@ -926,7 +931,8 @@ body {
               text-align: center;
               vertical-align: top; }
             #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li {
-              width: 100%; }
+              width: 100%;
+              text-align: left; }
               #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .descripción {
                 width: 50%;
                 padding: 1em;
@@ -1138,6 +1144,12 @@ body {
       background-color: #151D39; }
     #zapGdl .eje#comunidad li.compromiso:hover big {
       background-color: #253763; }
+  #zapGdl.portrait .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .descripción {
+    width: 40%; }
+  #zapGdl.portrait .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .observaciones {
+    width: 21.5%; }
+  #zapGdl.portrait .eje ol.compromisos li.compromiso big {
+    max-width: 25em; }
   #zapGdl #feedback {
     color: white; }
     #zapGdl #feedback h2 {

@@ -4,7 +4,7 @@ var QHHA = {
 	imgDir: '/img/icons/',
 	zapGdl: 'gdl',
 	ejesFull: {
-		seg: {label:'Seguridad y Prevención del Delito', shortLabel:'Seguridad', id:'seguridad', color:'#AF0B1E'},
+		seg: {label:'Seguridad', shortLabel:'Seguridad', id:'seguridad', color:'#AF0B1E'},
 		urb: {label:'Desarrollo Urbano', id:'desarrollo-urbano', color:'#CDDA1B'},
 		eco: {label:'Desarrollo Económico', id:'desarrollo-economico', color:'#F6921F'},
 		efi: {label:'Eficiencia Administrativa', id:'eficiencia', color:'#8583A0'},
@@ -29,7 +29,7 @@ var QHHA = {
 	fx:{
 		scroll:{
 			boot:function() { var scroll = QHHA.fx.scroll;
-				scroll.sr = ScrollReveal();
+				scroll.sr = ScrollReveal({mobile:true, reset:true});
 				scroll.bienvenida();
 				scroll.flor();
 				scroll.fuentes();
@@ -37,44 +37,45 @@ var QHHA = {
 			},
 			bienvenida:function() { var sr = QHHA.fx.scroll.sr;
 				sr.reveal('#bienvenida .municipio.zap', {
-					reset:true, origin:'left', delay:600
+					origin:'left', delay:600
 				});
 				sr.reveal('#bienvenida .municipio.gdl', {
-					reset:true, origin:'right', delay:600
+					origin:'right', delay:600
 				});
 				sr.reveal('#bienvenida .municipio img.mouseout', {
-					reset:true, delay:1000
+					delay:1000
 				});
 			},
 			fuentes:function() { var sr = QHHA.fx.scroll.sr;
 				sr.reveal('#fuentes .pages a', {
-					reset:true, delay:600
+					delay:600
 				});
 			},
 			logos:function() { var sr = QHHA.fx.scroll.sr;
 				sr.reveal('.logoList a', {
-					reset:true, delay:600
-				});
+					delay:600
+				}, 50);
 			},
 			flor:function() { var sr = QHHA.fx.scroll.sr;
 				sr.reveal('.flor .icon', {
-					reset:true, delay:500
+					delay:500
 				});
 				sr.reveal('.flor span.seg, .flor span.urb, .flor span.com', {
-					reset:true, delay:1000, duration:1000, scale:0.6, origin:'left'
+					delay:1000, duration:1000, scale:0.6, origin:'left'
 				});
 				sr.reveal('.flor span.eco, .flor span.efi, .flor span.pub, .flor span.med', {
-					reset:true, delay:1000, duration:1000, scale:0.6, origin:'right'
+					delay:1000, duration:1000, scale:0.6, origin:'right'
 				});
 			}
 		},
 		slide:{
 			boot:function() {
 				QHHA.fx.scroll.sr.reveal('.slide', {
-					reset:true,
 					duration:800,
 					scale:0.6,
 					viewFactor:0.3,
+					distance:'5em',
+					//reset:false,
 					beforeReveal:QHHA.fx.slide.transition
 				});
 			},
