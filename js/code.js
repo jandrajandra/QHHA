@@ -1,3 +1,9 @@
+$.extend($.expr[":"], {
+	"containsNC": function(elem, i, match, array) {
+	return (elem.textContent || elem.innerText || "").toLowerCase().indexOf((match[3] || "").toLowerCase()) >= 0;
+	}
+});
+
 var QHHA = {
 	/* variables */
 	ejes: [ 'seg', 'urb', 'eco', 'efi', 'pub', 'med', 'com' ],
@@ -16,6 +22,7 @@ var QHHA = {
 	boot:function() {
 		QHHA.build.boot();
 		QHHA.screen.boot();
+		QHHA.search.boot();
 		QHHA.fx.dockZoom.boot();
 		QHHA.fx.scroll.boot();
 		QHHA.fx.slide.boot();
@@ -23,6 +30,20 @@ var QHHA = {
 		$('#header .top, #menu a:first').click( QHHA.toTop );
 		$('.showIconCredits').click(function() {$('.creditList').toggle()});
 		QHHA.zapGdl = $('body').data('zapgdl');
+	},
+
+	search: {
+		boot:function() {
+			$('#search form').submit( QHHA.search.submit );
+			$('#search form .query').keyup( QHHA.search.submit );
+		},
+		submit:function() { var query = $('form .query').val(), results = [];
+			$('#ejes li.indicador .descripción:containsNC('+query+')').each(function() {
+				results.push( $(this).parents('li.indicador').clone() );
+			});
+			$('#search .results').html('').append( results );
+			return false;
+		}
 	},
 
 	/* Visual EFFECTS */
@@ -41,6 +62,9 @@ var QHHA = {
 				});
 				sr.reveal('#bienvenida .municipio.gdl', {
 					origin:'right', delay:600
+				});
+				sr.reveal('#bienvenida img.gdl', {
+					origin:'left', delay:1000
 				});
 				sr.reveal('#bienvenida .municipio img.mouseout', {
 					delay:1000
@@ -80,9 +104,11 @@ var QHHA = {
 				});
 			},
 			transition:function(domEl) { var slide = $(domEl);
+
 				var bgColor = slide.data('background');
 
 				$('body').css('background-color', bgColor);
+
 				if( slide.data('bkgimage') || (slide.attr('id') && slide.hasClass('eje')) ) {
 					$('body').css('background-image', 'url(/img/gradients/'+(slide.data('bkgimage')||slide.attr('id'))+'.png)');
 				} else {
@@ -352,7 +378,7 @@ var QHHA = {
 									show(indi, 'meta')+
 								'</div><div class="hover">'+
 									show(indi, 'fuente', 'enlacefuente', 'Fuente: ')+
-									show(indi, 'observaciones')+
+									show(indi, 'observaciones', 'enlaceobservaciones')+
 									show(indi, 'fechaarranque')+
 									show(indi, 'fechaactualización')+
 									show(indi, 'fechameta')+

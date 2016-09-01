@@ -50,7 +50,7 @@ $com:#253763;  $com2:#151D39;
 	&.comunidad {span, big {background-color:$com}}
 }
 
-#inicio {font-size:10px; transition:background 1s ease; color:#fff; background:#FBBF0E;
+#inicio {font-size:10px; transition:background 1s ease; color:#fff; background:#E0E0E2;
 	background-repeat:repeat-y; background-size:100% auto;
 	a {color:#fff}
 	.slide {
@@ -67,14 +67,21 @@ $com:#253763;  $com2:#151D39;
 
 	h1, h2, h3 {font-size:100%}
 	/* BIENVENIDA */
-	#bienvenida {
+	#bienvenida { color:#0e2a5d;
+		.inside {position:relative;
+			img.zap, img.gdl {position:absolute; z-index:1; bottom:-2em}
+			img.zap {left:-30em; height:70em; }
+			img.gdl {right:-5em; height:70em; }
+			.middle {z-index:3; position:relative}
+		}
 		&.slide .inside .middle { text-align:center; }
 		h1 { padding: 0 0 4em 0;
 			img { width:70em; }
 		}
 		p {font-size:310%; margin-top:0.5em}
 
-		.municipio {display:inline-block; width:40em; height:27.5em; color:white; text-decoration:none; margin-top:3em; margin-bottom:8em;
+		.municipio {display:inline-block; width:40em; height:27.5em; color:#0e2a5d; text-decoration:none;
+			margin-top:1em; margin-bottom:0; padding:4em 2em;
 			h2 {font-size:5em; font-weight:100; text-transform:uppercase; margin-top:1em; margin-bottom:0}
 			h3 {font-size:3em; margin-top:0.33em}
 
@@ -82,12 +89,14 @@ $com:#253763;  $com2:#151D39;
 			.mouseover {display:none}
 
 			&.zap {
-				background:#5C5973 url(/img/zapgdl/zap-bkg.png) no-repeat center bottom;
+				/*background:#5C5973 url(/img/zapgdl/zap-bkg.png) no-repeat center bottom;*/
+				background:transparent;
 				background-size:auto 100%;
 				margin-right:3em;
 			}
 			&.gdl {
-				background:#5C5973 url(/img/zapgdl/gdl-bkg.png) no-repeat center bottom;
+				/*background:#5C5973 url(/img/zapgdl/gdl-bkg.png) no-repeat center bottom;*/
+				background:transparent;
 				background-size:auto 100%;
 			}
 
@@ -214,7 +223,12 @@ $com:#253763;  $com2:#151D39;
 	}
 }
 
-#inicio .credits a, #zapGdl .credits a {color:black}
+.github {padding:2em 0; background:#bbb; color:black;
+	a {color:black}
+	img {vertical-align:middle}
+}
+
+#inicio .credits a, #zapGdl .credits a, #inicio .github a, #zapGdl .github a {color:black}
 
 $headerHeight:20em;
 $smallHeaderHeight:8em;
@@ -349,6 +363,13 @@ $smallHeaderHeight:8em;
 			}
 			a {color:black}
 		}
+
+		#search {
+			form {background:black; font-size:200%;
+				.query {display:inline-block; width:40%; font-size:1.5em}
+			}
+			.result {background:#eee}
+		}
 	}
 
 	&.portrait {
@@ -474,7 +495,9 @@ $smallHeaderHeight:8em;
 								em {font-weight:100}
 								a {font-style:italic; color:white}
 							}
-							.observaciones {width:31.5%; }
+							.observaciones {width:31.5%; 
+								a {color:white}
+							}
 							.fechaarranque, .fechaactualización, .fechameta {width:5em; padding:0.7em 0.3em; text-align:center; font-size:180%; color:#ccc;
 							}
 							.fechaarranque, .fechameta {width:7.5em; padding:1em 0.45em; text-align:center; font-size:120%; color:#ccc;

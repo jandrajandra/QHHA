@@ -87,7 +87,7 @@ body {
   font-size: 10px;
   transition: background 1s ease;
   color: #fff;
-  background: #FBBF0E;
+  background: #E0E0E2;
   background-repeat: repeat-y;
   background-size: 100% auto;
   /* BIENVENIDA */ }
@@ -105,50 +105,70 @@ body {
       text-align: left; }
   #inicio h1, #inicio h2, #inicio h3 {
     font-size: 100%; }
-  #inicio #bienvenida.slide .inside .middle {
-    text-align: center; }
-  #inicio #bienvenida h1 {
-    padding: 0 0 4em 0; }
-    #inicio #bienvenida h1 img {
-      width: 70em; }
-  #inicio #bienvenida p {
-    font-size: 310%;
-    margin-top: 0.5em; }
-  #inicio #bienvenida .municipio {
-    display: inline-block;
-    width: 40em;
-    height: 27.5em;
-    color: white;
-    text-decoration: none;
-    margin-top: 3em;
-    margin-bottom: 8em; }
-    #inicio #bienvenida .municipio h2 {
-      font-size: 5em;
-      font-weight: 100;
-      text-transform: uppercase;
+  #inicio #bienvenida {
+    color: #0e2a5d; }
+    #inicio #bienvenida .inside {
+      position: relative; }
+      #inicio #bienvenida .inside img.zap, #inicio #bienvenida .inside img.gdl {
+        position: absolute;
+        z-index: 1;
+        bottom: -2em; }
+      #inicio #bienvenida .inside img.zap {
+        left: -30em;
+        height: 70em; }
+      #inicio #bienvenida .inside img.gdl {
+        right: -5em;
+        height: 70em; }
+      #inicio #bienvenida .inside .middle {
+        z-index: 3;
+        position: relative; }
+    #inicio #bienvenida.slide .inside .middle {
+      text-align: center; }
+    #inicio #bienvenida h1 {
+      padding: 0 0 4em 0; }
+      #inicio #bienvenida h1 img {
+        width: 70em; }
+    #inicio #bienvenida p {
+      font-size: 310%;
+      margin-top: 0.5em; }
+    #inicio #bienvenida .municipio {
+      display: inline-block;
+      width: 40em;
+      height: 27.5em;
+      color: #0e2a5d;
+      text-decoration: none;
       margin-top: 1em;
-      margin-bottom: 0; }
-    #inicio #bienvenida .municipio h3 {
-      font-size: 3em;
-      margin-top: 0.33em; }
-    #inicio #bienvenida .municipio .mouseout {
-      display: inline-block; }
-    #inicio #bienvenida .municipio .mouseover {
-      display: none; }
-    #inicio #bienvenida .municipio.zap {
-      background: #5C5973 url(/img/zapgdl/zap-bkg.png) no-repeat center bottom;
-      background-size: auto 100%;
-      margin-right: 3em; }
-    #inicio #bienvenida .municipio.gdl {
-      background: #5C5973 url(/img/zapgdl/gdl-bkg.png) no-repeat center bottom;
-      background-size: auto 100%; }
-    #inicio #bienvenida .municipio:hover {
-      background-color: #121A2E;
-      color: white; }
-      #inicio #bienvenida .municipio:hover .mouseout {
-        display: none; }
-      #inicio #bienvenida .municipio:hover .mouseover {
+      margin-bottom: 0;
+      padding: 4em 2em; }
+      #inicio #bienvenida .municipio h2 {
+        font-size: 5em;
+        font-weight: 100;
+        text-transform: uppercase;
+        margin-top: 1em;
+        margin-bottom: 0; }
+      #inicio #bienvenida .municipio h3 {
+        font-size: 3em;
+        margin-top: 0.33em; }
+      #inicio #bienvenida .municipio .mouseout {
         display: inline-block; }
+      #inicio #bienvenida .municipio .mouseover {
+        display: none; }
+      #inicio #bienvenida .municipio.zap {
+        /*background:#5C5973 url(/img/zapgdl/zap-bkg.png) no-repeat center bottom;*/
+        background: transparent;
+        background-size: auto 100%;
+        margin-right: 3em; }
+      #inicio #bienvenida .municipio.gdl {
+        /*background:#5C5973 url(/img/zapgdl/gdl-bkg.png) no-repeat center bottom;*/
+        background: transparent;
+        background-size: auto 100%; }
+      #inicio #bienvenida .municipio:hover {
+        background-color: #121A2E;
+        color: white; }
+        #inicio #bienvenida .municipio:hover .mouseout {
+          display: none; }
+        #inicio #bienvenida .municipio:hover .mouseover {
+          display: inline-block; }
   #inicio .page {
     width: 100%; }
     #inicio .page .explicacion {
@@ -430,7 +450,16 @@ body {
         .credits .inside .creditList table td {
           vertical-align: top; }
 
-#inicio .credits a, #zapGdl .credits a {
+.github {
+  padding: 2em 0;
+  background: #bbb;
+  color: black; }
+  .github a {
+    color: black; }
+  .github img {
+    vertical-align: middle; }
+
+#inicio .credits a, #zapGdl .credits a, #inicio .github a, #zapGdl .github a {
   color: black; }
 
 /* ZAPOPAN & GUADALAJARA */
@@ -764,6 +793,15 @@ body {
           font-weight: normal; }
       #zapGdl #indice #alcalde a {
         color: black; }
+    #zapGdl #indice #search form {
+      background: black;
+      font-size: 200%; }
+      #zapGdl #indice #search form .query {
+        display: inline-block;
+        width: 40%;
+        font-size: 1.5em; }
+    #zapGdl #indice #search .result {
+      background: #eee; }
   #zapGdl.portrait #indice {
     font-size: 10px; }
     #zapGdl.portrait #indice #alcalde {
@@ -1092,6 +1130,8 @@ body {
                   color: white; }
               #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .observaciones {
                 width: 31.5%; }
+                #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .observaciones a {
+                  color: white; }
               #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaarranque, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaactualización, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechameta {
                 width: 5em;
                 padding: 0.7em 0.3em;
