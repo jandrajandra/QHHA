@@ -12,4 +12,13 @@ The [Roboto font](https://fonts.google.com/specimen/Roboto) in 2 weights (100 & 
 Licencia
 ========
 
-Este codigo se comparte bajo una licencia [CC 4.0 Reconocimiento-NoComercial-SinObraDerivada](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es_ES) con la esperanza de que sea util a la comunidad. Estamos muy abiertos a adaptaciones (obra derivada) de este sitio, tan solo platiquemoslo antes en [contacto@jaliscocomovamos.org](mailto:contacto@jaliscocomovamos.org ).
+Este codigo se comparte bajo una licencia [CC 4.0 Reconocimiento-NoComercial-SinObraDerivada](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es_ES) con la esperanza de que sea util a la comunidad. Estamos muy abiertos a adaptaciones (obra derivada) de este sitio, tan solo platiquemoslo antes en [contacto@jaliscocomovamos.org](mailto:contacto@jaliscocomovamos.org).
+
+Contribuir
+==========
+Gracias por interesarte en este proyecto. Son muy bienvenidas todas las contribuciones en codigo como pull requests. La mejor forma de comunicarte con nosotros es en [contacto@jaliscocomovamos.org](mailto:contacto@jaliscocomovamos.org) o abriendo un issue aqui en Github. Lo ideal seria que tuvieras tu version de la pagina montada en Github Pages para poder comparar tus cambios y verlos en vivo.
+
+Las necesidades mas puntuales son:
+* Integracion con redes sociales (Facebook y Twitter).
+* Habilidad de filtracion de indicadores estilo [Trudeaumetre](https://www.trudeaumetre.ca/).
+* Mejoras a la responsividad y la interaccion siempre son bienvenids, el diseño de interaccion es complicado.
