@@ -70,7 +70,7 @@ $com:#253763;  $com2:#151D39;
 	#bienvenida { color:#0e2a5d;
 		.inside {position:relative;
 			img.zap, img.gdl {position:absolute; z-index:1; bottom:-2em}
-			img.zap {left:-30em; height:70em; }
+			img.zap {left:-20em; height:70em; }
 			img.gdl {right:-5em; height:70em; }
 			.middle {z-index:3; position:relative}
 		}
@@ -80,9 +80,9 @@ $com:#253763;  $com2:#151D39;
 		}
 		p {font-size:310%; margin-top:0.5em}
 
-		.municipio {display:inline-block; width:40em; height:27.5em; color:#0e2a5d; text-decoration:none;
-			margin-top:1em; margin-bottom:0; padding:4em 2em;
-			h2 {font-size:5em; font-weight:100; text-transform:uppercase; margin-top:1em; margin-bottom:0}
+		.municipio {display:inline-block; width:28em; height:32em; color:#0e2a5d; text-decoration:none;
+			margin-top:1em; margin-bottom:0; padding:4em 2em; padding-bottom:4em;
+			h2 {font-size:5em; font-weight:100; text-transform:uppercase; margin-top:0.5em; margin-bottom:0}
 			h3 {font-size:3em; margin-top:0.33em}
 
 			.mouseout {display:inline-block}
@@ -95,6 +95,7 @@ $com:#253763;  $com2:#151D39;
 				margin-right:3em;
 			}
 			&.gdl {
+				width:35em;
 				/*background:#5C5973 url(/img/zapgdl/gdl-bkg.png) no-repeat center bottom;*/
 				background:transparent;
 				background-size:auto 100%;
@@ -242,12 +243,13 @@ $smallHeaderHeight:8em;
 			img {width:35em; vertical-align:middle;}
 		}
 		.top {height:$headerHeight; line-height:$headerHeight; vertical-align:bottom; font-weight:100; margin:0 2em; padding:0; 
-				display:block; text-decoration:none; color:white; text-transform:uppercase;
+				display:inline-block; text-decoration:none; color:white; text-transform:uppercase;
 			img {height:$headerHeight; vertical-align:top; margin:0 3em;
 				&.up {display:none; margin:0 2.2em}
 			}
 			span {display:inline-block; vertical-align:middle; font-size:6em; margin-top:0.75em}
 		}
+		.form {display:none}
 		&.small { height:$smallHeaderHeight; line-height:$smallHeaderHeight;
 			.home {width:25em; height:$smallHeaderHeight;
 				img {width:20em; margin-top:0}
@@ -259,6 +261,10 @@ $smallHeaderHeight:8em;
 			&:hover .top {
 				img.zapGdl {display:none}
 				img.up {display:inline-block; }
+			}
+			.form {display:inline-block; width:18em; font-size:1.5em; line-height:1.5em; text-decoration:none; text-align:center; text-transform:uppercase; vertical-align:top; float:right; color:#E6E5EA; margin-top:1em;
+				&.calificacion {width:10em}
+				&:hover {color:white; text-decoration:underline;}
 			}
 		}
 		&.easing { @include transition(all 1s ease);
@@ -466,6 +472,15 @@ $smallHeaderHeight:8em;
 											border-top:10px solid #ccc;
 											position:absolute; bottom:-6px; left:0;
 									}
+									&.rightDecile {
+										float:right; margin-top:-2.7em;
+									}
+									&.rightHalf:before {
+										border-right:0 solid transparent;
+										border-left:10px solid transparent;
+										border-top:10px solid #ccc;
+										left:auto; right:10px;
+									}
 								}
 							}
 							.meta {text-align:left; border-left:1px solid white; padding-left:0.4em; position:relative; line-height:2.8em;
@@ -476,7 +491,15 @@ $smallHeaderHeight:8em;
 								}
 							}
 							.arranque, .meta { span { font-size:85%; } }
-
+						}
+						&.negativeProgress .li {
+							.actualización {
+								div.bar {background:rgba(210, 65, 65, 0.7); margin-bottom:25px}
+								span, span.rightHalf {background:#a70808; color:white; margin-top:-1.3em;
+									&.rightDecile {margin-top:-4em}
+									&:before {border-top-color:#a70808}
+								}
+							}
 						}
 						&.evidencia .li { 
 							.arranque span {padding-right:0.3em;}

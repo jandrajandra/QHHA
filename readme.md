@@ -1,7 +1,7 @@
 Qué has hecho, Alcalde
 ======================
 
-QHHA es una herramienta de rendición de cuentas de los municipios de Guadalajara, Jalisco, Mexico. Fue programada a partir de casi cero en un sprint intenso del 6 al 14 de Agosto del 2016.
+QHHA es una herramienta de rendición de cuentas de los municipios de Guadalajara, Jalisco, Mexico. Fue programada a partir de casi cero en un sprint intenso del 6 al 14 de Agosto del 2016 del equipo de [Jalisco Como Vamos](http://www.jaliscocomovamos.org/).
 
 `source/publish.rb` arma los HTMLs a partir de la carpeta `source` (en donde `index`, `zapopan` y `guadalajara` son combinados con `header`, `template` y `footer`). Uso un estilo de `frontmatter` y `{{}}` improvisado en los templates. Publish has a major toggle: `$localOnline` que activa/desactiva cosas como el Google Analytics.
 

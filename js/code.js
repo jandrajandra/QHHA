@@ -63,6 +63,9 @@ var QHHA = {
 				sr.reveal('#bienvenida .municipio.gdl', {
 					origin:'right', delay:600
 				});
+				sr.reveal('#bienvenida img.zap', {
+					origin:'right', delay:1000
+				});
 				sr.reveal('#bienvenida img.gdl', {
 					origin:'left', delay:1000
 				});
@@ -280,13 +283,24 @@ var QHHA = {
 
 				arranque.number = TOOLS.parse( arranque.html.text() );
 				meta.number = TOOLS.parse( meta.html.text() );
-				actualizacion.number = TOOLS.parse(indi.find('.actualización span').text());
+				actualizacion.number = TOOLS.parse(actualizacion.html.text());
 
 				if( !isNaN(arranque.number) && !isNaN(actualizacion.number) && !isNaN(meta.number) ) {
-					var track = {number:meta.number - arranque.number, pixels:indi.find('.actualización').width() },
+					var track = {number:meta.number - arranque.number},
 						advance = {number:actualizacion.number - arranque.number };
-					advance.pixels = Math.abs(advance.number/track.number) * track.pixels;
-					actualizacion.html.before('<div class="bar" style="width:'+advance.pixels+'px"></div>');
+					advance.percent = Math.min(100, Math.ceil(Math.abs(advance.number/track.number)*100),100);
+					actualizacion.html.before('<div class="bar" style="width:'+advance.percent+'%"></div>');
+					if(advance.percent >= 50) {
+						actualizacion.html.addClass('rightHalf');
+						if(advance.percent >= 90) {
+							actualizacion.html.addClass('rightDecile');
+						} else {
+							indi.find('.bar').css({marginRight: '-'+(actualizacion.html.outerWidth()+15)+'px'});
+						}
+					}
+					if(advance.number/track.number < 0) {
+						indi.addClass('negativeProgress');
+					}
 				}
 
 				if( arranque.html.text().match(/NO/) ) {
