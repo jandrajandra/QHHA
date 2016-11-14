@@ -25,7 +25,7 @@ var QHHA = {
 		QHHA.search.boot();
 		QHHA.fx.dockZoom.boot();
 		QHHA.fx.scroll.boot();
-		QHHA.fx.slide.boot();
+		//QHHA.fx.slide.boot();
 
 		$('#header .top, #menu a:first').click( QHHA.toTop );
 		$('.showIconCredits').click(function() {$('.creditList').toggle()});
@@ -298,11 +298,13 @@ var QHHA = {
 							indi.find('.bar').css({marginRight: '-'+(actualizacion.html.outerWidth()+15)+'px'});
 						}
 					}
+					//if( (meta.number == 4500) ) {
+						//console.log(indi, "advance: "+ advance.number, "track: "+  track.number, "arranque: " +arranque.number, "meta: "+ meta.number, "actualizacion: "+actualizacion.numbeu);
+					//}
 					if(advance.number/track.number < 0) {
 						indi.addClass('negativeProgress');
 					}
 				}
-
 				if( arranque.html.text().match(/NO/) ) {
 					indi.addClass('evidencia');
 					if( actualizacion.html.text().match(/^S/) ) {
@@ -419,7 +421,7 @@ var TOOLS = {
 			replace(/\n+/g,'<br />');
 	},
 	parse:function(str) {
-		return parseFloat( str.replace(/#/,'') );
+		return parseFloat( str.replace(/#|,|%/g,'').replace(/^\s*(\d+)\s+.*$/,'$1') );
 	}
 };
 

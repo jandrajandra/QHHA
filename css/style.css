@@ -194,7 +194,7 @@ body {
         text-transform: uppercase;
         font-size: 250%;
         text-align: center;
-        padding-top: 4em; }
+        padding-top: 0; }
       #inicio .page .inside ul.ejes {
         list-style-type: none;
         font-size: 120%; }
@@ -256,7 +256,7 @@ body {
         font-size: 400%; }
     #inicio .page#fuentes .inside {
       width: 100%;
-      padding: 0; }
+      padding: 5em 0; }
       #inicio .page#fuentes .inside .middle {
         text-align: center; }
         #inicio .page#fuentes .inside .middle h2 {
@@ -373,6 +373,18 @@ body {
       #inicio .page#como-se-miden .inside .middle p.evidencia {
         border-top: 1px solid white;
         padding-top: 1em; }
+    #inicio .page#que-es {
+      background-color: #F6921F;
+      background-image: url(/img/gradients/desarrollo-economico.png); }
+    #inicio .page#fuentes {
+      background-color: #CDDA1B;
+      background-image: url(/img/gradients/desarrollo-urbano.png); }
+    #inicio .page#ejes {
+      background-color: #8583A0;
+      background-image: url(/img/gradients/eficiencia.png); }
+    #inicio .page#como-se-miden {
+      background-color: #AF0B1E;
+      background-image: url(/img/gradients/seguridad.png); }
 
 .sponsors {
   padding-bottom: 5em;
@@ -845,14 +857,14 @@ body {
     padding: 0;
     margin: 0;
     text-align: left;
-    padding-bottom: 40em; }
+    padding-bottom: 5em; }
     #zapGdl .eje h3 {
       text-align: center;
       font-weight: 100;
       color: white;
       margin: 0 auto;
       padding: 2em 0;
-      padding-top: 38em; }
+      padding-top: 10em; }
       #zapGdl .eje h3 span {
         display: inline-block;
         margin: 0;
@@ -1119,7 +1131,9 @@ body {
                   padding: 0 0.3em;
                   margin: 0; }
               #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .arranque span, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .meta span {
-                font-size: 85%; }
+                font-size: 65%;
+                vertical-align: bottom;
+                line-height: 110%; }
             #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.negativeProgress .li .actualización div.bar {
               background: rgba(210, 65, 65, 0.7);
               margin-bottom: 25px; }
@@ -1202,34 +1216,55 @@ body {
           visibility: visible;
           height: auto;
           overflow: visible; }
-    #zapGdl .eje#seguridad li.compromiso big {
-      background-color: #770013; }
-    #zapGdl .eje#seguridad li.compromiso:hover big {
-      background-color: #AF0B1E; }
-    #zapGdl .eje#desarrollo-urbano li.compromiso big {
-      background-color: #7F9304; }
-    #zapGdl .eje#desarrollo-urbano li.compromiso:hover big {
-      background-color: #CDDA1B; }
-    #zapGdl .eje#desarrollo-economico li.compromiso big {
-      background-color: #8F4103; }
-    #zapGdl .eje#desarrollo-economico li.compromiso:hover big {
-      background-color: #F6921F; }
-    #zapGdl .eje#eficiencia li.compromiso big {
-      background-color: #3A374C; }
-    #zapGdl .eje#eficiencia li.compromiso:hover big {
-      background-color: #8583A0; }
-    #zapGdl .eje#servicios-publicos li.compromiso big {
-      background-color: #7A000D; }
-    #zapGdl .eje#servicios-publicos li.compromiso:hover big {
-      background-color: #E50027; }
-    #zapGdl .eje#medio-ambiente li.compromiso big {
-      background-color: #885C03; }
-    #zapGdl .eje#medio-ambiente li.compromiso:hover big {
-      background-color: #FBBF0E; }
-    #zapGdl .eje#comunidad li.compromiso big {
-      background-color: #151D39; }
-    #zapGdl .eje#comunidad li.compromiso:hover big {
-      background-color: #253763; }
+    #zapGdl .eje#seguridad {
+      background-color: #AF0B1E;
+      background-image: url(/img/gradients/seguridad.png); }
+      #zapGdl .eje#seguridad li.compromiso big {
+        background-color: #770013; }
+      #zapGdl .eje#seguridad li.compromiso:hover big {
+        background-color: #AF0B1E; }
+    #zapGdl .eje#desarrollo-urbano {
+      background-color: #CDDA1B;
+      background-image: url(/img/gradients/desarrollo-urbano.png); }
+      #zapGdl .eje#desarrollo-urbano li.compromiso big {
+        background-color: #7F9304; }
+      #zapGdl .eje#desarrollo-urbano li.compromiso:hover big {
+        background-color: #CDDA1B; }
+    #zapGdl .eje#desarrollo-economico {
+      background-color: #F6921F;
+      background-image: url(/img/gradients/desarrollo-economico.png); }
+      #zapGdl .eje#desarrollo-economico li.compromiso big {
+        background-color: #8F4103; }
+      #zapGdl .eje#desarrollo-economico li.compromiso:hover big {
+        background-color: #F6921F; }
+    #zapGdl .eje#eficiencia {
+      background-color: #8583A0;
+      background-image: url(/img/gradients/eficiencia.png); }
+      #zapGdl .eje#eficiencia li.compromiso big {
+        background-color: #3A374C; }
+      #zapGdl .eje#eficiencia li.compromiso:hover big {
+        background-color: #8583A0; }
+    #zapGdl .eje#servicios-publicos {
+      background-color: #E50027;
+      background-image: url(/img/gradients/servicios-publicos.png); }
+      #zapGdl .eje#servicios-publicos li.compromiso big {
+        background-color: #7A000D; }
+      #zapGdl .eje#servicios-publicos li.compromiso:hover big {
+        background-color: #E50027; }
+    #zapGdl .eje#medio-ambiente {
+      background-color: #FBBF0E;
+      background-image: url(/img/gradients/medio-ambiente.png); }
+      #zapGdl .eje#medio-ambiente li.compromiso big {
+        background-color: #885C03; }
+      #zapGdl .eje#medio-ambiente li.compromiso:hover big {
+        background-color: #FBBF0E; }
+    #zapGdl .eje#comunidad {
+      background-color: #253763;
+      background-image: url(/img/gradients/comunidad.png); }
+      #zapGdl .eje#comunidad li.compromiso big {
+        background-color: #151D39; }
+      #zapGdl .eje#comunidad li.compromiso:hover big {
+        background-color: #253763; }
   #zapGdl.portrait .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .descripción {
     width: 40%; }
   #zapGdl.portrait .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .observaciones {
@@ -1237,7 +1272,9 @@ body {
   #zapGdl.portrait .eje ol.compromisos li.compromiso big {
     max-width: 25em; }
   #zapGdl #feedback {
-    color: white; }
+    color: white;
+    background: #aaaaaa;
+    padding: 5em; }
     #zapGdl #feedback h2 {
       font-size: 5em;
       font-weight: 100;

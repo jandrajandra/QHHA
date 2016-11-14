@@ -117,7 +117,7 @@ $com:#253763;  $com2:#151D39;
 			b {font-family:'Roboto Bold'}
 		}
 		.inside {width:35em; padding:5em 0; margin:0 auto; text-align:left; font-size:220%; text-align:left;
-			h2 {font-weight:100; text-transform:uppercase; font-size:250%; text-align:center; padding-top:4em}
+			h2 {font-weight:100; text-transform:uppercase; font-size:250%; text-align:center; padding-top:0}
 			ul.ejes {list-style-type:none; font-size:120%;
 				li {font-weight:bold; margin:0.5em 0; 
 					span {border-radius:50%; width:2em; height:2em; line-height:2em; vertical-align:middle;
@@ -142,7 +142,7 @@ $com:#253763;  $com2:#151D39;
 				.logos p {font-size:400%}
 			}
 		}
-		&#fuentes .inside {width:100%; padding:0;
+		&#fuentes .inside {width:100%; padding:5em 0;
 			.middle {text-align:center;
 				h2 {margin:0 auto}
 				p {width:90%; margin:0 auto; margin-bottom:1em;}
@@ -186,6 +186,10 @@ $com:#253763;  $com2:#151D39;
 			img {float:left; width:20em; margin:0 1em 1em -3em}
 			p.evidencia {border-top:1px solid white; padding-top:1em}
 		}
+		&#que-es { background-color:$eco; background-image:url(/img/gradients/desarrollo-economico.png); }
+		&#fuentes { background-color:$urb; background-image:url(/img/gradients/desarrollo-urbano.png); }
+		&#ejes { background-color:$efi; background-image:url(/img/gradients/eficiencia.png); }
+		&#como-se-miden { background-color:$seg; background-image:url(/img/gradients/seguridad.png); }
 	}
 }
 
@@ -398,8 +402,8 @@ $smallHeaderHeight:8em;
 	#template {display:none}
 
 	/* EJE */
-	.eje { padding:0; margin:0; text-align:left; padding-bottom:40em;
-		h3 {text-align:center; font-weight:100; color:white; margin:0 auto; padding:2em 0; padding-top:38em;
+	.eje { padding:0; margin:0; text-align:left; padding-bottom:5em;
+		h3 {text-align:center; font-weight:100; color:white; margin:0 auto; padding:2em 0; padding-top:10em;
 			span { display:inline-block; margin:0; margin-left:-8em; padding-right:2em; line-height:10em; vertical-align:middle;
 				img {height:8em; vertical-align:middle}
 			}
@@ -490,7 +494,7 @@ $smallHeaderHeight:8em;
 									line-height:2em; padding:0 0.3em; margin:0;
 								}
 							}
-							.arranque, .meta { span { font-size:85%; } }
+							.arranque, .meta { span { font-size:65%; vertical-align:bottom; line-height:110%; } }
 						}
 						&.negativeProgress .li {
 							.actualización {
@@ -538,13 +542,27 @@ $smallHeaderHeight:8em;
 				}
 			}
 		}
-		&#seguridad {li.compromiso { big {background-color:$seg2;} &:hover  big {background-color:$seg;}}}
-		&#desarrollo-urbano {li.compromiso { big {background-color:$urb2;} &:hover  big {background-color:$urb;}}}
-		&#desarrollo-economico {li.compromiso { big {background-color:$eco2;} &:hover  big {background-color:$eco;}}}
-		&#eficiencia {li.compromiso { big {background-color:$efi2;} &:hover  big {background-color:$efi;}}}
-		&#servicios-publicos {li.compromiso { big {background-color:$pub2;} &:hover  big {background-color:$pub;}}}
-		&#medio-ambiente {li.compromiso { big {background-color:$med2;} &:hover  big {background-color:$med;}}}
-		&#comunidad {li.compromiso { big {background-color:$com2;} &:hover  big {background-color:$com;}}}
+		&#seguridad {background-color:$seg; background-image:url(/img/gradients/seguridad.png);
+			li.compromiso { big {background-color:$seg2;} &:hover  big {background-color:$seg;}}
+		}
+		&#desarrollo-urbano {background-color:$urb; background-image:url(/img/gradients/desarrollo-urbano.png);
+			li.compromiso { big {background-color:$urb2;} &:hover  big {background-color:$urb;}}
+		}
+		&#desarrollo-economico {background-color:$eco; background-image:url(/img/gradients/desarrollo-economico.png);
+			li.compromiso { big {background-color:$eco2;} &:hover  big {background-color:$eco;}}
+		}
+		&#eficiencia {background-color:$efi; background-image:url(/img/gradients/eficiencia.png);
+			li.compromiso { big {background-color:$efi2;} &:hover  big {background-color:$efi;}}
+		}
+		&#servicios-publicos {background-color:$pub; background-image:url(/img/gradients/servicios-publicos.png);
+			li.compromiso { big {background-color:$pub2;} &:hover  big {background-color:$pub;}}
+		}
+		&#medio-ambiente {background-color:$med; background-image:url(/img/gradients/medio-ambiente.png);
+			li.compromiso { big {background-color:$med2;} &:hover  big {background-color:$med;}}
+		}
+		&#comunidad {background-color:$com; background-image:url(/img/gradients/comunidad.png);
+			li.compromiso { big {background-color:$com2;} &:hover  big {background-color:$com;}}
+		}
 	}
 
 	&.portrait {
@@ -553,7 +571,7 @@ $smallHeaderHeight:8em;
 		.eje ol.compromisos li.compromiso big {max-width:25em}
 	}
 
-	#feedback { color:white;
+	#feedback { color:white; background:rgb(170, 170, 170); padding:5em;
 		h2 {font-size:5em; font-weight:100; text-transform:uppercase; padding-top:10em}
 		p {font-size:200%;}
 		iframe {font-size:200%; height:65em}
