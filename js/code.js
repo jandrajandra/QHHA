@@ -224,7 +224,7 @@ var QHHA = {
 				$('.logoList').css('font-size', '5px');
 			}
 			$('#inicio .wHeight').css('height', h+'px')
-			$('#zapGdl .slide').css('min-height', h+'px')
+			//$('#zapGdl .slide').css('min-height', h+'px')
 			$('#zapGdl, #inicio').css('font-size', Math.min( hFontSize, wFontSize )+'px'); 
 		}
 	},
