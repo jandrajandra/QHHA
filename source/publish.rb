@@ -59,7 +59,7 @@ end
 pages = ['index', 'guadalajara', 'zapopan']
 
 pages.each do |page|
-	if true
+	if false
 		pausa = '<!doctype html><html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><title>Qué has hecho, alcalde</title></head><body style="text-align:center; margin:2em; background:#E0E0E2 url(/img/pausa-bkg.png);"><img src="/img/pausa.jpg" style="width:600px" /></body>'
 		publicHtml = publicDir+(
 			(page == 'index') ?
