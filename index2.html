@@ -1,1 +1,463 @@
 <h1>Hola mundo.</h1> 
+<!--
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@jandrajandra 
+Learn Git and GitHub without any code!
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+
+3
+13elzr/QHHA
+ Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights
+QHHA/index.html
+@elzr elzr unpause
+2ca3bd6 on Feb 14, 2017
+427 lines (402 sloc)  19.8 KB
+  
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<title>Qué has hecho, alcalde - Bienvenido</title>
+		
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		
+		
+		<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+		<script src="/js/code.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,700" rel="stylesheet">
+
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+
+
+<body id="inicio">
+	<div id="menu">
+		<div class="middle">
+			<a href="#bienvenida" class="here"><big>Bienvenida</big><span></span></a>
+			<a href="#que-es"><big>¿<strong>Qué</strong> es esto?</big><span></span></a>
+			<a href="#fuentes"><big>¿De dónde <strong>surgen</strong> estos compromisos?</big><span></span></a>
+			<a href="#ejes"><big>¿Cómo estan <strong>agrupados</strong> los compromisos?</big><span></span></a>
+			<a href="#como-se-miden"><big>¿Cómo se <strong>mide</strong> su cumplimiento?</big><span></span></a>
+			<a href="#feedback"><big>¿Cómo calificas esta iniciativa?</big><span></span></a>
+		</div>
+	</div>
+	<div class="slide wHeight" id="bienvenida" data-background="#E0E0E2">
+		<div class="inside">
+			<div class="middle">
+				<h1>
+					<img src="/img/logos/qhha-3-horizontal.png" alt="Qué has hecho, alcalde" />
+				</h1>
+				<p>
+					Ingresa a tu municipio para conocer el desempeño de tu alcalde:
+				</p>
+				<a href="zapopan/" class="municipio zap">
+					<img src="/img/zapgdl/lemus-0.png" class="mouseout" />
+					<img src="/img/zapgdl/lemus-1.png" class="mouseover" />
+					<h2>Zapopan</h2>
+					<h3>Pablo Lemus</h3>
+				</a>
+				<a href="guadalajara/" class="municipio gdl">
+					<img src="/img/zapgdl/alfaro-0.png" class="mouseout" />
+					<img src="/img/zapgdl/alfaro-1.png" class="mouseover" />
+					<h2>Guadalajara</h2>
+					<h3>Enrique Alfaro</h3>
+				</a>
+			</div>
+			<img src="/img/zapgdl/zap-bkg-2.png" class="zap" />
+			<img src="/img/zapgdl/gdl-bkg-2.png" class="gdl" />
+		</div>
+	</div>
+
+	<div class="page slide wHeight" id="que-es" data-background="#f6921e" data-bkgimage="desarrollo-economico">
+		<div class="inside">
+			<div class="middle">
+				<div class="middle2">
+					<h2>¿<strong>Qué</strong> es esto?</h2>
+					<p>
+						<strong>Qué has hecho, Alcalde</strong> 
+						es una herramienta de rendición de cuentas para el empoderamiento ciudadano impulsada por diversos organismos empresariales y de la sociedad civil en la ciudad de Guadalajara.
+					<p>
+						Fue creada para evaluar el nivel de cumplimiento de las acciones a las que se comprometieron los alcaldes Enrique Alfaro Ramírez y Pablo Lemus Navarro.
+					</p>
+				</div>
+				<div class="logos">
+					<p>
+						Esta iniciativa es impulsada por:
+					</p>
+					<div class="logoList">
+	<a href="http://www.jaliscocomovamos.org/" class="jcv" title="Jalisco Como Vamos">
+		<img src="/img/logos/jcv.png" />
+	</a>
+	<a href="http://www.coparmexjal.org.mx" class="coparmex" title="COPARMEX">
+		<img src="/img/logos/coparmex.png" />
+	</a>
+	<a href="http://www.camaradecomerciogdl.mx/" class="canaco" title="Cámara Nacional de Comercio - Guadalajara">
+		<img src="/img/logos/canaco.png" />
+	</a>
+	<a href="http://www.ccij.org.mx/" class="ccij" title="Consejo de Cámaras Industriales de Jalisco">
+		<img src="/img/logos/ccij.png" />
+	</a>
+	<a href="http://iteso.mx/" class="iteso" title="ITESO">
+		<img src="/img/logos/iteso.png" />
+	</a>
+	<a href="http://cf.org.mx/" class="cj" title="Corporativa de Fundaciones">
+		<img src="/img/logos/cf.png" />
+	</a>
+	<a href="http://tomala.mx/" class="tomala" title="¡Tómala!">
+		<img src="/img/logos/tomala.png" />
+	</a>
+	<a href="http://extra.org.mx/" class="extra" title="Extra A.C.">
+		<img src="/img/logos/extra.png" />
+	</a>
+</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="page slide wHeight" id="fuentes" data-background="#7F9304" data-bkgimage="desarrollo-urbano">
+		<div class="inside">
+			<div class="middle">
+				<h2>¿De dónde <strong>surgen</strong> estos compromisos?</h2>
+				<ul class="fuentes">
+					<li>
+						<p>
+							Una <strong>carta compromiso</strong> firmada <a href="/pdf/carta-compromiso-enrique-alfaro.pdf">por Enrique Alfaro</a> y <a href="/pdf/carta-compromiso-pablo-lemus.pdf">por Pablo Lemus</a> con Coparmex Jalisco durante las campañas electorales.
+						</p>
+						<div class="pages">
+							<a href="/pdf/carta-compromiso-enrique-alfaro.pdf" target="new">
+								<img src="/img/docs/coparmex-alfaro.jpg" />
+							</a>
+							<a href="/pdf/carta-compromiso-pablo-lemus.pdf" target="new">
+								<img src="/img/docs/coparmex-lemus.jpg" />
+							</a>
+						</div>
+					</li>
+					<li>
+						<p>
+							La <a href="http://www.iepcjalisco.org.mx/sites/default/files/proceso_2015/plataformas/MC_municipes.pdf"><strong>Plataforma electoral de munícipes</strong></a> que el Partido Movimiento Ciudadano entregó al IEPC Jalisco durante el proceso electoral.
+						</p>
+						<div class="pages">
+							<a href="http://www.iepcjalisco.org.mx/sites/default/files/proceso_2015/plataformas/MC_municipes.pdf" target="new">
+								<img src="/img/docs/plataforma-mc-municipes.jpg" />
+							</a>
+						</div>
+					</li>
+					<li>
+						<p>
+							Los <strong>compromisos dichos en campaña</strong>, recogidos en
+							<a href="http://www.ntrguadalajara.com/post.php?id_nota=16897">el reportaje de Sonia Serrano publicado en NTR</a>.
+						</p>
+						<div class="pages">
+							<a href="http://www.ntrguadalajara.com/post.php?id_nota=16897" target="new">
+								<img src="/img/docs/reportaje.jpg" />
+							</a>
+						</div>
+					</li>
+					<li>
+						<p>
+							Los <strong>Planes Municipales de Desarrollo</strong> <a href="http://transparencia.guadalajara.gob.mx/transparencia/planmunicipal-desarrollo">de Guadalajara</a> y <a href="http://www.zapopan.gob.mx/wp-content/uploads/2011/05/Plan-Municipal-de-Desarrollo-2015-2018.pdf">de Zapopan</a>.
+						</p>
+						<div class="pages">
+							<a href="http://transparencia.guadalajara.gob.mx/transparencia/planmunicipal-desarrollo" target="new">
+								<img src="/img/docs/plan-municipal-gdl.jpg" />
+							</a>
+							<a href="http://www.zapopan.gob.mx/wp-content/uploads/2011/05/Plan-Municipal-de-Desarrollo-2015-2018.pdf" target="new">
+								<img src="/img/docs/plan-municipal-zap.jpg" />
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="page slide wHeight" id="ejes" data-background="#8482a0" data-bkgimage="eficiencia">
+		<div class="inside">
+			<div class="middle">
+				<h2>¿Cómo estan <strong>agrupados</strong> los compromisos?</h2>
+					<p>
+					En los siguientes 7 ejes:<br />
+					<div class="flor">
+						<img class="flor" src="/img/flor-ejes.png" />
+						<img class="icon seg" src="/img/icons/seg.png" />
+						<img class="icon urb" src="/img/icons/urb.png" />
+						<img class="icon eco" src="/img/icons/eco.png" />
+						<img class="icon efi" src="/img/icons/efi.png" />
+						<img class="icon pub" src="/img/icons/pub.png" />
+						<img class="icon med" src="/img/icons/med.png" />
+						<img class="icon com" src="/img/icons/com.png" />
+						<span class="seg"><em>Seguridad</em></span>
+						<span class="urb"><em>Desarrollo<br /> Urbano</em></span>
+						<span class="eco"><em>Desarrollo<br/> Económico</em></span>
+						<span class="efi"><em>Eficiencia<br/> Administrativa</em></span>
+						<span class="pub"><em>Servicios<br/> públicos</em></span>
+						<span class="med"><em>Medio<br/> Ambiente</em></span>
+						<span class="com"><em>Construcción<br/> de comunidad</em></span>
+					</div>
+					</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="page slide wHeight" id="como-se-miden" data-background="#770013" data-bkgimage="seguridad">
+		<div class="inside">
+			<div class="middle">
+				<h2>¿Cómo se <strong>mide</strong> su cumplimiento?</h2>
+
+				<p style="font-size:120%; margin-bottom:1.5em; text-align:center">
+					Con los <b>indicadores</b> y <b>evidencias</b> que se eligieron<br /> para cada compromiso.
+				</p>
+
+				<p>
+					<img src="/img/indicador/indicador.png" />
+					Los <b>indicadores</b> son datos numéricos que nos ayudan a observar el avance o retroceso del municipio en temas particulares.
+				</p>
+
+				<p>
+					Con este instrumento podrás consultar en cada indicador el valor al arranque de la administración, la meta que los mismos Ayuntamientos estimaron que alcanzarían en 2018 y el valor actualizado al momento.
+				</p>
+
+				<p class="evidencia">
+					<img src="/img/indicador/evidencia.png" />
+					Las <b>evidencias</b> son documentos que dan cuenta del trabajo de los ayuntamientos en la elaboración de diagnósticos, reglamentos, planes o programas.
+				</p>
+
+				<br clear="both" />
+				<p style="margin-top:0">
+				Este sitio es actualizado por el equipo promotor de la iniciativa, pero alimentado con información producida por los mismos Ayuntamientos de <a href="http://www.zapopan.gob.mx/">Zapopan</a> y <a href="http://portal.guadalajara.gob.mx/">Guadalajara</a>, <a href="http://www.jaliscocomovamos.org/">Jalisco Cómo Vamos</a>, <a href="http://jalisco.gob.mx/es/gobierno/dependencias/fge">Fiscalía General del Estado</a>, <a href="http://semadet.jalisco.gob.mx/">Semadet</a>, <a href="http://www.inegi.org.mx/">INEGI</a>, <a href="http://www.imss.gob.mx/">IMSS, <a href="http://www.coneval.org.mx/Paginas/principal.aspx">Coneval</a>, <a href="http://imco.org.mx/home/">IMCO</a>, <a href="http://www.itei.org.mx/v4/">ITEI</a> y <a href="http://www.cimtra.org.mx/portal/">Cimtra</a>.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="page slide" id="feedback" data-background="#aaa">
+		<div class="inside">
+			<div class="middle">
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdAVGO_MZ8fNj-5V0zSHDPbTLzPmjWUJjGyMlfQa_EfTLevrA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+			</div>
+		</div>
+	</div>
+	<div class="sponsors">
+		<p>
+			Esta iniciativa es impulsada por:
+		</p>
+		<div class="logoList">
+	<a href="http://www.jaliscocomovamos.org/" class="jcv" title="Jalisco Como Vamos">
+		<img src="/img/logos/jcv.png" />
+	</a>
+	<a href="http://www.coparmexjal.org.mx" class="coparmex" title="COPARMEX">
+		<img src="/img/logos/coparmex.png" />
+	</a>
+	<a href="http://www.camaradecomerciogdl.mx/" class="canaco" title="Cámara Nacional de Comercio - Guadalajara">
+		<img src="/img/logos/canaco.png" />
+	</a>
+	<a href="http://www.ccij.org.mx/" class="ccij" title="Consejo de Cámaras Industriales de Jalisco">
+		<img src="/img/logos/ccij.png" />
+	</a>
+	<a href="http://iteso.mx/" class="iteso" title="ITESO">
+		<img src="/img/logos/iteso.png" />
+	</a>
+	<a href="http://cf.org.mx/" class="cj" title="Corporativa de Fundaciones">
+		<img src="/img/logos/cf.png" />
+	</a>
+	<a href="http://tomala.mx/" class="tomala" title="¡Tómala!">
+		<img src="/img/logos/tomala.png" />
+	</a>
+	<a href="http://extra.org.mx/" class="extra" title="Extra A.C.">
+		<img src="/img/logos/extra.png" />
+	</a>
+</div>
+
+	</div>
+	<div class="credits">
+		<div class="inside">
+			<a href="javascript:void(0)" class="showIconCredits">+ Créditos de íconos</a>
+			<div class="creditList">
+				<p>
+					Los siguientes PNGs se presentan enlazados a su pagina de The Noun Project. Agradecemos a los autores liberar sus diseños con licencias abiertas.
+				</p>
+
+				<table>
+					<tr>
+						<td>
+							<ul>
+								<li><a href="https://thenounproject.com/term/arrow-up/583354" target="new">up</a></li>
+								<li><a href="https://thenounproject.com/search/?q=police&i=8353" target="new">SEG</a>
+									<ul>
+									<li><a href="https://thenounproject.com/search/?q=guarantee&i=551295">seg-zap-1</a></li>
+									<li><a href="https://thenounproject.com/search/?q=police&i=523545">seg-zap-2</a></li>
+									<li><a href="https://thenounproject.com/search/?q=police&i=523545">seg-gdl-1</a></li>
+									<li><a href="https://thenounproject.com/search/?q=guarantee&i=551295">seg-gdl-2</a></li>
+									</ul>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li><a href="https://thenounproject.com/search/?q=ecology&i=10317">MED</a>
+									<ul>
+									<li><a href="https://thenounproject.com/search/?q=forest&i=16017">med-zap-1</a></li>
+									<li><a href="https://thenounproject.com/search/?q=forest&i=132930">med-zap-2</a></li>
+									<li><a href="https://thenounproject.com/search/?q=water&i=212">med-zap-3</a></li>
+									<li><a href="https://thenounproject.com/search/?q=bicycle&i=536">med-zap-4</a></li>
+									<li><a href="https://thenounproject.com/search/?q=sustainable&i=6786">med-zap-5</a></li>
+									<li><a href="https://thenounproject.com/search/?q=forest&i=16017">med-seg-1</a></li>
+									<li><a href="https://thenounproject.com/search/?q=forest&i=132930">med-seg-2</a></li>
+									<li><a href="https://thenounproject.com/search/?q=sustainable&i=6786">med-seg-3</a></li>
+									<li><a href="https://thenounproject.com/search/?q=bicycle&i=536">med-seg-4</a></li>
+									<li><a href="https://thenounproject.com/search/?q=gas+mask&i=34373">med-seg-5</a></li>
+									<li><a href="https://thenounproject.com/search/?q=agenda&i=521069">med-seg-6</a></li>
+									</ul>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li><a href="https://thenounproject.com/search/?q=ruler&i=33238">EFI</a>
+									<ul>
+									<li><a href="https://thenounproject.com/search/?q=money&i=29280">efi-zap-1</a></li>
+									<li><a href="https://thenounproject.com/search/?q=purchases&i=53043">efi-zap-2</a></li>
+									<li><a href="https://thenounproject.com/search/?q=eye&i=421">efi-zap-3</a></li>
+									<li><a href="https://thenounproject.com/search/?q=collaboration&i=489538">efi-zap-4</a></li>
+									<li><a href="https://thenounproject.com/search/?q=trim&i=62743">efi-gdl-1</a></li>
+									<li><a href="https://thenounproject.com/search/?q=budget&i=580704">efi-gdl-2</a></li>
+									<li><a href="https://thenounproject.com/search/?q=purchases&i=53043">efi-gdl-3</a></li>
+									<li><a href="https://thenounproject.com/search/?q=money&i=29280">efi-gdl-4</a></li>
+									<li><a href="https://thenounproject.com/search/?q=register&i=232993">efi-gdl-5</a></li>
+									<li><a href="https://thenounproject.com/search/?q=eye&i=421">efi-gdl-6</a></li>
+									</ul>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li><a href="https://thenounproject.com/search/?q=urban&i=21595">URB</a>
+									<ul>
+									<li><a href="https://thenounproject.com/search/?q=zone&i=273648">urb-zap-2</a></li>
+									<li><a href="https://thenounproject.com/search/?q=zone&i=273648">urb-gdl-1</a></li>
+									<li><a href="https://thenounproject.com/search/?q=justice&i=26749">urb-gdl-2</a></li>
+									<li><a href="https://thenounproject.com/search/?q=repairs&i=556907">urb-gdl-3</a></li>
+									<li><a href="https://thenounproject.com/search/?q=sports&i=129305">urb-gdl-4</a></li>
+									<li><a href="https://thenounproject.com/search/?q=maintenance&i=574764">urb-gdl-5</a></li>
+									<li><a href="https://thenounproject.com/search/?q=transportation&i=59">urb-gdl-6</a></li>
+									<li><a href="https://thenounproject.com/search/?q=urban&i=165828">urb-gdl-7</a></li>
+									</ul>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li><a href="https://thenounproject.com/search/?q=work&i=30234">ECO</a>
+									<ul>
+									<li><a href="https://thenounproject.com/search/?q=relocation&i=356594">eco-zap-1</a></li>
+									<li><a href="https://thenounproject.com/search/?q=online&i=564775">eco-zap-2</a></li>
+									<li><a href="https://thenounproject.com/term/growth/489000/">eco-zap-3</a></li>
+									<li><a href="https://thenounproject.com/term/growth/476589/">eco-zap-5</a></li>
+									<li><a href="https://thenounproject.com/search/?q=relocation&i=356594">eco-gdl-1</a></li>
+									<li><a href="https://thenounproject.com/term/growth/489000/">eco-gdl-2</a></li>
+									<li><a href="https://thenounproject.com/term/growth/476589/">eco-gdl-3</a></li>
+									</ul>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+							<li><a href="https://thenounproject.com/search/?q=speak&i=31849">COM</a>
+								<ul>
+								<li><a href="https://thenounproject.com/search/?q=approve&i=330">com-zap-1</a></li>
+								<li><a href="https://thenounproject.com/search/?q=participation&i=34872">com-zap-2</a></li>
+								<li><a href="https://thenounproject.com/search/?q=disabled&i=575987">com-zap-3</a></li>
+								<li><a href="https://thenounproject.com/search/?q=equality&i=6066">com-zap-4</a></li>
+								<li><a href="https://thenounproject.com/search/?q=culture&i=13644">com-zap-5</a></li>
+								<li><a href="https://thenounproject.com/search/?q=approve&i=330">com-gdl-1</a></li>
+								<li><a href="https://thenounproject.com/search/?q=participation&i=34872">com-gdl-2</a></li>
+								<li><a href="https://thenounproject.com/search/?q=public%20space&i=52484">com-gdl-3</a></li>
+								<li><a href="https://thenounproject.com/search/?q=disabled&i=575987">com-gdl-4</a></li>
+								<li><a href="https://thenounproject.com/search/?q=equality&i=6066">com-gdl-5</a></li>
+								<li><a href="https://thenounproject.com/search/?q=culture&i=13644">com-gdl-6</a></li>
+								</ul>
+							</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>
+									<a href="https://thenounproject.com/search/?q=electricity&i=45795">PUB</a>
+									<a href="https://thenounproject.com/search/?q=water&i=212">PUB</a>
+									<ul>
+										<li><a href="https://thenounproject.com/search/?q=shoveling&i=4271">pub-zap-1</a></li>
+										<li><a href="https://thenounproject.com/search/?q=expand&i=99110">pub-zap-2</a></li>
+										<li><a href="https://thenounproject.com/search/?q=water&i=212">pub-zap-3</a></li>
+										<li><a href="https://thenounproject.com/search/?q=shoveling&i=4271">pub-gdl-1</a></li>
+										<li><a href="https://thenounproject.com/search/?q=expand&i=99110">pub-gdl-2</a></li>
+									</ul>
+								</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="github">
+		<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es_ES"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a> &nbsp;|&nbsp; <a href="https://github.com/elzr/QHHA">Ver en Github &rarr;</a>
+	</div>
+	
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-82432173-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	
+</body>
+</html>
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+
+-->
