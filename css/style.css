@@ -314,60 +314,56 @@ body {
           z-index: 2;
           width: 5.5em;
           height: 5.5em; }
-     #inicio .page#ejes .inside .middle div.flor img.icon.urb {
-    top: 5.5em;
-    left: 15.5em;
-}
-
-
-
-#inicio .page#ejes .inside .middle div.flor img.icon.eco {
-    top: 2.5em;
-    left: 26.5em;
-}
-
-
-#inicio .page#ejes .inside .middle div.flor img.icon.efi {
-    top: 9em;
-    left: 33em;
-}
-
-#inicio .page#ejes .inside .middle div.flor img.icon.med {
-    top: 23.5em;
-    left: 22.5em;
-}
-
-#inicio .page#ejes .inside .middle div.flor img.icon.seg {
-    top: 17.5em;
-    left: 13.5em;
-}
-
-
+          #inicio .page#ejes .inside .middle div.flor img.icon.seg {
+            top: 11.5em;
+            left: 13.5em; }
+          #inicio .page#ejes .inside .middle div.flor img.icon.urb {
+            top: 4.5em;
+            left: 19.5em; }
+          #inicio .page#ejes .inside .middle div.flor img.icon.eco {
+            top: 4.5em;
+            left: 27.5em; }
+          #inicio .page#ejes .inside .middle div.flor img.icon.efi {
+            top: 11em;
+            left: 33em; }
+          #inicio .page#ejes .inside .middle div.flor img.icon.pub {
+            top: 20em;
+            left: 31em; }
+          #inicio .page#ejes .inside .middle div.flor img.icon.med {
+            top: 23.5em;
+            left: 23.5em; }
+          #inicio .page#ejes .inside .middle div.flor img.icon.com {
+            top: 20em;
+            left: 15.5em; }
         #inicio .page#ejes .inside .middle div.flor span {
           text-transform: uppercase;
           font-weight: 100;
           position: absolute;
           z-index: 2; }
-         #inicio .page#ejes .inside .middle div.flor span.seg {
-    top: 22em;
-    left: 3em;
-}
-
-#inicio .page#ejes .inside .middle div.flor span.eco {
-    top: 1em;
-    left: 39em;
-}
-
-
-#inicio .page#ejes .inside .middle div.flor span.med {
-    top: 31em;
-    left: 22em;
-}
-
-#inicio .page#ejes .inside .middle div.flor span.efi {
-    top: 11em;
-    left: 42em;
-}
+          #inicio .page#ejes .inside .middle div.flor span em {
+            font-style: normal;
+            font-size: 150%; }
+          #inicio .page#ejes .inside .middle div.flor span.seg {
+            top: 12em;
+            left: 3em; }
+          #inicio .page#ejes .inside .middle div.flor span.urb {
+            top: 1em;
+            left: 7em; }
+          #inicio .page#ejes .inside .middle div.flor span.eco {
+            top: 1em;
+            left: 34em; }
+          #inicio .page#ejes .inside .middle div.flor span.efi {
+            top: 11em;
+            left: 41em; }
+          #inicio .page#ejes .inside .middle div.flor span.pub {
+            top: 22em;
+            left: 41em; }
+          #inicio .page#ejes .inside .middle div.flor span.med {
+            top: 29em;
+            left: 34em; }
+          #inicio .page#ejes .inside .middle div.flor span.com {
+            top: 23em;
+            left: 1.5em; }
     #inicio .page#como-se-miden .inside .middle {
       text-align: left; }
       #inicio .page#como-se-miden .inside .middle img {
@@ -1270,7 +1266,7 @@ body {
       #zapGdl .eje#comunidad li.compromiso:hover big {
         background-color: #253763; }
   #zapGdl.portrait .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .descripción {
-    width: 40%; }
+    width: 40%; } 
   #zapGdl.portrait .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .observaciones {
     width: 21.5%; }
   #zapGdl.portrait .eje ol.compromisos li.compromiso big {
