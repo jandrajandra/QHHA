@@ -86,10 +86,13 @@ body {
 #inicio {
   font-size: 10px;
   transition: background 1s ease;
-  color: #fff;
+     background-image: url(/img/gradients/Fondos-QHHA-03.png);
+  background-size: cover;
+    background-repeat: no-repeat;
+  /*color: #fff;
   background: #E0E0E2;
   background-repeat: repeat-y;
-  background-size: 100% auto;
+  background-size: 100% auto;*/
   /* BIENVENIDA */ }
   #inicio a {
     color: #fff; }
