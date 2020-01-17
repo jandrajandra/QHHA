@@ -383,8 +383,10 @@ color: #19487c;}
         border-top: 1px solid white;
         padding-top: 1em; }
     #inicio .page#que-es {
-      background-color: #F6921F;
-      background-image: url(/img/gradients/Fondos-QHHA-05.png); }
+      /*background-color: #F6921F;*/
+      background-image: url(/img/gradients/Fondos-QHHA-05.png);
+  background-size: cover;
+    background-repeat: no-repeat;}
     #inicio .page#fuentes {
       background-color: #CDDA1B;
       background-image: url(/img/gradients/desarrollo-urbano.png); }
