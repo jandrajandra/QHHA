@@ -396,7 +396,9 @@ color: #19487c;}
 }
     #inicio .page#como-se-miden {
       /*background-color: #AF0B1E;*/
-      background-image: url(/img/gradients/Fondos-QHHA-04.png); }
+      background-image: url(/img/gradients/Fondos-QHHA-04.png); 
+  background-size: cover;
+    background-repeat: no-repeat;}
 
 .sponsors {
   padding-bottom: 5em;
