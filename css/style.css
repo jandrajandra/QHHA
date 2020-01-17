@@ -191,6 +191,7 @@ body {
       text-align: left; }
       #inicio .page .inside h2 {
         font-weight: 100;
+            color: #19487c;
         text-transform: uppercase;
         font-size: 250%;
         text-align: center;
@@ -293,7 +294,9 @@ body {
                 #inicio .page#fuentes .inside .middle ul.fuentes li .pages a:hover img {
                   width: 10em; }
     #inicio .page#ejes .inside .middle {
-      text-align: center; }
+      text-align: center;
+          color: #19487c;
+}
       #inicio .page#ejes .inside .middle div.flor {
         width: 55em;
         height: 35em;
