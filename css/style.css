@@ -339,7 +339,6 @@ body {
         #inicio .page#ejes .inside .middle div.flor span {
           text-transform: uppercase;
           font-weight: 100;
-          color: #19487c;
           position: absolute;
           z-index: 2; }
           #inicio .page#ejes .inside .middle div.flor span em {
@@ -347,7 +346,8 @@ body {
             font-size: 150%; }
           #inicio .page#ejes .inside .middle div.flor span.seg {
                 top: 22em;
-    left: 3em; }
+    left: 3em;
+ color: #19487c;}
           #inicio .page#ejes .inside .middle div.flor span.urb {
             top: 1em;
             left: 7em; }
