@@ -350,21 +350,27 @@ body {
  color: #19487c;}
           #inicio .page#ejes .inside .middle div.flor span.urb {
             top: 1em;
-            left: 7em; }
+            left: 7em;
+color: #19487c;}
           #inicio .page#ejes .inside .middle div.flor span.eco {
            top: 1em;
+            color: #19487c;
     left: 39em; }
           #inicio .page#ejes .inside .middle div.flor span.efi {
               top: 11em;
+            color: #19487c;
     left: 42em; }
           #inicio .page#ejes .inside .middle div.flor span.pub {
             top: 22em;
+            color: #19487c;
             left: 41em; }
           #inicio .page#ejes .inside .middle div.flor span.med {
            top: 31em;
+            color: #19487c;
     left: 22em; }
           #inicio .page#ejes .inside .middle div.flor span.com {
             top: 23em;
+            color: #19487c;
             left: 1.5em; }
     #inicio .page#como-se-miden .inside .middle {
       text-align: left; }
