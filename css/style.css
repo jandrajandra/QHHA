@@ -390,7 +390,10 @@ color: #19487c;}
       background-image: url(/img/gradients/desarrollo-urbano.png); }
     #inicio .page#ejes {
       background-color: #ffffff;
-      background-image: url(/img/gradients/Fondos-QHHA-01.png); }
+      background-image: url(/img/gradients/Fondos-QHHA-01.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
     #inicio .page#como-se-miden {
       background-color: #AF0B1E;
       background-image: url(/img/gradients/seguridad.png); }
