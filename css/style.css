@@ -160,12 +160,14 @@ body {
       #inicio #bienvenida .municipio.zap {
         /*background:#5C5973 url(/img/zapgdl/zap-bkg.png) no-repeat center bottom;*/
         background: transparent;
+        order-radius: 10px;
         background-size: auto 100%;
         margin-right: 3em; }
       #inicio #bienvenida .municipio.gdl {
         width: 35em;
         /*background:#5C5973 url(/img/zapgdl/gdl-bkg.png) no-repeat center bottom;*/
         background: transparent;
+        order-radius: 10px;
         background-size: auto 100%; }
       #inicio #bienvenida .municipio:hover {
         background-color: #121A2E;
