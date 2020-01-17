@@ -338,6 +338,7 @@ body {
         #inicio .page#ejes .inside .middle div.flor span {
           text-transform: uppercase;
           font-weight: 100;
+              color: #19487c;
           position: absolute;
           z-index: 2; }
           #inicio .page#ejes .inside .middle div.flor span em {
