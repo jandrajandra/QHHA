@@ -16,7 +16,7 @@ var QHHA = {
 		efi: {label:'Educación', id:'eficiencia', color:'#8583A0'},
 		pub: {label:'Servicios Públicos', id:'servicios-publicos', color:'#E50027'},
 		med: {label:'Medio Ambiente', id:'medio-ambiente', color:'#FBBF0E'},
-		/*com: {label:'Construcción de Comunidad', id:'comunidad', color:'#253763'}*/
+		com: {label:'Construcción de Comunidad', id:'comunidad', color:'#253763'}
 	},
 
 	boot:function() {
