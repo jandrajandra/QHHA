@@ -12,11 +12,11 @@ var QHHA = {
 	ejesFull: {
 		seg: {label:'Seguridad', shortLabel:'Seguridad', id:'seguridad', color:'#AF0B1E'},
 		urb: {label:'Desarrollo Urbano', id:'desarrollo-urbano', color:'#CDDA1B'},
-		eco: {label:'Desarrollo Económico', id:'desarrollo-economico', color:'#F6921F'},
-		efi: {label:'Eficiencia Administrativa', id:'eficiencia', color:'#8583A0'},
+		eco: {label:'Economía', id:'desarrollo-economico', color:'#F6921F'},
+		efi: {label:'Educación', id:'eficiencia', color:'#8583A0'},
 		pub: {label:'Servicios Públicos', id:'servicios-publicos', color:'#E50027'},
 		med: {label:'Medio Ambiente', id:'medio-ambiente', color:'#FBBF0E'},
-		com: {label:'Construcción de Comunidad', id:'comunidad', color:'#253763'}
+		/*com: {label:'Construcción de Comunidad', id:'comunidad', color:'#253763'}*/
 	},
 
 	boot:function() {
