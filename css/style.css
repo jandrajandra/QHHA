@@ -1239,13 +1239,18 @@ color: #19487c;}
           overflow: visible; }
     #zapGdl .eje#seguridad {
       /*background-color: #AF0B1E;*/
-      background-image: url(/img/gradients/Fondos-QHHA-03.png); }
+      background-image: url(/img/gradients/Fondos-QHHA-03.png); 
+background-size:cover;
+      background-repeat:no-repeat;
+}
       #zapGdl .eje#seguridad li.compromiso big {
         background-color: #770013; }
       #zapGdl .eje#seguridad li.compromiso:hover big {
         background-color: #AF0B1E; }
     #zapGdl .eje#desarrollo-urbano {
       /*background-color: #CDDA1B;*/
+      background-size:cover;
+      background-repeat:no-repeat;
       background-image: url(/img/gradients/Fondos-QHHA-04.png); }
       #zapGdl .eje#desarrollo-urbano li.compromiso big {
         background-color: #7F9304; }
@@ -1253,6 +1258,8 @@ color: #19487c;}
         background-color: #CDDA1B; }
     #zapGdl .eje#desarrollo-economico {
      /* background-color: #F6921F;*/
+      background-size:cover;
+      background-repeat:no-repeat;
       background-image: url(/img/gradients/Fondos-QHHA-05.png); }
       #zapGdl .eje#desarrollo-economico li.compromiso big {
         background-color: #8F4103; }
@@ -1260,6 +1267,8 @@ color: #19487c;}
         background-color: #F6921F; }
     #zapGdl .eje#eficiencia {
     /*  background-color: #8583A0;*/
+      background-size:cover;
+      background-repeat:no-repeat;
       background-image: url(/img/gradients/Fondos-QHHA-01.png); }
       #zapGdl .eje#eficiencia li.compromiso big {
         background-color: #3A374C; }
