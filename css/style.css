@@ -686,62 +686,62 @@ color: #19487c;}
         #zapGdl #indice ul li:hover a {
           text-decoration: underline; }
         #zapGdl #indice ul li.seg {
-          background-color: #AF0B1E;
+          background-color: #172F61;
           width: 40em;
           margin-left: 10em; }
           #zapGdl #indice ul li.seg span.icon {
             background-color: #770013; }
         #zapGdl #indice ul li.urb {
-          background-color: #CDDA1B;
+          background-color: #172F61;
           width: 45em;
           margin-right: 5em; }
           #zapGdl #indice ul li.urb span.icon {
             background-color: #7F9304; }
         #zapGdl #indice ul li.eco {
-          background-color: #F6921F;
+          background-color: #172F61;
           width: 50em;
           margin-left: 0; }
           #zapGdl #indice ul li.eco span.icon {
             background-color: #8F4103; }
         #zapGdl #indice ul li.efi {
-          background-color: #8583A0;
+          background-color: #172F61;
           width: 53em;
           margin-right: -3em; }
           #zapGdl #indice ul li.efi span.icon {
             background-color: #3A374C; }
         #zapGdl #indice ul li.pub {
-          background-color: #E50027;
+          background-color: #172F61;
           width: 45em;
           margin-left: 5em; }
           #zapGdl #indice ul li.pub span.icon {
             background-color: #7A000D; }
         #zapGdl #indice ul li.med {
-          background-color: #FBBF0E;
+          background-color: #172F61;
           width: 40em;
           margin-right: 10em; }
           #zapGdl #indice ul li.med span.icon {
             background-color: #885C03; }
         #zapGdl #indice ul li.com {
-          background-color: #253763;
+          background-color: #172F61;
           width: 60em; }
           #zapGdl #indice ul li.com span.icon {
             background-color: #151D39; }
         #zapGdl #indice ul li:hover a {
           text-decoration: underline; }
         #zapGdl #indice ul li:hover.seg {
-          background-color: #770013; }
+          background-color: #192759; }
         #zapGdl #indice ul li:hover.urb {
-          background-color: #7F9304; }
+          background-color: #192759; }
         #zapGdl #indice ul li:hover.eco {
-          background-color: #8F4103; }
+          background-color: #192759; }
         #zapGdl #indice ul li:hover.efi {
-          background-color: #3A374C; }
+          background-color: #192759; }
         #zapGdl #indice ul li:hover.pub {
-          background-color: #7A000D; }
+          background-color: #192759; }
         #zapGdl #indice ul li:hover.med {
-          background-color: #885C03; }
+          background-color: #192759; }
         #zapGdl #indice ul li:hover.com {
-          background-color: #151D39; }
+          background-color: #192759; }
       #zapGdl #indice ul br.onlyInPortrait {
         display: none; }
     #zapGdl #indice.counted ul li small {
