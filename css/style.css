@@ -882,7 +882,7 @@ color: #19487c;}
     #zapGdl .eje h3 {
       text-align: center;
       font-weight: 100;
-      color: white;
+      color: black;
       margin: 0 auto;
       padding: 2em 0;
       padding-top: 10em; }
@@ -905,7 +905,8 @@ color: #19487c;}
     #zapGdl .eje p {
       color: black;
       margin: 0 auto;
-      font-size: 170%;
+      /*font-size: 170%;*/
+      font-size:3em;
       width: 35em;
       line-height: 1.4em; }
       #zapGdl .eje p span {
@@ -964,7 +965,8 @@ color: #19487c;}
         position: relative; }
         #zapGdl .eje ol.compromisos li.compromiso big {
           color: white;
-          font-size: 200%;
+          /*font-size: 200%;*/
+          font-size:2.5em;
           cursor: pointer;
           padding: 1.2em 1em;
           line-height: 1.2em;
@@ -1032,7 +1034,8 @@ color: #19487c;}
                 width: 50%;
                 padding: 1em;
                 background: white;
-                font-size: 180%;
+                /*font-size: 180%;*/
+                font-size:1.5em;
                 display: inline-block;
                 text-align: left;
                 margin-right: 0; }
