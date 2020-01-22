@@ -1322,7 +1322,8 @@ background-size:cover;
   text-align: center !important;
   padding-bottom: 4em; }
   #feedback .middle iframe {
-    width: 30em;
+    /*width: 30em;*/
+    width: 80%;
     height: 45em;
     margin: 0 auto; }
 
