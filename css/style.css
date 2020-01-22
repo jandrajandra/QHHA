@@ -1314,7 +1314,9 @@ background-size:cover;
       font-size: 200%; }
     #zapGdl #feedback iframe {
       font-size: 200%;
-      height: 65em; }
+      height: 65em; 
+      width: 80%;
+}
 
 #feedback .middle {
   text-align: center !important;
