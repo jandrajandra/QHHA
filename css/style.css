@@ -1,10 +1,13 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
   background: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 100; }
 
 #menu {
