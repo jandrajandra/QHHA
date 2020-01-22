@@ -10,13 +10,13 @@ var QHHA = {
 	imgDir: '/img/icons/',
 	zapGdl: 'gdl',
 	ejesFull: {
-		seg: {label:'Seguridad', shortLabel:'Seguridad', id:'seguridad', color:'#AF0B1E'},
-		urb: {label:'Desarrollo Urbano', id:'desarrollo-urbano', color:'#CDDA1B'},
-		eco: {label:'Economía', id:'desarrollo-economico', color:'#F6921F'},
-		efi: {label:'Educación', id:'eficiencia', color:'#8583A0'},
-		pub: {label:'Servicios Públicos', id:'servicios-publicos', color:'#E50027'},
-		med: {label:'Medio Ambiente', id:'medio-ambiente', color:'#FBBF0E'},
-		com: {label:'Construcción de Comunidad', id:'comunidad', color:'#253763'},
+		seg: {label:'Seguridad', shortLabel:'Seguridad', id:'seguridad', color:'#193071'},
+		urb: {label:'Desarrollo Urbano', id:'desarrollo-urbano', color:'#193071'},
+		eco: {label:'Economía', id:'desarrollo-economico', color:'#193071'},
+		efi: {label:'Educación', id:'eficiencia', color:'#193071'},
+		pub: {label:'Servicios Públicos', id:'servicios-publicos', color:'#193071'},
+		med: {label:'Medio Ambiente', id:'medio-ambiente', color:'#193071'},
+		com: {label:'Construcción de Comunidad', id:'comunidad', color:'#193071'},
 		
 	},
 
