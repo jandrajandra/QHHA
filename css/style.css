@@ -69,19 +69,19 @@ body {
   margin-right: -0.75em;
   border-color: white; }
 #zapGdl #menu .middle a.seguridad span, #zapGdl #menu .middle a.seguridad big {
-  background-color: #AF0B1E; }
+  background-color: #000000; }
 #zapGdl #menu .middle a.desarrollo-urbano span, #zapGdl #menu .middle a.desarrollo-urbano big {
-  background-color: #CDDA1B; }
+  background-color: #000000; }
 #zapGdl #menu .middle a.desarrollo-economico span, #zapGdl #menu .middle a.desarrollo-economico big {
-  background-color: #F6921F; }
+  background-color: #000000; }
 #zapGdl #menu .middle a.eficiencia span, #zapGdl #menu .middle a.eficiencia big {
-  background-color: #8583A0; }
+  background-color: #000000; }
 #zapGdl #menu .middle a.servicios-publicos span, #zapGdl #menu .middle a.servicios-publicos big {
-  background-color: #E50027; }
+  background-color: #000000; }
 #zapGdl #menu .middle a.medio-ambiente span, #zapGdl #menu .middle a.medio-ambiente big {
-  background-color: #FBBF0E; }
+  background-color: #000000; }
 #zapGdl #menu .middle a.comunidad span, #zapGdl #menu .middle a.comunidad big {
-  background-color: #253763; }
+  background-color: #000000; }
 
 #inicio {
   font-size: 10px;
