@@ -6,7 +6,7 @@ $.extend($.expr[":"], {
 
 var QHHA = {
 	/* variables */
-	ejes: [ 'seg', 'urb', 'eco', 'efi', 'pub', 'med', 'com' ],
+	ejes: [ 'seg', 'urb', 'eco', 'efi', 'pub', 'med' ],
 	imgDir: '/img/icons/',
 	zapGdl: 'gdl',
 	ejesFull: {
@@ -15,9 +15,7 @@ var QHHA = {
 		eco: {label:'Economía', id:'desarrollo-economico', color:'#193071'},
 		efi: {label:'Educación', id:'eficiencia', color:'#193071'},
 		pub: {label:'Servicios Públicos', id:'servicios-publicos', color:'#193071'},
-		med: {label:'Medio Ambiente', id:'medio-ambiente', color:'#193071'},
-		com: {label:'Construcción de Comunidad', id:'comunidad', color:'#193071'},
-		
+		med: {label:'Medio Ambiente', id:'medio-ambiente', color:'#193071'}
 	},
 
 	boot:function() {
