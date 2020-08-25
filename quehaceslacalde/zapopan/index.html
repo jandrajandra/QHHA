@@ -1,0 +1,357 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<title>Qué has hecho, alcalde - Bienvenido</title>
+		
+
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,700" rel="stylesheet">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/styles.css">
+
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+<body id="zapGdl" class="zap" data-zapGdl="zap">
+	<script>
+		$( document ).ready(function() {
+			QHHA.sheet.fetch('zap');
+			QHHA.days.since();
+		});
+	</script>
+
+	<div id="menu">
+		<div class="middle">
+			<a class="indice" href="#indice" class="here"><big>Índice</big><span></span></a>
+			<a class="seguridad" href="#seguridad"><big>Seguridad y Prevención del Delito</big><span></span></a>
+			<a class="desarrollo-urbano" href="#desarrollo-urbano"><big>Desarrollo Urbano</big><span></span></a>
+			<a class="desarrollo-economico" href="#desarrollo-economico"><big>Desarrollo Económico</big><span></span></a>
+			<a class="eficiencia" href="#eficiencia"><big>Eficiencia Administrativa</big><span></span></a>
+			<a class="servicios-publicos" href="#servicios-publicos"><big>Servicios Públicos</big><span></span></a>
+			<a class="medio-ambiente" href="#medio-ambiente"><big>Medio Ambiente</big><span></span></a>
+			<a class="comunidad" href="#comunidad"><big>Construcción de Comunidad</big><span></span></a>
+			<a class="feedback" href="#feedback"><big>¿Cómo calificas esta iniciativa?</big><span></span></a>
+		</div>
+	</div>
+
+	<!--TEMPLATES-->
+	<div id="template">
+		<li class="indizado">
+			<span class="icon"><img /></span>
+			<big><a href="javascript:void(0)"></a></big>
+			<small><span class="compromisos">n</span> compromisos, <span class="indicadores">m</span> indicadores</small>
+		</li>
+
+		<div class="eje slide">
+			<h3>
+				<span><img /></span>
+				<big></big>
+			</h3>
+			<p>
+				Pablo Lemus hizo <span class="compromisos">n</span><span>compromisos</span> en este eje. Conoce su desempeño haciendo click en cada compromiso para ver sus indicadores. 
+			<a href="javascript:void(0)" class="indicadores">
+				<i>+ Ver</i><em>- Ocultar</em> todos los <span class="indicadores">m</span><span>indicadores</span></a>
+			</p>
+			<ol class="compromisos"></ol>
+		</div>
+
+		<a href="javascript:void(0)" class="veSusIndicadores">
+			<i>+ Ver</i><em>- Ocultar</em> sus <span class="indicadores">m</span><span>indicadores</span>
+		</a>
+
+		<li class="compromiso">
+			<big></big>
+			<ol class="indicadores">
+			</ol>
+		</li>
+
+		<li class="indicador"></li>
+	</div>
+	
+	<!--HEADER-->
+	<div id="header">
+		<a href="/" title="Regresar al inicio" class="home">
+			<img src="/img/logos/qhha-3-horizontal-2020.png" alt="Qué has hecho, alcalde" />
+		</a>
+		<a href="javascript:void(0)" class="top">
+			<img src="/img/zapgdl/zap-bkg.png" class="zapGdl" />
+			<img src="/img/icons/up.png" class="up" />
+			<span>Zapopan</span>
+		</a>
+
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLSdAVGO_MZ8fNj-5V0zSHDPbTLzPmjWUJjGyMlfQa_EfTLevrA/viewform?embedded=true" class="calificacion form" target="_blank">
+			¿Cómo calificas esta iniciativa?
+		</a>
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLSeJW-0AinQ2o8P2boTcoEug3kM6jZEpoRVFYSa4sFJoY9j8Tw/viewform" class="compromisos form" target="_blank">
+			¿Crees que a los alcaldes les falta algún compromiso?
+		</a>
+	</div>
+
+	<!--INDICE-->
+	<div id="indice" class="slide" data-background="white">
+		<div class="bienvenida">
+			<p>
+				Cuando votamos por nuestro alcalde votamos también por sus propuestas.
+				Recuperamos aquí <span class="totalCompromisos"></span><span>compromisos</span> para darles seguimiento con <span class="totalIndicadores"></span><span>indicadores</span>.
+			</p>
+		</div>
+		<ul class="indice"></ul>
+		<div id="alcalde">
+			<h2>
+				<img src="/img/zapgdl/lemus-0.png" />
+				<span>Pablo Lemus</span>
+			</h2><div class="datos">
+					<div class="tel">
+						<img src="/img/logos/phone-black.png" /><span>3818 2200 (ext. 2600 y 2601)</span>
+					</div>
+					<div class="email">
+						<a href="mailto:pablo.lemus@zapopan.gob.mx">
+							<img src="/img/logos/gm-black.png" />pablo.lemus@zapopan.gob.mx
+						</a>
+					</div>
+					<div class="twitter">
+						<a href="https://twitter.com/PabloLemusN">
+							<img src="/img/logos/tw-black.png" />PabloLemusN
+						</a>
+					</div>
+				</div><div class="bio">
+					<div class="text">
+						Es la primera vez que incursiona en el servicio público. Antes fue empresario en el ramo financiero, conductor de un programa de radio y presidente de Coparmex Jalisco de 2008 a 2011.
+					</div>
+				</div><div class="inicioFin">
+					<div class="text">
+						Su gestión inició el
+							<b>1 de octubre de <big>2015</big></b><br/>
+							y finaliza el<br/>
+						<b>30 de septiembre de <big>2018</big></b>.<br/>
+
+						Van <div class="dias"><i>n</i> días</div><div class="porcentaje">(<i>m</i>%)</div>.
+					</div>
+				</div>
+			</div>
+			<!--<div id="search">-->
+				<!--<form>-->
+				  <!--<input type="text" name="query" class="query" autocomplete="off" value="" />-->
+				  <!--<input type="submit" class="submit" value="Buscar" />-->
+				<!--</form>-->
+				<!--<div class="results"></div>-->
+			<!--</div>-->
+		</div>
+	</div>
+
+	<!--EJES-->
+	<div id="ejes"></div>
+
+	<div id="feedback" class="slide" data-background="#aaa">
+		<div class="inside">
+			<div class="middle">
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdAVGO_MZ8fNj-5V0zSHDPbTLzPmjWUJjGyMlfQa_EfTLevrA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+			</div>
+		</div>
+	</div>
+	<div class="sponsors">
+		<p>
+			Esta iniciativa es impulsada por:
+		</p>
+		<div class="logoList">
+	<a href="http://www.jaliscocomovamos.org/" class="jcv" title="Jalisco Como Vamos">
+		<img src="/img/logos/jcv.png" />
+	</a><!--
+	<a href="http://www.coparmexjal.org.mx" class="coparmex" title="COPARMEX">
+		<img src="/img/logos/coparmex.png" />
+	</a>
+	<a href="http://www.camaradecomerciogdl.mx/" class="canaco" title="Cámara Nacional de Comercio - Guadalajara">
+		<img src="/img/logos/canaco.png" />
+	</a>
+	<a href="https://www.up.edu.mx/es/guadalajara" class="ccij" title="Universidad Panamericana">
+		<img src="/img/logos/universidad-panamericana.png" />
+	</a>
+						
+	<a href="https://www.univa.mx/" class="ccij" title="UNIVA">
+		<img src="/img/logos/univa.png" />
+	</a>
+						
+	<a href="http://iteso.mx/" class="iteso" title="ITESO">
+		<img src="/img/logos/iteso.png" />
+	</a>
+	<a href="http://cf.org.mx/" class="cj" title="Corporativa de Fundaciones">
+		<img src="/img/logos/cf.png" />
+	</a>
+
+	<a href="http://extra.org.mx/" class="extra" title="Extra A.C.">
+		<img src="/img/logos/extra.png" />
+	</a>-->
+</div>
+
+	</div>
+	<div class="credits">
+		<div class="inside">
+			<a href="javascript:void(0)" class="showIconCredits">+ Créditos de íconos</a>
+			<div class="creditList">
+				<p>
+					Los siguientes PNGs se presentan enlazados a su pagina de The Noun Project. Agradecemos a los autores liberar sus diseños con licencias abiertas.
+				</p>
+
+				<table>
+					<tr>
+						<td>
+							<ul>
+								<li><a href="https://thenounproject.com/term/arrow-up/583354" target="new">up</a></li>
+								<li><a href="https://thenounproject.com/search/?q=police&i=8353" target="new">SEG</a>
+									<ul>
+									<li><a href="https://thenounproject.com/search/?q=guarantee&i=551295">seg-zap-1</a></li>
+									<li><a href="https://thenounproject.com/search/?q=police&i=523545">seg-zap-2</a></li>
+									<li><a href="https://thenounproject.com/search/?q=police&i=523545">seg-gdl-1</a></li>
+									<li><a href="https://thenounproject.com/search/?q=guarantee&i=551295">seg-gdl-2</a></li>
+									</ul>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li><a href="https://thenounproject.com/search/?q=ecology&i=10317">MED</a>
+									<ul>
+									<li><a href="https://thenounproject.com/search/?q=forest&i=16017">med-zap-1</a></li>
+									<li><a href="https://thenounproject.com/search/?q=forest&i=132930">med-zap-2</a></li>
+									<li><a href="https://thenounproject.com/search/?q=water&i=212">med-zap-3</a></li>
+									<li><a href="https://thenounproject.com/search/?q=bicycle&i=536">med-zap-4</a></li>
+									<li><a href="https://thenounproject.com/search/?q=sustainable&i=6786">med-zap-5</a></li>
+									<li><a href="https://thenounproject.com/search/?q=forest&i=16017">med-seg-1</a></li>
+									<li><a href="https://thenounproject.com/search/?q=forest&i=132930">med-seg-2</a></li>
+									<li><a href="https://thenounproject.com/search/?q=sustainable&i=6786">med-seg-3</a></li>
+									<li><a href="https://thenounproject.com/search/?q=bicycle&i=536">med-seg-4</a></li>
+									<li><a href="https://thenounproject.com/search/?q=gas+mask&i=34373">med-seg-5</a></li>
+									<li><a href="https://thenounproject.com/search/?q=agenda&i=521069">med-seg-6</a></li>
+									</ul>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li><a href="https://thenounproject.com/search/?q=ruler&i=33238">EFI</a>
+									<ul>
+									<li><a href="https://thenounproject.com/search/?q=money&i=29280">efi-zap-1</a></li>
+									<li><a href="https://thenounproject.com/search/?q=purchases&i=53043">efi-zap-2</a></li>
+									<li><a href="https://thenounproject.com/search/?q=eye&i=421">efi-zap-3</a></li>
+									<li><a href="https://thenounproject.com/search/?q=collaboration&i=489538">efi-zap-4</a></li>
+									<li><a href="https://thenounproject.com/search/?q=trim&i=62743">efi-gdl-1</a></li>
+									<li><a href="https://thenounproject.com/search/?q=budget&i=580704">efi-gdl-2</a></li>
+									<li><a href="https://thenounproject.com/search/?q=purchases&i=53043">efi-gdl-3</a></li>
+									<li><a href="https://thenounproject.com/search/?q=money&i=29280">efi-gdl-4</a></li>
+									<li><a href="https://thenounproject.com/search/?q=register&i=232993">efi-gdl-5</a></li>
+									<li><a href="https://thenounproject.com/search/?q=eye&i=421">efi-gdl-6</a></li>
+									</ul>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li><a href="https://thenounproject.com/search/?q=urban&i=21595">URB</a>
+									<ul>
+									<li><a href="https://thenounproject.com/search/?q=zone&i=273648">urb-zap-2</a></li>
+									<li><a href="https://thenounproject.com/search/?q=zone&i=273648">urb-gdl-1</a></li>
+									<li><a href="https://thenounproject.com/search/?q=justice&i=26749">urb-gdl-2</a></li>
+									<li><a href="https://thenounproject.com/search/?q=repairs&i=556907">urb-gdl-3</a></li>
+									<li><a href="https://thenounproject.com/search/?q=sports&i=129305">urb-gdl-4</a></li>
+									<li><a href="https://thenounproject.com/search/?q=maintenance&i=574764">urb-gdl-5</a></li>
+									<li><a href="https://thenounproject.com/search/?q=transportation&i=59">urb-gdl-6</a></li>
+									<li><a href="https://thenounproject.com/search/?q=urban&i=165828">urb-gdl-7</a></li>
+									</ul>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li><a href="https://thenounproject.com/search/?q=work&i=30234">ECO</a>
+									<ul>
+									<li><a href="https://thenounproject.com/search/?q=relocation&i=356594">eco-zap-1</a></li>
+									<li><a href="https://thenounproject.com/search/?q=online&i=564775">eco-zap-2</a></li>
+									<li><a href="https://thenounproject.com/term/growth/489000/">eco-zap-3</a></li>
+									<li><a href="https://thenounproject.com/term/growth/476589/">eco-zap-5</a></li>
+									<li><a href="https://thenounproject.com/search/?q=relocation&i=356594">eco-gdl-1</a></li>
+									<li><a href="https://thenounproject.com/term/growth/489000/">eco-gdl-2</a></li>
+									<li><a href="https://thenounproject.com/term/growth/476589/">eco-gdl-3</a></li>
+									</ul>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+							<li><a href="https://thenounproject.com/search/?q=speak&i=31849">COM</a>
+								<ul>
+								<li><a href="https://thenounproject.com/search/?q=approve&i=330">com-zap-1</a></li>
+								<li><a href="https://thenounproject.com/search/?q=participation&i=34872">com-zap-2</a></li>
+								<li><a href="https://thenounproject.com/search/?q=disabled&i=575987">com-zap-3</a></li>
+								<li><a href="https://thenounproject.com/search/?q=equality&i=6066">com-zap-4</a></li>
+								<li><a href="https://thenounproject.com/search/?q=culture&i=13644">com-zap-5</a></li>
+								<li><a href="https://thenounproject.com/search/?q=approve&i=330">com-gdl-1</a></li>
+								<li><a href="https://thenounproject.com/search/?q=participation&i=34872">com-gdl-2</a></li>
+								<li><a href="https://thenounproject.com/search/?q=public%20space&i=52484">com-gdl-3</a></li>
+								<li><a href="https://thenounproject.com/search/?q=disabled&i=575987">com-gdl-4</a></li>
+								<li><a href="https://thenounproject.com/search/?q=equality&i=6066">com-gdl-5</a></li>
+								<li><a href="https://thenounproject.com/search/?q=culture&i=13644">com-gdl-6</a></li>
+								</ul>
+							</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>
+									<a href="https://thenounproject.com/search/?q=electricity&i=45795">PUB</a>
+									<a href="https://thenounproject.com/search/?q=water&i=212">PUB</a>
+									<ul>
+										<li><a href="https://thenounproject.com/search/?q=shoveling&i=4271">pub-zap-1</a></li>
+										<li><a href="https://thenounproject.com/search/?q=expand&i=99110">pub-zap-2</a></li>
+										<li><a href="https://thenounproject.com/search/?q=water&i=212">pub-zap-3</a></li>
+										<li><a href="https://thenounproject.com/search/?q=shoveling&i=4271">pub-gdl-1</a></li>
+										<li><a href="https://thenounproject.com/search/?q=expand&i=99110">pub-gdl-2</a></li>
+									</ul>
+								</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="github">
+		<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es_ES"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a> &nbsp;|&nbsp; <a href="https://github.com/elzr/QHHA">Ver en Github &rarr;</a>
+	</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+		<script src="/js/code.js"></script>
+	
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-82432173-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	
+</body>
+</html>

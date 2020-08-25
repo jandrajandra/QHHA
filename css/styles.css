@@ -1,0 +1,977 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: calc(20px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  color: #0e2a5d;
+}
+
+p {
+  font-size: calc(15px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.title1 {
+  font-size: calc(14px + (26 - 15) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 400;
+}
+
+.title4 {
+  font-size: calc(10px + (26 - 15) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 400;
+}
+
+.link1 {
+  color: #0e2a5d;
+}
+
+.link1:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bg1 {
+  background-color: #192759;
+}
+.bg2 {
+  background-color: #2faad0;
+}
+.bg3 {
+    background-color: #DBC808;
+}
+.bg4 {
+    background-color: #FCE809;
+}
+
+.text-azul1 {
+  color: #0e2a5d;
+}
+
+.img-fluid-1 {
+  height: auto;
+  width: 30%;
+  margin: 0 auto;
+}
+
+li.indicador.llegoMeta .graficos .actualización span {
+  left: 70%;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .actualización span.llegoMeta {
+  position: absolute;
+  float: right;
+  right: -2rem;
+}
+
+.positionRight {
+    left: 39%;
+    top: -2em;
+}
+
+.positionRight span:before {
+    content: "";
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ccc;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+}
+
+.section1 {
+  background-image: url("../images/Fondos-QHHA-03.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  padding: 10% 0%;
+  width: 100%;
+}
+
+.section2 {
+  background-image: url("../images/Fondos-QHHA-05.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  padding: 10% 0%;
+  width: 100%;
+}
+
+.section3 {
+  background-image: url("../images/Fondos-QHHA-03.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  padding: 10% 0%;
+  width: 100%;
+}
+
+.section4 {
+  background-image: url("../images/Fondos-QHHA-04.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  padding: 10% 0%;
+  width: 100%;
+}
+
+.section5 {
+  height: auto;
+  padding: 10% 0%;
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 100vh;
+}
+
+.section6 {
+  background-color: #ccc;
+  height: auto;
+  padding: 5% 0%;
+  width: 100%;
+}
+
+.img-ejes {
+  width: 70%;
+  height: auto;
+}
+
+#flor-economia {
+  position: absolute;
+  left: 48%;
+  top: 5%;
+  font-size: 12px;
+}
+
+#flor-img-economia {
+  width: 10%;
+  top: 18%;
+  left: 50%;
+  position: absolute;
+}
+
+#flor-img-economia:after {
+  content: "Economia";
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#flor-educacion {
+  position: absolute;
+  top: 32%;
+  right: 3%;
+  font-size: 12px;
+}
+
+#flor-img-educacion {
+  width: 10%;
+  top: 37%;
+  right: 24%;
+  position: absolute;
+}
+
+#flor-seviciosPublicos {
+  position: absolute;
+  bottom: 10%;
+  right: 7%;
+  font-size: 12px;
+  width: 20%;
+}
+
+#flor-img-seviciosPublicos {
+  width: 10%;
+  right: 27%;
+  position: absolute;
+  bottom: 21%;
+}
+
+#flor-medioAmbiente {
+  position: absolute;
+  left: 40%;
+  bottom: -10%;
+  font-size: 12px;
+  width: 20%;
+}
+
+#flor-img-medioAmbiente {
+  width: 10%;
+  bottom: 8%;
+  left: 44%;
+  position: absolute;
+}
+
+#flor-seguridad {
+  position: absolute;
+  top: 80%;
+  left: 8%;
+  font-size: 12px;
+}
+
+#flor-img-seguridad {
+  width: 10%;
+  left: 27%;
+  position: absolute;
+  bottom: 23%;
+}
+
+#flor-desarrolloUrbano {
+  position: absolute;
+  top: 27%;
+  left: 5%;
+  font-size: 12px;
+  width: 20%;
+}
+
+#flor-img-desarrolloUrbano {
+  width: 10%;
+  top: 28%;
+  left: 30%;
+  position: absolute;
+}
+
+.imgover {
+  display: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.card:hover .imginit {
+  display: none;
+}
+.card:hover .imgover {
+  display: inline;
+}
+
+#delToro:hover,
+#lemus:hover {
+  background-color: #1d4075;
+  border-radius: 10px;
+  color: #fff;
+  transition: all 0.5s;
+  box-shadow: -1px 1px 2px #00000069;
+}
+
+#zapGdl #indice .bienvenida {
+    padding-top: 20em;
+    margin: 2.5em 2em 1em 2em;
+}
+
+/** section 1 zap gdl*/
+#zapGdl #indice ul li.seg,
+#zapGdl #indice ul li.urb,
+#zapGdl #indice ul li.eco,
+#zapGdl #indice ul li.efi,
+#zapGdl #indice ul li.pub,
+#zapGdl #indice ul li.med {
+    background-color: #172f61;
+    width: 100%;
+    margin: 1em;
+}
+/***/
+
+.credits {
+  font-size: 2em;
+  text-align: center;
+  background: #bbb;
+  padding: 0.5em 0;
+  color: black;
+}
+.creditList {
+  display: none;
+}
+.credits a {
+  color: black;
+  font-size: 16px;
+}
+
+.github {
+  padding: 2em 0;
+  background: #bbb;
+  color: black;
+}
+.github a {
+  color: black;
+}
+.github img {
+  vertical-align: middle;
+}
+
+#inicio .credits a,
+#zapGdl .credits a,
+#inicio .github a,
+#zapGdl .github a {
+  color: black;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso {
+    padding: 0 2em;
+    margin: 0 auto;
+    list-style-type: none;
+    position: relative;
+    width: 97%;
+    text-align: center;
+}
+
+#zapGdl .eje h3 big {
+    display: inline-block;
+    font-size: 200%;
+    font-weight: 100;
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 500;
+}
+
+.positionRight {
+    right: 0%;
+}
+
+.graficos {
+    width: 90%;
+    position: relative;
+    margin: 3em 0;
+}
+
+.datos1 {
+    position: relative;
+    left: -5em;
+    order: 1;
+}
+
+.datos2 {
+    position: relative;
+    left: -18%;
+}
+
+/* ---------  Estilos para el resultado negativo   ----------- */
+
+
+
+/* --------- Fin estilos para el resultado negativo   ----------- */
+
+/* ---------  Estilos para el resultado positivo -----------------*/
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .actualización span.recorreRight {
+  left: 8rem;
+  top: 0;
+}
+
+.negativo {
+  opacity: 0;
+  width: 0;
+}
+
+span.leftFull {
+  right: 60%;
+}
+span.rightFull {
+  left: 60%;
+}
+
+/* ---------- Fin estilos positivos ------------------------------ */
+
+@media (min-width: 576px) {
+        /** section 1 zap gdl*/
+#zapGdl #indice ul li.seg,
+#zapGdl #indice ul li.urb,
+#zapGdl #indice ul li.eco,
+#zapGdl #indice ul li.efi,
+#zapGdl #indice ul li.pub,
+#zapGdl #indice ul li.med {
+    background-color: #172f61;
+    width: 90%;
+    margin: 1em;
+}
+/***/
+#zapGdl #indice #alcalde .datos {
+    padding: 3em;
+    height: 224px;
+}
+
+}
+
+@media (min-width: 768px) {
+
+  .positionRight {
+      right: 0%;
+  } 
+
+  span.rightHalf.rightDecile.floatLeft1 {
+    left: 75%;
+}
+
+    /** section 1 zap gdl*/
+#zapGdl #indice ul li.seg,
+#zapGdl #indice ul li.urb,
+#zapGdl #indice ul li.eco,
+#zapGdl #indice ul li.efi,
+#zapGdl #indice ul li.pub,
+#zapGdl #indice ul li.med {
+    background-color: #172f61;
+    width: 80%;
+    margin: 1em;
+}
+/***/
+
+#zapGdl .eje ol.compromisos li.compromiso {
+    width: 73%;
+}
+#zapGdl .eje h3 big {
+    display: inline-block;
+    font-size: 200%;
+    font-weight: 100;
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-size: calc(40px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+#zapGdl #indice #alcalde .datos {
+    padding: 3em;
+    height: 218px;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso big {
+    width: 91%;
+}
+#zapGdl .eje ol li::before {
+    left: -2em;
+}
+
+#zapGdl .eje p {
+  width: 50%;
+}
+
+#zapGdl.portrait
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .descripción {
+  width: 50%;
+}
+
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .descripción {
+  width: 50%;
+}
+
+#zapGdl.portrait .eje ol.compromisos li.compromiso big {
+    max-width: 30em;
+}
+
+.graficos {
+    width: 50%;
+}
+
+.datos1 {
+    position: relative;
+    left: 0em;
+    float: left;
+    width: 50%;
+}
+
+.datos2 {
+    position: relative;
+    right: 0em;
+    float: right;
+    width: 44%;
+    left: -3em;
+}
+
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador.clicked
+  .hover,
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador:hover
+  .hover {
+  position: relative;
+  display: block;
+  left: 0;
+  height: auto;
+  min-height: 10vh;
+}
+
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .actualización {
+    width: 10em;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fuente {
+    width: 50%;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .observaciones {
+    width: 50%;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaactualización {
+    position: relative;
+    left: 0;
+    width: 40%;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechameta {
+    position: relative;
+    top: 0;
+    float: right;
+    right: 10px;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaarranque, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechameta {
+    left: 0;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.floatLeft1 .graficos span.bgRojo {
+  left: -53%;
+  position: relative;
+  top: 40px;
+}
+
+span.leftFull {
+  right: 0%;
+}
+span.rightFull {
+  left: 0%;
+}
+
+
+}
+
+@media (min-width: 992px) {
+  #flor-educacion {
+    top: 32%;
+    right: 6%;
+    font-size: 18px;
+  }
+  #flor-img-educacion {
+    width: 10%;
+    top: 37%;
+    right: 22%;
+  }
+  #flor-seviciosPublicos {
+    bottom: 10%;
+    right: 7%;
+    font-size: 18px;
+  }
+  #flor-img-seviciosPublicos {
+    width: 10%;
+    right: 27%;
+    bottom: 21%;
+  }
+  #flor-medioAmbiente {
+    left: 40%;
+    bottom: -5%;
+    font-size: 18px;
+  }
+  #flor-img-medioAmbiente {
+    width: 10%;
+    bottom: 8%;
+    left: 44%;
+  }
+  #flor-seguridad {
+    top: 73%;
+    left: 8%;
+    font-size: 18px;
+  }
+  #flor-img-seguridad {
+    width: 10%;
+    left: 27%;
+    bottom: 23%;
+  }
+  #flor-desarrolloUrbano {
+    top: 27%;
+    left: 5%;
+    font-size: 18px;
+  }
+  #flor-img-desarrolloUrbano {
+    width: 10%;
+    top: 28%;
+    left: 27%;
+  }
+  #flor-economia {
+    left: 48%;
+    top: 5%;
+    font-size: 18px;
+  }
+  #flor-img-economia {
+    width: 10%;
+    top: 15%;
+    left: 50%;
+  }
+
+/** section 1 zap gdl*/
+#zapGdl #indice ul li.seg,
+#zapGdl #indice ul li.urb,
+#zapGdl #indice ul li.eco,
+#zapGdl #indice ul li.efi,
+#zapGdl #indice ul li.pub,
+#zapGdl #indice ul li.med {
+    background-color: #172f61;
+    width: 40%;
+    margin: 1em;
+}
+/***/
+#zapGdl .eje ol.compromisos li.compromiso {
+  width: 90%;
+}
+
+#zapGdl .eje ol li::before {
+  left: 0;
+}
+
+#zapGdl .eje h3 span {
+    display: inline-block;
+    margin: 0;
+    margin-left: -8em;
+    padding-right: 2em;
+    vertical-align: middle;
+  }
+  #zapGdl .eje h3 span img {
+    width: 5em;
+    vertical-align: middle;
+    height: auto;
+  }
+
+  #zapGdl .eje ol.compromisos li.compromiso big {
+    width: 89%;
+}
+#zapGdl #indice #alcalde .datos {
+    text-align: left;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .descripción {
+    width: 50%;
+    font-weight: 400;
+}
+
+.graficos {
+    width: 50%;
+    position: relative;
+    margin: 3em 0;
+}
+
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .actualización {
+  width: 10em;
+}
+
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .hover
+  .fuente {
+  width: 50%;
+  font-weight: bold;
+  position: relative;
+  top: 0em;
+}
+
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .hover
+  .fechaarranque,
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .hover
+  .fechameta {
+  width: 7.5em;
+  padding: 1em 0.45em;
+  text-align: center;
+  font-size: 120%;
+  color: black;
+  position: relative;
+  left: -1em;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaactualización {
+  width: 45%;
+  position: relative;
+  left: 0em;
+  height: auto;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador {
+  padding: 0;
+  margin: 2em 0;
+  position: relative;
+  text-align: center;
+  width: 90%;
+  left: 5em;
+}
+
+#zapGdl.portrait
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .hover
+  .observaciones {
+    width: 21.5%;
+    position: relative;
+    bottom: 0em;
+    left: 0%;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.negativeProgress .li .actualización span.bgRojo {
+  color: #a70808;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.negativeProgress .li .actualización span.bgRojo b{
+  color: #fff;
+}
+
+
+/* #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.negativeProgress .li .actualización span, 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.negativeProgress.negativoPros .li .actualización span.rightHalf {
+    left: -20%;
+    top: 0em;
+} */
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.masMeta .li .actualización span {
+    left: 60%;
+    top: 0;
+}
+
+#zapGdl #indice ul li a {
+    font-size: 2em;
+}
+
+/* -------- Estilos de resultado negativo ---------- */
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.negativeProgress .li .actualización span.recorreLeft {
+  right: 4rem;
+  top: -18px;
+}
+
+/*-------------------fin estilos negativo -------- */
+
+
+span.rightHalf.rightDecile.rightFull {
+  left: 70%;
+}
+
+span.leftFull {
+  right: 70%;
+}
+
+}/*cierra media 992*/
+
+@media (min-width: 1200px) {
+    
+  /** section 1 zap gdl*/
+#zapGdl #indice ul li.seg,
+#zapGdl #indice ul li.urb,
+#zapGdl #indice ul li.eco,
+#zapGdl #indice ul li.efi,
+#zapGdl #indice ul li.pub,
+#zapGdl #indice ul li.med {
+    background-color: #172f61;
+    width: 34%;
+    margin: 1em;
+}
+/***/
+
+#zapGdl .eje ol li::before {
+    left: 0em;
+  }
+  #zapGdl #indice #alcalde h2 {
+    height: 47vh;
+}
+  #zapGdl #indice #alcalde .datos {
+    text-align: left;
+    height: 47vh;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso {
+    width: 80%;
+}
+
+#zapGdl #indice #alcalde .bio .text {
+    margin: 10px;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaactualización {
+    width: 13em;
+}
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fuente {
+    width: 50%;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaactualización {
+  width: 12em;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso big {
+  width: 80%;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador {
+  padding: 0;
+  margin: 2em 0;
+  position: relative;
+  text-align: center;
+  width: 89%;
+  left: 10em;
+}
+
+.graficos {
+    width: 50%;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.floatLeft1 .graficos span.bgRojo {
+  left: -62%;
+  position: relative;
+  top: 50px;
+}
+
+span.rightHalf.rightDecile.rightFull {
+  left: 65%;
+}
+
+span.leftFull {
+  right: 80%;
+}
+
+
+
+
+}/*cierra 1200*/
+
+@media (min-width: 1400px) {
+    
+    /** section 1 zap gdl*/
+  #zapGdl #indice ul li.seg,
+  #zapGdl #indice ul li.urb,
+  #zapGdl #indice ul li.eco,
+  #zapGdl #indice ul li.efi,
+  #zapGdl #indice ul li.pub,
+  #zapGdl #indice ul li.med {
+      background-color: #172f61;
+      width: 25%;
+      margin: 1em;
+  }
+  /***/
+
+  #zapGdl .eje ol.compromisos li.compromiso big {
+    width: 90%;
+}
+
+  #zapGdl #indice #alcalde h2 {
+     height: 30em;
+}
+  #zapGdl #indice #alcalde .datos {
+    text-align: left;
+    height: 30em;
+}
+
+#zapGdl #indice #alcalde .bio, 
+#zapGdl #indice #alcalde .inicioFin {
+    padding: 1em;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso {
+    width: 65%;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.clicked .hover, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador:hover .hover {
+    height: 15vh;
+}
+
+
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .actualización {
+  width: 10em;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaactualización {
+    width: 9em;
+}
+
+
+.graficos {
+    margin: 1em 0;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.floatLeft1 .graficos span.bgRojo {
+  left: -90%;
+  position: relative;
+  top: 10px;
+}
+  
+} /*cierra media 1400*/
+
+@media (min-width: 1600px) {
+/* .datos2 {
+  position: relative;
+  right: 0em;
+  float: right;
+  width: 30%;
+  left: -12em;
+  top: -1em;
+} */
+
+.datos2 {
+  position: relative;
+  right: 0em;
+  float: right;
+  width: 40%;
+  left: -6em;
+  top: -1em;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaactualización {
+  width: 12em;
+}
+
+} /*cierra media 1440*/

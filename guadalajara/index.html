@@ -1,17 +1,24 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-	<head>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 		<title>Qué has hecho, alcalde - Bienvenido</title>
 		
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		
-		
-		<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
-		<script src="/js/code.js"></script>
-
-		<link rel="stylesheet" type="text/css" href="/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/code.js"></script>
 
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700,800,900&display=swap" rel="stylesheet">
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/old_style.css">
+        <link rel="stylesheet" href="../css/styles.css">
 
 		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -26,7 +33,7 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/manifest.json">
+		<link rel="manifest" href="../manifest.json">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
@@ -90,12 +97,12 @@
 	<!--HEADER-->
 	<div id="header">
 		<a href="/" title="Regresar al inicio" class="home">
-			<img src="/img/logos/qhha-3-horizontal-2020.png" alt="Qué has hecho, alcalde" />
+			<img src="../img/logos/qhha-3-horizontal-2020.png" alt="Qué has hecho, alcalde" />
 		</a>
 		<a href="javascript:void(0)" class="top">
-			<img src="/img/zapgdl/gdl-bkg.png" class="zapGdl" />
-			<img src="/img/icons/up.png" class="up" />
-			<span>Guadalajara</span>
+			<img src="../img/zapgdl/gdl-bkg.png" class="zapGdl d-none d-sm-inline-block" />
+			<img src="../img/icons/up.png" class="up" />
+			<span class="d-none d-sm-inline-block">Guadalajara</span>
 		</a>
 
 		<a href="https://docs.google.com/forms/d/e/1FAIpQLSdAVGO_MZ8fNj-5V0zSHDPbTLzPmjWUJjGyMlfQa_EfTLevrA/viewform?embedded=true" class="calificacion form" target="_blank">
@@ -114,68 +121,82 @@
 				Recuperamos aquí <span class="totalCompromisos"></span><span>compromisos</span> para darles seguimiento con <span class="totalIndicadores"></span><span>indicadores</span>.
 			</p>
 		</div>
-		<ul class="indice"></ul>
-		<div id="alcalde">
-			<h2>
-				<img src="/img/zapgdl/ismael-0-2020.png" />
-				<span>Ismael del Toro</span>
-			</h2><div class="datos">
-					<div class="tel">
-						<img src="/img/logos/phone-black.png" /><span>3837 4400 (ext. 4702 y 4774)</span>
-					</div>
-					<div class="email">
-						<a href="mailto:alfaro@guadalajara.gob.mx">
-							<img src="/img/logos/gm-black.png" />ismael@guadalajara.gob.mx
-						</a>
-					</div>
-					<div class="twitter">
-						<a href="https://twitter.com/EnriqueAlfaroR">
-							<img src="/img/logos/tw-black.png" />DelToroIsmael
-						</a>
-					</div>
-				</div><div class="bio">
-					<div class="text">
-						Inició en la política en 2007 como diputado en el Congreso de Jalisco y después como alcalde del municipio de Tlajomulco. Fue candidato a gobernador del estado por la coalición PT y Movimiento Ciudadano.
-					</div>
-				</div><div class="inicioFin">
-					<div class="text">
-						Su gestión inició el
-							<b>1 de octubre de <big>2015</big></b><br/>
-							y finaliza el<br/>
-						<b>30 de septiembre de <big>2018</big></b>.<br/>
+        <ul class="indice"></ul>
+        
+        <section id="alcalde">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-5 p-0">
+                        <div class="row px-3">
+                            <div class="col-12 col-xl-5 p-0">
+                                <h2>
+                                    <img src="../img/zapgdl/ismael-0-2020.png" />
+                                    <span>Ismael del Toro</span>
+                                </h2>
+                            </div>
+                            <div class="col-12 col-xl-7 p-0">
+                                <div class="datos">
+                                    <div class="tel">
+                                        <img src="../img/logos/phone-black.png" /><span>3837 4400 (ext. 4702 y 4774)</span>
+                                    </div>
+                                    <div class="email">
+                                        <a href="mailto:alfaro@guadalajara.gob.mx">
+                                         <img src="../img/logos/gm-black.png" />ismael@guadalajara.gob.mx
+                                        </a>
+                                    </div>
+                                    <div class="twitter">
+                                        <a href="https://twitter.com/EnriqueAlfaroR">
+                                        <img src="../img/logos/tw-black.png" />DelToroIsmael
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="col-12 col-md-5 d-inline-flex p-0">
+                        <div class="bio">
+                            <div class="text">
+                                Inició en la política en 2007 como diputado en el Congreso de Jalisco y después como alcalde del municipio de Tlajomulco. Fue candidato a gobernador del estado por la coalición PT y Movimiento Ciudadano.
+                            </div>
+                        </div>
+                        <div class="inicioFin">
+                            <div class="text">
+                                Su gestión inició el
+                                    <b>1 de octubre de <big>2015</big></b><br/>
+                                    y finaliza el<br/>
+                                <b>30 de septiembre de <big>2018</big></b>.<br/>
+        
+                                Van <div class="dias"><i>n</i> días</div><div class="porcentaje">(<i>m</i>%)</div>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-						Van <div class="dias"><i>n</i> días</div><div class="porcentaje">(<i>m</i>%)</div>.
-					</div>
-				</div>
-			</div>
-			<!--<div id="search">-->
-				<!--<form>-->
-				  <!--<input type="text" name="query" class="query" autocomplete="off" value="" />-->
-				  <!--<input type="submit" class="submit" value="Buscar" />-->
-				<!--</form>-->
-				<!--<div class="results"></div>-->
-			<!--</div>-->
 		</div>
 	</div>
 
 	<!--EJES-->
-	<div id="ejes"></div>
-
-	<div id="feedback" class="slide" data-background="#aaa">
+     <div id="ejes"></div> 
+    
+    <div id="feedback" class="slide" data-background="#aaa">
 		<div class="inside">
 			<div class="middle">
 				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdAVGO_MZ8fNj-5V0zSHDPbTLzPmjWUJjGyMlfQa_EfTLevrA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
 			</div>
 		</div>
-	</div>
+	</div> 
 	<div class="sponsors">
 		<p>
 			Esta iniciativa es impulsada por:
 		</p>
 		<div class="logoList">
 	<a href="http://www.jaliscocomovamos.org/" class="jcv" title="Jalisco Como Vamos">
-		<img src="/img/logos/jcv.png" />
+		<img src="../img/logos/jcv.png" />
 	</a><!--
 	<a href="http://www.coparmexjal.org.mx" class="coparmex" title="COPARMEX">
 		<img src="/img/logos/coparmex.png" />
@@ -354,3 +375,4 @@
 	
 </body>
 </html>
+

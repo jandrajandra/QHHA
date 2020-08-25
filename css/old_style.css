@@ -1,0 +1,2229 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+
+#menu {
+  position: fixed;
+  z-index: 4;
+  right: 4.5em;
+  top: 0;
+  text-align: right;
+  display: table;
+  height: 100%;
+}
+#menu .middle {
+  display: table-cell;
+  vertical-align: middle;
+  clear: both;
+}
+#menu .middle a {
+  display: block;
+  line-height: 3em;
+  height: 3em;
+  vertical-align: middle;
+}
+#menu .middle a span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  border-radius: 1em;
+  border: 2px solid white;
+  background: white;
+  transition: all 0.5s ease;
+  margin-left: 2em;
+}
+#menu .middle a big {
+  display: none;
+  vertical-align: middle;
+  background: white;
+  color: black;
+  font-size: 2em;
+  padding: 0.3em 0.6em;
+}
+#menu .middle a strong {
+  color: black;
+}
+#menu .middle a.here span {
+  background: transparent;
+}
+#menu .middle a:hover span {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 2.5em;
+  margin-top: -1.25em;
+  margin-right: -0.75em;
+}
+#menu .middle a:hover big {
+  display: inline-block;
+}
+
+#zapGdl #menu .middle a span {
+  border-color: transparent;
+  background: #ccc;
+}
+#zapGdl #menu .middle a big {
+  color: white;
+}
+#zapGdl #menu .middle a.indice big,
+#zapGdl #menu .middle a.feedback big {
+  color: black;
+}
+#zapGdl #menu .middle a.here span {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 2.5em;
+  margin-top: -0.75em;
+  margin-right: -0.75em;
+  border-color: white;
+}
+#zapGdl #menu .middle a.seguridad span,
+#zapGdl #menu .middle a.seguridad big {
+  background-color: #13224f;
+}
+#zapGdl #menu .middle a.desarrollo-urbano span,
+#zapGdl #menu .middle a.desarrollo-urbano big {
+  background-color: #13224f;
+}
+#zapGdl #menu .middle a.desarrollo-economico span,
+#zapGdl #menu .middle a.desarrollo-economico big {
+  background-color: #13224f;
+}
+#zapGdl #menu .middle a.eficiencia span,
+#zapGdl #menu .middle a.eficiencia big {
+  background-color: #13224f;
+}
+#zapGdl #menu .middle a.servicios-publicos span,
+#zapGdl #menu .middle a.servicios-publicos big {
+  background-color: #13224f;
+}
+#zapGdl #menu .middle a.medio-ambiente span,
+#zapGdl #menu .middle a.medio-ambiente big {
+  background-color: #13224f;
+}
+#zapGdl #menu .middle a.comunidad span,
+#zapGdl #menu .middle a.comunidad big {
+  background-color: #13224f;
+}
+
+#inicio {
+  font-size: 10px;
+  transition: background 1s ease;
+  background-image: url(/img/gradients/Fondos-QHHA-03.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  /*color: #fff;
+  background: #E0E0E2;
+  background-repeat: repeat-y;
+  background-size: 100% auto;*/
+  /* BIENVENIDA */
+}
+#inicio a {
+  color: #fff;
+}
+#inicio .slide .inside {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+#inicio .slide .inside .middle {
+  display: table-cell;
+  width: 100%;
+  clear: both;
+  vertical-align: middle;
+  text-align: left;
+}
+#inicio h1,
+#inicio h2,
+#inicio h3 {
+  font-size: 100%;
+}
+#inicio #bienvenida {
+  color: #0e2a5d;
+}
+#inicio #bienvenida .inside {
+  position: relative;
+}
+#inicio #bienvenida .inside img.zap,
+#inicio #bienvenida .inside img.gdl {
+  position: absolute;
+  z-index: 1;
+  bottom: -2em;
+}
+#inicio #bienvenida .inside img.zap {
+  left: -20em;
+  height: 70em;
+}
+#inicio #bienvenida .inside img.gdl {
+  right: -5em;
+  height: 70em;
+}
+#inicio #bienvenida .inside .middle {
+  z-index: 3;
+  position: relative;
+}
+#inicio #bienvenida.slide .inside .middle {
+  text-align: center;
+}
+#inicio #bienvenida h1 {
+  padding: 0 0 4em 0;
+}
+#inicio #bienvenida h1 img {
+  width: 70em;
+}
+#inicio #bienvenida p {
+  font-size: 310%;
+  margin-top: 0.5em;
+}
+#inicio #bienvenida .municipio {
+  display: inline-block;
+  width: 28em;
+  height: 32em;
+  color: #0e2a5d;
+  text-decoration: none;
+  margin-top: 1em;
+  margin-bottom: 0;
+  padding: 4em 2em;
+  padding-bottom: 4em;
+}
+#inicio #bienvenida .municipio h2 {
+  font-size: 5em;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+#inicio #bienvenida .municipio h3 {
+  font-size: 3em;
+  margin-top: 0.33em;
+}
+#inicio #bienvenida .municipio .mouseout {
+  display: inline-block;
+}
+#inicio #bienvenida .municipio .mouseover {
+  display: none;
+}
+#inicio #bienvenida .municipio.zap {
+  /*background:#5C5973 url(/img/zapgdl/zap-bkg.png) no-repeat center bottom;*/
+  background: transparent;
+  order-radius: 10px;
+  background-size: auto 100%;
+  margin-right: 3em;
+}
+#inicio #bienvenida .municipio.gdl {
+  width: 35em;
+  /*background:#5C5973 url(/img/zapgdl/gdl-bkg.png) no-repeat center bottom;*/
+  background: transparent;
+  order-radius: 10px;
+  background-size: auto 100%;
+}
+#inicio #bienvenida .municipio:hover {
+  background-color: #121a2e;
+  color: white;
+}
+#inicio #bienvenida .municipio:hover .mouseout {
+  display: none;
+}
+#inicio #bienvenida .municipio:hover .mouseover {
+  display: inline-block;
+}
+#inicio .page {
+  width: 100%;
+}
+#inicio .page .explicacion {
+  width: 70em;
+  margin: 2em auto;
+  text-align: left;
+  font-size: 100%;
+}
+#inicio .page .explicacion p {
+  font-size: 250%;
+}
+#inicio .page .explicacion b {
+  font-family: "Roboto Bold";
+}
+#inicio .page .inside {
+  width: 35em;
+  padding: 0em 0;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 220%;
+  text-align: left;
+}
+#inicio .page .inside h2 {
+  font-weight: 100;
+  color: #19487c;
+  text-transform: uppercase;
+  font-size: 250%;
+  text-align: center;
+  padding-top: 0;
+}
+#inicio .page .inside ul.ejes {
+  list-style-type: none;
+  font-size: 120%;
+}
+#inicio .page .inside ul.ejes li {
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+#inicio .page .inside ul.ejes li span {
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+  font-size: 130%;
+  margin-right: 0.5em;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+}
+#inicio .page .inside ul.ejes li span img {
+  height: 1.3em;
+  vertical-align: middle;
+}
+#inicio .page .inside ul.ejes .seg {
+  color: #af0b1e;
+}
+#inicio .page .inside ul.ejes .seg span {
+  background-color: #af0b1e;
+}
+#inicio .page .inside ul.ejes .urb {
+  color: #cdda1b;
+}
+#inicio .page .inside ul.ejes .urb span {
+  background-color: #cdda1b;
+}
+#inicio .page .inside ul.ejes .eco {
+  color: #f6921f;
+}
+#inicio .page .inside ul.ejes .eco span {
+  background-color: #f6921f;
+}
+#inicio .page .inside ul.ejes .efi {
+  color: #8583a0;
+}
+#inicio .page .inside ul.ejes .efi span {
+  background-color: #8583a0;
+}
+#inicio .page .inside ul.ejes .pub {
+  color: #e50027;
+}
+#inicio .page .inside ul.ejes .pub span {
+  background-color: #e50027;
+}
+#inicio .page .inside ul.ejes .med {
+  color: #fbbf0e;
+}
+#inicio .page .inside ul.ejes .med span {
+  background-color: #fbbf0e;
+}
+#inicio .page .inside ul.ejes .com {
+  color: #253763;
+}
+#inicio .page .inside ul.ejes .com span {
+  background-color: #253763;
+}
+#inicio .page#que-es .inside {
+  width: 100%;
+}
+#inicio .page#que-es .inside .middle2 {
+  width: 35em;
+  margin: 0 auto;
+}
+#inicio .page#que-es .inside .middle h2 {
+  margin-top: 0;
+}
+#inicio .page#que-es .inside .middle p {
+  font-size: 120%;
+}
+#inicio .page#que-es .inside .middle .logos p {
+  font-size: 400%;
+}
+#inicio .page#fuentes .inside {
+  width: 100%;
+  padding: 5em 0;
+}
+#inicio .page#fuentes .inside .middle {
+  text-align: center;
+}
+#inicio .page#fuentes .inside .middle h2 {
+  margin: 0 auto;
+}
+#inicio .page#fuentes .inside .middle p {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+#inicio .page#fuentes .inside .middle ul.fuentes {
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 1.5em;
+  text-align: center;
+}
+#inicio .page#fuentes .inside .middle ul.fuentes li {
+  width: 35%;
+  height: 45%;
+  margin: 0 1% 2% 0;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+#inicio .page#fuentes .inside .middle ul.fuentes li .pages {
+  height: 15em;
+  line-height: 15em;
+  overflow: hidden;
+}
+#inicio .page#fuentes .inside .middle ul.fuentes li .pages a {
+  display: inline-block;
+  vertical-align: top;
+}
+#inicio .page#fuentes .inside .middle ul.fuentes li .pages a img {
+  width: 8em;
+  border: 1px solid #555;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#inicio .page#fuentes .inside .middle ul.fuentes li .pages a:hover img {
+  width: 10em;
+}
+#inicio .page#ejes .inside .middle {
+  text-align: center;
+  color: #19487c;
+}
+#inicio .page#ejes .inside .middle div.flor {
+  width: 55em;
+  height: 35em;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 1em;
+  overflow-y: hidden;
+  font-size: 80%;
+}
+#inicio .page#ejes .inside .middle div.flor img.flor {
+  position: absolute;
+  height: 32em;
+  width: 32em;
+  top: 0;
+  left: 10em;
+  z-index: 1;
+}
+#inicio .page#ejes .inside .middle div.flor img.icon {
+  position: absolute;
+  z-index: 2;
+  width: 5.5em;
+  height: 5.5em;
+}
+#inicio .page#ejes .inside .middle div.flor img.icon.seg {
+  top: 17.5em;
+  left: 13.5em;
+}
+#inicio .page#ejes .inside .middle div.flor img.icon.urb {
+  top: 5.5em;
+  left: 15.5em;
+}
+#inicio .page#ejes .inside .middle div.flor img.icon.eco {
+  top: 2.5em;
+  left: 26.5em;
+}
+#inicio .page#ejes .inside .middle div.flor img.icon.efi {
+  top: 9em;
+  left: 33em;
+}
+#inicio .page#ejes .inside .middle div.flor img.icon.pub {
+  top: 20em;
+  left: 31em;
+}
+#inicio .page#ejes .inside .middle div.flor img.icon.med {
+  top: 23.5em;
+  left: 22.5em;
+}
+#inicio .page#ejes .inside .middle div.flor img.icon.com {
+  top: 20em;
+  left: 15.5em;
+}
+#inicio .page#ejes .inside .middle div.flor span {
+  text-transform: uppercase;
+  font-weight: 100;
+  position: absolute;
+  z-index: 2;
+}
+#inicio .page#ejes .inside .middle div.flor span em {
+  font-style: normal;
+  font-size: 150%;
+}
+#inicio .page#ejes .inside .middle div.flor span.seg {
+  top: 22em;
+  left: 3em;
+  color: #19487c;
+}
+#inicio .page#ejes .inside .middle div.flor span.urb {
+  top: 4em;
+  left: 4em;
+  color: #19487c;
+}
+#inicio .page#ejes .inside .middle div.flor span.eco {
+  top: 1em;
+  color: #19487c;
+  left: 39em;
+}
+#inicio .page#ejes .inside .middle div.flor span.efi {
+  top: 11em;
+  color: #19487c;
+  left: 42em;
+}
+#inicio .page#ejes .inside .middle div.flor span.pub {
+  top: 22em;
+  color: #19487c;
+  left: 41em;
+}
+#inicio .page#ejes .inside .middle div.flor span.med {
+  top: 31em;
+  color: #19487c;
+  left: 22em;
+}
+#inicio .page#ejes .inside .middle div.flor span.com {
+  top: 23em;
+  color: #19487c;
+  left: 1.5em;
+}
+#inicio .page#como-se-miden .inside .middle {
+  text-align: left;
+}
+#inicio .page#como-se-miden .inside .middle img {
+  float: left;
+  width: 20em;
+  margin: 0 1em 1em -3em;
+}
+#inicio .page#como-se-miden .inside .middle p.evidencia {
+  border-top: 1px solid white;
+  padding-top: 1em;
+}
+#inicio .page#que-es {
+  /*background-color: #F6921F;*/
+  background-image: url(/img/gradients/Fondos-QHHA-05.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#inicio .page#fuentes {
+  background-color: #cdda1b;
+  background-image: url(/img/gradients/desarrollo-urbano.png);
+}
+#inicio .page#ejes {
+  background-color: #ffffff;
+  background-image: url(/img/gradients/Fondos-QHHA-01.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#inicio .page#como-se-miden {
+  /*background-color: #AF0B1E;*/
+  background-image: url(/img/gradients/Fondos-QHHA-04.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sponsors {
+  padding-bottom: 5em;
+  margin-top: 0;
+  padding-top: 2em;
+  border-top: 1px solid #aaa;
+  color: #555;
+  background: #ccc;
+}
+
+.sponsors,
+#inicio .logos {
+  font-size: 5px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+.sponsors p,
+#inicio .logos p {
+  font-size: 350%;
+  margin-bottom: 0;
+}
+.sponsors .logoList,
+#inicio .logos .logoList {
+  line-height: 25em;
+  height: 25em;
+  overflow: hidden;
+  width: 200%;
+  margin-left: -50%;
+  text-align: center;
+}
+.sponsors .logoList a,
+#inicio .logos .logoList a {
+  text-decoration: none;
+  vertical-align: middle;
+  display: inline-block;
+}
+.sponsors .logoList a img,
+#inicio .logos .logoList a img {
+  vertical-align: middle;
+  margin-right: 4em;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.sponsors .logoList a.jcv img,
+#inicio .logos .logoList a.jcv img {
+  width: 28em;
+}
+.sponsors .logoList a.coparmex img,
+#inicio .logos .logoList a.coparmex img {
+  height: 12em;
+}
+.sponsors .logoList a.canaco img,
+#inicio .logos .logoList a.canaco img {
+  width: 25em;
+}
+.sponsors .logoList a.ccij img,
+#inicio .logos .logoList a.ccij img {
+  width: 11em;
+}
+.sponsors .logoList a.iteso img,
+#inicio .logos .logoList a.iteso img {
+  width: 26em;
+}
+.sponsors .logoList a.cj img,
+#inicio .logos .logoList a.cj img {
+  width: 16em;
+}
+.sponsors .logoList a.tomala img,
+#inicio .logos .logoList a.tomala img {
+  width: 23em;
+}
+.sponsors .logoList a.extra img,
+#inicio .logos .logoList a.extra img {
+  width: 20em;
+}
+.sponsors .logoList a.zoomed img,
+#inicio .logos .logoList a.zoomed img {
+  font-size: 200%;
+  margin-right: 2em;
+}
+.sponsors .logoList a.zoomedAdj img,
+#inicio .logos .logoList a.zoomedAdj img {
+  font-size: 150%;
+  margin-right: 2.6em;
+}
+
+.credits {
+  font-size: 2em;
+  text-align: center;
+  background: #bbb;
+  padding: 0.5em 0;
+  color: black;
+}
+.creditList {
+    display: none;
+}
+.credits a {
+  color: black;
+}
+.credits .inside {
+  width: 100%;
+  margin: 0 auto;
+}
+.credits .inside .showIconCredits {
+  display: block;
+  text-align: center;
+  font-size: 90%;
+}
+.credits .inside .creditList {
+  display: none;
+}
+.credits .inside .creditList table {
+  margin: 0 auto;
+}
+.credits .inside .creditList table td {
+  vertical-align: top;
+}
+
+.github {
+  padding: 2em 0;
+  background: #bbb;
+  color: black;
+}
+.github a {
+  color: black;
+}
+.github img {
+  vertical-align: middle;
+}
+
+#inicio .credits a,
+#zapGdl .credits a,
+#inicio .github a,
+#zapGdl .github a {
+  color: black;
+}
+
+/* ZAPOPAN & GUADALAJARA */
+#zapGdl {
+  font-size: 10px;
+  background-color: #fff;
+  transition: background 1s ease;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  /* HEADER */
+  /* Indice de ejes */
+  /* EJE */
+}
+#zapGdl #header {
+    /* vertical-align: middle; */
+    background: #ffffff;
+    height: 14em;
+    width: 100%;
+    /* line-height: 20em; */
+    text-align: left;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    box-shadow: 4px 1px 2px 0px #0000000d;
+}
+#zapGdl #header .home {
+  display: inline-block;
+  text-decoration: none;
+  /* background: #fff; */
+  float: left;
+  width: 40em;
+  text-align: center;
+  height: auto;
+}
+#zapGdl #header .home img {
+  width: 35em;
+  vertical-align: middle;
+}
+#zapGdl #header .top {
+  /* height: 20em; */
+  /* line-height: 20em; */
+  vertical-align: bottom;
+  font-weight: 100;
+  /* margin: 0 2em; */
+  padding: 0;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+#zapGdl #header .top img {
+  height: auto;
+  /* vertical-align: top; */
+  margin: 0 3em;
+  width: 10%;
+}
+#zapGdl #header .top img.up {
+  display: none;
+  margin: 0 2.2em;
+}
+#zapGdl #header .top span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 4em;
+  margin-top: 0.75em;
+}
+#zapGdl #header .form {
+  display: none;
+}
+#zapGdl #header.small {
+  height: 11em;
+  line-height: 8em;
+}
+#zapGdl #header.small .home {
+  width: 25em;
+  height: 8em;
+}
+#zapGdl #header.small .home img {
+  width: 20em;
+  margin-top: 0;
+}
+#zapGdl #header.small .top {
+  line-height: 8em;
+}
+#zapGdl #header.small .top img {
+  height: auto;
+  width: 10%;
+}
+#zapGdl #header.small .top span {
+  font-size: 4em;
+  margin-top: 0;
+}
+#zapGdl #header.small:hover .top img.zapGdl {
+  display: none;
+}
+#zapGdl #header.small:hover .top img.up {
+  display: inline-block;
+}
+
+#zapGdl #header.small .form {
+    display: inline-block;
+    width: 18em;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: top;
+    color: #9696b0;
+    float: right;
+    margin: 1em 3em;
+    font-weight: 600;
+}
+#zapGdl #header.small .form.calificacion {
+  width: 30em;
+}
+#zapGdl #header.small .form:hover {
+    color: #373737;
+    text-decoration: underline;
+}
+#zapGdl #header.easing {
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
+}
+#zapGdl #header.easing .home {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+#zapGdl #header.easing .home img {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+#zapGdl #header.easing .top {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+#zapGdl #header.easing .top img {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+#zapGdl #indice {
+  padding: 0;
+  padding-bottom: 5em;
+  position: relative;
+  overflow: hidden;
+  /* ALCALDE */
+}
+#zapGdl #indice .bienvenida {
+  padding-top: 20em;
+  margin: 2.5em 2em 1em 2em;
+}
+#zapGdl #indice .bienvenida p {
+    margin: 0 auto;
+    padding: 0.5em 0;
+    line-height: 1.6em;
+    font-size: calc(15px + (18 - 15) * ((100vw - 300px) / (1600 - 300)));
+    width: 65%;
+    font-weight: 400;
+}
+#zapGdl #indice .bienvenida p span {
+  background: #ddd;
+  padding: 0.2em 0.3em;
+}
+#zapGdl #indice .bienvenida p .totalCompromisos,
+#zapGdl #indice .bienvenida p .totalIndicadores {
+  background: black;
+  color: white;
+}
+#zapGdl #indice big {
+  display: block;
+}
+#zapGdl #indice ul {
+  list-style-type: none;
+  width: 100%;
+  margin: 3em auto;
+  text-align: center;
+  padding: 0;
+}
+#zapGdl #indice ul li {
+  color: white;
+  margin: 1em;
+  padding: 0;
+  display: inline-block;
+  width: 60em;
+  cursor: pointer;
+  text-align: left;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+#zapGdl #indice ul li span.icon {
+  float: left;
+  margin: 0;
+  margin-right: 2em;
+  padding: 1em;
+}
+#zapGdl #indice ul li span.icon img {
+  height: 8em;
+}
+#zapGdl #indice ul li.right big,
+#zapGdl #indice ul li.right small {
+  margin-left: 1.5em;
+  text-align: right;
+  display: block;
+}
+#zapGdl #indice ul li.right span.icon {
+  float: right;
+  margin-right: 0;
+  margin-left: 2em;
+}
+#zapGdl #indice ul li.right small {
+  display: none;
+}
+#zapGdl #indice ul li big {
+  margin-top: 2em;
+  font-size: 100%;
+}
+#zapGdl #indice ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 180%;
+  text-transform: uppercase;
+}
+#zapGdl #indice ul li small {
+  font-size: 160%;
+  display: none;
+  margin-top: 0.3em;
+}
+#zapGdl #indice ul li:hover a {
+  text-decoration: underline;
+}
+#zapGdl #indice ul li.seg {
+  background-color: #172f61;
+  width: 40em;
+  margin-left: 10em;
+}
+#zapGdl #indice ul li.seg span.icon {
+  background-color: #2faad0;
+}
+#zapGdl #indice ul li.urb {
+  background-color: #172f61;
+  width: 45em;
+  margin-right: 5em;
+}
+#zapGdl #indice ul li.urb span.icon {
+  background-color: #2faad0;
+}
+#zapGdl #indice ul li.eco {
+  background-color: #172f61;
+  width: 50em;
+  margin-left: 0;
+}
+#zapGdl #indice ul li.eco span.icon {
+  background-color: #2faad0;
+}
+#zapGdl #indice ul li.efi {
+  background-color: #172f61;
+  width: 53em;
+  margin-right: -3em;
+}
+#zapGdl #indice ul li.efi span.icon {
+  background-color: #2faad0;
+}
+#zapGdl #indice ul li.pub {
+  background-color: #172f61;
+  width: 45em;
+  margin-left: 5em;
+}
+#zapGdl #indice ul li.pub span.icon {
+  background-color: #2faad0;
+}
+#zapGdl #indice ul li.med {
+  background-color: #172f61;
+  width: 40em;
+  margin-right: 10em;
+}
+#zapGdl #indice ul li.med span.icon {
+  background-color: #2faad0;
+}
+#zapGdl #indice ul li.com {
+  background-color: #172f61;
+  width: 60em;
+}
+#zapGdl #indice ul li.com span.icon {
+  background-color: #2faad0;
+}
+#zapGdl #indice ul li:hover a {
+  text-decoration: underline;
+}
+#zapGdl #indice ul li:hover.seg {
+  background-color: #192759;
+}
+#zapGdl #indice ul li:hover.urb {
+  background-color: #192759;
+}
+#zapGdl #indice ul li:hover.eco {
+  background-color: #192759;
+}
+#zapGdl #indice ul li:hover.efi {
+  background-color: #192759;
+}
+#zapGdl #indice ul li:hover.pub {
+  background-color: #192759;
+}
+#zapGdl #indice ul li:hover.med {
+  background-color: #192759;
+}
+#zapGdl #indice ul li:hover.com {
+  background-color: #192759;
+}
+#zapGdl #indice ul br.onlyInPortrait {
+  display: none;
+}
+#zapGdl #indice.counted ul li small {
+  display: block;
+}
+#zapGdl #indice #alcalde {
+    text-align: center;
+    height: auto;
+    width: 100%;
+    margin: 2em auto;
+}
+#zapGdl #indice #alcalde h2,
+#zapGdl #indice #alcalde .bio,
+#zapGdl #indice #alcalde .inicioFin,
+#zapGdl #indice #alcalde .datos {
+  display: inline-block;
+  text-align: left;
+  line-height: normal;
+  vertical-align: top;
+}
+#zapGdl #indice #alcalde h2 div.text,
+#zapGdl #indice #alcalde .bio div.text,
+#zapGdl #indice #alcalde .inicioFin div.text,
+#zapGdl #indice #alcalde .datos div.text {
+  font-size: 100%;
+  font-weight: 400;
+}
+#zapGdl #indice #alcalde h2 {
+  font-size: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: #dbc808;
+  height: auto;
+  padding: 3em;
+  width: 100%;
+  overflow: hidden;
+}
+/* #zapGdl #indice #alcalde h2 img {
+  height: 11em;
+  margin-top: 3em;
+} */
+#zapGdl #indice #alcalde h2 span {
+  display: block;
+  font-size: 220%;
+  margin-top: 0.5em;
+}
+#zapGdl #indice #alcalde .datos {
+    background: #dbc808;
+    height: auto;
+    padding: 0 2em;
+    padding-left: 0;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+#zapGdl #indice #alcalde .datos a {
+  text-decoration: none;
+}
+#zapGdl #indice #alcalde .datos a:hover {
+  text-decoration: underline;
+}
+#zapGdl #indice #alcalde .datos img {
+  height: 2em;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+#zapGdl #indice #alcalde .datos .tel,
+#zapGdl #indice #alcalde .datos .email,
+#zapGdl #indice #alcalde .datos .twitter {
+  margin: 2.5em 0;
+  font-size: 90%;
+}
+#zapGdl #indice #alcalde .datos .tel span,
+#zapGdl #indice #alcalde .datos .tel a,
+#zapGdl #indice #alcalde .datos .email span,
+#zapGdl #indice #alcalde .datos .email a,
+#zapGdl #indice #alcalde .datos .twitter span,
+#zapGdl #indice #alcalde .datos .twitter a {    
+  font-size: 14px;
+  font-weight: 500;
+}
+#zapGdl #indice #alcalde .datos .tel {
+  margin-top: 5em;
+}
+#zapGdl #indice #alcalde .datos .tel img {
+  height: auto;
+  width: 4em;
+}
+#zapGdl #indice #alcalde .bio,
+#zapGdl #indice #alcalde .inicioFin {
+  background: #fce809;
+  width: 50%;
+  padding: 2em;
+  vertical-align: middle;
+  height: auto;
+  margin-top: 0;
+  font-size: 16px;
+}
+#zapGdl #indice #alcalde .bio {
+  padding-right: 0;
+}
+#zapGdl #indice #alcalde .bio .text {
+  margin: 1em;
+}
+#zapGdl #indice #alcalde .inicioFin {
+  text-align: center;
+  padding-left: 0;
+}
+#zapGdl #indice #alcalde .inicioFin b {
+  padding-left: 1em;
+  background: #dbc808;
+  display: inline-block;
+  margin: 0.3em 0;
+  font-weight: normal;
+}
+#zapGdl #indice #alcalde .inicioFin b big {
+  color: black;
+  background: #c1b10b;
+  padding: 0.2em 0.5em;
+  vertical-align: middle;
+  font-size: 100%;
+  display: inline-block;
+}
+#zapGdl #indice #alcalde .inicioFin b:last-of-type {
+  margin-bottom: 1em;
+}
+#zapGdl #indice #alcalde .inicioFin .dias,
+#zapGdl #indice #alcalde .inicioFin .porcentaje {
+  display: inline-block;
+  font-weight: bold;
+  width: auto;
+  padding: 0 0.3em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+#zapGdl #indice #alcalde .inicioFin .dias i,
+#zapGdl #indice #alcalde .inicioFin .porcentaje i {
+  font-style: normal;
+}
+#zapGdl #indice #alcalde .inicioFin .dias {
+  background: #000;
+  color: white;
+  font-size: 100%;
+  padding: 0 0.7em;
+}
+#zapGdl #indice #alcalde .inicioFin .porcentaje {
+  background: #dbc808;
+  font-weight: normal;
+}
+#zapGdl #indice #alcalde a {
+  color: black;
+}
+#zapGdl #indice #search form {
+  background: black;
+  font-size: 200%;
+}
+#zapGdl #indice #search form .query {
+  display: inline-block;
+  width: 40%;
+  font-size: 1.5em;
+}
+#zapGdl #indice #search .result {
+  background: #eee;
+}
+#zapGdl.portrait #indice {
+  font-size: 10px;
+}
+#zapGdl.portrait #indice #alcalde {
+  text-align: left;
+}
+#zapGdl.portrait #indice br.onlyInPortrait {
+  display: block;
+}
+#zapGdl.portrait #indice ul li .right big,
+#zapGdl.portrait #indice ul li .right small {
+  margin-left: 0;
+  text-align: left;
+}
+#zapGdl.portrait #indice ul li .right span.icon {
+  float: none;
+  margin-left: 0;
+}
+#zapGdl.portrait #indice ul li.seg,
+#zapGdl.portrait #indice ul li.urb,
+#zapGdl.portrait #indice ul li.eco,
+#zapGdl.portrait #indice ul li.efi,
+#zapGdl.portrait #indice ul li.pub,
+#zapGdl.portrait #indice ul li.med,
+#zapGdl.portrait #indice ul li.com {
+  margin: 1em auto;
+}
+#zapGdl.portrait #indice ul br.onlyInPortrait {
+  display: block;
+}
+#zapGdl #template {
+  display: none;
+}
+#zapGdl .eje {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  padding-bottom: 5em;
+}
+#zapGdl .eje h3 {
+  text-align: center;
+  font-weight: 100;
+  color: black;
+  margin: 0 auto;
+  padding: 2em 0;
+  padding-top: 2em;
+}
+#zapGdl .eje h3 span {
+    display: inline-block;
+    margin: 0;
+    margin-left: -3em;
+    padding-right: 0;
+    vertical-align: middle;
+}
+#zapGdl .eje h3 span img {
+    width: 2em;
+    vertical-align: middle;
+    height: auto;
+}
+#zapGdl .eje h3 big {
+  display: inline-block;
+  font-size: 200%;
+  font-weight: 100;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+#zapGdl .eje p {
+    color: black;
+    margin: 0 auto;
+    /* font-size: 170%; */
+    font-size: 3em;
+    width: 90%;
+    line-height: 1.4em;
+}
+#zapGdl .eje p span {
+  background: rgba(200, 200, 200, 0.3);
+  padding: 0.2em 0.3em;
+}
+#zapGdl .eje p a.indicadores {
+  display: block;
+  color: black;
+  font-size: 80%;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  text-align: center;
+  text-decoration: none;
+}
+#zapGdl .eje p a.indicadores:hover {
+  text-decoration: underline;
+}
+#zapGdl .eje p a.indicadores i,
+#zapGdl .eje p a.indicadores em {
+  font-style: normal;
+}
+#zapGdl .eje p a.indicadores em {
+  display: none;
+}
+#zapGdl .eje p a.indicadores.ocultar i {
+  display: none;
+}
+#zapGdl .eje p a.indicadores.ocultar em {
+  display: inline-block;
+}
+#zapGdl .eje p span.compromisos,
+#zapGdl .eje p span.indicadores {
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+  font-weight: bold;
+}
+#zapGdl .eje ol {
+  counter-reset: compromiso;
+  padding: 0;
+}
+#zapGdl .eje ol li {
+  counter-increment: compromiso;
+}
+#zapGdl .eje ol li::before {
+  background: white;
+  color: black;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0em;
+  z-index: 2;
+  content: counters(compromiso, ".") " ";
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: 1em;
+}
+#zapGdl .eje ol.compromisos {
+  width: 100%;
+  margin: 0 auto;
+}
+#zapGdl .eje ol.compromisos li.compromiso {
+  padding: 0 2em;
+  margin: 0 auto;
+  list-style-type: none;
+  position: relative;
+  width: 42%;
+  text-align: center;
+}
+#zapGdl .eje ol.compromisos li.compromiso big {
+  color: white;
+  /*font-size: 200%;*/
+  font-size: 2.3em;
+  cursor: pointer;
+  padding: 1.2em 1em;
+  line-height: 1.2em;
+  display: inline-block;
+  margin-left: -1em;
+  margin-right: 0;
+  /* max-width: 33em; */
+  position: relative;
+  margin-top: 1em;
+  width: 80%;
+}
+#zapGdl .eje ol.compromisos li.compromiso big .veSusIndicadores {
+    position: absolute;
+    bottom: -2em;
+    right: 0;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    opacity: 1;
+}
+#zapGdl .eje ol.compromisos li.compromiso big .veSusIndicadores i,
+#zapGdl .eje ol.compromisos li.compromiso big .veSusIndicadores em {
+  font-style: normal;
+}
+#zapGdl .eje ol.compromisos li.compromiso big .veSusIndicadores em {
+  display: none;
+}
+#zapGdl .eje ol.compromisos li.compromiso big .veSusIndicadores span {
+  background: rgba(200, 200, 200, 0.3);
+  padding: 0.2em 0.3em;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  big
+  .veSusIndicadores
+  span.indicadores {
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+  font-weight: bold;
+}
+#zapGdl .eje ol.compromisos li.compromiso big:hover .veSusIndicadores {
+  text-decoration: underline;
+  opacity: 1;
+}
+#zapGdl .eje ol.compromisos li.compromiso img.icon {
+  vertical-align: top;
+  height: 7em;
+  margin-left: 2em;
+  margin-top: 2em;
+}
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores {
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  margin-top: 5em;
+  padding: 0;
+  list-style-type: none;
+}
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador {
+  padding: 0;
+  margin: 2em 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  left: 2em;
+}
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador::before {
+  width: 2.3em;
+  top: -1em;
+  left: -2em;
+  background: #555;
+  color: white;
+  font-size: 200%;
+}
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador div {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li {
+  width: 100%;
+  text-align: left;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .descripción {
+  width: 50%;
+  padding: 1em;
+  background: white;
+  /*font-size: 180%;*/
+  font-size: 2em;
+  display: inline-block;
+  text-align: left;
+  margin-right: 0;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .descripción
+  strong {
+  color: black;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .arranque,
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .actualización,
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .meta {
+  width: 4em;
+  padding: 0 0.2em;
+  margin: 0;
+  color: white;
+  line-height: 2.5em;
+  font-weight: normal;
+  font-size: 200%;
+  margin-top: 0.1em;
+  vertical-align: bottom;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .arranque
+  span,
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .actualización
+  span,
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .meta
+  span {
+  font-size: 90%;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .arranque
+  span
+  b,
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .actualización
+  span
+  b,
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .meta
+  span
+  b {
+  font-size: 110%;
+  margin-right: 0.2em;
+  display: inline-block;
+  vertical-align: middle;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .arranque {
+  text-align: right;
+  position: relative;
+  border-right: 1px solid white;
+  line-height: 2.8em;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .arranque
+  span {
+  display: inline-block;
+  vertical-align: bottom;
+  height: 2.5em;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .arranque::before {
+  content: "ARRANQUE";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  color: black;
+  font-size: 0.5em;
+  font-weight: bold;
+  height: 2em;
+  line-height: 2em;
+  padding: 0 0.3em;
+  margin: 0;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .actualización {
+      width: 12em;
+      padding: 0;
+      margin-top: 0em;
+      border-bottom: 2px solid white;
+      text-align: left;
+      line-height: 2.2em;
+      background-image: url(../img/indicador/fondo.png);
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .actualización
+  div.bar {
+  display: inline-block;
+  vertical-align: bottom;
+  height: 1em;
+  background: rgba(119, 119, 119, 0.7);
+  border-right: 1px solid black;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .actualización
+  span {
+  background: #ccc;
+  color: black;
+  padding: 0.2em 0.5em;
+  padding-top: 0;
+  position: relative;
+  z-index: 3;
+  display: inline-block;
+  height: 1.5em;
+  line-height: 1.5em;
+  vertical-align: top;
+  border-radius: 0.3em;
+  text-align: center;
+  font-weight: bold;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .actualización
+  span:before {
+  content: "";
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ccc;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .actualización
+  span.rightDecile {
+  float: right;
+  margin-top: -2.7em;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .actualización
+  span.rightHalf:before {
+  border-right: 0 solid transparent;
+  border-left: 10px solid transparent;
+  border-top: 10px solid #ccc;
+  left: auto;
+  right: 10px;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .meta {
+  text-align: left;
+  border-left: 1px solid white;
+  padding-left: 0.4em;
+  position: relative;
+  line-height: 2.8em;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .meta
+  span {
+  display: inline-block;
+  vertical-align: bottom;
+  height: 2.5em;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .meta::before {
+  content: "META";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  color: white;
+  font-size: 0.5em;
+  font-weight: bold;
+  height: 2em;
+  line-height: 2em;
+  padding: 0 0.3em;
+  margin: 0;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .arranque
+  span,
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .meta
+  span {
+  font-size: 65%;
+  vertical-align: bottom;
+  line-height: 110%;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador.negativeProgress
+  .li
+  .actualización
+  div.bar {
+  background: rgba(210, 65, 65, 0.7);
+  margin-bottom: 0px;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador.negativeProgress
+  .li
+  .actualización
+  span,
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador.negativeProgress
+  .li
+  .actualización
+  span.rightHalf {
+  background: #a70808;
+  color: #fff;
+  margin-top: -1.3em;
+}
+#zapGdl .eje 
+    ol.compromisos 
+    li.compromiso 
+    ol.indicadores 
+    li.indicador.negativeProgress .li .actualización 
+    span, #zapGdl .eje 
+    ol.compromisos 
+    li.compromiso 
+    ol.indicadores 
+    li.indicador.negativeProgress .li .actualización 
+    span.rightHalf b {
+    color: #fff;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador.negativeProgress
+  .li
+  .actualización
+  span.rightDecile,
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador.negativeProgress
+  .li
+  .actualización
+  span.rightHalf.rightDecile {
+  margin-top: -4em;
+ 
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador.negativeProgress
+  .li
+  .actualización
+  span:before,
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador.negativeProgress
+  .li
+  .actualización
+  span.rightHalf:before {
+  border-top-color: #a70808;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador.evidencia
+  .li
+  .arranque
+  span {
+  padding-right: 0.3em;
+}
+
+/* #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.negativeProgress .li .actualización span, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.negativeProgress.negativoPros .li .actualización span.rightHalf {
+    left: -110%;
+    top: -1em;
+} */
+
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador.evidencia
+  .li
+  .actualización {
+  text-align: center;
+  background-image: none;
+  border-bottom: 0;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador.evidencia
+  .li
+  .actualización
+  span {
+  padding: 0 0.2em;
+  font-weight: 700;
+  border: 2px solid white;
+  background: transparent;
+  color: black;
+  border-radius: 0;
+  -webkit-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+  -ms-transform: rotate(-7deg);
+  -o-transform: rotate(-7deg);
+  transform: rotate(-7deg);
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador.evidencia
+  .li
+  .actualización
+  span::before {
+  display: none;
+}
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover {
+  display: none;
+  text-align: left;
+  margin: 0;
+  color: black;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .hover
+  .fuente,
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .hover
+  .observaciones {
+  text-align: center;
+  padding: 1em 0.5em 0 0.5em;
+  font-size: 150%;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .hover
+  .fuente {
+  width: 20%;
+  font-weight: bold;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .hover
+  .fuente
+  em {
+  font-weight: 100;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .hover
+  .fuente
+  a {
+  font-style: italic;
+  color: black;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .hover
+  .observaciones {
+  width: 31.5%;
+  opacity: 1;
+  color: #000;
+  font-size: 12px;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .hover
+  .observaciones
+  a {
+  color: black;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .hover
+  .fechaarranque,
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .hover
+  .fechaactualización,
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .hover
+  .fechameta {
+  width: 5em;
+  padding: 0.7em 0.3em;
+  text-align: center;
+  font-size: 180%;
+  color: black;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .hover
+  .fechaarranque,
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .hover
+  .fechameta {
+  width: 7.5em;
+  padding: 1em 0.45em;
+  text-align: center;
+  font-size: 120%;
+  color: black;
+  position: relative;
+  left: 7em;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .hover
+  .fechaarranque
+  b,
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .hover
+  .fechameta
+  b {
+  font-size: 150%;
+  display: block;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .hover
+  .fechameta {
+  width: 6.75em;
+}
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaactualización {
+  width: 13em;
+  position: relative;
+  left: 5em;
+}
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador.clicked
+  .hover,
+#zapGdl
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador:hover
+  .hover {
+  position: relative;
+  display: inline-grid;
+  left: -10%;
+  height: auto;
+  font-weight: 400;
+}
+#zapGdl .eje ol.compromisos li.compromiso.picked .veSusIndicadores i {
+  display: none;
+}
+#zapGdl .eje ol.compromisos li.compromiso.picked .veSusIndicadores em {
+  display: inline-block;
+}
+#zapGdl .eje ol.compromisos li.compromiso.picked ol.indicadores {
+  visibility: visible;
+  height: auto;
+  overflow: visible;
+  text-align: center;
+  left: 0;
+  position: relative;
+}
+#zapGdl .eje#seguridad {
+  /*background-color: #AF0B1E;*/
+  background-image: url(../img/gradients/Fondos-QHHA-05.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#zapGdl .eje#seguridad li.compromiso big {
+  background-color: #1e4384;
+}
+#zapGdl .eje#seguridad li.compromiso:hover big {
+  background-color: #193770;
+}
+#zapGdl .eje#desarrollo-urbano {
+  /*background-color: #CDDA1B;*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/gradients/Fondos-QHHA-04.png);
+  background-position: center;
+}
+#zapGdl .eje#desarrollo-urbano li.compromiso big {
+  background-color: #1e4384;
+}
+#zapGdl .eje#desarrollo-urbano li.compromiso:hover big {
+  background-color: #193770;
+}
+#zapGdl .eje#desarrollo-economico {
+  /* background-color: #F6921F;*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/gradients/Fondos-QHHA-05.png);
+}
+#zapGdl .eje#desarrollo-economico li.compromiso big {
+  background-color: #1e4384;
+}
+#zapGdl .eje#desarrollo-economico li.compromiso:hover big {
+  background-color: #193770;
+}
+#zapGdl .eje#eficiencia {
+  /*  background-color: #8583A0;*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/gradients/Fondos-QHHA-04.png);
+  background-position: center;
+}
+#zapGdl .eje#eficiencia li.compromiso big {
+  background-color: #1e4384;
+}
+#zapGdl .eje#eficiencia li.compromiso:hover big {
+  background-color: #193770;
+}
+#zapGdl .eje#servicios-publicos {
+  /* background-color: #e50027; */
+  background-image: url(../img/gradients/Fondos-QHHA-05.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#zapGdl .eje#servicios-publicos li.compromiso big {
+  background-color: #1e4384;
+}
+#zapGdl .eje#servicios-publicos li.compromiso:hover big {
+  background-color: #193770;
+}
+#zapGdl .eje#medio-ambiente {
+  background-color: #fbbf0e;
+  background-image: url(../img/gradients/Fondos-QHHA-04.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#zapGdl .eje#medio-ambiente li.compromiso big {
+  background-color: #1e4384;
+}
+#zapGdl .eje#medio-ambiente li.compromiso:hover big {
+  background-color: #193770;
+}
+#zapGdl .eje#comunidad {
+  background-color: #253763;
+  background-image: url(/img/gradients/Fondos-QHHA-05.png);
+}
+#zapGdl .eje#comunidad li.compromiso big {
+  background-color: #1e4384;
+}
+#zapGdl .eje#comunidad li.compromiso:hover big {
+  background-color: #193770;
+}
+#zapGdl.portrait .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .descripción {
+    width: 90%;
+    font-weight: 400;
+}
+#zapGdl.portrait .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .observaciones {
+    width: 50%;
+}
+#zapGdl.portrait .eje ol.compromisos li.compromiso big {
+  max-width: 25em;
+}
+#zapGdl #feedback {
+  color: white;
+  background: #aaaaaa;
+  padding: 5em;
+}
+#zapGdl #feedback h2 {
+  font-size: 5em;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding-top: 10em;
+}
+#zapGdl #feedback p {
+  font-size: 200%;
+}
+#zapGdl #feedback iframe {
+  font-size: 200%;
+  height: 65em;
+  width: 80%;
+}
+
+#feedback .middle {
+  text-align: center !important;
+  padding-bottom: 4em;
+}
+#feedback .middle iframe {
+  /*width: 30em;*/
+  width: 80%;
+  height: 45em;
+  margin: 0 auto;
+}
+
+body.zap#zapGdl #header.small .top img.up {
+  margin: 0 4.93em;
+}
+
+/*# sourceMappingURL=style.css.map */
