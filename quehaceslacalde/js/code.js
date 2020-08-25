@@ -4,6 +4,8 @@ $.extend($.expr[":"], {
 	}
 });
 
+AOS.init();
+
 var QHHA = {
 	/* variables */
 	ejes: [ 'seg', 'urb', 'eco', 'efi', 'pub', 'med' ],
@@ -284,46 +286,26 @@ var QHHA = {
 				meta.number = TOOLS.parse( meta.html.text() );
 				actualizacion.number = TOOLS.parse(actualizacion.html.text());
 
-				 if( !isNaN(arranque.number) && !isNaN(actualizacion.number) && !isNaN(meta.number) ) {
+				if( !isNaN(arranque.number) && !isNaN(actualizacion.number) && !isNaN(meta.number) ) {
 					var track = {number:meta.number - arranque.number},
 						advance = {number:actualizacion.number - arranque.number };
-						 if(actualizacion.number < 0 ){
-							advance.percent = 0;
-							actualizacion.html.addClass('leftFull');
-							// actualizacion.html.before('<div class="bar" style="width:'+advance.percent+'%"></div>');
-							
-						} else {
-							advance.percent = Math.min(100, Math.ceil(Math.abs(advance.number/track.number)*100),100);
-							actualizacion.html.before('<div class="bar" style="width:'+advance.percent+'%"></div>');
-						}	
-					
-					
-					if((advance.number/track.number < 0) || (advance.percent < 50)) {
-						indi.addClass('negativeProgress');
-					}
-
-					if(actualizacion.number > 0){
-						actualizacion.html.removeClass('rightHalf rightDecile');
-						// Si el porcentaje es mayo al 50%	
+					advance.percent = Math.min(100, Math.ceil(Math.abs(advance.number/track.number)*100),100);
+					actualizacion.html.before('<div class="bar" style="width:'+advance.percent+'%"></div>');
 					if(advance.percent >= 50) {
 						actualizacion.html.addClass('rightHalf');
-						
 						if(advance.percent >= 90) {
 							actualizacion.html.addClass('rightDecile');
-						}if(advance.percent >= 100) {
-							actualizacion.html.addClass('rightFull');
-						}  
-						else {
+						} else {
 							indi.find('.bar').css({marginRight: '-'+(actualizacion.html.outerWidth()+15)+'px'});
 						}
-					} 
-					} 
+					}
 					//if( (meta.number == 4500) ) {
 						//console.log(indi, "advance: "+ advance.number, "track: "+  track.number, "arranque: " +arranque.number, "meta: "+ meta.number, "actualizacion: "+actualizacion.numbeu);
 					//}
-					
+					if(advance.number/track.number < 0) {
+						indi.addClass('negativeProgress');
+					}
 				}
-				// Aqui de hace match con el texto de la casilla ------
 				if( arranque.html.text().match(/NO/) ) {
 					indi.addClass('evidencia');
 					if( actualizacion.html.text().match(/^S/) ) {
@@ -341,8 +323,7 @@ var QHHA = {
 					out += '<a href="'+col[link]+'" target="new">'+TOOLS.markdown( col[name] )+'</a>';
 				} else {
 					if( (name == 'arranque')||(name == 'actualización')||(name == 'meta') ) {
-						// out += '<span>'+col[name].replace(/\s*[\d.,]+\s*/,'<b>$&</b>')+'</span>';
-						out += '<span>'+col[name].replace(/\s*[-]+\s*/,'<b class="negativo">$&</b>')+'</span>';
+						out += '<span>'+col[name].replace(/\s*[\d.,]+\s*/,'<b>$&</b>')+'</span>';
 					} else if( (name == 'fechaarranque')||(name == 'fechaactualización')||(name == 'fechameta') ) {
 						out += col[name].replace(/[\d.,]+/,'<b>$&</b>');
 					} else {
@@ -407,26 +388,19 @@ var QHHA = {
 					$.each(compromiso.data.indicadores, function() { indicador.data = this; var indi = this;
 						indicador.ol.append(
 							indicador.template.clone().html(
-								'<div class="li">' +
-								  show(indi, "descripción") +
-								  '<div class="graficos">' +
-								  show(indi, "arranque") +
-								  show(indi, "actualización") +
-								  show(indi, "meta") +
-								  "</div>" +
-								  "</div>" +
-								  '<div class="hover">' +
-								  '<div class="datos1">' +
-								  show(indi, "fuente", "enlacefuente", "Fuente: ") +
-								  show(indi, "observaciones", "enlaceobservaciones") +
-								  "</div>" +
-								  '<div class="datos2">' +
-								  show(indi, "fechaarranque") +
-								  show(indi, "fechaactualización") +
-								  show(indi, "fechameta") +
-								  "</div>" +
-								  "</div>"
-								)
+								'<div class="li">'+
+									show(indi, 'descripción')+
+									show(indi, 'arranque')+
+									show(indi, 'actualización')+
+									show(indi, 'meta')+
+								'</div><div class="hover">'+
+									show(indi, 'fuente', 'enlacefuente', 'Fuente: ')+
+									show(indi, 'observaciones', 'enlaceobservaciones')+
+									show(indi, 'fechaarranque')+
+									show(indi, 'fechaactualización')+
+									show(indi, 'fechameta')+
+								'</div>'
+							)
 						);
 					});
 					compromisos.append( compromiso.clone );

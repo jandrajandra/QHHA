@@ -1,0 +1,238 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+h1 {
+    font-size: calc(20px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    color: #0e2a5d;
+}
+
+p {
+    font-size: calc(15px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title1 {
+    font-size: calc(14px + (26 - 15) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 400;
+}
+
+.title4 {
+    font-size: calc(10px + (26 - 15) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 400;
+}
+
+.link1 {
+    color: #0e2a5d;
+}
+
+.link1:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.bg1 {background-color: #192759;}
+.bg2 {background-color: #2FAAD0;}
+
+.text-azul1 {
+    color: #0e2a5d;
+}
+
+.img-fluid-1 {
+    height: auto;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.section1 {
+    background-image: url('../images/Fondos-QHHA-03.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    padding: 10% 0%;
+    width: 100%;
+}
+
+.section2 {
+    background-image: url('../images/Fondos-QHHA-05.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding: 10% 0%;
+    width: 100%;
+}
+
+.section3 {
+    background-image: url('../images/Fondos-QHHA-03.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    padding: 10% 0%;
+    width: 100%;
+}
+
+.section4 {
+    background-image: url('../images/Fondos-QHHA-04.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    padding: 10% 0%;
+    width: 100%;
+}
+
+.section5 {
+    height: auto;
+    padding: 10% 0%;
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 100vh;
+}
+
+.section6 {
+    background-color: #ccc;
+    height: auto;
+    padding: 5% 0%;
+    width: 100%;
+}
+
+.img-ejes {
+    width: 70%;
+    height: auto;
+}
+
+#economia {
+    position: absolute;
+    left: 48%;
+    top: 5%;
+    font-size: 12px;
+}
+
+#img-economia {
+    width: 10%;
+    top: 22%;
+    left: 50%;
+    position: absolute;
+}
+
+#img-economia:after {
+    content: "Economia";
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#educacion {
+    position: absolute;
+    top: 32%;
+    right: 3%;
+    font-size: 12px;
+}
+
+#img-educacion {
+    width: 10%;
+    top: 37%;
+    right: 24%;
+    position: absolute;
+}
+
+#seviciosPublicos {
+    position: absolute;
+    bottom: 10%;
+    right: 7%;
+    font-size: 12px;
+    width: 20%;
+}
+
+#img-seviciosPublicos {
+    width: 10%;
+    right: 27%;
+    position: absolute;
+    bottom: 21%;
+}
+
+#medioAmbiente {
+    position: absolute;
+    left: 40%;
+    bottom: -10%;
+    font-size: 12px;
+    width: 20%;
+}
+
+#img-medioAmbiente {
+    width: 10%;
+    bottom: 8%;
+    left: 44%;
+    position: absolute;
+}
+
+#seguridad {
+    position: absolute;
+    top: 80%;
+    left: 8%;
+    font-size: 12px;
+}
+
+#img-seguridad {
+    width: 10%;
+    left: 27%;
+    position: absolute;
+    bottom: 23%;
+}
+
+#desarrolloUrbano {
+    position: absolute;
+    top: 27%;
+    left: 5%;
+    font-size: 12px;
+    width: 20%;
+}
+
+#img-desarrolloUrbano {
+    width: 10%;
+    top: 28%;
+    left: 30%;
+    position: absolute;
+}
+
+.imgover {
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.card:hover .imginit {
+    display: none
+}
+.card:hover .imgover {
+    display: inline;
+}
+
+#delToro:hover,
+#lemus:hover {
+    background-color: #1D4075;
+    border-radius: 10px;
+    color: #fff;
+    transition: all .5s;
+    box-shadow: -1px 1px 2px #00000069;
+}
+
+
+@media (min-width: 576px) {  }
+
+
+@media (min-width: 768px) {  }
+
+
+@media (min-width: 992px) {  }
+
+
+@media (min-width: 1200px) {  }
