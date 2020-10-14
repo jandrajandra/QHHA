@@ -4,6 +4,10 @@ $.extend($.expr[":"], {
 	}
 });
 
+$( ".graficos" ).mouseover(function() {
+	$( ".hover" ).addClass('ver');
+  });
+
 var QHHA = {
 	/* variables */
 	ejes: [ 'seg', 'urb', 'eco', 'efi', 'pub', 'med' ],
@@ -233,7 +237,8 @@ var QHHA = {
 	/* SHEET */
 	sheet: {
 		zap:'1xFOEq-kHbPpTp69XOPPOS3xM6h-2hBPNGJLpc49gWLg',
-		gdl:'1MWP5xiuhVJQUdYvOLSmPgXS-JVrveoMojN0Q-WqP6XM',
+        /* gdl:'1MWP5xiuhVJQUdYvOLSmPgXS-JVrveoMojN0Q-WqP6XM', */
+        gdl:'1MWP5xiuhVJQUdYvOLSmPgXS-JVrveoMojN0Q-WqP6XM',
 			done: [],
 		data: {},
 		split:function(str) { 
@@ -268,7 +273,9 @@ var QHHA = {
 					S.load();
 					S.count();
 					S.medidor();
-					S.medidor2();
+                    S.medidor2();
+					S.medidor3();
+					S.medidor4();
 				}
 			});
 		},
@@ -306,8 +313,6 @@ var QHHA = {
 					if((advance.number/track.number < 0) || (advance.percent < 50)) {
 						indi.addClass('negativeProgress');
 					}
-
-
 
 					if(actualizacion.number > 0){
 						actualizacion.html.removeClass('rightHalf rightDecile');
@@ -352,33 +357,33 @@ var QHHA = {
 					actualizacionDos.number = TOOLS.parse(actualizacionDos.html.text());
 
 				  if( !isNaN(arranqueDos.number) && !isNaN(actualizacionDos.number) && !isNaN(metaDos.number) ) {
-					var track = {number:metaDos.number - arranqueDos.number},
-						advance = {number:actualizacionDos.number - arranqueDos.number };
+					var trackDos = {number:metaDos.number - arranqueDos.number},
+						advanceDos = {number:actualizacionDos.number - arranqueDos.number };
 						
 						 if(actualizacionDos.number < 0){
-							advance.percent = 0;
+							advanceDos.percent = 0;
 							actualizacionDos.html.addClass('leftFull');
 							
 							
 						} else {
-							advance.percent = Math.min(100, Math.ceil(Math.abs(advance.number/track.number)*100),100);
-							actualizacionDos.html.before('<div class="bar" style="width:'+advance.percent+'%"></div>');
+							advanceDos.percent = Math.min(100, Math.ceil(Math.abs(advanceDos.number/trackDos.number)*100),100);
+							actualizacionDos.html.before('<div class="bar" style="width:'+advanceDos.percent+'%"></div>');
 						}	
 					
 					
-					if((advance.number/track.number < 0) || (advance.percent < 50)) {
+					if((advanceDos.number/trackDos.number < 0) || (advanceDos.percent < 50)) {
 						indi.addClass('negativeProgress');
 					}
 
 					if(actualizacionDos.number > 0){
 						actualizacionDos.html.removeClass('rightHalf rightDecile');
 						// Si el porcentaje es mayo al 50%	
-					 if(advance.percent >= 50) {
+					 if(advanceDos.percent >= 50) {
 						actualizacionDos.html.addClass('rightHalf');
 						
-						if(advance.percent >= 90) {
+						if(advanceDos.percent >= 90) {
 							actualizacionDos.html.addClass('rightDecile');
-						}if(advance.percent >= 100) {
+						}if(advanceDos.percent >= 100) {
 							actualizacionDos.html.addClass('rightFull');
 						}  
 						else {
@@ -390,16 +395,142 @@ var QHHA = {
 				} 
 
 				// Aqui de hace match con el texto de la casilla ------
-				/*if( arranque.html.text().match(/NO/) ) {
+				if( arranqueDos.html.text().match(/NO/) ) {
+					indi.addClass('evidencia');
+					if( actualizacionDos.html.text().match(/^S/) ) {
+						indi.addClass('entregado');
+						actualizacionDos.html.text('✓ ENTREGADO');
+					}
+				}
+				
+			});
+        },
+        
+        medidor3:function() {
+			$('#ejes .eje li.indicador').each(function() { 
+				 var indi = $(this);
+				 var arranqueTres = {html:indi.find('.arranque_3 span')},
+					actualizacionTres = {html:indi.find('.actualización_3 span')},
+					metaTres = {html:indi.find('.meta_3 span')};
+
+					arranqueTres.number = TOOLS.parse( arranqueTres.html.text() );
+					metaTres.number = TOOLS.parse( metaTres.html.text() );
+					actualizacionTres.number = TOOLS.parse(actualizacionTres.html.text());
+
+				  if( !isNaN(arranqueTres.number) && !isNaN(actualizacionTres.number) && !isNaN(metaTres.number) ) {
+					var track = {number:metaTres.number - arranqueTres.number},
+						advance = {number:actualizacionTres.number - arranqueTres.number };
+						
+						 if(actualizacionTres.number < 0){
+							advance.percent = 0;
+							actualizacionTres.html.addClass('leftFull');
+							
+							
+						} else {
+							advance.percent = Math.min(100, Math.ceil(Math.abs(advance.number/track.number)*100),100);
+							actualizacionTres.html.before('<div class="bar" style="width:'+advance.percent+'%"></div>');
+						}	
+					
+					
+					if((advance.number/track.number < 0) || (advance.percent < 50)) {
+						indi.addClass('negativeProgress');
+					}
+
+					if(actualizacionTres.number > 0){
+						actualizacionTres.html.removeClass('rightHalf rightDecile');
+						// Si el porcentaje es mayo al 50%	
+					 if(advance.percent >= 50) {
+						actualizacionTres.html.addClass('rightHalf');
+						
+						if(advance.percent >= 90) {
+							actualizacionTres.html.addClass('rightDecile');
+						}if(advance.percent >= 100) {
+							actualizacionTres.html.addClass('rightFull');
+							
+						}  
+						else {
+							indi.find('.bar').css({marginRight: '-'+(actualizacionTres.html.outerWidth()+15)+'px'});
+						}
+					}  
+					} 
+	 
+				} 
+
+				// Aqui de hace match con el texto de la casilla ------
+				if( arranqueTres.html.text().match(/NO/) ) {
+					indi.addClass('evidencia');
+					if( actualizacionTres.html.text().match(/^S/) ) {
+						indi.addClass('entregado');
+						actualizacionTres.html.text('✓ ENTREGADO');
+					}
+				}
+				
+			});
+		},
+        //===========================================================================================
+		medidor4:function() {
+			$('#ejes .eje li.indicador').each(function() { 
+				 var indi = $(this);
+				 var arranque = {html:indi.find('.arranque_4 span')},
+					actualizacion = {html:indi.find('.actualización_4 span')},
+					meta = {html:indi.find('.meta_4 span')};
+
+					arranque.number = TOOLS.parse( arranque.html.text() );
+					meta.number = TOOLS.parse( meta.html.text() );
+					actualizacion.number = TOOLS.parse(actualizacion.html.text());
+
+				  if( !isNaN(arranque.number) && !isNaN(actualizacion.number) && !isNaN(meta.number) ) {
+					var track = {number:meta.number - arranque.number},
+						advance = {number:actualizacion.number - arranque.number };
+						
+						 if(actualizacion.number < 0){
+							advance.percent = 0;
+							actualizacion.html.addClass('leftFull');
+							
+							
+						} else {
+							advance.percent = Math.min(100, Math.ceil(Math.abs(advance.number/track.number)*100),100);
+							actualizacion.html.before('<div class="bar" style="width:'+advance.percent+'%"></div>');
+						}	
+					
+					
+					if((advance.number/track.number < 0) || (advance.percent < 50)) {
+						indi.addClass('negativeProgress');
+					}
+
+					if(actualizacion.number > 0){
+						actualizacion.html.removeClass('rightHalf rightDecile');
+						// Si el porcentaje es mayo al 50%	
+					 if(advance.percent >= 50) {
+						actualizacion.html.addClass('rightHalf');
+						
+						if(advance.percent >= 90) {
+							actualizacion.html.addClass('rightDecile');
+						}if(advance.percent >= 100) {
+							actualizacion.html.addClass('rightFull');
+							
+						}  
+						else {
+							indi.find('.bar').css({marginRight: '-'+(actualizacion.html.outerWidth()+15)+'px'});
+						}
+					}  
+					} 
+	 
+				} 
+
+				// Aqui de hace match con el texto de la casilla ------
+				if( arranque.html.text().match(/NO/) ) {
 					indi.addClass('evidencia');
 					if( actualizacion.html.text().match(/^S/) ) {
 						indi.addClass('entregado');
 						actualizacion.html.text('✓ ENTREGADO');
 					}
-				}*/
+				}
 				
 			});
 		},
+
+		 
 		
 		show: function(col, name, link, caption) {
 			var out = '&nbsp';
@@ -412,7 +543,7 @@ var QHHA = {
 						// out += '<span>'+col[name].replace(/\s*[\d.,]+\s*/,'<b>$&</b>')+'</span>';
 						out += '<span>'+col[name].replace(/\s*[-]+\s*/,'<b class="negativo">$&</b>')+'</span>';
 					} else if( (name == 'fechaarranque')||(name == 'fechaactualización')||(name == 'fechameta') ) {
-						out += col[name].replace(/[\d.,]+/,'<b>$&</b>');
+						out += col[name].replace(/[\d.,]+/,'$&');
 					} else {
 						out += (caption ? '<em>':'') + TOOLS.markdown( col[name] ) + (caption ? '</em>':'');
 					}
@@ -439,7 +570,47 @@ var QHHA = {
 				}
 			}
 			return ('<div class="'+name+'">'+out+'</div>');
+        },
+        
+        show3: function(col, name, link, caption) {
+			var out = '&nbsp';
+			if(col[name]) {
+				out = (caption || '')
+				if(link && col[link]) {
+					out += '<a href="'+col[link]+'" target="new">'+TOOLS.markdown( col[name] )+'</a>';
+				} else {
+					if( (name == 'arranque_3')||(name == 'actualización_3')||(name == 'meta_3') ) {
+						// out += '<span>'+col[name].replace(/\s*[\d.,]+\s*/,'<b>$&</b>')+'</span>';
+						out += '<span>'+col[name].replace(/\s*[-]+\s*/,'<b class="negativo">$&</b>')+'</span>';
+					} else if( (name == 'fechaarranque_3')||(name == 'fechaactualización_3')||(name == 'fechameta_3') ) {
+						out += col[name].replace(/[\d.,]+/,'<b>$&</b>');
+					} else {
+						out += (caption ? '<em>':'') + TOOLS.markdown( col[name] ) + (caption ? '</em>':'');
+					}
+				}
+			}
+			return ('<div class="'+name+'">'+out+'</div>');
 		},
+
+		show4: function(col, name, link, caption) {
+			var out = '&nbsp';
+			if(col[name]) {
+				out = (caption || '')
+				if(link && col[link]) {
+					out += '<a href="'+col[link]+'" target="new">'+TOOLS.markdown( col[name] )+'</a>';
+				} else {
+					if( (name == 'arranque_4')||(name == 'actualización_4')||(name == 'meta_4') ) {
+						// out += '<span>'+col[name].replace(/\s*[\d.,]+\s*/,'<b>$&</b>')+'</span>';
+						out += '<span>'+col[name].replace(/\s*[-]+\s*/,'<b class="negativo">$&</b>')+'</span>';
+					} else if( (name == 'fechaarranque_4')||(name == 'fechaactualización_4')||(name == 'fechameta_4') ) {
+						out += col[name].replace(/[\d.,]+/,'<b>$&</b>');
+					} else {
+						out += (caption ? '<em>':'') + TOOLS.markdown( col[name] ) + (caption ? '</em>':'');
+					}
+				}
+			}
+			return ('<div class="'+name+'">'+out+'</div>');
+        },
 
 
 		
@@ -485,7 +656,9 @@ var QHHA = {
 				veSusIndicadores = $('#template .veSusIndicadores'),
 				data = QHHA.sheet.data,
 				show = QHHA.sheet.show;
-				show2 = QHHA.sheet.show2;
+                show2 = QHHA.sheet.show2;
+				show3 = QHHA.sheet.show3;
+				show4 = QHHA.sheet.show4;
 
 			$.each(QHHA.ejes, function() { 
 				var eje = {name:this+''};
@@ -501,7 +674,9 @@ var QHHA = {
 						append(veSusIndicadores.clone()).
 						after('<img class="icon" src="/img/icons/'+eje.name+'-'+QHHA.zapGdl+'-'+(i+1)+'.png" />');
 					
-					$.each(compromiso.data.indicadores, function() { indicador.data = this; var indi = this;
+					$.each(compromiso.data.indicadores, function() { 
+						indicador.data = this; 
+						var indi = this;
 						indicador.ol.append(
 							indicador.template.clone().html(
 								'<div class="li">' +
@@ -512,28 +687,117 @@ var QHHA = {
 								  show(indi, "actualización") +
 								  show(indi, "meta") +
 								  "</div>" +
-
-								  '<div class="graficos_2">' +
-								  show2(indi, "arranque_2") +
-								  show2(indi, "actualización_2") +
-								  show2(indi, "meta_2") +
-								  "</div>" +
-
-
+								  
 								  "</div>" +
 								  '<div class="hover">' +
-								  '<div class="datos1">' +
-								  show(indi, "fuente", "enlacefuente", "Fuente: ") +
-								  show(indi, "observaciones", "enlaceobservaciones") +
+									
+								  	'<div class="datos1">' +
+										show(indi, "fuente", "enlacefuente", "Fuente: ") +
+										show(indi, "observaciones", "enlaceobservaciones") +
+									"</div>" +
+
+									'<div class="datos2">' +
+										show(indi, "fechaarranque") +
+										show(indi, "fechaactualización") +
+										show(indi, "fechameta") +
+									"</div>" +
+									
+								  "</div>" 
+								  
+							
+								  //------------------------------------------------------------------------------------
+								),
+								indicador.template.clone().html(
+									
+								'<div class="li">' +
+								  show(indi, "descripción_vacia") +
+								  
+								  '<div class="graficos">' +
+									show2(indi, "arranque_2") +
+									show2(indi, "actualización_2") +
+									show2(indi, "meta_2") +
 								  "</div>" +
-								  '<div class="datos2">' +
-								  show(indi, "fechaarranque") +
-								  show(indi, "fechaactualización") +
-								  show(indi, "fechameta") +
+								  
 								  "</div>" +
+								  '<div class="hover">' +
+									
+								  	'<div class="datos1">' +
+										show(indi, "fuente_2", "enlacefuente_2", "Fuente: ") +
+										show(indi, "observaciones_2", "enlaceobservaciones_2") +
+									"</div>" +
+
+									'<div class="datos2">' +
+										show(indi, "fechaarranque_2") +
+										show(indi, "fechaactualización_2") +
+										show(indi, "fechameta_2") +
+									"</div>" +
+									
 								  "</div>"
-								)
+
+								
+									  //------------------------------------------------------------------------------------
+									),
+			
+									indicador.template.clone().html(
+									
+								'<div class="li">' +
+								  show(indi, "descripción_vacia") +
+								  
+								  '<div class="graficos">' +
+									show3(indi, "arranque_3") +
+									show3(indi, "actualización_3") +
+									show3(indi, "meta_3") +
+								  "</div>" +
+								  
+								  "</div>" +
+								  '<div class="hover">' +
+									
+								  	'<div class="datos1">' +
+										show(indi, "fuente_3", "enlacefuente_3", "Fuente: ") +
+										show(indi, "observaciones_3", "enlaceobservaciones_3") +
+									"</div>" +
+
+									'<div class="datos2">' +
+										show(indi, "fechaarranque_3") +
+										show(indi, "fechaactualización_3") +
+										show(indi, "fechameta_3") +
+									"</div>" +
+									
+								  "</div>"
+									
+										  //------------------------------------------------------------------------------------
+										),
+
+										indicador.template.clone().html(
+										'<div class="li">' +
+											show(indi, "descripción_vacia") +
+											
+											'<div class="graficos">' +
+											  show4(indi, "arranque_4") +
+											  show4(indi, "actualización_4") +
+											  show4(indi, "meta_4") +
+											"</div>" +
+											
+											"</div>" +
+											'<div class="hover">' +
+											  
+												'<div class="datos1">' +
+												  show(indi, "fuente_4", "enlacefuente_4", "Fuente: ") +
+												  show(indi, "observaciones_4", "enlaceobservaciones_4") +
+											  "</div>" +
+			
+											  '<div class="datos2">' +
+												  show(indi, "fechaarranque_4") +
+												  show(indi, "fechaactualización_4") +
+												  show(indi, "fechameta_4") +
+											  "</div>" +
+											"</div>"
+														
+										//------------------------------------------------------------------------------------
+										),
+							
 						);
+						
 					});
 					compromisos.append( compromiso.clone );
 					compromiso.clone.find('big').click( QHHA.sheet.expand.thisOne );

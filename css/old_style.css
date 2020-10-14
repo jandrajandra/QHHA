@@ -627,7 +627,7 @@ body {
   color: black;
 }
 .creditList {
-    display: none;
+  display: none;
 }
 .credits a {
   color: black;
@@ -682,21 +682,21 @@ body {
   /* EJE */
 }
 #zapGdl #header {
-    /* vertical-align: middle; */
-    background: #ffffff;
-    height: 14em;
-    width: 100%;
-    /* line-height: 20em; */
-    text-align: left;
-    color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: 99;
-    display: flex;
-    align-items: center;
-    box-shadow: 4px 1px 2px 0px #0000000d;
+  /* vertical-align: middle; */
+  background: #ffffff;
+  height: 14em;
+  width: 100%;
+  /* line-height: 20em; */
+  text-align: left;
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  box-shadow: 4px 1px 2px 0px #0000000d;
 }
 #zapGdl #header .home {
   display: inline-block;
@@ -773,30 +773,30 @@ body {
 }
 
 #zapGdl #header.small .form {
-    display: inline-block;
-    width: 18em;
-    font-size: 1.5em;
-    line-height: 1.5em;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    vertical-align: top;
-    color: #9696b0;
-    float: right;
-    margin: 1em 3em;
-    font-weight: 600;
+  display: inline-block;
+  width: 18em;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: top;
+  color: #9696b0;
+  float: right;
+  margin: 1em 3em;
+  font-weight: 600;
 }
 #zapGdl #header.small .form.calificacion {
   width: 30em;
 }
 #zapGdl #header.small .form:hover {
-    color: #373737;
-    text-decoration: underline;
+  color: #373737;
+  text-decoration: underline;
 }
 #zapGdl #header.easing {
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 #zapGdl #header.easing .home {
   -webkit-transition: all 1s ease;
@@ -830,12 +830,12 @@ body {
   margin: 2.5em 2em 1em 2em;
 }
 #zapGdl #indice .bienvenida p {
-    margin: 0 auto;
-    padding: 0.5em 0;
-    line-height: 1.6em;
-    font-size: calc(15px + (18 - 15) * ((100vw - 300px) / (1600 - 300)));
-    width: 65%;
-    font-weight: 400;
+  margin: 0 auto;
+  padding: 0.5em 0;
+  line-height: 1.6em;
+  font-size: calc(15px + (18 - 15) * ((100vw - 300px) / (1600 - 300)));
+  width: 65%;
+  font-weight: 400;
 }
 #zapGdl #indice .bienvenida p span {
   background: #ddd;
@@ -996,10 +996,10 @@ body {
   display: block;
 }
 #zapGdl #indice #alcalde {
-    text-align: center;
-    height: auto;
-    width: 100%;
-    margin: 2em auto;
+  text-align: center;
+  height: auto;
+  width: 100%;
+  margin: 2em auto;
 }
 #zapGdl #indice #alcalde h2,
 #zapGdl #indice #alcalde .bio,
@@ -1023,7 +1023,7 @@ body {
   margin: 0;
   padding: 0;
   background: #dbc808;
-  height: auto;
+  height: 100%;
   padding: 3em;
   width: 100%;
   overflow: hidden;
@@ -1038,13 +1038,13 @@ body {
   margin-top: 0.5em;
 }
 #zapGdl #indice #alcalde .datos {
-    background: #dbc808;
-    height: auto;
-    padding: 0 2em;
-    padding-left: 0;
-    width: 100%;
-    left: 0;
-    text-align: center;
+  background: #dbc808;
+  height: auto;
+  padding: 0 2em;
+  padding-left: 0;
+  width: 100%;
+  left: 0;
+  text-align: center;
 }
 #zapGdl #indice #alcalde .datos a {
   text-decoration: none;
@@ -1068,7 +1068,7 @@ body {
 #zapGdl #indice #alcalde .datos .email span,
 #zapGdl #indice #alcalde .datos .email a,
 #zapGdl #indice #alcalde .datos .twitter span,
-#zapGdl #indice #alcalde .datos .twitter a {    
+#zapGdl #indice #alcalde .datos .twitter a {
   font-size: 14px;
   font-weight: 500;
 }
@@ -1204,16 +1204,16 @@ body {
   padding-top: 2em;
 }
 #zapGdl .eje h3 span {
-    display: inline-block;
-    margin: 0;
-    margin-left: -3em;
-    padding-right: 0;
-    vertical-align: middle;
+  display: inline-block;
+  margin: 0;
+  margin-left: -3em;
+  padding-right: 0;
+  vertical-align: middle;
 }
 #zapGdl .eje h3 span img {
-    width: 2em;
-    vertical-align: middle;
-    height: auto;
+  width: 2em;
+  vertical-align: middle;
+  height: auto;
 }
 #zapGdl .eje h3 big {
   display: inline-block;
@@ -1223,12 +1223,12 @@ body {
   vertical-align: middle;
 }
 #zapGdl .eje p {
-    color: black;
-    margin: 0 auto;
-    /* font-size: 170%; */
-    font-size: 3em;
-    width: 90%;
-    line-height: 1.4em;
+  color: black;
+  margin: 0 auto;
+  /* font-size: 170%; */
+  font-size: 3em;
+  width: 90%;
+  line-height: 1.4em;
 }
 #zapGdl .eje p span {
   background: rgba(200, 200, 200, 0.3);
@@ -1286,7 +1286,7 @@ body {
   z-index: 2;
   content: counters(compromiso, ".") " ";
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 600;
   margin-top: 1em;
 }
 #zapGdl .eje ol.compromisos {
@@ -1310,6 +1310,7 @@ body {
   line-height: 1.2em;
   display: inline-block;
   margin-left: -1em;
+  font-weight: 500;
   margin-right: 0;
   /* max-width: 33em; */
   position: relative;
@@ -1317,13 +1318,14 @@ body {
   width: 80%;
 }
 #zapGdl .eje ol.compromisos li.compromiso big .veSusIndicadores {
-    position: absolute;
-    bottom: -2em;
-    right: 0;
-    text-decoration: none;
-    font-size: 14px;
-    color: black;
-    opacity: 1;
+  position: absolute;
+  bottom: -2em;
+  right: 0;
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  opacity: 1;
+  font-weight: 600;
 }
 #zapGdl .eje ol.compromisos li.compromiso big .veSusIndicadores i,
 #zapGdl .eje ol.compromisos li.compromiso big .veSusIndicadores em {
@@ -1372,7 +1374,7 @@ body {
   position: relative;
   text-align: center;
   width: 100%;
-  left: 2em;
+  left: 0em;
 }
 #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador::before {
   width: 2.3em;
@@ -1382,24 +1384,28 @@ body {
   color: white;
   font-size: 200%;
 }
-#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador div {
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador div,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 div,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 div,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 div  {
   display: inline-block;
   text-align: center;
   vertical-align: top;
+  /* width: 100%; */
 }
-#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li {
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li {
   width: 100%;
   text-align: left;
+  /* height: 250px; */
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .descripción {
-  width: 50%;
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .descripción,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .descripción,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .descripción,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .descripción {
+  width: 100%;
   padding: 1em;
   background: white;
   /*font-size: 180%;*/
@@ -1407,43 +1413,26 @@ body {
   display: inline-block;
   text-align: left;
   margin-right: 0;
+  font-weight: 500;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .descripción
-  strong {
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .descripción strong {
   color: black;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .arranque,
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .actualización,
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .meta {
-  width: 4em;
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .líneabase,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .líneabase_2,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .líneabase_3,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .líneabase_4,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .aactualización,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .aactualización_2,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .aactualización_3,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .aactualización_4,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .meta,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .meta_2,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .meta_3,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .meta_4 {
+  width: 28%;
   padding: 0 0.2em;
   margin: 0;
   color: white;
@@ -1452,161 +1441,157 @@ body {
   font-size: 200%;
   margin-top: 0.1em;
   vertical-align: bottom;
+} 
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .líneabase span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .líneabase_2 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .líneabase_3 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .líneabase_4 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .aactualización span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .aactualización_2 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .aactualización_3 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .aactualización_4 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .meta span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .meta_2 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .meta_3 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .meta_4 span {
+  font-size: 11px;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .arranque
-  span,
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .actualización
-  span,
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .meta
-  span {
-  font-size: 90%;
-}
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .arranque
-  span
-  b,
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .actualización
-  span
-  b,
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .meta
-  span
-  b {
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .líneabase span b,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .líneabase_2 span b,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .líneabase_3 span b,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .líneabase_4 span b,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .aactualización span b,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .aactualización_2 span b,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .aactualización_3 span b,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .aactualización_4 span b,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .meta span b,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .meta_2 span b,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .meta_3 span b,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .meta_4 span b {
   font-size: 110%;
   margin-right: 0.2em;
   display: inline-block;
   vertical-align: middle;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .arranque {
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .líneabase,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .líneabase_2,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .líneabase_3,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .líneabase_4 {
   text-align: right;
   position: relative;
   border-right: 1px solid white;
   line-height: 2.8em;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .arranque
-  span {
+
+
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .líneabase span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .líneabase_2 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .líneabase_3 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .líneabase_4 span {
   display: inline-block;
   vertical-align: bottom;
   height: 2.5em;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .arranque::before {
-  content: "ARRANQUE";
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .líneabase::before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .líneabase::before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .líneabase::before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .líneabase::before {
+  content: "1a actualización";
   display: block;
   position: absolute;
   top: 0;
   right: 0;
   background: white;
   color: black;
-  font-size: 0.5em;
+  font-size: 10px;
   font-weight: bold;
   height: 2em;
   line-height: 2em;
   padding: 0 0.3em;
   margin: 0;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .actualización {
-      width: 12em;
-      padding: 0;
-      margin-top: 0em;
-      border-bottom: 2px solid white;
-      text-align: left;
-      line-height: 2.2em;
-      background-image: url(../img/indicador/fondo.png);
-      background-repeat: no-repeat;
-      background-size: 100% auto;
+
+ #zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .líneabase_2::before {
+  content: "2a actualización";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+  height: 2em;
+  line-height: 2em;
+  padding: 0 0.3em;
+  margin: 0;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .actualización
-  div.bar {
+
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .líneabase_3::before {
+  content: "3a actualización";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+  height: 2em;
+  line-height: 2em;
+  padding: 0 0.3em;
+  margin: 0;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .líneabase_4::before {
+  content: "4a actualización";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+  height: 2em;
+  line-height: 2em;
+  padding: 0 0.3em;
+  margin: 0;
+} 
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .aactualización,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .aactualización_2,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .aactualización_3,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .aactualización_4 {
+  width: 44%;
+  padding: 0;
+  margin-top: 0em;
+  border-bottom: 2px solid white;
+  text-align: left;
+  line-height: 2.2em;
+  background-image: url(../img/indicador/fondo.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .aactualización div.bar,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .aactualización_2 div.bar,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .aactualización_3 div.bar,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .aactualización_4 div.bar {
   display: inline-block;
   vertical-align: bottom;
   height: 1em;
   background: rgba(119, 119, 119, 0.7);
   border-right: 1px solid black;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .actualización
-  span {
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .aactualización span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .aactualización_2 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .aactualización_3 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .aactualización_4 span {
   background: #ccc;
   color: black;
   padding: 0.2em 0.5em;
@@ -1621,15 +1606,12 @@ body {
   text-align: center;
   font-weight: bold;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .actualización
-  span:before {
+
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .aactualización span:before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .aactualización_2 span:before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .aactualización_3 span:before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .aactualización_4 span:before {
   content: "";
   width: 0;
   height: 0;
@@ -1641,68 +1623,85 @@ body {
   bottom: -6px;
   left: 0;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .actualización
-  span.rightDecile {
-  float: right;
-  margin-top: -2.7em;
+
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .aactualización span.leftFull:after,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .aactualización_2 span.leftFull:after,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .aactualización_3 span.leftFull:after,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .aactualización_4 span.leftFull:after {
+  content: "";
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-left: 10px solid transparent;
+  border-top: 10px solid #a70808;
+  position: absolute;
+  bottom: -6px;
+  right: 0;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .actualización
-  span.rightHalf:before {
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .aactualización span.leftFull:before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .aactualización_2 span.leftFull:before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .aactualización_3 span.leftFull:before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .aactualización_4 span.leftFull:before {
+  content: "";
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-left: 10px solid transparent;
+  border-top: 10px solid transparent;
+  position: absolute;
+  bottom: -6px;
+  right: 0;
+  border-top-color: transparent!important;
+}
+
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .aactualización span.rightDecile,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .aactualización_2 span.rightDecile,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .aactualización_3 span.rightDecile,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .aactualización_4 span.rightDecile {
+  float: right;
+  position: absolute;
+  /* left: 60%; */
+}
+
+/* #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .aactualización span.rightHalf:before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .aactualización_2 span .rightHalf:before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .aactualización_3 span.rightHalf:before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .aactualización_4 span.rightHalf:before {
   border-right: 0 solid transparent;
   border-left: 10px solid transparent;
   border-top: 10px solid #ccc;
   left: auto;
   right: 10px;
-}
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .meta {
+} */
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .meta,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .meta_2,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .meta_3,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .meta_4 {
   text-align: left;
   border-left: 1px solid white;
   padding-left: 0.4em;
   position: relative;
   line-height: 2.8em;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .meta
-  span {
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .meta span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .meta_2 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .meta_3 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .meta_4 span  {
   display: inline-block;
   vertical-align: bottom;
-  height: 2.5em;
+  height: 20px;
+  font-weight: 500;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .meta::before {
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .meta::before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .meta_2::before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .meta_3::before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .meta_4::before {
   content: "META";
   display: block;
   position: absolute;
@@ -1710,161 +1709,102 @@ body {
   left: 0;
   background: black;
   color: white;
-  font-size: 0.5em;
+  font-size: 12px;
   font-weight: bold;
   height: 2em;
   line-height: 2em;
   padding: 0 0.3em;
   margin: 0;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .arranque
-  span,
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .li
-  .meta
-  span {
-  font-size: 65%;
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .líneabase span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .líneabase_2 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .líneabase_3 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .líneabase_4 span,
+#zapGdl .eje ol.compromisos li.compromis ol.indicadores li.indicador .li .meta span,
+#zapGdl .eje ol.compromisos li.compromis ol.indicadores .indicador_2 .li .meta_2 span,
+#zapGdl .eje ol.compromisos li.compromis ol.indicadores .indicador_3 .li .meta_3 span,
+#zapGdl .eje ol.compromisos li.compromis ol.indicadores .indicador_4 .li .meta_4 span {
+  font-size: 12px;
+  display: inline-block;
   vertical-align: bottom;
-  line-height: 110%;
+  height: 20px;
+  font-weight: 500;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador.negativeProgress
-  .li
-  .actualización
-  div.bar {
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.negativeProgress .li .aactualización div.bar,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2.negativeProgress .li .aactualización_2 div.bar,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3.negativeProgress .li .aactualización_3 div.bar,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4.negativeProgress .li .aactualización_4 div.bar {
   background: rgba(210, 65, 65, 0.7);
   margin-bottom: 0px;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador.negativeProgress
-  .li
-  .actualización
-  span,
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador.negativeProgress
-  .li
-  .actualización
-  span.rightHalf {
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.negativeProgress .li .aactualización span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.negativeProgress .li .aactualización span.rightHalf,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2.negativeProgress .li .aactualización_2 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2.negativeProgress .li .aactualización_2 span.rightHalf,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3.negativeProgress .li .aactualización_3 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3.negativeProgress .li .aactualización_3 span.rightHalf,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4.negativeProgress .li .aactualización_4 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4.negativeProgress .li .aactualización_4 span.rightHalf {
   background: #a70808;
   color: #fff;
-  margin-top: -1.3em;
+  margin-top: -9px;
 }
-#zapGdl .eje 
-    ol.compromisos 
-    li.compromiso 
-    ol.indicadores 
-    li.indicador.negativeProgress .li .actualización 
-    span, #zapGdl .eje 
-    ol.compromisos 
-    li.compromiso 
-    ol.indicadores 
-    li.indicador.negativeProgress .li .actualización 
-    span.rightHalf b {
-    color: #fff;
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.negativeProgress .li .aactualización span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.negativeProgress .li .aactualización span.rightHalf b,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2.negativeProgress .li .aactualización_2 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2.negativeProgress .li .aactualización_2 span.rightHalf b,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3.negativeProgress .li .aactualización_3 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3.negativeProgress .li .aactualización_3 span.rightHalf b,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4.negativeProgress .li .aactualización_4 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4.negativeProgress .li .aactualización_4 span.rightHalf b {
+  color: #fff;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador.negativeProgress
-  .li
-  .actualización
-  span.rightDecile,
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador.negativeProgress
-  .li
-  .actualización
-  span.rightHalf.rightDecile {
-  margin-top: -4em;
- 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.negativeProgress .li .aactualización span.rightDecile,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.negativeProgress .li .aactualización span.rightHalf.rightDecile,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2.negativeProgress .li .aactualización_2 span.rightDecile,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2.negativeProgress .li .aactualización_2 span.rightHalf.rightDecile,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3.negativeProgress .li .aactualización_3 span.rightDecile,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3.negativeProgress .li .aactualización_3 span.rightHalf.rightDecile,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4.negativeProgress .li .aactualización_4 span.rightDecile,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4.negativeProgress .li .aactualización_4 span.rightHalf.rightDecile {
+  margin-top: -5em;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador.negativeProgress
-  .li
-  .actualización
-  span:before,
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador.negativeProgress
-  .li
-  .actualización
-  span.rightHalf:before {
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.negativeProgress .li .aactualización span:before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.negativeProgress .li .aactualización span.rightHalf:before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2.negativeProgress .li .aactualización_2 span:before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2.negativeProgress .li .aactualización_2 span.rightHalf:before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3.negativeProgress .li .aactualización_3 span:before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3.negativeProgress .li .aactualización_3 span.rightHalf:before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4.negativeProgress .li .aactualización_4 span:before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4.negativeProgress .li .aactualización_4 span.rightHalf:before
+ {
   border-top-color: #a70808;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador.evidencia
-  .li
-  .arranque
-  span {
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.evidencia .li .líneabase span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2.evidencia .li .líneabase_2 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3.evidencia .li .líneabase_3 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4.evidencia .li .líneabase_4 span {
   padding-right: 0.3em;
 }
 
-/* #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.negativeProgress .li .actualización span, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.negativeProgress.negativoPros .li .actualización span.rightHalf {
+/* #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.negativeProgress .li .aactualización span, #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.negativeProgress.negativoPros .li .aactualización span.rightHalf {
     left: -110%;
     top: -1em;
 } */
 
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador.evidencia
-  .li
-  .actualización {
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.evidencia .li .aactualización,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2.evidencia .li .aactualización_2,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3.evidencia .li .aactualización_3,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4.evidencia .li .aactualización_4 {
   text-align: center;
   background-image: none;
   border-bottom: 0;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador.evidencia
-  .li
-  .actualización
-  span {
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.evidencia .li .aactualización span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2.evidencia .li .aactualización_2 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3.evidencia .li .aactualización_3 span,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4.evidencia .li .aactualización_4 span {
   padding: 0 0.2em;
   font-weight: 700;
   border: 2px solid white;
@@ -1877,154 +1817,93 @@ body {
   -o-transform: rotate(-7deg);
   transform: rotate(-7deg);
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador.evidencia
-  .li
-  .actualización
-  span::before {
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.evidencia .li .aactualización span::before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2.evidencia .li .aactualización_2 span::before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3.evidencia .li .aactualización_3 span::before,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4.evidencia .li .aactualización_4 span::before {
   display: none;
 }
-#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover {
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .hover,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .hover,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .hover {
   display: none;
   text-align: left;
   margin: 0;
   color: black;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .hover
-  .fuente,
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .hover
-  .observaciones {
-  text-align: center;
-  padding: 1em 0.5em 0 0.5em;
-  font-size: 150%;
-}
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .hover
-  .fuente {
-  width: 20%;
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fuente, 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .hover .fuente_2, 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .hover .fuente_3, 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .hover .fuente_4 {
+  width: 50%;
   font-weight: bold;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .hover
-  .fuente
-  em {
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fuente em,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .hover .fuente_2 em,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .hover .fuente_3 em,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .hover .fuente_4 em  {
   font-weight: 100;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .hover
-  .fuente
-  a {
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fuente a,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .hover .fuente_2 a,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .hover .fuente_3 a,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .hover .fuente_4 a {
   font-style: italic;
   color: black;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .hover
-  .observaciones {
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .observaciones,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .hover .observaciones_2,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .hover .observaciones_3,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .hover .observaciones_4 {
   width: 31.5%;
   opacity: 1;
   color: #000;
   font-size: 12px;
+  width: 50%;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .hover
-  .observaciones
-  a {
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .observaciones a,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .hover .observaciones_2 a,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .hover .observaciones_3 a,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .hover .observaciones_4 a {
   color: black;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .hover
-  .fechaarranque,
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .hover
-  .fechaactualización,
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .hover
-  .fechameta {
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechalíneabase,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .hover .datode1aactualización,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .hover .datode2aactualización,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .hover .datode3aactualización,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fecha1aactualización,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .hover .fecha2aactualización,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .hover .fecha3aactualización,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .hover .fecha4aactualización,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechameta,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .hover .fechameta_2,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .hover .fechameta_3,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .hover .fechameta_4 {
   width: 5em;
   padding: 0.7em 0.3em;
   text-align: center;
-  font-size: 180%;
+  font-size: 12px;
   color: black;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .hover
-  .fechaarranque,
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .hover
-  .fechameta {
-  width: 7.5em;
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechalíneabase, 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .hover .fechameta, 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .hover .datode1aactualización, 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .hover .fechameta_2, 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .datode2aactualización, 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .hover .fechameta_3, 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .hover .datode3aactualización, 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .hover .fechameta_4 {
+  width: 20%;
   padding: 1em 0.45em;
   text-align: center;
-  font-size: 120%;
+  font-size: 12px;
   color: black;
   position: relative;
-  left: 7em;
+  left: 0em;
+  font-weight: 600;
 }
 #zapGdl
   .eje
@@ -2033,52 +1912,40 @@ body {
   ol.indicadores
   li.indicador
   .hover
-  .fechaarranque
+  .fechalíneabase
   b,
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .hover
-  .fechameta
-  b {
-  font-size: 150%;
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechameta b,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .hover .fechameta_2 b,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .hover .fechameta_3 b,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .hover .fechameta_4 b {
+  font-size: 15px;
   display: block;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador
-  .hover
-  .fechameta {
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechameta,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .hover .fechameta_2,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .hover .fechameta_3,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .hover .fechameta_4 {
   width: 6.75em;
+  font-weight: 600;
 }
-#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fechaactualización {
-  width: 13em;
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .fecha1aactualización, 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .hover .fecha2aactualización, 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .hover .fecha3aactualización, 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .hover .fecha4aactualización {
+  width: 30%;
   position: relative;
-  left: 5em;
+  left: 0em;
 }
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador.clicked
-  .hover,
-#zapGdl
-  .eje
-  ol.compromisos
-  li.compromiso
-  ol.indicadores
-  li.indicador:hover
-  .hover {
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador.clicked .hover,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador:hover .hover,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2:hover .hover,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3:hover .hover,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4:hover .hover {
   position: relative;
   display: inline-grid;
-  left: -10%;
+  left: 0;
   height: auto;
   font-weight: 400;
 }
@@ -2105,6 +1972,7 @@ body {
 }
 #zapGdl .eje#seguridad li.compromiso big {
   background-color: #1e4384;
+  font-weight: 500;
 }
 #zapGdl .eje#seguridad li.compromiso:hover big {
   background-color: #193770;
@@ -2118,6 +1986,7 @@ body {
 }
 #zapGdl .eje#desarrollo-urbano li.compromiso big {
   background-color: #1e4384;
+  font-weight: 400;
 }
 #zapGdl .eje#desarrollo-urbano li.compromiso:hover big {
   background-color: #193770;
@@ -2181,12 +2050,22 @@ body {
 #zapGdl .eje#comunidad li.compromiso:hover big {
   background-color: #193770;
 }
-#zapGdl.portrait .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .descripción {
-    width: 90%;
-    font-weight: 400;
+#zapGdl.portrait
+  .eje
+  ol.compromisos
+  li.compromiso
+  ol.indicadores
+  li.indicador
+  .li
+  .descripción {
+  width: 90%;
+  font-weight: 400;
 }
-#zapGdl.portrait .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .observaciones {
-    width: 50%;
+#zapGdl.portrait .eje ol.compromisos li.compromiso ol.indicadores li.indicador .hover .observaciones,
+#zapGdl.portrait .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .hover .observaciones,
+#zapGdl.portrait .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .hover .observaciones,
+#zapGdl.portrait .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .hover .observaciones    {
+  width: 50%;
 }
 #zapGdl.portrait .eje ol.compromisos li.compromiso big {
   max-width: 25em;
