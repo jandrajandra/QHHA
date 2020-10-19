@@ -395,9 +395,10 @@ iframe {
 }
 
 span.leftFull {
-  right: 35%;
-  transform: translate(50%, 23px);
+  right: 92%;
+  transform: translate(30%, 23px);
 }
+
 span.rightFull {
   left: 86%;
 }
@@ -465,6 +466,27 @@ span.rightFull {
   width: 100%;
 }
 
+li.indicador.evidencia.entregado .aactualización span {
+  top: 0;
+  right: 36%;
+}
+
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .aactualización,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .aactualización_2,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .aactualización_3,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .aactualización_4 {
+  width: 44%;
+  padding: 0;
+  margin-top: 0em;
+  border-bottom: 2px solid white;
+  text-align: left;
+  line-height: 2.2em;
+  background-image: url(../img/indicador/fondo.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 33px;
+}
 
 /*-------------------------------------- nuevos styles ---------------------*/
 
@@ -723,6 +745,22 @@ font-size: 12px;
   font-size: 12px;
 } 
 
+span.leftFull {
+  right: 85%;
+  transform: translate(50%, 23px);
+}
+
+li.indicador.evidencia.entregado .aactualización span {
+  top: 0;
+  right: 43%;
+}
+
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .aactualización, 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .aactualización_2, 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .aactualización_3, 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .aactualización_4 {
+  background-position: 0 -18px;
+}
 
 }
 
@@ -1049,6 +1087,13 @@ span.leftFull {
   width: 50%;
 }
 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .aactualización, 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .aactualización_2, 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .aactualización_3, 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .aactualización_4 {
+  background-position: 0px -2px;
+}
+
 
 }/*cierra media 992*/
 
@@ -1135,6 +1180,21 @@ span.leftFull {
   top: 50px;
 }
 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .aactualización,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .aactualización_2,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .aactualización_3,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .aactualización_4 {
+  width: 44%;
+  padding: 0;
+  margin-top: 0em;
+  border-bottom: 2px solid white;
+  text-align: left;
+  line-height: 2.2em;
+  background-image: url(../img/indicador/fondo.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 42px;
+}
 
 span.rightHalf.rightDecile.rightFull {
   left: 80%;
@@ -1143,7 +1203,7 @@ span.rightHalf.rightDecile.rightFull {
 
 span.leftFull {
   right: 80%;
-  transform: translate(50px, 27px);
+  transform: translate(0px, 25px);
 }
 
 #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .líneabase span, 
@@ -1333,13 +1393,34 @@ span.rightHalf.rightDecile.rightFull {
   font-weight: 500;
 }
 
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .aactualización,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .aactualización_2,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .aactualización_3,
+#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .aactualización_4 {
+  width: 44%;
+  padding: 0;
+  margin-top: 0em;
+  border-bottom: 2px solid white;
+  text-align: left;
+  line-height: 2.2em;
+  background-image: url(../img/indicador/fondo.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 33px;
+}
+
 span.rightHalf.rightDecile.rightFull {
   left: 70%;
 }
 
-span.leftFull {
+/* span.leftFull {
   right: 80%;
   transform: translate(70px, 25px);
+} */
+
+span.leftFull {
+  right: 70%;
+  transform: translate(0px, 25px);
 }
 
 .datos2 {
