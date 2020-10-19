@@ -1574,6 +1574,7 @@ body {
   height: 1em;
   background: rgba(119, 119, 119, 0.7);
   border-right: 1px solid black;
+  position: relative;
 }
 
 #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .aactualización span,
@@ -1584,7 +1585,7 @@ body {
   color: black;
   padding: 0.2em 0.5em;
   padding-top: 0;
-  position: absolute;
+  position: relative;
   z-index: 3;
   display: inline-block;
   height: 1.5em;
