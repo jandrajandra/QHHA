@@ -349,7 +349,7 @@ var QHHA = {
 					}
 				} 
 				
-				if(!isNaN(líneabase.number) && !isNaN(meta.number) ){
+				if((líneabase.number) && (meta.number) && !(actualizacion.number)){
 					indi.addClass('evidencia');
 					if( actualizacion.html.text().match(/NADA/) ) {
 						indi.addClass('entregado');
