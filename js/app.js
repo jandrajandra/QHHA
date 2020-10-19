@@ -236,9 +236,9 @@ var QHHA = {
 
 	/* SHEET */
 	sheet: {
-		 zap:'1xFOEq-kHbPpTp69XOPPOS3xM6h-2hBPNGJLpc49gWLg',
-		 gdl:'1MWP5xiuhVJQUdYvOLSmPgXS-JVrveoMojN0Q-WqP6XM',
-	         /*gdl:'1MWP5xiuhVJQUdYvOLSmPgXS-JVrveoMojN0Q-WqP6XM',*/
+		zap:'1xFOEq-kHbPpTp69XOPPOS3xM6h-2hBPNGJLpc49gWLg',
+        /* gdl:'1MWP5xiuhVJQUdYvOLSmPgXS-JVrveoMojN0Q-WqP6XM', */
+        gdl:'1MWP5xiuhVJQUdYvOLSmPgXS-JVrveoMojN0Q-WqP6XM',
 			done: [],
 		data: {},
 		split:function(str) { 
@@ -338,6 +338,19 @@ var QHHA = {
 				if( líneabase.html.text().match(/NO/) ) {
 					indi.addClass('evidencia');
 
+					if( actualizacion.html.text().match(/NADA/) ) {
+						indi.addClass('entregado');
+						actualizacion.html.text('SIN ACTUALIZACIÓN');
+					}
+
+					else if(actualizacion.html.text().match(/^S/) ) {
+						indi.addClass('entregado');
+						actualizacion.html.text('✓ ENTREGADO');
+					}
+				} 
+				
+				if(!isNaN(líneabase.number) && !isNaN(meta.number) ){
+					indi.addClass('evidencia');
 					if( actualizacion.html.text().match(/NADA/) ) {
 						indi.addClass('entregado');
 						actualizacion.html.text('SIN ACTUALIZACIÓN');
