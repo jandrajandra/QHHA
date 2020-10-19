@@ -488,6 +488,10 @@ li.indicador.evidencia.entregado .aactualización span {
   height: 33px;
 }
 
+.absolutePosition {
+    position: absolute!important;
+}
+
 /*-------------------------------------- nuevos styles ---------------------*/
 
 @media (min-width: 576px) {
