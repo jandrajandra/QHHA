@@ -395,7 +395,7 @@ iframe {
 }
 
 span.leftFull {
-  right: 92%;
+  right: 50%;
   transform: translate(30%, 23px);
 }
 
@@ -468,7 +468,7 @@ span.rightFull {
 
 li.indicador.evidencia.entregado .aactualización span {
   top: 0;
-  right: 36%;
+  right: 0%;
 }
 
 
@@ -746,8 +746,8 @@ font-size: 12px;
 } 
 
 span.leftFull {
-  right: 85%;
-  transform: translate(50%, 23px);
+    right: 50%;
+    transform: translate(50%, 30px);
 }
 
 li.indicador.evidencia.entregado .aactualización span {
