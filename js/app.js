@@ -238,7 +238,7 @@ var QHHA = {
 	sheet: {
 		zap:'1xFOEq-kHbPpTp69XOPPOS3xM6h-2hBPNGJLpc49gWLg',
         /* gdl:'1MWP5xiuhVJQUdYvOLSmPgXS-JVrveoMojN0Q-WqP6XM', */
-        gdl:'1KgtTvqqNeCZn4mCQEIRFYI3Wr4P2dvQvpub3toLFtoE',
+        gdl:'1MWP5xiuhVJQUdYvOLSmPgXS-JVrveoMojN0Q-WqP6XM',
 			done: [],
 		data: {},
 		split:function(str) { 
@@ -316,7 +316,7 @@ var QHHA = {
 						actualizacion.html.removeClass('rightHalf rightDecile');
 						// Si el porcentaje es mayo al 50%	
 					if(advance.percent >= 50) {
-						actualizacion.html.addClass('rightHalf');
+						actualizacion.html.addClass('rightHalf absolutePosition');
 						
 						if(advance.percent >= 90) {
 							actualizacion.html.addClass('rightDecile');
@@ -419,7 +419,7 @@ var QHHA = {
 						actualizacionDos.html.removeClass('rightHalf rightDecile');
 						// Si el porcentaje es mayo al 50%	
 					 if(advanceDos.percent >= 50) {
-						actualizacionDos.html.addClass('rightHalf');
+						actualizacionDos.html.addClass('rightHalf absolutePosition');
 						
 						if(advanceDos.percent >= 90) {
 							actualizacionDos.html.addClass('rightDecile');
@@ -501,7 +501,7 @@ var QHHA = {
 						actualizacionTres.html.removeClass('rightHalf rightDecile');
 						// Si el porcentaje es mayo al 50%	
 					 if(advanceTres.percent >= 50) {
-						actualizacionTres.html.addClass('rightHalf');
+						actualizacionTres.html.addClass('rightHalf absolutePosition');
 						
 						if(advanceTres.percent >= 90) {
 							actualizacionTres.html.addClass('rightDecile');
@@ -585,7 +585,7 @@ var QHHA = {
 						actualizacionCuatro.html.removeClass('rightHalf rightDecile');
 						// Si el porcentaje es mayo al 50%	
 					 if(advanceCuatro.percent >= 50) {
-						actualizacionCuatro.html.addClass('rightHalf');
+						actualizacionCuatro.html.addClass('rightHalf absolutePosition');
 						
 						if(advanceCuatro.percent >= 90) {
 							actualizacionCuatro.html.addClass('rightDecile');
