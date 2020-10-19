@@ -1471,7 +1471,8 @@ body {
 #zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .meta_4 span b {
   font-size: 110%;
   margin-right: 0.2em;
-  display: inline-block;
+  /* display: inline-block; */
+  display: none;
   vertical-align: middle;
 }
 #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .líneabase,
@@ -1563,20 +1564,7 @@ body {
   margin: 0;
 } 
 
-#zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .aactualización,
-#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .aactualización_2,
-#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .aactualización_3,
-#zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_4 .li .aactualización_4 {
-  width: 44%;
-  padding: 0;
-  margin-top: 0em;
-  border-bottom: 2px solid white;
-  text-align: left;
-  line-height: 2.2em;
-  background-image: url(../img/indicador/fondo.png);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-}
+
 #zapGdl .eje ol.compromisos li.compromiso ol.indicadores li.indicador .li .aactualización div.bar,
 #zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_2 .li .aactualización_2 div.bar,
 #zapGdl .eje ol.compromisos li.compromiso ol.indicadores .indicador_3 .li .aactualización_3 div.bar,
@@ -1596,7 +1584,7 @@ body {
   color: black;
   padding: 0.2em 0.5em;
   padding-top: 0;
-  position: relative;
+  position: absolute;
   z-index: 3;
   display: inline-block;
   height: 1.5em;
