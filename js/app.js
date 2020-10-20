@@ -238,7 +238,7 @@ var QHHA = {
 	sheet: {
 		zap:'1xFOEq-kHbPpTp69XOPPOS3xM6h-2hBPNGJLpc49gWLg',
         /* gdl:'1MWP5xiuhVJQUdYvOLSmPgXS-JVrveoMojN0Q-WqP6XM', */
-        gdl:'1MWP5xiuhVJQUdYvOLSmPgXS-JVrveoMojN0Q-WqP6XM',
+        gdl:'1KgtTvqqNeCZn4mCQEIRFYI3Wr4P2dvQvpub3toLFtoE',
 			done: [],
 		data: {},
 		split:function(str) { 
