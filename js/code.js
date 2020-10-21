@@ -145,8 +145,8 @@ var QHHA = {
 
 	days:{
 		since:function() {
-			var dias = Math.ceil((new Date() - new Date("2021/October/1"))/(1e3*60*60*24)),
-				total = (new Date("2018/September/30") - new Date("2021/October/1"))/(1e3*60*60*24),
+			var dias = Math.ceil((new Date() - new Date("2018/October/1"))/(1e3*60*60*24)),
+				total = (new Date("2021/September/30") - new Date("2018/October/1"))/(1e3*60*60*24),
 				porcentaje = Math.ceil((dias*100)/total);
 			$('#alcalde .inicioFin').find('.dias i').text(dias).end().
 				find('.porcentaje i').text(porcentaje);
