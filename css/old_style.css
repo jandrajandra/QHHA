@@ -1014,7 +1014,7 @@ body {
 #zapGdl #indice #alcalde .bio div.text,
 #zapGdl #indice #alcalde .inicioFin div.text,
 #zapGdl #indice #alcalde .datos div.text {
-  font-size: 100%;
+  font-size: 82%;
   font-weight: 400;
 }
 #zapGdl #indice #alcalde h2 {
@@ -1069,7 +1069,7 @@ body {
 #zapGdl #indice #alcalde .datos .email a,
 #zapGdl #indice #alcalde .datos .twitter span,
 #zapGdl #indice #alcalde .datos .twitter a {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
 }
 #zapGdl #indice #alcalde .datos .tel {
