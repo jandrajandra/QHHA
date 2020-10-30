@@ -3,8 +3,15 @@ body {
 }
 
 
-.indicador_2. .indicador_3. .indicador_4{
+.indicador_2.{
 display:none;}
+
+.indicador_3.{
+display:none;}
+
+.indicador_4.{
+display:none;}
+
 
 h1 {
   font-size: calc(20px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
