@@ -41,7 +41,12 @@
 		<meta name="theme-color" content="#ffffff">
 	</head>
 <body id="zapGdl" class="gdl" data-zapGdl="gdl">
-	
+	<script>
+		$( document ).ready(function() {
+			QHHA.sheet.fetch('gdl');
+			QHHA.days.since();
+		});
+	</script>
 	
 	<!--HEADER-->
 	<div id="header">
